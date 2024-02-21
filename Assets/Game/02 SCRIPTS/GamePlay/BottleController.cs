@@ -33,9 +33,11 @@ public class DataWaterColor
 
 public class BottleController : MonoBehaviour
 {
+    [Header("----------------------------------REFERENCE--------------------------------")]
     public List<Color> bottleColors;
     public SpriteRenderer bottleMask;
     public SpriteRenderer _ava;
+
     public WaterData data;
     public DataWaterColor datawaterColor;
     public int Id => data.index;
@@ -53,6 +55,8 @@ public class BottleController : MonoBehaviour
     /// <summary>
     /// 
     /// </summary>
+    /// 
+    [Header("---------------------------------VALUE-----------------------------------")]
     public float[] fillAmouts;
     public float[] rotationValues;
     private int rotationIndex = 0;
@@ -75,7 +79,6 @@ public class BottleController : MonoBehaviour
     Vector3 originalPosition;
     Vector3 startPosition;
     Vector3 endPosition;
-
 
     public float weight;
     public float height;
@@ -122,8 +125,6 @@ public class BottleController : MonoBehaviour
     {
         this.data = data;
         bottleColors = dataColor.color;
-        this._slot = dataColor.slot;
-        numberofCOlor = dataColor.slot;
     }
 
     public void InitPos(Vector2 target, int slot)

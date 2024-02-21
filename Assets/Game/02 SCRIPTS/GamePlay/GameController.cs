@@ -73,7 +73,7 @@ public class GameController : SingletonMonoBehaviour<GameController>
 
         Vector2 target = new Vector2(x * (bottle.weight / 2 + _spaceHorizontal), y);
 
-        WaterData waterData = new WaterData();
+        //  WaterData waterData = new WaterData();
 
         bottle.InitPos(target, value);
         bottleList.Add(bottle);
