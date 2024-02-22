@@ -385,8 +385,10 @@ MonoBehaviour:
   data:
     index: 0
     color: {r: 0, g: 0, b: 0, a: 0}
-  weight: 120
-  height: 120
+  datawaterColor:
+    slot: 0
+    waterDa: []
+  Id: 0
   _lineRenderer: {fileID: 3249477931123282121}
   scaleAndRotete:
     serializedVersion: 2
@@ -508,15 +510,15 @@ MonoBehaviour:
   - 71
   - 83
   - 90
-  numberofCOlor: 2
-  topColor: {r: 0, g: 0, b: 0, a: 0}
+  numberofCOlor: 0
   numberofTOpColorLayers: 1
   bottleCOntrollerRef: {fileID: 0}
-  justThisBottle: 0
   leftRotationPoint: {fileID: 5605391771865361106}
   rightRotationPoint: {fileID: 5605391773057560550}
   _spawnTrans: {fileID: 5605391771865361106}
   _startTeransMove: {fileID: 5605391773057560550}
+  weight: 120
+  height: 120
 --- !u!61 &5605391773115520293
 BoxCollider2D:
   m_ObjectHideFlags: 0

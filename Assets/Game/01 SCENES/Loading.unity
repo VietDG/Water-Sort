@@ -268,6 +268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1096221525}
   - component: {fileID: 1096221526}
+  - component: {fileID: 1096221527}
   m_Layer: 0
   m_Name: PlayerData(~~~PlayerData~~~)
   m_TagString: Untagged
@@ -302,6 +303,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18ea206cb79d68c4daabf435a58a4403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1096221527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096221524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3004224600d59664e8587a98cb0837c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textData: {fileID: 4900000, guid: fc2101c8e53eb2e4aa6721c74381fac4, type: 3}
+  _levelDataSO: {fileID: 11400000, guid: 0dd249562144833458957e7872db8d39, type: 2}
 --- !u!1001 &1108950494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -634,6 +649,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46648ed0e15c23469ab9137c6759f0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  preInstantiate: 0
+  LevelDataSO: {fileID: 11400000, guid: 0dd249562144833458957e7872db8d39, type: 2}
 --- !u!1 &1945951012
 GameObject:
   m_ObjectHideFlags: 0

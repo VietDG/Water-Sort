@@ -17,18 +17,18 @@ public class WaterData
     public int index;
     public Color color;
 }
-
-public class DataWaterColor
+[Serializable]
+public class DataBottle
 {
     public int slot;
-    public List<Color> color = new List<Color>();
+    public List<WaterData> waterDa = new List<WaterData>();
 
-    public DataWaterColor(int slot, List<Color> color)
+    public DataBottle(int slot, List<WaterData> color)
     {
         this.slot = slot;
-        this.color = color;
+        this.waterDa = color;
     }
-    public DataWaterColor() { }
+    public DataBottle() { }
 }
 
 public class BottleController : MonoBehaviour
@@ -39,8 +39,8 @@ public class BottleController : MonoBehaviour
     public SpriteRenderer _ava;
 
     public WaterData data;
-    public DataWaterColor datawaterColor;
-    public int Id => data.index;
+    public DataBottle datawaterColor;
+    public int Id /*=> data.index*/;
 
     private int _slot;
     public int Slot => _slot;
@@ -99,12 +99,16 @@ public class BottleController : MonoBehaviour
 
     void Start()
     {
+        for (int i = 0; i < datawaterColor.waterDa.Count; i++)
+        {
+            bottleColors.Add(datawaterColor.waterDa[i].color);
+        }
         HandleColor();
 
         originalPosition = transform.position;
 
         UpdateColorOnShader();
-        UpdateTopColor();
+        //   UpdateTopColor();
     }
 
     public bool isEmpty()
@@ -121,10 +125,12 @@ public class BottleController : MonoBehaviour
         bottleMask.material.SetFloat("_FillAmout", fillAmouts[numberofCOlor]);
     }
 
-    public void Init(WaterData data, DataWaterColor dataColor)
+    public void Init(DataBottle dataColor, int value)
     {
-        this.data = data;
-        bottleColors = dataColor.color;
+        datawaterColor = dataColor;
+        dataColor.slot = value;
+        numberofCOlor = dataColor.waterDa.Count;
+        Debug.LogError(numberofCOlor);
     }
 
     public void InitPos(Vector2 target, int slot)
@@ -207,12 +213,13 @@ public class BottleController : MonoBehaviour
         bottleMask.sortingOrder -= 2;
     }
 
+    private string[] name = new string[] { "C1", "C2", "C3", "C4" };
     void UpdateColorOnShader()
     {
-        bottleMask.material.SetColor($"{ColorShader.C1}", bottleColors[0]);
-        bottleMask.material.SetColor($"{ColorShader.C2}", bottleColors[1]);
-        bottleMask.material.SetColor($"{ColorShader.C3}", bottleColors[2]);
-        bottleMask.material.SetColor($"{ColorShader.C4}", bottleColors[3]);
+        for (int i = 0; i < datawaterColor.waterDa.Count; i++)
+        {
+            bottleMask.material.SetColor(name[i], bottleColors[i]);
+        }
     }
 
     IEnumerator RotateBottle(BottleController bottle)

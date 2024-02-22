@@ -11,6 +11,9 @@ public class GameController : SingletonMonoBehaviour<GameController>
     public List<BottleController> bottleList = new List<BottleController>();
     public BottleController _holdingBottle;
 
+    private GameManager _gameManager;
+    private UserData _userData;
+
     private BottleController first;
     private BottleController second;
     [Header("------------------------------------VALUE--------------------------")]
@@ -20,6 +23,8 @@ public class GameController : SingletonMonoBehaviour<GameController>
 
     public override void Awake()
     {
+        _gameManager = GameManager.Instance;
+        _userData = PlayerData.UserData;
         _camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
     }
 
@@ -35,7 +40,9 @@ public class GameController : SingletonMonoBehaviour<GameController>
 
     private void Init()
     {
-        int tubeNumber = 5;
+        int tubeNumber = _gameManager.Level.tube;
+        int slotTube = _gameManager.Level.tubeSlot;
+        int index = 0;
 
         if (tubeNumber > _tubeHorizontalMax)
         {
@@ -45,13 +52,13 @@ public class GameController : SingletonMonoBehaviour<GameController>
 
             for (int i = 0; i < top; i++)
             {
-                SpawnBottleWater(i, 0f, 4);
+                SpawnBottleWater(i, 0f, 4, GetBottleData());
             }
 
             float _spaccBot = tubeNumber % 2 == 0 ? 0f : 0.5f;
             for (int i = 0; i < bot; i++)
             {
-                SpawnBottleWater(i + _spaccBot, -_spaceVertical, 4);
+                SpawnBottleWater(i + _spaccBot, -_spaceVertical, 4, GetBottleData());
             }
         }
         else
@@ -59,13 +66,32 @@ public class GameController : SingletonMonoBehaviour<GameController>
             _spaceHorizontal = (_tubeHorizontalMax / tubeNumber) * GetDistance(tubeNumber);
             for (int i = 0; i < tubeNumber; i++)
             {
-                SpawnBottleWater(i, 0f, 4);
+                SpawnBottleWater(i, 0f, 4, GetBottleData());
             }
+        }
+        List<WaterData> GetBottleData()
+        {
+            List<WaterData> dataBalls = new List<WaterData>();
+            for (int j = 0; j < slotTube; j++)
+            {
+                if (index >= _gameManager.Level.data.Count)
+                {
+                    return dataBalls;
+                }
+                if (_gameManager.Level.data[index] < 0)
+                {
+                    index++;
+                    continue;
+                }
+                WaterData data = _gameManager.getBallDataSO().GetWaterData(_gameManager.Level.data[index]);
+                dataBalls.Add(data);
+                index++;
+            }
+            return dataBalls;
         }
     }
 
-    public DataWaterSO _dataWaterSO;
-    private void SpawnBottleWater(float x, float y, int value)
+    private void SpawnBottleWater(float x, float y, int value, List<WaterData> dataWater)
     {
         GameObject waterObj = SimplePool.Spawn(_waterPrefab, Vector2.zero, Quaternion.identity);
         BottleController bottle = waterObj.GetComponent<BottleController>();
@@ -74,6 +100,10 @@ public class GameController : SingletonMonoBehaviour<GameController>
         Vector2 target = new Vector2(x * (bottle.weight / 2 + _spaceHorizontal), y);
 
         //  WaterData waterData = new WaterData();
+
+        DataBottle data = new DataBottle(value, dataWater);
+
+        bottle.Init(data, value);
 
         bottle.InitPos(target, value);
         bottleList.Add(bottle);

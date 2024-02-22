@@ -4,10 +4,29 @@ using UnityEngine;
 
 public class GameManager : SingletonMonoBehaviour<GameManager>
 {
-    #region Public Methods
-    public void OpenAdditionalCup()
+    [Header("~~~DATA~~~")]
+    public DataWaterSO _dataWaterSO;
+    [field: SerializeField] public Level Level { get; private set; }
+    public DataManager Datamanager { get; private set; }
+    private UserData _userData;
+    [Header("REFFERENCE")]
+    [SerializeField] int _level;
+
+    public override void Awake()
     {
-        PopupAdditionalCup.Instance.Open();
+        Datamanager = DataManager.Instance;
+        _userData = PlayerData.UserData;
+
+        InitLevel();
     }
-    #endregion
+
+    public void InitLevel()
+    {
+        this.Level = Datamanager.LevelDataSO.getLevel(_userData.HighestLevel);
+    }
+
+    public DataWaterSO getBallDataSO()
+    {
+        return _dataWaterSO;
+    }
 }
