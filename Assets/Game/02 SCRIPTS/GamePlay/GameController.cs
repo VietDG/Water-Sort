@@ -166,6 +166,7 @@ public class GameController : SingletonMonoBehaviour<GameController>
                 {
                     // _holdingBottle.StartColorTransfer(newBottle);
                     SortWater(_holdingBottle, newBottle, OnMoveComplete);
+                    Debug.LogError("1");
                     _holdingBottle = null;
                 }
             }
@@ -245,11 +246,13 @@ public class GameController : SingletonMonoBehaviour<GameController>
 
                     // Do some thing
                     max++;
+                    Debug.LogError("abc");
                 }
                 break;
             }
             if (holdingBall.index == holdBalls[i].index)
             {
+                Debug.LogError("xyz");
                 if (to.datawaterColor.waterDa.Count + moveBalls.Count >= to.Slot)
                 {
                     for (int j = holdBalls.Count - 1 - max; j >= 0; j--)
@@ -274,15 +277,18 @@ public class GameController : SingletonMonoBehaviour<GameController>
 
         for (int i = 0; i < moveBalls.Count; i++)
         {
+            Debug.LogError("for");
             if (i == moveBalls.Count - 1)
             {
-                from.StartMove(from, to, countBall, i);   //move -> new branch
+                //  from.StartMove(from, to, countBall, i);   //move -> new branch
                 _holdingBottle.StartColorTransfer(to);
+                Debug.LogError("move1");
             }
             else
             {
-                from.StartMove(from, to, countBall, i);   //move -> new branch
+                //    from.StartMove(from, to, countBall, i);   //move -> new branch
                 _holdingBottle.StartColorTransfer(to);
+                Debug.LogError("move2");
             }
 
             to.datawaterColor.waterDa.Add(moveBalls[i]);

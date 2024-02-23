@@ -107,7 +107,7 @@ public class BottleController : MonoBehaviour
 
         originalPosition = transform.position;
 
-        UpdateColorOnShader();
+        UpdateStartColor();
         UpdateTopColor();
     }
 
@@ -129,12 +129,8 @@ public class BottleController : MonoBehaviour
     {
         datawaterColor = dataColor;
         dataColor.slot = value;
+        this._slot = dataColor.slot;
         numberofCOlor = dataColor.waterDa.Count;
-
-        foreach (var item in dataColor.waterDa)
-        {
-            Debug.LogError(item.index);
-        }
     }
 
     public void InitPos(Vector2 target, int slot)
@@ -159,8 +155,8 @@ public class BottleController : MonoBehaviour
         //    bottle.bottleColors[bottle.numberofCOlor + i] = topColor;
         //}
 
-        bottle.UpdateColorOnShader();
-        UpdateColorOnShader();
+        bottle.UpdateStartColor();
+        UpdateStartColor();
         CaulateRoattionIndex(4 - bottle.numberofCOlor);
 
         transform.GetComponent<SpriteRenderer>().sortingOrder += 2;
@@ -218,15 +214,21 @@ public class BottleController : MonoBehaviour
         bottleMask.sortingOrder -= 2;
     }
 
-    private string[] name = new string[] { "C1", "C2", "C3", "C4" };
-    void UpdateColorOnShader()
+    private string[] name = new string[] { "C1", "C2", "C3", "C4" }; // Update Start Color
+    void UpdateStartColor()
     {
         for (int i = 0; i < datawaterColor.waterDa.Count; i++)
         {
             bottleMask.material.SetColor(name[i], bottleColors[i]);
         }
+        Debug.LogError(datawaterColor.waterDa.Count);
     }
+    // them mot doan update color moi chia ra lam 2 , 1 doan update luc dau game
 
+    void UpdateColor()
+    {
+
+    }
     IEnumerator RotateBottle(BottleController bottle)
     {
         float t = 0;
