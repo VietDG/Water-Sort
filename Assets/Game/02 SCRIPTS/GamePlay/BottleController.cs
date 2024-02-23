@@ -108,12 +108,12 @@ public class BottleController : MonoBehaviour
         originalPosition = transform.position;
 
         UpdateColorOnShader();
-        //   UpdateTopColor();
+        UpdateTopColor();
     }
 
     public bool isEmpty()
     {
-        if (numberofCOlor > 0)
+        if (datawaterColor.waterDa.Count > 0)
         {
             return false;
         }
@@ -130,7 +130,11 @@ public class BottleController : MonoBehaviour
         datawaterColor = dataColor;
         dataColor.slot = value;
         numberofCOlor = dataColor.waterDa.Count;
-        Debug.LogError(numberofCOlor);
+
+        foreach (var item in dataColor.waterDa)
+        {
+            Debug.LogError(item.index);
+        }
     }
 
     public void InitPos(Vector2 target, int slot)
@@ -149,10 +153,11 @@ public class BottleController : MonoBehaviour
         ChoseRotationPointAndDirection(bottle);
         numberOfColorToTransfer = Mathf.Min(numberofTOpColorLayers, 4 - bottle.numberofCOlor);
 
-        for (int i = 0; i < numberOfColorToTransfer; i++)
-        {
-            bottle.bottleColors[bottle.numberofCOlor + i] = topColor;
-        }
+        //for (int i = 0; i < numberOfColorToTransfer; i++)
+        //{
+        //    Debug.LogError(bottle.numberofCOlor + i);
+        //    bottle.bottleColors[bottle.numberofCOlor + i] = topColor;
+        //}
 
         bottle.UpdateColorOnShader();
         UpdateColorOnShader();
@@ -244,7 +249,6 @@ public class BottleController : MonoBehaviour
             {
                 if (_lineRenderer.enabled == false)
                 {
-                    Debug.LogError("c");
                     _lineRenderer.startColor = topColor;
                     _lineRenderer.endColor = topColor;
 
@@ -304,72 +308,46 @@ public class BottleController : MonoBehaviour
 
     public void UpdateTopColor() // update mau
     {
-        if (numberofCOlor != 0)
-        {
-            numberofTOpColorLayers = 1;
-            topColor = bottleColors[numberofCOlor - 1];
+        //if (numberofCOlor != 0)
+        //{
+        //    numberofTOpColorLayers = 1;
+        //    topColor = bottleColors[numberofCOlor - 1];
 
-            if (numberofCOlor == 4)
-            {
-                if (bottleColors[3].Equals(bottleColors[2]))
-                {
-                    numberofTOpColorLayers = 2;
-                    if (bottleColors[2].Equals(bottleColors[1]))
-                    {
-                        numberofTOpColorLayers = 3;
-                        if (bottleColors[1].Equals(bottleColors[0]))
-                        {
-                            numberofTOpColorLayers = 4;
-                        }
-                    }
-                }
-            }
-            else if (numberofCOlor == 3)
-            {
-                if (bottleColors[2].Equals(bottleColors[1]))
-                {
-                    numberofTOpColorLayers = 2;
-                    if (bottleColors[1].Equals(bottleColors[0]))
-                    {
-                        numberofTOpColorLayers = 3;
-                    }
-                }
-            }
-            else if (numberofCOlor == 2)
-            {
-                if (bottleColors[1].Equals(bottleColors[0]))
-                {
-                    numberofTOpColorLayers = 2;
-                }
-            }
-            rotationIndex = 3 - (numberofCOlor - numberofTOpColorLayers);
-        }
-    }
-
-    public bool FillBOttleCheck(Color colorToCheck)
-    {
-        if (numberofCOlor == 0)
-        {
-            return true;
-        }
-        else
-        {
-            if (numberofCOlor == 4)
-            {
-                return false;
-            }
-            else
-            {
-                if (topColor.Equals(colorToCheck))
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-        }
+        //    if (numberofCOlor == 4)
+        //    {
+        //        if (bottleColors[3].Equals(bottleColors[2]))
+        //        {
+        //            numberofTOpColorLayers = 2;
+        //            if (bottleColors[2].Equals(bottleColors[1]))
+        //            {
+        //                numberofTOpColorLayers = 3;
+        //                if (bottleColors[1].Equals(bottleColors[0]))
+        //                {
+        //                    numberofTOpColorLayers = 4;
+        //                }
+        //            }
+        //        }
+        //    }
+        //    else if (numberofCOlor == 3)
+        //    {
+        //        if (bottleColors[2].Equals(bottleColors[1]))
+        //        {
+        //            numberofTOpColorLayers = 2;
+        //            if (bottleColors[1].Equals(bottleColors[0]))
+        //            {
+        //                numberofTOpColorLayers = 3;
+        //            }
+        //        }
+        //    }
+        //    else if (numberofCOlor == 2)
+        //    {
+        //        if (bottleColors[1].Equals(bottleColors[0]))
+        //        {
+        //            numberofTOpColorLayers = 2;
+        //        }
+        //    }
+        //    rotationIndex = 3 - (numberofCOlor - numberofTOpColorLayers);
+        //}
     }
 
     private void CaulateRoattionIndex(int value)
@@ -406,9 +384,9 @@ public class BottleController : MonoBehaviour
         {
             return true;
         }
-        if (_slot == numberofCOlor) return false;
+        if (_slot == datawaterColor.waterDa.Count) return false;
 
-        if (4 == numberofCOlor)
+        if (datawaterColor.slot == datawaterColor.waterDa.Count)
         {
             return false;
         }
@@ -417,6 +395,23 @@ public class BottleController : MonoBehaviour
         if (!isSameColor)
         {
             return false;
+        }
+        return true;
+    }
+
+    public bool isDone()
+    {
+        if (Slot < datawaterColor.slot) return false;
+        if (datawaterColor.waterDa.Count != datawaterColor.slot) return false;
+        for (int i = datawaterColor.waterDa.Count - 1; i >= 0; i--)
+        {
+            if (i > 0)
+            {
+                if (datawaterColor.waterDa[i].index != datawaterColor.waterDa[i - 1].index)
+                {
+                    return false;
+                }
+            }
         }
         return true;
     }
@@ -434,4 +429,21 @@ public class BottleController : MonoBehaviour
             directionMultiple = 1f;
         }
     }
+
+    public WaterData GetWaterData()
+    {
+        if (!isEmpty())
+        {
+            WaterData waterData = datawaterColor.waterDa[datawaterColor.waterDa.Count - 1];
+            return waterData;
+        }
+        return null;
+    }
+}
+
+public enum StateTube
+{
+    Active,
+    Deactive,
+    Moving,
 }
