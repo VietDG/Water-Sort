@@ -103,10 +103,9 @@ public class BottleController : MonoBehaviour
         {
             bottleColors.Add(datawaterColor.waterDa[i].color);
         }
+
         HandleColor();
-
         originalPosition = transform.position;
-
         UpdateStartColor();
         UpdateTopColor();
     }
@@ -155,8 +154,8 @@ public class BottleController : MonoBehaviour
         //    bottle.bottleColors[bottle.numberofCOlor + i] = topColor;
         //}
 
-        bottle.UpdateStartColor();
-        UpdateStartColor();
+        // bottle.UpdateStartColor();
+        //UpdateStartColor();
         CaulateRoattionIndex(4 - bottle.numberofCOlor);
 
         transform.GetComponent<SpriteRenderer>().sortingOrder += 2;
@@ -214,14 +213,13 @@ public class BottleController : MonoBehaviour
         bottleMask.sortingOrder -= 2;
     }
 
-    private string[] name = new string[] { "C1", "C2", "C3", "C4" }; // Update Start Color
+    public string[] _colorName = new string[] { "C1", "C2", "C3", "C4" }; // Update Start Color
     void UpdateStartColor()
     {
         for (int i = 0; i < datawaterColor.waterDa.Count; i++)
         {
-            bottleMask.material.SetColor(name[i], bottleColors[i]);
+            bottleMask.material.SetColor(_colorName[i], bottleColors[i]);
         }
-        Debug.LogError(datawaterColor.waterDa.Count);
     }
     // them mot doan update color moi chia ra lam 2 , 1 doan update luc dau game
 

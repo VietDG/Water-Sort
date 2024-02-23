@@ -7677,7 +7677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   preInstantiate: 0
-  _dataWaterSO: {fileID: 0}
+  _dataWaterSO: {fileID: 11400000, guid: e20a9c0ada8ab8d4494f51923f1acb14, type: 2}
   <Level>k__BackingField:
     level: 0
     tube: 0
