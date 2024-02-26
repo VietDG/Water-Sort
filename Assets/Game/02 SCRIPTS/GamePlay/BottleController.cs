@@ -239,14 +239,12 @@ public class BottleController : MonoBehaviour
                     _lineRenderer.SetPosition(1, choseRotationPoint.position - Vector3.up * 1.45f);
                     _lineRenderer.enabled = true;
                 }
-                bottle.HandleColor();
 
-                bottleMask.material.SetFloat("_FillAmout", fillAmoutCurve.Evaluate(angleValue));
-                bottle.FillUp(fillAmoutCurve.Evaluate(lastAngleValue) - fillAmoutCurve.Evaluate(angleValue));
+                bottleMask.material.SetFloat("_FillAmout", fillAmouts[datawaterColor.waterDa.Count]);
+                //  bottle.FillUp(fillAmoutCurve.Evaluate(lastAngleValue) - fillAmoutCurve.Evaluate(angleValue));
+                bottle.bottleMask.material.SetFloat("_FillAmout", fillAmouts[bottle.datawaterColor.waterDa.Count]);
                 bottle.UpdateStartColor();
             }
-            HandleColor();
-
             t += Time.deltaTime * rotationSpeed.Evaluate(angleValue);
             lastAngleValue = angleValue;
             yield return new WaitForEndOfFrame();
@@ -254,7 +252,7 @@ public class BottleController : MonoBehaviour
         angleValue = directionMultiple * rotationValues[rotationIndex];
         // transform.eulerAngles = new Vector3(0, 0, angleValue);
         bottleMask.material.SetFloat("_scale", scaleAndRotete.Evaluate(angleValue));
-        bottleMask.material.SetFloat("_FillAmout", fillAmoutCurve.Evaluate(angleValue));
+        bottleMask.material.SetFloat("_FillAmout", fillAmouts[datawaterColor.waterDa.Count]);
 
         numberofCOlor -= numberOfColorToTransfer;
         bottle.numberofCOlor += numberOfColorToTransfer;
