@@ -382,9 +382,6 @@ MonoBehaviour:
   bottleColors: []
   bottleMask: {fileID: 5605391771573233090}
   _ava: {fileID: 5605391773115520288}
-  data:
-    index: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
   datawaterColor:
     slot: 0
     waterDa: []
@@ -519,6 +516,11 @@ MonoBehaviour:
   _startTeransMove: {fileID: 5605391773057560550}
   weight: 120
   height: 120
+  _colorName:
+  - C1
+  - C2
+  - C3
+  - C4
 --- !u!61 &5605391773115520293
 BoxCollider2D:
   m_ObjectHideFlags: 0

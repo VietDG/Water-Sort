@@ -166,7 +166,6 @@ public class GameController : SingletonMonoBehaviour<GameController>
                 {
                     // _holdingBottle.StartColorTransfer(newBottle);
                     SortWater(_holdingBottle, newBottle, OnMoveComplete);
-                    Debug.LogError("1");
                     _holdingBottle = null;
                 }
             }
@@ -176,7 +175,6 @@ public class GameController : SingletonMonoBehaviour<GameController>
             //  newBottle.ChangeState(StateTube.Deactive);
             if (newBottle.isDone())
             {
-                Debug.LogError("complete");
                 //   newTube.PlayVfx();
                 //  VibrationManager.Vibrate(15);
                 //  SoundManager.Instance.PlaySfxRewind(GlobalSetting.GetSFX("complete1"));
@@ -246,13 +244,11 @@ public class GameController : SingletonMonoBehaviour<GameController>
 
                     // Do some thing
                     max++;
-                    Debug.LogError("abc");
                 }
                 break;
             }
             if (holdingBall.index == holdBalls[i].index)
             {
-                Debug.LogError("xyz");
                 if (to.datawaterColor.waterDa.Count + moveBalls.Count >= to.Slot)
                 {
                     for (int j = holdBalls.Count - 1 - max; j >= 0; j--)
@@ -266,7 +262,11 @@ public class GameController : SingletonMonoBehaviour<GameController>
                 }
                 moveBalls.Add(from.datawaterColor.waterDa[i]);
 
+                to.bottleColors.Add(from.datawaterColor.waterDa[i].color);
                 from.datawaterColor.waterDa.RemoveAt(i);
+                from.bottleColors.RemoveAt(i);
+                //from.UpdateStartColor();
+                //to.UpdateStartColor();
 
                 max++;
             }
@@ -277,18 +277,15 @@ public class GameController : SingletonMonoBehaviour<GameController>
 
         for (int i = 0; i < moveBalls.Count; i++)
         {
-            Debug.LogError("for");
             if (i == moveBalls.Count - 1)
             {
                 //  from.StartMove(from, to, countBall, i);   //move -> new branch
                 _holdingBottle.StartColorTransfer(to);
-                Debug.LogError("move1");
             }
             else
             {
                 //    from.StartMove(from, to, countBall, i);   //move -> new branch
                 _holdingBottle.StartColorTransfer(to);
-                Debug.LogError("move2");
             }
 
             to.datawaterColor.waterDa.Add(moveBalls[i]);
