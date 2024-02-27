@@ -149,11 +149,13 @@ public class BottleController : MonoBehaviour
         transform.GetComponent<SpriteRenderer>().sortingOrder += 2;
         bottleMask.sortingOrder += 2;
         StartCoroutine(MoveBottle(bottle));
+        // StartCoroutine(RotateBottle(bottle));
     }
 
     IEnumerator MoveBottle(BottleController bottle)
     {
         startPosition = transform.position;
+        // endPosition = originalPosition;
 
         if (choseRotationPoint == leftRotationPoint)
         {
@@ -166,7 +168,7 @@ public class BottleController : MonoBehaviour
 
         float t = 0;
 
-        while (t < 1)
+        while (t <= 1)
         {
             transform.position = Vector3.Lerp(startPosition, endPosition, t);
             t += Time.deltaTime * 2;
@@ -187,7 +189,7 @@ public class BottleController : MonoBehaviour
 
         float t = 0;
 
-        while (t < 1)
+        while (t <= 1)
         {
             transform.position = Vector3.Lerp(startPosition, endPosition, t);
             t += Time.deltaTime * 2;
@@ -247,7 +249,7 @@ public class BottleController : MonoBehaviour
             bottle.bottleMask.material.SetFloat("_FillAmout", newValue);
             bottle.UpdateStartColor();
             //  }
-            t += Time.deltaTime/* * rotationSpeed.Evaluate(angleValue)*/;
+            t += Time.deltaTime * rotationSpeed.Evaluate(angleValue);
             lastAngleValue = angleValue;
             yield return new WaitForEndOfFrame();
         }
@@ -281,7 +283,7 @@ public class BottleController : MonoBehaviour
             bottleMask.material.SetFloat("_scale", scaleAndRotete.Evaluate(angleValue));
 
             lastAngleValue = angleValue;
-            t += Time.deltaTime;
+            t += Time.deltaTime * 2;
             yield return new WaitForEndOfFrame();
         }
         angleValue = 0f;

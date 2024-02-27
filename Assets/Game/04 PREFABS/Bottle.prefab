@@ -356,12 +356,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 3b84c1327f558574b9ac481dc534f7bc, type: 3}
+  m_Sprite: {fileID: 1272286900, guid: 3b84c1327f558574b9ac481dc534f7bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.484375, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -434,41 +434,41 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 54
       value: 0.13
-      inSlope: -0.009169173
-      outSlope: -0.009169173
+      inSlope: -0.012501573
+      outSlope: -0.012501573
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.25149694
+      inWeight: 0.23622958
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 71
       value: -0.08
-      inSlope: -0.00997181
-      outSlope: -0.00997181
+      inSlope: -0.011722624
+      outSlope: -0.011722624
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.2645295
+      inWeight: 0.23069808
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 83
       value: -0.29
-      inSlope: -0.007946112
-      outSlope: -0.007946112
+      inSlope: -0.016807284
+      outSlope: -0.016807284
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.42265448
+      inWeight: 0.48335013
       outWeight: 0.5688629
     - serializedVersion: 3
       time: 90
       value: -0.50198364
-      inSlope: -0.030541625
-      outSlope: -0.030541625
+      inSlope: -0.026065812
+      outSlope: -0.026065812
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.5389219
+      inWeight: 0.6878684
       outWeight: 0.33333334
     m_PreInfinity: 0
-    m_PostInfinity: 2
+    m_PostInfinity: 0
     m_RotationOrder: 4
   rotationSpeed:
     serializedVersion: 2
@@ -508,7 +508,6 @@ MonoBehaviour:
   - 90
   numberofCOlor: 0
   numberofTOpColorLayers: 1
-  bottleCOntrollerRef: {fileID: 0}
   leftRotationPoint: {fileID: 5605391771865361106}
   rightRotationPoint: {fileID: 5605391773057560550}
   _spawnTrans: {fileID: 5605391771865361106}
@@ -537,8 +536,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 0.484375, y: 1}
+    newSize: {x: 0.484375, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
