@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelDatas:
   - level: 1
-    tube: 3
+    tube: 4
     tubeSlot: 4
-    data: 000000000000000001000000ffffffff010000000100000001000000ffffffff0000000000000000ffffffffffffffff
+    data: 000000000000000001000000ffffffff010000000100000001000000ffffffff0000000000000000ffffffffffffffffffffffffffffffffffffffffffffffff
   - level: 2
     tube: 3
     tubeSlot: 4

@@ -385,7 +385,6 @@ MonoBehaviour:
   datawaterColor:
     slot: 0
     waterDa: []
-  Id: 0
   _lineRenderer: {fileID: 3249477931123282121}
   scaleAndRotete:
     serializedVersion: 2
@@ -426,47 +425,47 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 30
       value: 0.34
-      inSlope: -0.0017288242
-      outSlope: -0.0017288242
+      inSlope: -0.000065555076
+      outSlope: -0.000065555076
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.33333334
+      outWeight: 0.20059888
     - serializedVersion: 3
       time: 54
       value: 0.13
-      inSlope: -0.010957625
-      outSlope: -0.010957625
+      inSlope: -0.009169173
+      outSlope: -0.009169173
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.2335329
+      inWeight: 0.25149694
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 71
       value: -0.08
-      inSlope: -0.0122693805
-      outSlope: -0.0122693805
+      inSlope: -0.00997181
+      outSlope: -0.00997181
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.27721047
+      inWeight: 0.2645295
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 83
       value: -0.29
-      inSlope: -0.019846305
-      outSlope: -0.019846305
+      inSlope: -0.007946112
+      outSlope: -0.007946112
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.34181657
-      outWeight: 0.4610781
+      inWeight: 0.42265448
+      outWeight: 0.5688629
     - serializedVersion: 3
       time: 90
-      value: -0.5
-      inSlope: -0.019672751
-      outSlope: -0.019672751
+      value: -0.50198364
+      inSlope: -0.030541625
+      outSlope: -0.030541625
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.5081264
+      inWeight: 0.5389219
       outWeight: 0.33333334
     m_PreInfinity: 0
     m_PostInfinity: 2
@@ -495,7 +494,7 @@ MonoBehaviour:
     m_PreInfinity: 0
     m_PostInfinity: 2
     m_RotationOrder: 4
-  timeRotate: 1.5
+  timeRotate: 1
   fillAmouts:
   - -0.5
   - -0.29

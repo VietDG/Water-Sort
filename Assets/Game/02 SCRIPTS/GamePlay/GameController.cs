@@ -15,8 +15,6 @@ public class GameController : SingletonMonoBehaviour<GameController>
     private GameManager _gameManager;
     private UserData _userData;
 
-    private BottleController first;
-    private BottleController second;
     [Header("------------------------------------VALUE--------------------------")]
     private Camera _camera;
     [SerializeField] private float _minCameraSize;
