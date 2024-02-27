@@ -288,6 +288,7 @@ public class GameController : SingletonMonoBehaviour<GameController>
 
             to.datawaterColor.waterDa.Add(moveBalls[i]);
             AddPrevTube(from, to);
+            callBack?.Invoke();
         }
     }
 

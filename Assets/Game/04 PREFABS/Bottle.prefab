@@ -494,7 +494,7 @@ MonoBehaviour:
     m_PreInfinity: 0
     m_PostInfinity: 2
     m_RotationOrder: 4
-  timeRotate: 1
+  timeRotate: 0.5
   fillAmouts:
   - -0.5
   - -0.29
