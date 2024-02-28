@@ -23,17 +23,17 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 0, a: 1}
   - index: 4
     color: {r: 0, g: 1, b: 1, a: 1}
-  - index: 4
+  - index: 5
     color: {r: 0.75294125, g: 0.75294125, b: 0.75294125, a: 1}
-  - index: 4
+  - index: 6
     color: {r: 0.5019608, g: 0, b: 0, a: 1}
-  - index: 4
+  - index: 7
     color: {r: 0.5019608, g: 0.5019608, b: 0, a: 1}
-  - index: 4
+  - index: 8
     color: {r: 0, g: 0.5019608, b: 0, a: 1}
-  - index: 4
+  - index: 9
     color: {r: 0.5019608, g: 0, b: 0.5019608, a: 1}
-  - index: 4
+  - index: 10
     color: {r: 0, g: 0.5019608, b: 0.5019608, a: 1}
-  - index: 4
+  - index: 11
     color: {r: 0, g: 0, b: 0.5019608, a: 1}

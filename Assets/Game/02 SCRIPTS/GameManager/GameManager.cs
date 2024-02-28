@@ -1,6 +1,9 @@
+using Google.Play.Common.LoadingScreen;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : SingletonMonoBehaviour<GameManager>
 {
@@ -28,5 +31,15 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     public DataWaterSO getBallDataSO()
     {
         return _dataWaterSO;
+    }
+
+    public void Win()
+    {
+        _userData.UpdateHighestLevel();
+        Debug.LogError("Win");
+        FunctionCommon.DelayTime(2f, () =>
+        {
+            SceneManager.LoadScene(Const.SCENE_GAME);
+        });
     }
 }

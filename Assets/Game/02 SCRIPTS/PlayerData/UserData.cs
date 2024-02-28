@@ -14,8 +14,8 @@ public class UserData
     #region Method
     public void UpdateHighestLevel()
     {
-        //if (HighestLevel < DataManager.Instance.LevelDataSO.getListLevel() - 1)
-        //    this.HighestLevel++;
+        if (HighestLevel < DataManager.Instance.LevelDataSO.getListLevel() - 1)
+            this.HighestLevel++;
     }
     #endregion
 }

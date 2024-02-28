@@ -26,6 +26,7 @@ public class GameController : SingletonMonoBehaviour<GameController>
         _gameManager = GameManager.Instance;
         _userData = PlayerData.UserData;
         _camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        // InitScreen();
     }
 
     private void Update()
@@ -101,9 +102,9 @@ public class GameController : SingletonMonoBehaviour<GameController>
 
         DataBottle data = new DataBottle(value, dataWater);
 
+        bottle.InitPos(target, value);
         bottle.Init(data, value);
 
-        bottle.InitPos(target, value);
         bottleList.Add(bottle);
     }
 
@@ -177,15 +178,26 @@ public class GameController : SingletonMonoBehaviour<GameController>
                 //  VibrationManager.Vibrate(15);
                 //  SoundManager.Instance.PlaySfxRewind(GlobalSetting.GetSFX("complete1"));
                 // Debug.LogError($"{newTube.name} is done");
-                //   if (ConditionWin())
+                if (ConditionWin())
                 {
                     // Debug.Log("you win");
                     //    _gameManager.Win();
                     //  }
+                    _gameManager.Win();
                 }
             }
         }
 
+    }
+
+    private bool ConditionWin()
+    {
+        for (int i = 0; i < bottleList.Count; i++)
+        {
+            if (bottleList[i].isEmpty()) continue;
+            if (!bottleList[i].isDone()) return false;
+        }
+        return true;
     }
 
     private void SortTube(int tubeNumber)
@@ -296,5 +308,4 @@ public class GameController : SingletonMonoBehaviour<GameController>
     {
         _prevTube.Add(new KeyValuePair<BottleController, BottleController>(from, to));
     }
-
 }
