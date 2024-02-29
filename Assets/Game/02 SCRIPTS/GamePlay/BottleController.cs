@@ -163,67 +163,28 @@ public class BottleController : MonoBehaviour
         }
     }
 
+    private float _duration = 0.5f;
     public void Rote(BottleController bottle)
     {
-        //if (choseRotationPoint == leftRotationPoint)
-        //{
-        //    endPosition = bottle.rightRotationPoint.position;
-        //}
-        //else
-        //{
-        //    endPosition = bottle.leftRotationPoint.position;
-        //}
         midPos = bottle._linePos.position;
 
         Vector2 target = new Vector2(bottle.originalPosition.x/*+ directionMultiple*/, midPos.y);
 
         this.transform.DOMove(target, 0.2f).SetEase(Ease.Linear).SetDelay(0.1f).OnComplete(() =>
         {
-            SetScaleMaterial();
-            bottleMask.material.DOFloat(fillAmouts[datawaterColor.waterDa.Count], "_FillAmout", 0.4f).SetEase(Ease.Linear).OnComplete(() =>
-            {
-                if (datawaterColor.waterDa.Count < 1)
-                {
-                    bottleMask.material.SetFloat("_scale", 1f);
-                }
-            });
+            bottleMask.material.DOFloat(0.47f, "_scale", _duration).SetEase(Ease.Linear);
+            bottleMask.material.DOFloat(fillAmouts[datawaterColor.waterDa.Count], "_FillAmout", _duration).SetEase(Ease.Linear);
 
-            FunctionCommon.DelayTime(0.1f, () =>
-            {
-                //SetLine(bottle);
-                _lineRenderer.gameObject.SetActive(true);
-                if (_lineRenderer.enabled == false)
-                {
-                    _lineRenderer.startColor = bottle.bottleColors[^1];//
-                    _lineRenderer.endColor = bottle.bottleColors[^1];
-
-                    _lineRenderer.SetPosition(0, midPos);
-                    _lineRenderer.SetPosition(1, midPos - Vector3.up /** 1.2f*/);
-                    _lineRenderer.enabled = true;
-                }
-            });
-
-            bottle.bottleMask.material.DOFloat(bottle.fillAmouts[bottle.datawaterColor.waterDa.Count], "_FillAmout", 0.5f).SetEase(Ease.Linear);
+            bottle.bottleMask.material.DOFloat(bottle.fillAmouts[bottle.datawaterColor.waterDa.Count], "_FillAmout", _duration).SetEase(Ease.Linear);
             bottle.UpdateStartColor();
-            this.transform.DORotate(new Vector3(0, 0, directionMultiple * rotationValues[datawaterColor.waterDa.Count]), 0.5f).OnComplete(() =>
+
+            this.transform.DORotate(new Vector3(0, 0, directionMultiple * rotationValues[datawaterColor.waterDa.Count]), _duration).OnComplete(() =>
             {
                 RoteBack(target);
                 _lineRenderer.enabled = false;
                 _lineRenderer.gameObject.SetActive(false);
             });
         });
-    }
-
-    private void SetScaleMaterial()
-    {
-        if (datawaterColor.waterDa.Count > 0)
-        {
-            bottleMask.material.SetFloat("_scale", 1f);
-        }
-        else
-        {
-            bottleMask.material.SetFloat("_scale", 0.47f);
-        }
     }
 
     private void SetLine(BottleController bottle)
@@ -245,7 +206,8 @@ public class BottleController : MonoBehaviour
     {
         // startPosition = transform.position;
         endPosition = originalPosition;
-        this.transform.DORotate(new Vector3(0, 0, 0), 0.5f).SetDelay(0.1f).OnComplete(() =>
+        bottleMask.material.DOFloat(1f, "_scale", _duration).SetEase(Ease.Linear);
+        this.transform.DORotate(new Vector3(0, 0, 0), _duration).SetDelay(0.1f).OnComplete(() =>
         {
             this.transform.DOMove(endPosition, 0.2f).SetEase(Ease.Linear).OnComplete(() =>
             {
