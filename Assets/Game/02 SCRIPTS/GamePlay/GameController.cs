@@ -1,7 +1,9 @@
-﻿using System;
+﻿using SS.View;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static TubeController;
 
 public class GameController : SingletonMonoBehaviour<GameController>
@@ -26,12 +28,17 @@ public class GameController : SingletonMonoBehaviour<GameController>
         _gameManager = GameManager.Instance;
         _userData = PlayerData.UserData;
         _camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-        // InitScreen();
     }
 
     private void Update()
     {
+        // InitScreen();
         InitScreen();
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene(Const.SCENE_GAME);
+        }
     }
 
     private void Start()
@@ -53,13 +60,13 @@ public class GameController : SingletonMonoBehaviour<GameController>
 
             for (int i = 0; i < top; i++)
             {
-                SpawnBottleWater(i, 0f, 4, GetBottleData());
+                SpawnBottleWater(i, 0f, slotTube, GetBottleData());
             }
 
             float _spaccBot = tubeNumber % 2 == 0 ? 0f : 0.5f;
             for (int i = 0; i < bot; i++)
             {
-                SpawnBottleWater(i + _spaccBot, -_spaceVertical, 4, GetBottleData());
+                SpawnBottleWater(i + _spaccBot, -_spaceVertical, slotTube, GetBottleData());
             }
         }
         else
@@ -67,7 +74,7 @@ public class GameController : SingletonMonoBehaviour<GameController>
             _spaceHorizontal = (_tubeHorizontalMax / tubeNumber) * GetDistance(tubeNumber);
             for (int i = 0; i < tubeNumber; i++)
             {
-                SpawnBottleWater(i, 0f, 4, GetBottleData());
+                SpawnBottleWater(i, 0f, slotTube, GetBottleData());
             }
         }
         List<WaterData> GetBottleData()
@@ -110,6 +117,18 @@ public class GameController : SingletonMonoBehaviour<GameController>
 
     private float GetDistance(int value)
     {
+        //if (value <= 2)
+        //{
+        //    return 1f;
+        //}
+        //else if (value > 2 && value <= 5)
+        //{
+        //    return 0.5f;
+        //}
+        //else if (value > 5 && value <= 6)
+        //{
+        //    return 0.3f;
+        //}
         return 0.2f;
     }
 
@@ -132,8 +151,8 @@ public class GameController : SingletonMonoBehaviour<GameController>
         bounds.Expand(1f);
         var vertical = bounds.size.y;
         var horizontal = bounds.size.x * _camera.pixelHeight / _camera.pixelWidth;
-        // var size = Mathf.Clamp(Mathf.Max(horizontal, vertical) * 0.5f, _minCameraSize, _maxCameraSize);
-        var size = Mathf.Max(horizontal, vertical) * 0.5f;
+        var size = Mathf.Clamp(Mathf.Max(horizontal, vertical) * 0.45f, _minCameraSize, _maxCameraSize);
+        //  var size = Mathf.Max(horizontal, vertical) * 0.4f;
         var center = bounds.center + new Vector3(0, 0, -10);
         return (center, size);
     }
@@ -143,6 +162,7 @@ public class GameController : SingletonMonoBehaviour<GameController>
         if (_holdingBottle == null)
         {
             if (newBottle.isEmpty()) return;
+            if (newBottle.isDone()) return;
             _holdingBottle = newBottle;
             newBottle.StartMove(newBottle, true);
         }
@@ -174,6 +194,10 @@ public class GameController : SingletonMonoBehaviour<GameController>
             //  newBottle.ChangeState(StateTube.Deactive);
             if (newBottle.isDone())
             {
+                FunctionCommon.DelayTime(1f, () =>
+                {
+                    newBottle.Complete();
+                });
                 //   newTube.PlayVfx();
                 //  VibrationManager.Vibrate(15);
                 //  SoundManager.Instance.PlaySfxRewind(GlobalSetting.GetSFX("complete1"));

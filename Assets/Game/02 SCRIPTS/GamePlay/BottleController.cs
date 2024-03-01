@@ -59,6 +59,8 @@ public class BottleController : MonoBehaviour
     public int numberofCOlor = 4;
     public int numberofTOpColorLayers = 1;
 
+    public GameObject _bottleTop;
+
     private int numberOfColorToTransfer = 0;
 
     public Transform leftRotationPoint;
@@ -91,6 +93,8 @@ public class BottleController : MonoBehaviour
     private Vector3 _rightPos;
     public Vector3 RightPos => _rightPos;
 
+    [SerializeField] ParticleSystem _vfx;
+
     private void Awake()
     {
         weight = _ava.bounds.size.x;
@@ -100,6 +104,13 @@ public class BottleController : MonoBehaviour
     private void OnMouseDown()
     {
         GameController.Instance.OnClick(this);
+    }
+
+    public void Complete()
+    {
+        _bottleTop.gameObject.SetActive(true);
+        _bottleTop.transform.DOMoveY(_bottleTop.transform.position.y - 0.1f, 0.2f).SetDelay(0.1f).SetEase(Ease.InQuad);
+
     }
 
     void Start()
@@ -168,11 +179,9 @@ public class BottleController : MonoBehaviour
     }
 
     private float _duration = 0.5f;
+
     public void Rote(BottleController bottle)
     {
-        //midPos = bottle._linePos.position;
-
-
         if (choseRotationPoint == leftRotationPoint)
         {
             endPosition = bottle.roteright.position;
@@ -186,35 +195,38 @@ public class BottleController : MonoBehaviour
 
         this.transform.DOMove(target, 0.2f).SetEase(Ease.Linear).SetDelay(0.1f).OnComplete(() =>
         {
-            bottleMask.material.DOFloat(0.47f, "_scale", _duration).SetEase(Ease.Linear).SetDelay(0.1f);
+            bottleMask.material.DOFloat(0.15f, "_scale", _duration).SetEase(Ease.Linear);
             bottleMask.material.DOFloat(fillAmouts[datawaterColor.waterDa.Count], "_FillAmout", _duration).SetEase(Ease.Linear);
 
             bottle.bottleMask.material.DOFloat(bottle.fillAmouts[bottle.datawaterColor.waterDa.Count], "_FillAmout", _duration).SetEase(Ease.Linear);
             bottle.UpdateStartColor();
 
-            StartCoroutine(SetLine(bottle));
+            FunctionCommon.DelayTime(_duration / 2, () =>
+            {
+                StartCoroutine(SetLine(bottle));
+            });
             this.transform.DORotate(new Vector3(0, 0, directionMultiple * rotationValues[datawaterColor.waterDa.Count]), _duration).OnComplete(() =>
             {
-                RoteBack(target);
-                //  _lineRenderer.enabled = false;
-                //   _lineRenderer.gameObject.SetActive(false);
+                RoteBack(target, bottle);
+                _lineRenderer.enabled = false;
+                _lineRenderer.gameObject.SetActive(false);
             });
         });
     }
 
+
     IEnumerator SetLine(BottleController bottle)
     {
         float t = 0;
-        Debug.LogError(choseRotationPoint.position);
         _lineRenderer.gameObject.SetActive(true);
         _lineRenderer.startColor = bottle.bottleColors[^1];//
         _lineRenderer.endColor = bottle.bottleColors[^1];
         _lineRenderer.enabled = true;
+        ChoseRotationPointAndDirection(bottle);
         while (t <= _duration)
         {
             _lineRenderer.SetPosition(0, choseRotationPoint.position);
-            // Debug.LogError
-            _lineRenderer.SetPosition(1, choseRotationPoint.position - Vector3.up * 1.4f);
+            _lineRenderer.SetPosition(1, choseRotationPoint.position - Vector3.up * 0.7f);
             t += Time.deltaTime;
             yield return new WaitForEndOfFrame();
         }
@@ -222,11 +234,11 @@ public class BottleController : MonoBehaviour
         _lineRenderer.gameObject.SetActive(false);
     }
 
-    public void RoteBack(Vector2 target)
+    public void RoteBack(Vector2 target, BottleController newBottle)
     {
         // startPosition = transform.position;
         endPosition = originalPosition;
-        bottleMask.material.DOFloat(1f, "_scale", _duration).SetEase(Ease.Linear);
+        bottleMask.material.DOFloat(0.7f, "_scale", _duration).SetEase(Ease.Linear);
         this.transform.DORotate(new Vector3(0, 0, 0), _duration).SetDelay(0.1f).OnComplete(() =>
         {
             this.transform.DOMove(endPosition, 0.2f).SetEase(Ease.Linear).OnComplete(() =>
@@ -244,10 +256,10 @@ public class BottleController : MonoBehaviour
 
     public void StartMove(BottleController tube, bool value, float originalChildCount = 0, int index = 0)
     {
-        float duration = 0.5f;
+        float duration = 0.2f;
         if (value)
         {
-            this.transform.DOMoveY(tube.StartPosMove.y, duration).SetEase(Ease.OutQuad).OnComplete(() =>
+            this.transform.DOMoveY(this.transform.position.y + 0.2f, duration).SetEase(Ease.OutQuad).OnComplete(() =>
             {
             });
         }
