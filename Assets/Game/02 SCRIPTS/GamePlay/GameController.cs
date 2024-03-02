@@ -23,17 +23,27 @@ public class GameController : SingletonMonoBehaviour<GameController>
     [SerializeField] private float _maxCameraSize;
     private List<KeyValuePair<BottleController, BottleController>> _prevTube = new List<KeyValuePair<BottleController, BottleController>>();
 
+    private int _cdAddTube;
+
     public override void Awake()
     {
         _gameManager = GameManager.Instance;
         _userData = PlayerData.UserData;
         _camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+
+        ActionEvent.OnUserBoosterBack += UserBack;
+        ActionEvent.OnResetGamePlay += Reset;
+    }
+
+    private void OnDestroy()
+    {
+        ActionEvent.OnUserBoosterBack -= UserBack;
+        ActionEvent.OnResetGamePlay -= Reset;
     }
 
     private void Update()
     {
         // InitScreen();
-        InitScreen();
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -44,6 +54,7 @@ public class GameController : SingletonMonoBehaviour<GameController>
     private void Start()
     {
         Init();
+        InitScreen();
     }
 
     private void Init()
@@ -99,6 +110,20 @@ public class GameController : SingletonMonoBehaviour<GameController>
         }
     }
 
+    public void Reset()
+    {
+        foreach (var item in bottleList)
+        {
+            item.bottleColors.Clear();
+            SimplePool.Despawn(item.gameObject);
+        }
+        bottleList.Clear();
+        _holdingBottle = null;
+        _cdAddTube = 0;
+        Init();
+        InitScreen();
+    }
+
     private void SpawnBottleWater(float x, float y, int value, List<WaterData> dataWater)
     {
         GameObject waterObj = SimplePool.Spawn(_waterPrefab, Vector2.zero, Quaternion.identity);
@@ -144,7 +169,7 @@ public class GameController : SingletonMonoBehaviour<GameController>
     {
         var bounds = new Bounds();
 
-        foreach (var col in FindObjectsOfType<Collider2D>())
+        foreach (var col in FindObjectsOfType<BoxCollider2D>())
         {
             bounds.Encapsulate(col.bounds);
         }
@@ -332,4 +357,96 @@ public class GameController : SingletonMonoBehaviour<GameController>
     {
         _prevTube.Add(new KeyValuePair<BottleController, BottleController>(from, to));
     }
+
+    #region Booster
+
+    private void UserBack()
+    {
+        if (_prevTube.Count > 0)
+        {
+            Debug.Log("Use Revoke");
+            BottleController from = _prevTube[_prevTube.Count - 1].Key;
+            BottleController to = _prevTube[_prevTube.Count - 1].Value;
+            if (_holdingBottle != null)
+            {
+                if (to != _holdingBottle)
+                    _holdingBottle.StartMove(_holdingBottle, false, _holdingBottle.datawaterColor.waterDa.Count - 1);
+                _holdingBottle = null;
+            }
+
+            int countBall = from.datawaterColor.waterDa.Count;
+            List<WaterData> moveBalls = new List<WaterData>();
+            int cd = 1;
+            for (int i = _prevTube.Count - 1; i >= 0; i--)
+            {
+                BottleController first = _prevTube[i].Value;
+                BottleController second = _prevTube[i].Key;
+                moveBalls.Add(first.GetLastWater());
+                second.datawaterColor.waterDa.Add(first.GetLastWater());
+                first.datawaterColor.waterDa.Remove(first.GetLastWater());
+                cd++;
+                if (_prevTube.Count == 1 || first.datawaterColor.waterDa.Count <= 0) break;
+                if (first != _prevTube[i - 1].Value || second != _prevTube[i - 1].Key)
+                {
+                    break;
+                }
+            }
+
+            //   from.ChangeState(StateTube.Active);
+            //   to.ChangeState(StateTube.Moving);
+            for (int i = 0; i < moveBalls.Count; i++)
+            {
+                if (i == moveBalls.Count - 1)
+                {
+                    // _holdingBottle.StartColorTransfer(to);
+                    //moveBalls[i].Start(to, from, countBall, i, () =>
+                    //{
+                    //    // from.ChangeState(StateTube.Deactive);
+                    //    //  to.ChangeState(StateTube.Deactive);
+                    //});
+                    // moveBalls[i].Set
+                    from.SetColorBooster();
+                    to.SetColorBooster();
+                }
+                else
+                {
+                    from.SetColorBooster();
+                    to.SetColorBooster();
+                    //   moveBalls[i].Movement(to, from, countBall, i, null);
+                    //_holdingBottle.StartColorTransfer(to);
+                }
+
+                if (_prevTube.Count > 0)
+                {
+                    _prevTube.RemoveAt(_prevTube.Count - 1);
+                }
+            }
+
+            PlayerData.UserData.UpdateValueBooster(TypeBooster.Back, -1);
+        }
+        else
+        {
+            Debug.Log("Khong co luot de su dung booster");
+        }
+    }
+
+    private void UseAddTube()
+    {
+        int slotTube = _gameManager.Level.tubeSlot;
+
+        if (_cdAddTube < slotTube)
+        {
+            if (bottleList.Count <= _gameManager.Level.tube)
+            {
+                SpawnBottleWater(0f, 0f, 1, new List<WaterData>());
+                // SortWater(bottleList.Count);
+            }
+        }
+    }
+
+    public void OnClickRestart()
+    {
+        ActionEvent.OnResetGamePlay?.Invoke();
+    }
+    #endregion
 }

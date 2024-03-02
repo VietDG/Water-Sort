@@ -93,6 +93,8 @@ public class BottleController : MonoBehaviour
     private Vector3 _rightPos;
     public Vector3 RightPos => _rightPos;
 
+    private Vector3 _topPos;
+
     [SerializeField] ParticleSystem _vfx;
 
     private void Awake()
@@ -115,13 +117,31 @@ public class BottleController : MonoBehaviour
 
     void Start()
     {
+
+    }
+
+    private void Reset()
+    {
+        this.datawaterColor = null;
+    }
+
+
+    private void OnEnable()
+    {
+
+    }
+
+    private void OnDisable()
+    {
+        Reset();
+    }
+
+    private void AddColor()
+    {
         for (int i = 0; i < datawaterColor.waterDa.Count; i++)
         {
             bottleColors.Add(datawaterColor.waterDa[i].color);
         }
-        HandleColor();
-        originalPosition = transform.position;
-        UpdateStartColor();
     }
 
     public bool isEmpty()
@@ -144,6 +164,11 @@ public class BottleController : MonoBehaviour
         dataColor.slot = value;
         this._slot = dataColor.slot;
         numberofCOlor = dataColor.waterDa.Count;
+        AddColor();
+        HandleColor();
+        originalPosition = transform.position;
+        _topPos = _bottleTop.transform.position;
+        UpdateStartColor();
     }
 
     public void InitPos(Vector2 target, int slot)
@@ -212,6 +237,15 @@ public class BottleController : MonoBehaviour
                 _lineRenderer.gameObject.SetActive(false);
             });
         });
+    }
+
+    public void SetColorBooster()
+    {
+        bottleColors.Clear();
+        AddColor();
+        bottleMask.material.SetFloat("_FillAmout", fillAmouts[datawaterColor.waterDa.Count]);
+        _bottleTop.SetActive(false);
+        _bottleTop.transform.position = _topPos;
     }
 
 
