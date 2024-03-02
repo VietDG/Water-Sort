@@ -111,7 +111,8 @@ public class BottleController : MonoBehaviour
     public void Complete()
     {
         _bottleTop.gameObject.SetActive(true);
-        _bottleTop.transform.DOMoveY(_bottleTop.transform.position.y - 0.1f, 0.2f).SetDelay(0.1f).SetEase(Ease.InQuad);
+        _bottleTop.transform.DOMoveY(_bottleTop.transform.position.y - 0.5f, 0.2f).SetDelay(0.1f).SetEase(Ease.InQuad);
+        _vfx.Play();
 
     }
 
@@ -293,7 +294,7 @@ public class BottleController : MonoBehaviour
         float duration = 0.2f;
         if (value)
         {
-            this.transform.DOMoveY(this.transform.position.y + 0.2f, duration).SetEase(Ease.OutQuad).OnComplete(() =>
+            this.transform.DOMoveY(this.transform.position.y + 0.5f, duration).SetEase(Ease.OutQuad).OnComplete(() =>
             {
             });
         }

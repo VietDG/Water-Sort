@@ -43,7 +43,7 @@ public class GameController : SingletonMonoBehaviour<GameController>
 
     private void Update()
     {
-        // InitScreen();
+        InitScreen();
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -54,7 +54,7 @@ public class GameController : SingletonMonoBehaviour<GameController>
     private void Start()
     {
         Init();
-        InitScreen();
+        //  InitScreen();
     }
 
     private void Init()
@@ -142,19 +142,19 @@ public class GameController : SingletonMonoBehaviour<GameController>
 
     private float GetDistance(int value)
     {
-        //if (value <= 2)
-        //{
-        //    return 1f;
-        //}
-        //else if (value > 2 && value <= 5)
-        //{
-        //    return 0.5f;
-        //}
-        //else if (value > 5 && value <= 6)
-        //{
-        //    return 0.3f;
-        //}
-        return 0.2f;
+        if (value <= 2)
+        {
+            return 0.3f;
+        }
+        else if (value > 2 && value <= 5)
+        {
+            return 0.5f;
+        }
+        else if (value > 5 && value <= 6)
+        {
+            return 0.8f;
+        }
+        return 0.5f;
     }
 
     private void InitScreen()
@@ -176,7 +176,7 @@ public class GameController : SingletonMonoBehaviour<GameController>
         bounds.Expand(1f);
         var vertical = bounds.size.y;
         var horizontal = bounds.size.x * _camera.pixelHeight / _camera.pixelWidth;
-        var size = Mathf.Clamp(Mathf.Max(horizontal, vertical) * 0.45f, _minCameraSize, _maxCameraSize);
+        var size = Mathf.Clamp(Mathf.Max(horizontal, vertical) * 0.5f, _minCameraSize, _maxCameraSize);
         //  var size = Mathf.Max(horizontal, vertical) * 0.4f;
         var center = bounds.center + new Vector3(0, 0, -10);
         return (center, size);

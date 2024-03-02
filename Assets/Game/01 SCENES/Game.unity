@@ -458,11 +458,11 @@ MonoBehaviour:
   preInstantiate: 0
   _waterPrefab: {fileID: 5605391773115520289, guid: 8992a269f33cf8c4c8a8c551c9521ce8, type: 3}
   _spaceHorizontal: 20
-  _spaceVertical: 1
+  _spaceVertical: 4
   _tubeHorizontalMax: 8
   bottleList: []
   _holdingBottle: {fileID: 0}
-  _minCameraSize: 2
+  _minCameraSize: 6
   _maxCameraSize: 99
 --- !u!114 &18984624
 MonoBehaviour:
