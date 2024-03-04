@@ -37,6 +37,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         Debug.LogError("Win");
         FunctionCommon.DelayTime(2f, () =>
         {
+            //  ActionEvent.OnResetGamePlay?.Invoke();
             SceneManager.LoadScene(Const.SCENE_GAME);
         });
     }

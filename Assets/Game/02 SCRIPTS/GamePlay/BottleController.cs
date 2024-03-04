@@ -54,6 +54,7 @@ public class BottleController : MonoBehaviour
     [Header("---------------------------------VALUE-----------------------------------")]
     public float[] fillAmouts;
     public float[] rotationValues;
+    public float[] scaleValue;
     private int rotationIndex = 0;
     [Range(0, 4)]
     public int numberofCOlor = 4;
@@ -98,11 +99,12 @@ public class BottleController : MonoBehaviour
     {
         weight = _ava.bounds.size.x;
         height = _ava.bounds.size.y;
+        ActionEvent.OnResetGamePlay += ResetPos;
     }
 
     private void OnMouseDown()
     {
-        if (state.Equals(StateTube.Active) || state.Equals(StateTube.Moving)) return;
+        if (/*state.Equals(StateTube.Active) ||*/ state.Equals(StateTube.Moving)) return;
         GameController.Instance.OnClick(this);
         Debug.LogError("c");
     }
@@ -115,28 +117,16 @@ public class BottleController : MonoBehaviour
 
     }
 
-    void Start()
-    {
-
-    }
-
     private void Reset()
     {
         this.datawaterColor = null;
-        //  this.GetComponent<BoxCollider2D>().size = Vector2.zero;
-        //  ChangeState(StateTube.Deactive);
         _vfx.Stop();
-    }
-
-
-    private void OnEnable()
-    {
-
     }
 
     private void OnDisable()
     {
         Reset();
+        ActionEvent.OnResetGamePlay -= Reset;
     }
 
     private void AddColor()
@@ -169,8 +159,7 @@ public class BottleController : MonoBehaviour
         numberofCOlor = dataColor.waterDa.Count;
         AddColor();
         HandleColor();
-        originalPosition = transform.position;
-        _topPos = _bottleTop.transform.position;
+
         _bottleTop.SetActive(false);
         UpdateStartColor();
     }
@@ -184,19 +173,20 @@ public class BottleController : MonoBehaviour
     {
         this.transform.position = target;
         _startPosMove = _spawnTrans.position;
+        originalPosition = target;
+        _topPos = _bottleTop.transform.position;
     }
 
     public void StartColorTransfer(BottleController bottle)
     {
         ChoseRotationPointAndDirection(bottle);
 
-
         CaulateRoattionIndex(4 - bottle.numberofCOlor);
 
         _ava.sortingOrder += 2;
         bottleMask.sortingOrder += 2;
         Rote(bottle);
-        this.ChangeState(StateTube.Active);
+        this.ChangeState(StateTube.Moving);
         bottle.ChangeState(StateTube.Active);
     }
 
@@ -226,10 +216,10 @@ public class BottleController : MonoBehaviour
 
         this.transform.DOMove(target, 0.2f).SetEase(Ease.Linear).SetDelay(0.1f).OnComplete(() =>
         {
-            bottleMask.material.DOFloat(0.15f, "_scale", _duration).SetEase(Ease.Linear);
-            bottleMask.material.DOFloat(fillAmouts[datawaterColor.waterDa.Count], "_FillAmout", _duration).SetEase(Ease.Linear);
+            //  bottleMask.material.DOFloat(scaleValue[datawaterColor.waterDa.Count], "_scale", 0f).SetEase(Ease.Linear);
+            bottleMask.material.DOFloat(fillAmouts[datawaterColor.waterDa.Count], "_FillAmout", _duration).SetEase(Ease.Linear).SetDelay(0.1f);
 
-            bottle.bottleMask.material.DOFloat(bottle.fillAmouts[bottle.datawaterColor.waterDa.Count], "_FillAmout", _duration).SetEase(Ease.Linear);
+            bottle.bottleMask.material.DOFloat(bottle.fillAmouts[bottle.datawaterColor.waterDa.Count], "_FillAmout", _duration).SetEase(Ease.Linear).SetDelay(0.2f);
             bottle.UpdateStartColor();
 
             FunctionCommon.DelayTime(_duration / 2, () =>
@@ -251,9 +241,16 @@ public class BottleController : MonoBehaviour
         AddColor();
         bottleMask.material.SetFloat("_FillAmout", fillAmouts[datawaterColor.waterDa.Count]);
         _bottleTop.SetActive(false);
+        originalPosition = this.transform.position;
         _bottleTop.transform.position = _topPos;
+        //_topPos = _bottleTop.transform.position;
     }
 
+    private void ResetPos()
+    {
+        originalPosition = this.transform.position;
+        _bottleTop.transform.position = _topPos;
+    }
 
     IEnumerator SetLine(BottleController bottle)
     {
@@ -373,14 +370,12 @@ public class BottleController : MonoBehaviour
         if (transform.position.x > bottle.transform.position.x)
         {
             choseRotationPoint = leftRotationPoint;
-            //  choseRotationPoint = _linePos;
             directionMultiple = 1f;
             _posS = roteright;
         }
         else
         {
             choseRotationPoint = rightRotationPoint;
-            //  choseRotationPoint = _linePos;
             directionMultiple = -1f;
             _posS = roteleft;
         }

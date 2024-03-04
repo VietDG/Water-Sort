@@ -23,8 +23,6 @@ public class GameController : SingletonMonoBehaviour<GameController>
     [SerializeField] private float _maxCameraSize;
     private List<KeyValuePair<BottleController, BottleController>> _prevTube = new List<KeyValuePair<BottleController, BottleController>>();
 
-    private int _cdAddTube;
-
     public override void Awake()
     {
         _gameManager = GameManager.Instance;
@@ -58,8 +56,8 @@ public class GameController : SingletonMonoBehaviour<GameController>
     private void Start()
     {
         Init();
-        // Invoke(nameof(InitScreen), 0.02f);
-        InitScreen();
+        Invoke(nameof(InitScreen), 0.02f);
+        //InitScreen();
     }
 
     private void Init()
@@ -124,10 +122,9 @@ public class GameController : SingletonMonoBehaviour<GameController>
         }
         bottleList.Clear();
         _holdingBottle = null;
-        _cdAddTube = 0;
         Init();
         Invoke(nameof(InitScreen), 0.02f);
-        //InitScreen();
+        // InitScreen();
     }
 
     private void SpawnBottleWater(float x, float y, int value, List<WaterData> dataWater)
@@ -150,17 +147,21 @@ public class GameController : SingletonMonoBehaviour<GameController>
     {
         if (value <= 2)
         {
-            return 0.2f;
+            Debug.LogError("2");
+            return 0.4f;
         }
         else if (value > 2 && value <= 5)
         {
-            return 0.3f;
+            Debug.LogError("3");
+            return 0.5f;
         }
-        else if (value > 5 && value <= 6)
+        else if (value > 5 && value <= 7)
         {
-            return 0.4f;
+            Debug.LogError("5");
+            return 0.7f;
         }
-        return 0.5f;
+        Debug.LogError("none");
+        return 0.4f;
     }
 
     private void InitScreen()
@@ -228,7 +229,7 @@ public class GameController : SingletonMonoBehaviour<GameController>
         void OnMoveComplete()
         {
             //  newBottle.ChangeState(StateTube.Deactive);
-            newBottle.ChangeState(StateTube.Deactive);
+            // newBottle.ChangeState(StateTube.Deactive);
             if (newBottle.isDone())
             {
                 FunctionCommon.DelayTime(1f, () =>
@@ -376,7 +377,6 @@ public class GameController : SingletonMonoBehaviour<GameController>
     {
         if (_prevTube.Count > 0)
         {
-            Debug.Log("Use Revoke");
             BottleController from = _prevTube[_prevTube.Count - 1].Key;
             BottleController to = _prevTube[_prevTube.Count - 1].Value;
             if (_holdingBottle != null)
@@ -461,6 +461,18 @@ public class GameController : SingletonMonoBehaviour<GameController>
     public void OnClickRestart()
     {
         ActionEvent.OnResetGamePlay?.Invoke();
+    }
+
+    public bool isMoving()
+    {
+        foreach (var item in GameController.Instance.bottleList)
+        {
+            if (item.state.Equals(StateTube.Moving))
+            {
+                return false;
+            }
+        }
+        return true;
     }
     #endregion
 }
