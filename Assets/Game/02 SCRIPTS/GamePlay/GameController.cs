@@ -188,6 +188,7 @@ public class GameController : SingletonMonoBehaviour<GameController>
         {
             if (newBottle.isEmpty()) return;
             if (newBottle.isDone()) return;
+            newBottle.ChangeState(StateTube.Active);
             _holdingBottle = newBottle;
             newBottle.StartMove(newBottle, true);
         }
@@ -195,6 +196,7 @@ public class GameController : SingletonMonoBehaviour<GameController>
         {
             if (_holdingBottle.Equals(newBottle))
             {
+                newBottle.ChangeState(StateTube.Active);
                 newBottle.StartMove(newBottle, false, 0);
                 _holdingBottle = null;
             }
@@ -202,12 +204,15 @@ public class GameController : SingletonMonoBehaviour<GameController>
             {
                 if (!newBottle.CanSortBall(_holdingBottle))
                 {
+                    _holdingBottle.ChangeState(StateTube.Deactive);
+                    newBottle.ChangeState(StateTube.Active);
                     _holdingBottle.StartMove(_holdingBottle, false, 0);
                     newBottle.StartMove(newBottle, true);
                     _holdingBottle = newBottle;
                 }
                 else
                 {
+                    newBottle.ChangeState(StateTube.Moving);
                     // _holdingBottle.StartColorTransfer(newBottle);
                     SortWater(_holdingBottle, newBottle, OnMoveComplete);
                     _holdingBottle = null;
@@ -217,6 +222,7 @@ public class GameController : SingletonMonoBehaviour<GameController>
         void OnMoveComplete()
         {
             //  newBottle.ChangeState(StateTube.Deactive);
+            newBottle.ChangeState(StateTube.Deactive);
             if (newBottle.isDone())
             {
                 FunctionCommon.DelayTime(1f, () =>
@@ -392,8 +398,8 @@ public class GameController : SingletonMonoBehaviour<GameController>
                 }
             }
 
-            //   from.ChangeState(StateTube.Active);
-            //   to.ChangeState(StateTube.Moving);
+            from.ChangeState(StateTube.Active);
+            to.ChangeState(StateTube.Moving);
             for (int i = 0; i < moveBalls.Count; i++)
             {
                 if (i == moveBalls.Count - 1)
@@ -401,8 +407,8 @@ public class GameController : SingletonMonoBehaviour<GameController>
                     // _holdingBottle.StartColorTransfer(to);
                     //moveBalls[i].Start(to, from, countBall, i, () =>
                     //{
-                    //    // from.ChangeState(StateTube.Deactive);
-                    //    //  to.ChangeState(StateTube.Deactive);
+                    from.ChangeState(StateTube.Deactive);
+                    to.ChangeState(StateTube.Deactive);
                     //});
                     // moveBalls[i].Set
                     from.SetColorBooster();

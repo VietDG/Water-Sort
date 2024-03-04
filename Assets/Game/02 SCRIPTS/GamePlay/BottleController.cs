@@ -61,8 +61,6 @@ public class BottleController : MonoBehaviour
 
     public GameObject _bottleTop;
 
-    private int numberOfColorToTransfer = 0;
-
     public Transform leftRotationPoint;
     public Transform rightRotationPoint;
     private Transform choseRotationPoint;
@@ -77,9 +75,7 @@ public class BottleController : MonoBehaviour
     private float directionMultiple = 1f;
 
     Vector3 originalPosition;
-    Vector3 startPosition;
     Vector3 endPosition;
-    Vector3 midPos;
 
     public float weight;
     public float height;
@@ -96,6 +92,7 @@ public class BottleController : MonoBehaviour
     private Vector3 _topPos;
 
     [SerializeField] ParticleSystem _vfx;
+    [field: SerializeField] public StateTube state { get; private set; }
 
     private void Awake()
     {
@@ -105,7 +102,9 @@ public class BottleController : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (state.Equals(StateTube.Active) || state.Equals(StateTube.Moving)) return;
         GameController.Instance.OnClick(this);
+        Debug.LogError("c");
     }
 
     public void Complete()
@@ -124,6 +123,9 @@ public class BottleController : MonoBehaviour
     private void Reset()
     {
         this.datawaterColor = null;
+        //  this.GetComponent<BoxCollider2D>().size = Vector2.zero;
+        //  ChangeState(StateTube.Deactive);
+        _vfx.Stop();
     }
 
 
@@ -169,6 +171,7 @@ public class BottleController : MonoBehaviour
         HandleColor();
         originalPosition = transform.position;
         _topPos = _bottleTop.transform.position;
+        _bottleTop.SetActive(false);
         UpdateStartColor();
     }
 
@@ -193,6 +196,8 @@ public class BottleController : MonoBehaviour
         _ava.sortingOrder += 2;
         bottleMask.sortingOrder += 2;
         Rote(bottle);
+        this.ChangeState(StateTube.Active);
+        bottle.ChangeState(StateTube.Active);
     }
 
     public string[] _colorName = new string[] { "C1", "C2", "C3", "C4" }; // Update Start Color
@@ -258,10 +263,10 @@ public class BottleController : MonoBehaviour
         _lineRenderer.endColor = bottle.bottleColors[^1];
         _lineRenderer.enabled = true;
         ChoseRotationPointAndDirection(bottle);
-        while (t <= _duration)
+        while (t <= 0.4f)
         {
             _lineRenderer.SetPosition(0, choseRotationPoint.position);
-            _lineRenderer.SetPosition(1, choseRotationPoint.position - Vector3.up * 0.7f);
+            _lineRenderer.SetPosition(1, new Vector3(choseRotationPoint.position.x, bottle._linePos.position.y, 0) /*- Vector3.up * 0.6f*/);
             t += Time.deltaTime;
             yield return new WaitForEndOfFrame();
         }
@@ -280,6 +285,8 @@ public class BottleController : MonoBehaviour
             {
                 _ava.sortingOrder -= 2;
                 bottleMask.sortingOrder -= 2;
+                this.ChangeState(StateTube.Deactive);
+                newBottle.ChangeState(StateTube.Deactive);
             });
         });
     }
@@ -289,21 +296,28 @@ public class BottleController : MonoBehaviour
         rotationIndex = 3 - (numberofCOlor - Mathf.Min(value, numberofTOpColorLayers));
     }
 
-    public void StartMove(BottleController tube, bool value, float originalChildCount = 0, int index = 0)
+    public void StartMove(BottleController tube, bool value, float index = 0)
     {
         float duration = 0.2f;
         if (value)
         {
             this.transform.DOMoveY(this.transform.position.y + 0.5f, duration).SetEase(Ease.OutQuad).OnComplete(() =>
             {
+                tube.ChangeState(StateTube.Deactive);
             });
         }
         else
         {
             this.transform.DOMoveY(originalPosition.y, duration).SetEase(Ease.InQuad).OnComplete(() =>
             {
+                tube.ChangeState(StateTube.Deactive);
             });
         }
+    }
+
+    public void ChangeState(StateTube state)
+    {
+        this.state = state;
     }
 
     public bool CanSortBall(BottleController tube)
