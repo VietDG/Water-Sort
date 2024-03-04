@@ -2,17 +2,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BoosterAddTube : MonoBehaviour
+public class BoosterAddTube : BoosterController
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
+        ActionEvent.OnResetGamePlay += UpdateQuality;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Start()
     {
-        
+        UpdateQuality();
     }
+
+    private void OnDestroy()
+    {
+        ActionEvent.OnResetGamePlay -= UpdateQuality;
+    }
+
+    public void OnClickAddTube()
+    {
+        if (PlayerData.UserData.BoosterAddTube > 0)
+        {
+            ActionEvent.OnUserBoosterAddTube?.Invoke();
+            DisPlayBooster(PlayerData.UserData.BoosterAddTube);
+        }
+        else
+        {
+            Debug.LogError("Show Ads");
+        }
+    }
+
+    private void UpdateQuality()
+    {
+        int quatily = PlayerData.UserData.BoosterAddTube;
+        PlayerData.UserData.UpdateValueBooster(this.Type, 1 - quatily);
+        base.DisPlayBooster(PlayerData.UserData.BoosterAddTube);
+    }
+
 }

@@ -7,8 +7,26 @@ using UnityEngine;
 using UnityEngine.Audio;
 using Random = UnityEngine.Random;
 
-public class SoundManager : SingletonMonoBehaviour<SoundManager>
+public class SoundManager : MonoBehaviour
 {
+    #region Instance
+    private static SoundManager instance;
+    public static SoundManager Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<SoundManager>();
+                if (instance == null)
+                {
+                    instance = Instantiate(Resources.Load<SoundManager>("SoundManager"));
+                }
+            }
+            return instance;
+        }
+    }
+    #endregion
     public AudioSource music;
     public AudioMixer mixer;
     public AudioMixerGroup musicGroup, sfxGroup, voiceGroup;
@@ -20,9 +38,18 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
     public AudioClip clickSound, failClickSound;
     public AudioClip popupOpenSfx, popupCloseSfx;
 
-    public override void Awake()
+    private void Awake()
     {
-        base.Awake();
+        if (FindObjectsOfType(typeof(SoundManager)).Length > 1)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        instance = this;
+        //   DontDestroyOnLoad(this.gameObject);
+    }
+    private void Start()
+    {
         playingSound = new SortedList<int, AudioSource>();
         loopSound = new SortedList<int, LoopSoundRequest>();
         voiceSound = new SortedList<int, AudioSource>();
@@ -32,34 +59,18 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
             PlayerPrefs.SetInt(Const.FIRST_TIME_OPEN, 1);
             PlayerPrefs.SetFloat(Const.MUSIC_VALUE, 5f);
             PlayerPrefs.SetFloat(Const.SOUND_VALUE, -5f);
-          //  Debug.LogError("this first time open");
+            //  Debug.LogError("this first time open");
         }
-        //mixer.SetFloat("music", PlayerPrefs.GetFloat(Const.MUSIC_VALUE));
-        //mixer.SetFloat("sfx", PlayerPrefs.GetFloat(Const.SOUND_VALUE));
-        //mixer.SetFloat("voice", PlayerPrefs.GetFloat(Const.VOICE_OVER_VALUE));
-        //if (Setting.MUSIC)
-        //{
-        //  //  TurnOnMusic("music");
-        //}
-        //else
-        //{
-        //    TurnOff("music");
-        //}
+        if (Setting.Instance.SOUND)
+        {
+            TurnOnSound("sfx");
+        }
+        else
+        {
+            TurnOff("sfx");
+        }
+    }
 
-        //if (Setting.SOUND)
-        //{
-        //    //  TurnOnSound("sfx");
-        //}
-        //else
-        //{
-        //    TurnOff("sfx");
-        //}
-    }
-    private void Start()
-    {
-        mixer.SetFloat("music", PlayerPrefs.GetFloat(Const.MUSIC_VALUE));
-        mixer.SetFloat("sfx", PlayerPrefs.GetFloat(Const.SOUND_VALUE));
-    }
     void HandlePopupClose(PopupSystem.BasePopup p)
     {
         PlaySfxOverride(popupCloseSfx);
@@ -127,7 +138,7 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
     /// </summary>
     public void PlaySfxRewind(AudioClip sfx)
     {
-        if (sfx == null || playingSound==null)
+        if (sfx == null || playingSound == null)
             return;
         int id = sfx.GetInstanceID();
         if (playingSound.ContainsKey(id))
@@ -146,7 +157,7 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
     /// </summary>
     public void PlaySfxNoRewind(AudioClip sfx)
     {
-        if (sfx == null || playingSound==null)
+        if (sfx == null || playingSound == null)
             return;
         int id = sfx.GetInstanceID();
         if (playingSound.ContainsKey(id))
@@ -165,7 +176,7 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
     /// </summary>
     public void PlaySfxOverride(AudioClip sfx)
     {
-        if (sfx == null || playingSound==null)
+        if (sfx == null || playingSound == null)
             return;
         int id = sfx.GetInstanceID();
         if (playingSound.ContainsKey(id))
@@ -180,7 +191,7 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
 
     public void PlaySfxLoop(AudioClip sfx, int requesterId)
     {
-        if (sfx == null || playingSound==null)
+        if (sfx == null || playingSound == null)
             return;
         int id = sfx.GetInstanceID();
         if (loopSound.ContainsKey(id))
@@ -197,7 +208,7 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
 
     public bool StopLoopSound(AudioClip sfx, int requesterId)
     {
-        if (sfx == null || playingSound==null)
+        if (sfx == null || playingSound == null)
             return false;
         int id = sfx.GetInstanceID();
         if (loopSound.ContainsKey(id))
@@ -216,17 +227,17 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
     }
 
     #region On Click Button
-    public void TurnOff(string soundType, bool isMusic)
+    public void TurnOff(string soundType/*, bool isMusic*/)
     {
         mixer.SetFloat(soundType, -80);
-        if (isMusic)
-        {
-            PlayerPrefs.SetFloat(Const.MUSIC_VALUE, -80);
-        }
-        else
-        {
-            PlayerPrefs.SetFloat(Const.SOUND_VALUE, -80);
-        }
+        //if (isMusic)
+        //{
+        //    PlayerPrefs.SetFloat(Const.MUSIC_VALUE, -80);
+        //}
+        //else
+        //{
+        //    PlayerPrefs.SetFloat(Const.SOUND_VALUE, -80);
+        //}
     }
 
     public void TurnOnMusic(string soundType)
@@ -237,15 +248,15 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
 
     public void TurnOnSound(string soundType)
     {
-        mixer.SetFloat(soundType,-5f);
+        mixer.SetFloat(soundType, -5f);
 
     }
     #endregion
 
     #region On Slider
-    public void ChangerVolume_Music (string soundType, float value)
+    public void ChangerVolume_Music(string soundType, float value)
     {
-        mixer.SetFloat(soundType, value );
+        mixer.SetFloat(soundType, value);
     }
 
     public void ChangeVolum_Sound(string soundType, float value)
@@ -321,7 +332,7 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
 
     //public void MusicHandle(bool value)
     //{
-       
+
     //    if (value)
     //    {
     //        TurnOnMusic("music");
@@ -332,18 +343,18 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
     //    }
     //}
 
-    //public void SoundHandle(bool value)
-    //{
-        
-    //    if (value)
-    //    {
-    //        TurnOnSound("sfx");
-    //    }
-    //    else
-    //    {
-    //        TurnOff("sfx");
-    //    }
-    //}
+    public void SoundHandle(bool value)
+    {
+
+        if (value)
+        {
+            TurnOnSound("sfx");
+        }
+        else
+        {
+            TurnOff("sfx");
+        }
+    }
 
     public void VibrateHandle(bool value)
     {

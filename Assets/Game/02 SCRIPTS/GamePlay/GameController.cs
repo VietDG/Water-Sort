@@ -33,28 +33,33 @@ public class GameController : SingletonMonoBehaviour<GameController>
 
         ActionEvent.OnUserBoosterBack += UserBack;
         ActionEvent.OnResetGamePlay += Reset;
+        ActionEvent.OnUserBoosterAddTube += UseAddTube;
+        //   Init();
     }
 
     private void OnDestroy()
     {
         ActionEvent.OnUserBoosterBack -= UserBack;
         ActionEvent.OnResetGamePlay -= Reset;
+        ActionEvent.OnUserBoosterAddTube -= UseAddTube;
     }
 
     private void Update()
     {
-        InitScreen();
-
+#if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.Space))
         {
             SceneManager.LoadScene(Const.SCENE_GAME);
         }
+        //    InitScreen();
+#endif
     }
 
     private void Start()
     {
         Init();
-        //  InitScreen();
+        // Invoke(nameof(InitScreen), 0.02f);
+        InitScreen();
     }
 
     private void Init()
@@ -121,7 +126,8 @@ public class GameController : SingletonMonoBehaviour<GameController>
         _holdingBottle = null;
         _cdAddTube = 0;
         Init();
-        InitScreen();
+        Invoke(nameof(InitScreen), 0.02f);
+        //InitScreen();
     }
 
     private void SpawnBottleWater(float x, float y, int value, List<WaterData> dataWater)
@@ -144,15 +150,15 @@ public class GameController : SingletonMonoBehaviour<GameController>
     {
         if (value <= 2)
         {
-            return 0.3f;
+            return 0.2f;
         }
         else if (value > 2 && value <= 5)
         {
-            return 0.5f;
+            return 0.3f;
         }
         else if (value > 5 && value <= 6)
         {
-            return 0.8f;
+            return 0.4f;
         }
         return 0.5f;
     }
@@ -173,7 +179,7 @@ public class GameController : SingletonMonoBehaviour<GameController>
         {
             bounds.Encapsulate(col.bounds);
         }
-        bounds.Expand(1f);
+        //   bounds.Expand(3f);
         var vertical = bounds.size.y;
         var horizontal = bounds.size.x * _camera.pixelHeight / _camera.pixelWidth;
         var size = Mathf.Clamp(Mathf.Max(horizontal, vertical) * 0.5f, _minCameraSize, _maxCameraSize);
@@ -440,13 +446,15 @@ public class GameController : SingletonMonoBehaviour<GameController>
     {
         int slotTube = _gameManager.Level.tubeSlot;
 
-        if (_cdAddTube < slotTube)
+        if (bottleList.Count <= _gameManager.Level.tube)
         {
-            if (bottleList.Count <= _gameManager.Level.tube)
-            {
-                SpawnBottleWater(0f, 0f, 1, new List<WaterData>());
-                // SortWater(bottleList.Count);
-            }
+            SpawnBottleWater(0f, 0f, 4, new List<WaterData>());
+            SortTube(bottleList.Count);
+            Invoke(nameof(InitScreen), 0.02f);
+        }
+        else
+        {
+            Debug.LogError("da du canh");
         }
     }
 

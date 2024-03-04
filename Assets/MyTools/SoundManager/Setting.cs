@@ -3,53 +3,54 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Setting : MonoBehaviour
+public class Setting : SingletonMonoBehaviour<Setting>
 {
-    private static bool sound, music, vibrate;
-    private const string KEY_SOUND = "SETTING_SOUND";
-    private const string KEY_MUSIC = "SETTING_MUSIC";
-    private const string KEY_VIBRATE = "SETTING_VIBRATE";
+    #region Member Varibales
+    private bool _sound, _music, _vibrate;
 
+    private const string KEY_SOUND = "setting_sound";
+    // private const string KEY_MUSIC = "setting_music";
+    private const string KEY_VIBRATE = "setting_vibrate";
 
+    #endregion
 
-    private static void Awake()
+    #region Public Methods
+
+    public override void Awake()
     {
+        base.Awake();
         SOUND = PlayerPrefs.GetInt(KEY_SOUND, 1) == 1;
-        MUSIC = PlayerPrefs.GetInt(KEY_MUSIC, 1) == 1;
+        //   MUSIC = PlayerPrefs.GetInt(KEY_MUSIC, 1) == 1;
         VIBRATE = PlayerPrefs.GetInt(KEY_VIBRATE, 1) == 1;
     }
-
-    public static Action<bool> onChangeSoundValue = delegate { };
-    public static bool SOUND
+    public bool SOUND
     {
-        get { return sound; }
+        get { return _sound; }
         set
         {
-            sound = value;
-            PlayerPrefs.SetInt(KEY_SOUND, sound ? 1 : 0);
-            onChangeSoundValue(value);
+            _sound = value;
+            PlayerPrefs.SetInt(KEY_SOUND, _sound ? 1 : 0);
         }
     }
 
-    public static Action<bool> onChangeMusicValue;
-    public static bool MUSIC
-    {
-        get { return music; }
-        set
-        {
-            music = value;
-            PlayerPrefs.SetInt(KEY_MUSIC, music ? 1 : 0);
-            onChangeMusicValue?.Invoke(value);
-        }
-    }
+    //public bool MUSIC
+    //{
+    //    get { return _music; }
+    //    set
+    //    {
+    //        _music = value;
+    //        PlayerPrefs.SetInt(KEY_MUSIC, _music ? 1 : 0);
+    //    }
+    //}
 
-    public static bool VIBRATE
+    public bool VIBRATE
     {
-        get { return vibrate; }
+        get { return _vibrate; }
         set
         {
-            vibrate = value;
-            PlayerPrefs.SetInt(KEY_VIBRATE, vibrate ? 1 : 0);
+            _vibrate = value;
+            PlayerPrefs.SetInt(KEY_VIBRATE, _vibrate ? 1 : 0);
         }
     }
+    #endregion
 }

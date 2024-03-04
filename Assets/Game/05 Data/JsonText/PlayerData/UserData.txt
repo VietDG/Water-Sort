@@ -1,1 +1,1 @@
-{"HighestLevel":8,"BoosterBack":5,"BoosterAddTube":0,"Coin":0}
+{"HighestLevel":3,"BoosterBack":5,"BoosterAddTube":1,"Coin":0}

@@ -1,7 +1,5 @@
-using Google.Play.Common.LoadingScreen;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
