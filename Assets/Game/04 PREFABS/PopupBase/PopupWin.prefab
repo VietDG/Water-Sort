@@ -12059,6 +12059,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9141934145435965048}
   - component: {fileID: 6520923235447687155}
+  - component: {fileID: 767207493684841509}
   m_Layer: 5
   m_Name: ProcessUnlockSkin
   m_TagString: Untagged
@@ -12143,6 +12144,22 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &767207493684841509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2344057359235549241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d410e289574a1143b53738d5e05a72e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _process: {fileID: 6520923235447687155}
+  _ValueTxt: {fileID: 6016622370940100351}
+  _processTxt: {fileID: 7921380676748568216}
+  _duration: 1.2
 --- !u!1 &2435245309494944112
 GameObject:
   m_ObjectHideFlags: 0
@@ -35112,6 +35129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8266878046004136041}
   - component: {fileID: 8266878046004136040}
+  - component: {fileID: 4510545294437327881}
   m_Layer: 5
   m_Name: ProcessReward
   m_TagString: Untagged
@@ -35196,6 +35214,22 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4510545294437327881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8266878046004136038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d410e289574a1143b53738d5e05a72e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _process: {fileID: 8266878046004136040}
+  _ValueTxt: {fileID: 8266878045176966744}
+  _processTxt: {fileID: 8266878044711848101}
+  _duration: 1
 --- !u!1 &8266878046080475992
 GameObject:
   m_ObjectHideFlags: 0
@@ -35273,7 +35307,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8266878046137313600}
         m_TargetAssemblyTypeName: PopupWin, Assembly-CSharp
-        m_MethodName: OnClickNextlevel
+        m_MethodName: OnClickNextLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -35378,20 +35412,22 @@ MonoBehaviour:
   wasPlayAnim: 0
   showAnimationClip: {fileID: 0}
   hideAnimationClip: {fileID: 0}
-  _rewardDataSO: {fileID: 0}
-  _tubeDataSO: {fileID: 0}
-  _ballDataSO: {fileID: 0}
-  _themeDataSO: {fileID: 0}
-  atlasBG: {fileID: 0}
-  atlasBall: {fileID: 0}
-  atlasTube: {fileID: 0}
-  _processReward: {fileID: 0}
-  _processUnlockSkin: {fileID: 0}
+  _rewardDataSO: {fileID: 11400000, guid: 953a7adff201b1f43a00a9c52b100831, type: 2}
+  _tubeDataSO: {fileID: 11400000, guid: 2544e8005458264458480de30f1d61c8, type: 2}
+  _ballDataSO: {fileID: 11400000, guid: 7095935e72871434997802463a8dfdae, type: 2}
+  _themeDataSO: {fileID: 11400000, guid: 2cdbf230eaafc484ab1ed552b63fdf9a, type: 2}
+  atlasBG: {fileID: 4343727234628468602, guid: 907cee4ee35878b46afd3f8f6d54f8f8, type: 2}
+  atlasBall: {fileID: 4343727234628468602, guid: 303f22aa8b955024393e1a01215c7cd1, type: 2}
+  _processReward: {fileID: 4510545294437327881}
+  _processUnlockSkin: {fileID: 767207493684841509}
   _chestImg: {fileID: 8266878045822477837}
   _skinUnlockImg: {fileID: 0}
   _nextBtnRect: {fileID: 8266878046080475995}
   _iconOpenChest: {fileID: 21300000, guid: f2186da186e9b594f94402ff79d9758d, type: 3}
-  _starTrans: []
+  _starTrans:
+  - {fileID: 8266878044105161927}
+  - {fileID: 8266878044351486210}
+  - {fileID: 8266878045816501865}
   _victoryTxtTrans: {fileID: 8266878044657358442}
 --- !u!1 &8401998248283896372
 GameObject:

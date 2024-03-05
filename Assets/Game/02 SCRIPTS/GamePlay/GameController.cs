@@ -4,9 +4,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static TubeController;
 
-public class GameController : SingletonMonoBehaviour<GameController>
+public class GameController : MonoBehaviour
 {
     [Header("-------------------------REFERENCE--------------------------------")]
     [SerializeField] GameObject _waterPrefab;
@@ -23,7 +22,7 @@ public class GameController : SingletonMonoBehaviour<GameController>
     [SerializeField] private float _maxCameraSize;
     private List<KeyValuePair<BottleController, BottleController>> _prevTube = new List<KeyValuePair<BottleController, BottleController>>();
 
-    public override void Awake()
+    public void Awake()
     {
         _gameManager = GameManager.Instance;
         _userData = PlayerData.UserData;
@@ -124,6 +123,7 @@ public class GameController : SingletonMonoBehaviour<GameController>
         _holdingBottle = null;
         Init();
         Invoke(nameof(InitScreen), 0.02f);
+        Debug.LogError("Reset");
         // InitScreen();
     }
 
@@ -147,7 +147,7 @@ public class GameController : SingletonMonoBehaviour<GameController>
     {
         if (value <= 2)
         {
-            return 0.3f;
+            return 0.5f;
         }
         else if (value > 2 && value <= 5)
         {
@@ -155,7 +155,7 @@ public class GameController : SingletonMonoBehaviour<GameController>
         }
         else if (value > 5 && value <= 7)
         {
-            return 0.6f;
+            return 0.5f;
         }
         return 0.4f;
     }
@@ -243,11 +243,11 @@ public class GameController : SingletonMonoBehaviour<GameController>
                     // Debug.Log("you win");
                     //    _gameManager.Win();
                     //  }
+                    // _userData.UpdateHighestLevel();
                     _gameManager.Win();
                 }
             }
         }
-
     }
 
     private bool ConditionWin()
@@ -457,15 +457,9 @@ public class GameController : SingletonMonoBehaviour<GameController>
         PlayerData.UserData.UpdateValueBooster(TypeBooster.Tube, -1);
     }
 
-    public void OnClickRestart()
-    {
-        if (!isMoving()) return;
-        ActionEvent.OnResetGamePlay?.Invoke();
-    }
-
     public bool isMoving()
     {
-        foreach (var item in GameController.Instance.bottleList)
+        foreach (var item in bottleList)
         {
             if (item.state.Equals(StateTube.Moving))
             {

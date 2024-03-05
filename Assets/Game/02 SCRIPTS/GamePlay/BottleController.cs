@@ -98,27 +98,35 @@ public class BottleController : MonoBehaviour
     {
         weight = _ava.bounds.size.x;
         height = _ava.bounds.size.y;
-        ActionEvent.OnResetGamePlay += ResetPos;
     }
 
     private void OnMouseDown()
     {
         if (state.Equals(StateTube.Active) || state.Equals(StateTube.Moving)) return;
-        GameController.Instance.OnClick(this);
+        GameManager.Instance._controller.OnClick(this);
     }
 
     public void Complete()
     {
         _bottleTop.gameObject.SetActive(true);
         _bottleTop.transform.DOMoveY(_bottleTop.transform.position.y - 0.5f, 0.2f).SetDelay(0.1f).SetEase(Ease.InQuad);
-        _vfx.Play();
+        SoundManager.Instance.PlaySfxRewind(GlobalSetting.GetSFX("TopComplete"));
 
+        _vfx.Play();
+    }
+
+    private void OnEnable()
+    {
+        ActionEvent.OnResetGamePlay += ResetPos;
     }
 
     private void Reset()
     {
         this.datawaterColor = null;
+        this.state = StateTube.Deactive;
         _vfx.Stop();
+        originalPosition = this.transform.position;
+        _bottleTop.transform.position = _topPos;
     }
 
     private void OnDisable()
@@ -214,18 +222,24 @@ public class BottleController : MonoBehaviour
 
         this.transform.DOMove(target, 0.2f).SetEase(Ease.Linear).SetDelay(0.1f).OnComplete(() =>
         {
-            if (datawaterColor.waterDa.Count <= 1)
+            if (datawaterColor.waterDa.Count == 0)
             {
                 bottleMask.material.DOFloat(0.07f, "_scale", _duration).SetEase(Ease.Linear);
+            }
+            if (datawaterColor.waterDa.Count == 1)
+            {
+                bottleMask.material.DOFloat(0.17f, "_scale", _duration).SetEase(Ease.Linear);
+            }
+            if (datawaterColor.waterDa.Count == 2)
+            {
+                bottleMask.material.DOFloat(0.35f, "_scale", _duration).SetEase(Ease.Linear);
             }
             if (datawaterColor.waterDa.Count == 3)
             {
                 bottleMask.material.DOFloat(0.3f, "_scale", _duration).SetEase(Ease.Linear);
             }
-            if (datawaterColor.waterDa.Count == 2)
-            {
-                bottleMask.material.DOFloat(0.2f, "_scale", _duration).SetEase(Ease.Linear);
-            }
+
+            SoundManager.Instance.PlaySfxRewind(GlobalSetting.GetSFX("Water"));
             bottleMask.material.DOFloat(fillAmouts[datawaterColor.waterDa.Count], "_FillAmout", _duration).SetEase(Ease.Linear);
 
             bottle.bottleMask.material.DOFloat(bottle.fillAmouts[bottle.datawaterColor.waterDa.Count], "_FillAmout", _duration).SetEase(Ease.Linear).SetDelay(0.2f);

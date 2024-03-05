@@ -32,7 +32,7 @@ public class GlobalSetting : SingletonMonoBehaviour<GlobalSetting>
 
     public void ShowLoadingAd(Action callback)
     {
-        StartCoroutine(LoadingAd(callback));
+        // StartCoroutine(LoadingAd(callback));
     }
 
     IEnumerator LoadingAd(Action callback)

@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DisplayProcess : MonoBehaviour
+public class Progress : MonoBehaviour
 {
     [SerializeField] Slider _process;
     [SerializeField] TMP_Text _ValueTxt;

@@ -13,9 +13,9 @@ public class PopupWin : SingletonPopup<PopupWin>
     [SerializeField] RewardDataSO _rewardDataSO;
     [SerializeField] CollectionSkinDataSO _tubeDataSO, _ballDataSO, _themeDataSO;
     [SerializeField] SpriteAtlas atlasBG;
-    [SerializeField] SpriteAtlas atlasBall, atlasTube;
-    [SerializeField] DisplayProcess _processReward;
-    [SerializeField] DisplayProcess _processUnlockSkin;
+    [SerializeField] SpriteAtlas atlasBall/*, atlasTube*/;
+    [SerializeField] Progress _processReward;
+    [SerializeField] Progress _processUnlockSkin;
     [SerializeField] Image _chestImg, _skinUnlockImg;
     [SerializeField] RectTransform _nextBtnRect;
     [SerializeField] Sprite _iconOpenChest;
@@ -51,13 +51,14 @@ public class PopupWin : SingletonPopup<PopupWin>
 
     public void OnClickNextLevel()
     {
-        ActionEvent.OnResetGamePlay?.Invoke();
+        // GameController.Instance.OnClickRestart();
         base.Hide(() =>
         {
-            if (GameManager.Instance.Level.level % 5 == 0 && PlayerData.UserData.ValueToRate <= 0)
-            {
-                PopupCallToRate.Instance.Show();
-            }
+            ActionEvent.OnResetGamePlay?.Invoke();
+            //if (GameManager.Instance.Level.level % 5 == 0 && PlayerData.UserData.ValueToRate <= 0)
+            //{
+            //    PopupCallToRate.Instance.Show();
+            //}
         });
     }
 
@@ -133,7 +134,7 @@ public class PopupWin : SingletonPopup<PopupWin>
 
         _processUnlockSkin.UpdateProcess(valueMin, valueMax);
 
-        _skinUnlockImg.sprite = getIconSkin(_DataItemSkin.Type, _DataItemSkin.Index);
+        //   _skinUnlockImg.sprite = getIconSkin(_DataItemSkin.Type, _DataItemSkin.Index);
     }
 
     private void CallProcessUnlockSkin()
@@ -217,20 +218,20 @@ public class PopupWin : SingletonPopup<PopupWin>
         return tmp;
     }
 
-    private Sprite getIconSkin(TypeSkinCollection type, int id)
-    {
-        switch (type)
-        {
-            case TypeSkinCollection.Tube:
-                return atlasTube.GetSprite($"Ui_Rewards_Icon_Card_{id + 1:00}");
-            case TypeSkinCollection.Ball:
-                return atlasBall.GetSprite($"Ui_Shop_Ball{id + 1:00}");
-            case TypeSkinCollection.Theme:
-                return atlasBG.GetSprite($"Ui_Shop_Theme{id + 1:00}_B");
-            default:
-                return null;
-        }
-    }
+    //private Sprite getIconSkin(TypeSkinCollection type, int id)
+    //{
+    //    //switch (type)
+    //    //{
+    //    //    case TypeSkinCollection.Tube:
+    //    //        return atlasTube.GetSprite($"Ui_Rewards_Icon_Card_{id + 1:00}");
+    //    //    case TypeSkinCollection.Ball:
+    //    //        return atlasBall.GetSprite($"Ui_Shop_Ball{id + 1:00}");
+    //    //    case TypeSkinCollection.Theme:
+    //    //        return atlasBG.GetSprite($"Ui_Shop_Theme{id + 1:00}_B");
+    //    //    default:
+    //    //        return null;
+    //    //}
+    //}
 
     private void DisplayButton(bool value)
     {
