@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 5
+  m_text: 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -1418,8 +1418,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 1
-  _amoutText: {fileID: 8417010}
-  _iconAds: {fileID: 191390986}
+  _amoutText: {fileID: 1928142069}
+  _iconAds: {fileID: 460145653}
+  _iconNumber: {fileID: 1928142067}
 --- !u!114 &1001318460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2520,7 +2521,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1
+  m_text: 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -2837,6 +2838,7 @@ MonoBehaviour:
   Type: 0
   _amoutText: {fileID: 8417010}
   _iconAds: {fileID: 191390986}
+  _iconNumber: {fileID: 8417008}
 --- !u!114 &2122322955
 MonoBehaviour:
   m_ObjectHideFlags: 0

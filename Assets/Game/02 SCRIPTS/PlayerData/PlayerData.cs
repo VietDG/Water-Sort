@@ -5,8 +5,11 @@ using UnityEngine;
 
 public class PlayerData : MonoBehaviour
 {
-    private static string path = "Assets/Game/05 Data/JsonText/PlayerData/UserData.txt";
-
+#if UNITY_EDITOR
+    private static string path = "Assets/Game/05 Data/JsonText/PlayerData";
+#else
+    public static string path = Application.persistentDataPath;
+#endif
     public static UserData UserData = new UserData();
 
     private void Start()
@@ -20,11 +23,6 @@ public class PlayerData : MonoBehaviour
         if (!PlayerPrefs.HasKey(Const.KEY_USER_DATA))
         {
             SaveUserData();
-            if (!File.Exists(path))
-            {
-                // Create a file to write to.
-                File.Create(path);
-            }
         }
         else
         {
@@ -44,6 +42,6 @@ public class PlayerData : MonoBehaviour
         string saveData = JsonUtility.ToJson(UserData);
         PlayerPrefs.SetString(Const.KEY_USER_DATA, saveData);
 
-        File.WriteAllText(path, saveData);
+        File.WriteAllText(path + "/UserData.txt", saveData);
     }
 }

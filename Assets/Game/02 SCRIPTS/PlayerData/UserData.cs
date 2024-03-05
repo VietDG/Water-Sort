@@ -29,7 +29,7 @@ public class UserData
             case TypeBooster.Back:
                 this.BoosterBack += value;
                 break;
-            case TypeBooster.AddTube:
+            case TypeBooster.Tube:
                 this.BoosterAddTube += value;
                 break;
         }

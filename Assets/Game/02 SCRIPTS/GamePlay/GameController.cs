@@ -148,17 +148,17 @@ public class GameController : SingletonMonoBehaviour<GameController>
         if (value <= 2)
         {
             Debug.LogError("2");
-            return 0.4f;
+            return 0.3f;
         }
         else if (value > 2 && value <= 5)
         {
             Debug.LogError("3");
-            return 0.5f;
+            return 0.4f;
         }
         else if (value > 5 && value <= 7)
         {
             Debug.LogError("5");
-            return 0.7f;
+            return 0.6f;
         }
         Debug.LogError("none");
         return 0.4f;
@@ -456,10 +456,12 @@ public class GameController : SingletonMonoBehaviour<GameController>
         {
             Debug.LogError("da du canh");
         }
+        PlayerData.UserData.UpdateValueBooster(TypeBooster.Tube, -1);
     }
 
     public void OnClickRestart()
     {
+        if (!isMoving()) return;
         ActionEvent.OnResetGamePlay?.Invoke();
     }
 

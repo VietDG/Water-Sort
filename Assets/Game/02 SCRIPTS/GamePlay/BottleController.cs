@@ -54,7 +54,6 @@ public class BottleController : MonoBehaviour
     [Header("---------------------------------VALUE-----------------------------------")]
     public float[] fillAmouts;
     public float[] rotationValues;
-    public float[] scaleValue;
     private int rotationIndex = 0;
     [Range(0, 4)]
     public int numberofCOlor = 4;
@@ -104,9 +103,8 @@ public class BottleController : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (/*state.Equals(StateTube.Active) ||*/ state.Equals(StateTube.Moving)) return;
+        if (state.Equals(StateTube.Active) || state.Equals(StateTube.Moving)) return;
         GameController.Instance.OnClick(this);
-        Debug.LogError("c");
     }
 
     public void Complete()
@@ -216,10 +214,10 @@ public class BottleController : MonoBehaviour
 
         this.transform.DOMove(target, 0.2f).SetEase(Ease.Linear).SetDelay(0.1f).OnComplete(() =>
         {
-            //  bottleMask.material.DOFloat(scaleValue[datawaterColor.waterDa.Count], "_scale", 0f).SetEase(Ease.Linear);
-            bottleMask.material.DOFloat(fillAmouts[datawaterColor.waterDa.Count], "_FillAmout", _duration).SetEase(Ease.Linear).SetDelay(0.1f);
+            bottleMask.material.DOFloat(0.47f, "_scale", _duration).SetEase(Ease.Linear);
+            bottleMask.material.DOFloat(fillAmouts[datawaterColor.waterDa.Count], "_FillAmout", _duration).SetEase(Ease.Linear);
 
-            bottle.bottleMask.material.DOFloat(bottle.fillAmouts[bottle.datawaterColor.waterDa.Count], "_FillAmout", _duration).SetEase(Ease.Linear).SetDelay(0.2f);
+            bottle.bottleMask.material.DOFloat(bottle.fillAmouts[bottle.datawaterColor.waterDa.Count], "_FillAmout", _duration).SetEase(Ease.Linear);
             bottle.UpdateStartColor();
 
             FunctionCommon.DelayTime(_duration / 2, () =>
