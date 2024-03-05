@@ -17,8 +17,13 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     {
         Datamanager = DataManager.Instance;
         _userData = PlayerData.UserData;
-
+        ActionEvent.OnResetGamePlay += InitLevel;
         InitLevel();
+    }
+
+    private void OnDestroy()
+    {
+        ActionEvent.OnResetGamePlay -= InitLevel;
     }
 
     public void InitLevel()
@@ -38,7 +43,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         FunctionCommon.DelayTime(2f, () =>
         {
             //  ActionEvent.OnResetGamePlay?.Invoke();
-            SceneManager.LoadScene(Const.SCENE_GAME);
+            PopupWin.Instance.Show();
         });
     }
 }

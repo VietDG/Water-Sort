@@ -839,7 +839,8 @@ MonoBehaviour:
   fadeTweenTime: 0.2
   transparentAmount: 0.85
   prefabs:
-  - {fileID: 5365205842673966896, guid: bf135826e27a14b0fb1de59a4f4dcea7, type: 3}
+  - {fileID: 7851513871737165517, guid: aeab693163759154c9e180ce70059802, type: 3}
+  - {fileID: 8266878046137313600, guid: e723e582f5a998e4cba2490d1ae0f4a7, type: 3}
   transparent: {fileID: 7659179651087851638}
   parent: {fileID: 7548558703387335186}
   hasPopupShowing: 0

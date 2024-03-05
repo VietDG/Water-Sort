@@ -14,5 +14,6 @@ public class ActionEvent : MonoBehaviour
     public static Action OnResetGamePlay;
     public static Action OnUserBoosterBack;
     public static Action OnUserBoosterAddTube;
+    public static Action OnShowToast;
     #endregion
 }

@@ -39,6 +39,11 @@ public class GameUIManager : SingletonMonoBehaviour<GameUIManager>
         }
 
     }
+
+    public void OnClickSetting()
+    {
+        PopupSetting.Instance.Show();
+    }
 }
 
 public enum TypeSkinColect

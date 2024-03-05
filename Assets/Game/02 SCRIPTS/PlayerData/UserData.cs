@@ -10,9 +10,14 @@ public class UserData
     /// Achievements
     /// </summary>
     public int HighestLevel;
+    public int Coin = 20;
+    public int ValueToRate;
+
     public int BoosterBack;
     public int BoosterAddTube;
-    public int Coin;
+
+    public int CurrentRewardValue;
+    public int RewardValueMax;
     #endregion
 
     #region Method

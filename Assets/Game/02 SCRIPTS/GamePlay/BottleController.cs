@@ -185,7 +185,7 @@ public class BottleController : MonoBehaviour
         bottleMask.sortingOrder += 2;
         Rote(bottle);
         this.ChangeState(StateTube.Moving);
-        bottle.ChangeState(StateTube.Active);
+        bottle.ChangeState(StateTube.Open);
     }
 
     public string[] _colorName = new string[] { "C1", "C2", "C3", "C4" }; // Update Start Color
@@ -214,13 +214,24 @@ public class BottleController : MonoBehaviour
 
         this.transform.DOMove(target, 0.2f).SetEase(Ease.Linear).SetDelay(0.1f).OnComplete(() =>
         {
-            bottleMask.material.DOFloat(0.47f, "_scale", _duration).SetEase(Ease.Linear);
+            if (datawaterColor.waterDa.Count <= 1)
+            {
+                bottleMask.material.DOFloat(0.07f, "_scale", _duration).SetEase(Ease.Linear);
+            }
+            if (datawaterColor.waterDa.Count == 3)
+            {
+                bottleMask.material.DOFloat(0.3f, "_scale", _duration).SetEase(Ease.Linear);
+            }
+            if (datawaterColor.waterDa.Count == 2)
+            {
+                bottleMask.material.DOFloat(0.2f, "_scale", _duration).SetEase(Ease.Linear);
+            }
             bottleMask.material.DOFloat(fillAmouts[datawaterColor.waterDa.Count], "_FillAmout", _duration).SetEase(Ease.Linear);
 
-            bottle.bottleMask.material.DOFloat(bottle.fillAmouts[bottle.datawaterColor.waterDa.Count], "_FillAmout", _duration).SetEase(Ease.Linear);
+            bottle.bottleMask.material.DOFloat(bottle.fillAmouts[bottle.datawaterColor.waterDa.Count], "_FillAmout", _duration).SetEase(Ease.Linear).SetDelay(0.2f);
             bottle.UpdateStartColor();
 
-            FunctionCommon.DelayTime(_duration / 2, () =>
+            FunctionCommon.DelayTime(0.1f, () =>
             {
                 StartCoroutine(SetLine(bottle));
             });
@@ -298,7 +309,7 @@ public class BottleController : MonoBehaviour
         {
             this.transform.DOMoveY(this.transform.position.y + 0.5f, duration).SetEase(Ease.OutQuad).OnComplete(() =>
             {
-                tube.ChangeState(StateTube.Deactive);
+                tube.ChangeState(StateTube.Active);
             });
         }
         else
@@ -395,4 +406,5 @@ public enum StateTube
     Active,
     Deactive,
     Moving,
+    Open,
 }

@@ -7,11 +7,9 @@ using UnityEngine.UI;
 public class PopupSetting : SingletonPopup<PopupSetting>
 {
     [SerializeField] Toggle _sfx, _vibrate;
-
-    private Setting _setting => Setting.Instance;
-
     public void Show()
     {
+        base.canCloseWithOverlay = true;
         base.Show();
     }
 
@@ -22,13 +20,13 @@ public class PopupSetting : SingletonPopup<PopupSetting>
 
     private void Start()
     {
-        SetUpIcon();
+        SetUpICon();
     }
 
     #region Sound
     public void OnClickSound()
     {
-        if (_setting.SOUND)
+        if (Setting.Instance.SOUND)
         {
             _sfx.isOn = true;
         }
@@ -36,13 +34,13 @@ public class PopupSetting : SingletonPopup<PopupSetting>
         {
             _sfx.isOn = false;
         }
-        _setting.SOUND = !_setting.SOUND;
-        SoundManager.Instance.SoundHandle(_setting.SOUND);
+        Setting.Instance.SOUND = !Setting.Instance.SOUND;
+        SoundManager.Instance.SoundHandle(Setting.Instance.SOUND);
     }
 
     public void OnClickVibrate()
     {
-        if (_setting.VIBRATE)
+        if (Setting.Instance.VIBRATE)
         {
             _vibrate.isOn = true;
         }
@@ -50,12 +48,12 @@ public class PopupSetting : SingletonPopup<PopupSetting>
         {
             _vibrate.isOn = false;
         }
-        _setting.VIBRATE = !_setting.VIBRATE;
+        Setting.Instance.VIBRATE = !Setting.Instance.VIBRATE;
     }
 
-    public void SetUpIcon()
+    public void SetUpICon()
     {
-        if (_setting.SOUND)
+        if (Setting.Instance.SOUND)
         {
             _sfx.isOn = false;
         }
@@ -64,7 +62,7 @@ public class PopupSetting : SingletonPopup<PopupSetting>
             _sfx.isOn = true;
         }
 
-        if (_setting.VIBRATE)
+        if (Setting.Instance.VIBRATE)
         {
             _vibrate.isOn = false;
         }
@@ -74,4 +72,17 @@ public class PopupSetting : SingletonPopup<PopupSetting>
         }
     }
     #endregion
+
+    public void OnclickCollection()
+    {
+        base.Hide(() =>
+        {
+            // PopupCollection.Instance.Show();
+        });
+    }
+
+    public void OnClickLanguage()
+    {
+        //  ActionEvent.OnShowToast?.Invoke("Coming soon!");
+    }
 }
