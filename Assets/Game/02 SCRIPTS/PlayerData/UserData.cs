@@ -42,10 +42,13 @@ public class UserData
 
     public void EarnCoin(int value)
     {
-        this.Coin += value;
+        Coin.RefIntCrementWithAmount(value);
+        SoundManager.Instance.PlaySfxRewind(GlobalSetting.GetSFX("coin_multi"));
+        ActionEvent.OnUpdateCoin?.Invoke();
     }
 
-    public void UseCoin(int value, Action<bool> callBack)
+
+    public void SpendCoin(int value, Action<bool> callBack)
     {
         if (Coin < value)
         {

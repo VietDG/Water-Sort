@@ -31,7 +31,6 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     public void InitLevel()
     {
         this.Level = Datamanager.LevelDataSO.getLevel(_userData.HighestLevel);
-        Debug.LogError(_userData.HighestLevel);
     }
 
     public DataWaterSO getBallDataSO()
@@ -54,7 +53,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     public void OnClickRestart()
     {
-        if (_controller.isMoving()) return;
+        if (!_controller.isMoving()) return;
         ActionEvent.OnResetGamePlay?.Invoke();
     }
 }

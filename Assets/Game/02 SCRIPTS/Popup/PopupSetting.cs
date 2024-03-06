@@ -77,7 +77,7 @@ public class PopupSetting : SingletonPopup<PopupSetting>
     {
         base.Hide(() =>
         {
-            // PopupCollection.Instance.Show();
+            PopupCollection.Instance.Show();
         });
     }
 

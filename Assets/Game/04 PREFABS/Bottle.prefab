@@ -72,8 +72,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 1863950986, guid: ecf5c99ae9efd504bab1640a2e96a3d9, type: 3}
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 21300000, guid: ecf5c99ae9efd504bab1640a2e96a3d9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -509,7 +509,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6f91e17357ac24bbedfa6f1e4a82a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bottleColors: []
   bottleMask: {fileID: 5605391771573233090}
   _ava: {fileID: 6492317657683007797}
   datawaterColor:
@@ -636,8 +635,6 @@ MonoBehaviour:
   - 81
   - 75
   - 69
-  numberofCOlor: 0
-  numberofTOpColorLayers: 1
   _bottleTop: {fileID: 7928329137137623835}
   leftRotationPoint: {fileID: 5605391771865361106}
   rightRotationPoint: {fileID: 5605391773057560550}
@@ -755,8 +752,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f180d73072dcac04d87be62bb9ca4d16, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 8f573f1fd2baefe47b50805679d845fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

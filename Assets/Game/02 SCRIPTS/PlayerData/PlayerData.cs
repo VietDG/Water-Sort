@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerData : MonoBehaviour
 {
 #if UNITY_EDITOR
-    private static string path = "Assets/Game/05 Data/JsonText/PlayerData";
+    public const string path = "Assets/Game/05 Data/JsonText/PlayerData";
 #else
     public static string path = Application.persistentDataPath;
 #endif

@@ -14,8 +14,19 @@ public class ActionEvent : MonoBehaviour
     public static Action OnResetGamePlay;
     public static Action OnUserBoosterBack;
     public static Action OnUserBoosterAddTube;
-    public static Action OnShowToast;
-
     public static Action OnNextLevel;
+
+    public static Action OnUpdateCoin;
+    #endregion
+
+    #region Collection
+    public static Action OnChangeSkinEquip;
+    public static Action<TypeSkinCollection> OnSelectSkin;
+
+    #endregion
+
+    #region MyToast
+    public static Action<string> OnShowToast;
+    public static Action OnShowLoadingAds;
     #endregion
 }

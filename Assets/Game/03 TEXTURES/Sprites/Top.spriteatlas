@@ -49,16 +49,16 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 0dde702c54b29224a89d353cc4b476f2, type: 3}
   - {fileID: 21300000, guid: 8f573f1fd2baefe47b50805679d845fa, type: 3}
   m_PackedSpriteNamesToIndex:
-  - cylinder_stopper20
-  - cylinder_stopper8
-  - cylinder_stopper1
-  - cylinder_stopper11
-  - cylinder_stopper17
-  - cylinder_stopper6
-  - cylinder_stopper9
-  - cylinder_stopper10
-  - cylinder_stopper7
-  - cylinder_stopper16
+  - top10
+  - top04
+  - top01
+  - top07
+  - top09
+  - top02
+  - top05
+  - top06
+  - top03
+  - top08
   m_RenderDataMap: {}
   m_Tag: Top
   m_IsVariant: 0

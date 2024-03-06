@@ -30,7 +30,7 @@ public class PopupWin : SingletonPopup<PopupWin>
 
     public void Show()
     {
-        //  base.canCloseWithOverlay = true;
+        base.canCloseWithOverlay = true;
         DisplayUI();
         base.Show(() =>
         {

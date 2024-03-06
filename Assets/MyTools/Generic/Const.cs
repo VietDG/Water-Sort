@@ -15,6 +15,7 @@
 
     #region Player Data
     public const string KEY_USER_DATA = "user_data";
+    public const string KEY_USER_COLLECTION_DATA = "collection_data";
     #endregion
 
     #region Infor Show Ads Rewarded
@@ -24,5 +25,19 @@
 
     #region Intro Game
     public const string SHOW_INTRO_GAME = "SHOW_INTRO_GAME";
+    #endregion
+
+    #region LocalLize Text
+    public const string KEY_NO_INTERNET = "No internet connection";
+    public const string KEY_ERROR_ADS = "An error has occured, try again later!";
+    public const string KEY_OUT_BOOSTER_REVOKE = "Out of booster!";
+    public const string KEY_OUT_BOOSTER_ADD_TUBE = "You cannat add more tube!";
+    public const string KEY_CANNOT_LOAD_ADS = "Cannot load Ads";
+    public const string KEY_NOT_UNLOCK_SKIN = "You have not unlock this!";
+
+    //Tutorial
+    public const string KEY_TUT_LV_1 = "Please select water to pour into a tube.";
+    public const string KEY_TUT_LV_2 = "You can move water on top of the same color.";
+
     #endregion
 }

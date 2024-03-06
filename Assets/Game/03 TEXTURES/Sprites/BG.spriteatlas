@@ -48,15 +48,15 @@ SpriteAtlas:
   - {fileID: 21300000, guid: a094c5ae0f8e7824d9edd8855ae64b74, type: 3}
   - {fileID: 21300000, guid: 2c7ea62ffa07bfa4e92625ddf4816764, type: 3}
   m_PackedSpriteNamesToIndex:
-  - Ui_Shop_Theme09_B
-  - Ui_Shop_Theme02_B
-  - Ui_Shop_Theme04_B
-  - Ui_Shop_Theme05_B
-  - Ui_Shop_Theme03_B
-  - Ui_Shop_Theme01_B
-  - Ui_Shop_Theme06_B
-  - Ui_Shop_Theme07_B
-  - Ui_Shop_Theme08_B
+  - BG09
+  - BG02
+  - BG04
+  - BG05
+  - BG03
+  - BG01
+  - BG06
+  - BG07
+  - BG08
   m_RenderDataMap: {}
   m_Tag: BG
   m_IsVariant: 0

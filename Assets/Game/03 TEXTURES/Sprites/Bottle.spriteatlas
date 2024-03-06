@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Bottle
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 9b2ba907b83675b4db5a96538d9ed457, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: a40e9e924e9f02e4696986c3a242edbc, type: 3}
+  - {fileID: 21300000, guid: c80943f2bf01ab9498d6aedbbe90821b, type: 3}
+  - {fileID: 21300000, guid: 7ebf2154a72368c4cab5edb27152da52, type: 3}
+  - {fileID: 21300000, guid: 6ea14f55bd081404cbba7b0cc62d11b6, type: 3}
+  - {fileID: 21300000, guid: f6d31d286de69f040a451db1b56c05b9, type: 3}
+  - {fileID: 21300000, guid: 5fed6648868991d41b5da269d63e669a, type: 3}
+  - {fileID: 21300000, guid: 0e5f378aa0124a046a11fb6cd1a80e2a, type: 3}
+  - {fileID: 21300000, guid: ecf5c99ae9efd504bab1640a2e96a3d9, type: 3}
+  - {fileID: 21300000, guid: 57d0d7cb66e785c4995180a1743fad23, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Bottle03
+  - Bottle08
+  - Bottle02
+  - Bottle05
+  - Bottle06
+  - Bottle04
+  - Bottle07
+  - Bottle01
+  - Bottle09
+  m_RenderDataMap: {}
+  m_Tag: Bottle
+  m_IsVariant: 0

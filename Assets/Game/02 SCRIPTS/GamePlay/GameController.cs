@@ -116,15 +116,14 @@ public class GameController : MonoBehaviour
     {
         foreach (var item in bottleList)
         {
-            item.bottleColors.Clear();
+            // item.bottleColors.Clear();
             SimplePool.Despawn(item.gameObject);
         }
         bottleList.Clear();
+        _prevTube.Clear();
         _holdingBottle = null;
         Init();
         Invoke(nameof(InitScreen), 0.02f);
-        Debug.LogError("Reset");
-        // InitScreen();
     }
 
     private void SpawnBottleWater(float x, float y, int value, List<WaterData> dataWater)
@@ -147,17 +146,21 @@ public class GameController : MonoBehaviour
     {
         if (value <= 2)
         {
-            return 0.5f;
+            Debug.LogError("0.5");
+            return 0.7f;
         }
         else if (value > 2 && value <= 5)
         {
-            return 0.4f;
+            Debug.LogError("0.6");
+            return 0.5f;
         }
         else if (value > 5 && value <= 7)
         {
-            return 0.5f;
+            Debug.LogError("0.6");
+            return 0.3f;
         }
-        return 0.4f;
+        Debug.LogError("0.4 return");
+        return 0.2f;
     }
 
     private void InitScreen()
@@ -332,9 +335,9 @@ public class GameController : MonoBehaviour
                 }
                 moveBalls.Add(from.datawaterColor.waterDa[i]);
 
-                to.bottleColors.Add(from.datawaterColor.waterDa[i].color);
+                //  to.bottleColors.Add(from.datawaterColor.waterDa[i].color);
                 from.datawaterColor.waterDa.RemoveAt(i);
-                from.bottleColors.RemoveAt(i);
+                // from.bottleColors.RemoveAt(i);
                 //from.UpdateStartColor();
                 //to.UpdateStartColor();
 
@@ -375,8 +378,8 @@ public class GameController : MonoBehaviour
     {
         if (_prevTube.Count > 0)
         {
-            BottleController from = _prevTube[_prevTube.Count - 1].Key;
-            BottleController to = _prevTube[_prevTube.Count - 1].Value;
+            BottleController from = _prevTube[^1].Key;
+            BottleController to = _prevTube[^1].Value;
             if (_holdingBottle != null)
             {
                 if (to != _holdingBottle)
@@ -389,11 +392,13 @@ public class GameController : MonoBehaviour
             int cd = 1;
             for (int i = _prevTube.Count - 1; i >= 0; i--)
             {
+                Debug.LogError(i);
                 BottleController first = _prevTube[i].Value;
                 BottleController second = _prevTube[i].Key;
                 moveBalls.Add(first.GetLastWater());
                 second.datawaterColor.waterDa.Add(first.GetLastWater());
                 first.datawaterColor.waterDa.Remove(first.GetLastWater());
+
                 cd++;
                 if (_prevTube.Count == 1 || first.datawaterColor.waterDa.Count <= 0) break;
                 if (first != _prevTube[i - 1].Value || second != _prevTube[i - 1].Key)
@@ -403,18 +408,13 @@ public class GameController : MonoBehaviour
             }
 
             from.ChangeState(StateTube.Active);
-            to.ChangeState(StateTube.Moving);
+            to.ChangeState(StateTube.Active);
             for (int i = 0; i < moveBalls.Count; i++)
             {
                 if (i == moveBalls.Count - 1)
                 {
-                    // _holdingBottle.StartColorTransfer(to);
-                    //moveBalls[i].Start(to, from, countBall, i, () =>
-                    //{
                     from.ChangeState(StateTube.Deactive);
                     to.ChangeState(StateTube.Deactive);
-                    //});
-                    // moveBalls[i].Set
                     from.SetColorBooster();
                     to.SetColorBooster();
                 }
@@ -422,8 +422,6 @@ public class GameController : MonoBehaviour
                 {
                     from.SetColorBooster();
                     to.SetColorBooster();
-                    //   moveBalls[i].Movement(to, from, countBall, i, null);
-                    //_holdingBottle.StartColorTransfer(to);
                 }
 
                 if (_prevTube.Count > 0)
@@ -443,6 +441,7 @@ public class GameController : MonoBehaviour
     private void UseAddTube()
     {
         int slotTube = _gameManager.Level.tubeSlot;
+        _holdingBottle = null;
 
         if (bottleList.Count <= _gameManager.Level.tube)
         {
