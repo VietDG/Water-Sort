@@ -28,6 +28,7 @@ public class GameUIManager : SingletonMonoBehaviour<GameUIManager>
     private void DisPlayLevelText()
     {
         _levelTxt.text = $"{PlayerData.UserData.HighestLevel + 1:00}";
+        DisPlayTheme(TypeSkinColect.Theme);
 
     }
 
@@ -35,9 +36,8 @@ public class GameUIManager : SingletonMonoBehaviour<GameUIManager>
     {
         if (type.Equals(TypeSkinColect.Theme))
         {
-            //  _bg.sprite = GameManager.Instance.get
+            _bg.sprite = GameManager.Instance.getBG();
         }
-
     }
 
     public void OnClickSetting()

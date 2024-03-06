@@ -20,7 +20,7 @@ public class BoosterBack : BoosterController
 
     public void OnClickBack()
     {
-        if (!GameManager.Instance._controller.isMoving()) return;
+        if (!GameManager.Instance.controller.isMoving()) return;
         if (PlayerData.UserData.BoosterBack > 0)
         {
             ActionEvent.OnUserBoosterBack?.Invoke();

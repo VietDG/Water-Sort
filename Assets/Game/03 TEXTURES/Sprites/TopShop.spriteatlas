@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TopShop
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: c0ff26c8eab76b145907ae1e17656a62, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 8ff3d011923026e44913640adffe61e9, type: 3}
+  - {fileID: 21300000, guid: 640d0651ea5a9cd4e9dd0f9d616f3e8d, type: 3}
+  - {fileID: 21300000, guid: 09206be1a00ae26489fa715e9157e43f, type: 3}
+  - {fileID: 21300000, guid: 791f05d248570224bb217b32dc7b9a60, type: 3}
+  - {fileID: 21300000, guid: 97fc96f27a1fdd14c88ef123733bf685, type: 3}
+  - {fileID: 21300000, guid: f8902a0421818044eb57a8888b808b38, type: 3}
+  - {fileID: 21300000, guid: 75c88cd58606ccb45a484965223b16d1, type: 3}
+  - {fileID: 21300000, guid: a056bfb9bea24614595e2191ec848073, type: 3}
+  - {fileID: 21300000, guid: eeeb4dda2ca55f34e90af04bdd9c0499, type: 3}
+  - {fileID: 21300000, guid: f270c3bbc4ddb4442b8e77c1f24169f0, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - top04
+  - top03
+  - top05
+  - top10
+  - top07
+  - top08
+  - top02
+  - top01
+  - top09
+  - top06
+  m_RenderDataMap: {}
+  m_Tag: TopShop
+  m_IsVariant: 0

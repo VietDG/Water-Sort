@@ -48,6 +48,10 @@ public class GameController : MonoBehaviour
         {
             SceneManager.LoadScene(Const.SCENE_GAME);
         }
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            _gameManager.Win();
+        }
         //    InitScreen();
 #endif
     }

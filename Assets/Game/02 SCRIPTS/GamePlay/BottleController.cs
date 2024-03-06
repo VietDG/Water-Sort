@@ -1,4 +1,5 @@
 using DG.Tweening;
+using PopupSystem;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -89,6 +90,7 @@ public class BottleController : MonoBehaviour
     [SerializeField] ParticleSystem _vfx;
     [field: SerializeField] public StateTube state { get; private set; }
 
+    #region UNITY_METHOD
     private void Awake()
     {
         weight = _ava.bounds.size.x;
@@ -97,22 +99,14 @@ public class BottleController : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (PopupManager.Instance.hasPopupShowing) return;
         if (state.Equals(StateTube.Active) || state.Equals(StateTube.Moving)) return;
-        GameManager.Instance._controller.OnClick(this);
+        GameManager.Instance.controller.OnClick(this);
     }
-
-    public void Complete()
-    {
-        _bottleTop.gameObject.SetActive(true);
-        _bottleTop.transform.DOMoveY(_bottleTop.transform.position.y - 0.5f, 0.2f).SetDelay(0.1f).SetEase(Ease.InQuad);
-        SoundManager.Instance.PlaySfxRewind(GlobalSetting.GetSFX("TopComplete"));
-
-        _vfx.Play();
-    }
-
     private void OnEnable()
     {
         ActionEvent.OnResetGamePlay += ResetPos;
+        ActionEvent.OnSetSkin += SetSkinTop;
     }
 
     private void Reset()
@@ -128,6 +122,16 @@ public class BottleController : MonoBehaviour
     {
         Reset();
         ActionEvent.OnResetGamePlay -= Reset;
+        ActionEvent.OnSetSkin -= SetSkinTop;
+    }
+    #endregion
+    public void Complete()
+    {
+        _bottleTop.gameObject.SetActive(true);
+        _bottleTop.transform.DOMoveY(_bottleTop.transform.position.y - 0.5f, 0.2f).SetDelay(0.1f).SetEase(Ease.InQuad);
+        SoundManager.Instance.PlaySfxRewind(GlobalSetting.GetSFX("TopComplete"));
+
+        _vfx.Play();
     }
 
     //private void AddColor()
@@ -137,6 +141,19 @@ public class BottleController : MonoBehaviour
     //        bottleColors.Add(datawaterColor.waterDa[i].color);
     //    }
     //}
+
+    #region Skin
+
+    private void SetSkinTop(TypeSkinCollection type)
+    {
+        if (type.Equals(TypeSkinCollection.Ball))
+        {
+            Sprite newAva = GameManager.Instance.getTop();
+            _bottleTop.GetComponent<SpriteRenderer>().sprite = newAva;
+        }
+    }
+
+    #endregion
 
     public bool isEmpty()
     {
@@ -160,6 +177,7 @@ public class BottleController : MonoBehaviour
         // AddColor();
         HandleColor();
 
+        SetSkinTop(TypeSkinCollection.Ball);
         _bottleTop.SetActive(false);
         UpdateStartColor();
     }
@@ -181,8 +199,8 @@ public class BottleController : MonoBehaviour
     {
         ChoseRotationPointAndDirection(bottle);
 
-        _ava.sortingOrder += 2;
-        bottleMask.sortingOrder += 2;
+        _ava.sortingOrder += 3;
+        bottleMask.sortingOrder += 3;
         Rote(bottle);
         this.ChangeState(StateTube.Moving);
         bottle.ChangeState(StateTube.Open);
@@ -291,15 +309,14 @@ public class BottleController : MonoBehaviour
 
     public void RoteBack(Vector2 target, BottleController newBottle)
     {
-        // startPosition = transform.position;
         endPosition = originalPosition;
         bottleMask.material.DOFloat(0.7f, "_scale", _duration).SetEase(Ease.Linear);
         this.transform.DORotate(new Vector3(0, 0, 0), _duration).SetDelay(0.1f).OnComplete(() =>
         {
             this.transform.DOMove(endPosition, 0.2f).SetEase(Ease.Linear).OnComplete(() =>
             {
-                _ava.sortingOrder -= 2;
-                bottleMask.sortingOrder -= 2;
+                _ava.sortingOrder -= 3;
+                bottleMask.sortingOrder -= 3;
                 this.ChangeState(StateTube.Deactive);
                 newBottle.ChangeState(StateTube.Deactive);
             });

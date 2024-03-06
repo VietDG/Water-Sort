@@ -17,11 +17,11 @@ public class ActionEvent : MonoBehaviour
     public static Action OnNextLevel;
 
     public static Action OnUpdateCoin;
+    public static Action<TypeSkinCollection> OnSetSkin;
     #endregion
 
     #region Collection
     public static Action OnChangeSkinEquip;
-    public static Action<TypeSkinCollection> OnSelectSkin;
 
     #endregion
 

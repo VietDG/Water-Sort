@@ -21,7 +21,7 @@ public class BoosterAddTube : BoosterController
 
     public void OnClickAddTube()
     {
-        if (!GameManager.Instance._controller.isMoving()) return;
+        if (!GameManager.Instance.controller.isMoving()) return;
         if (PlayerData.UserData.BoosterAddTube > 0)
         {
             ActionEvent.OnUserBoosterAddTube?.Invoke();

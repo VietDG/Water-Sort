@@ -8,7 +8,9 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 {
     [Header("~~~DATA~~~")]
     public DataWaterSO _dataWaterSO;
-    public GameController _controller;
+    public GameController controller;
+    public TopDataSO topDataSO;
+    public BgDataSO bgDataSO;
     [field: SerializeField] public Level Level { get; private set; }
     public DataManager Datamanager { get; private set; }
     private UserData _userData;
@@ -38,6 +40,18 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         return _dataWaterSO;
     }
 
+    public Sprite getTop()
+    {
+        int id = CollectionData.ShopData.getItemEquip(TypeSkinCollection.Ball).Index;
+        return topDataSO.getTop(id);
+    }
+
+    public Sprite getBG()
+    {
+        int id = CollectionData.ShopData.getItemEquip(TypeSkinCollection.Theme).Index;
+        return bgDataSO.getBG(id);
+    }
+
     public void Win()
     {
         _userData.UpdateHighestLevel();
@@ -53,7 +67,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     public void OnClickRestart()
     {
-        if (!_controller.isMoving()) return;
+        if (!controller.isMoving()) return;
         ActionEvent.OnResetGamePlay?.Invoke();
     }
 }

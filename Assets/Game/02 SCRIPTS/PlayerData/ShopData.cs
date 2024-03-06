@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class ShopData
 {
-    public List<UserItemCollection> TubeDatas = new List<UserItemCollection>();
+    // public List<UserItemCollection> TubeDatas = new List<UserItemCollection>();
     public List<UserItemCollection> BallDatas = new List<UserItemCollection>();
     public List<UserItemCollection> ThemeDatas = new List<UserItemCollection>();
 
@@ -28,8 +28,6 @@ public class ShopData
     {
         switch (type)
         {
-            case TypeSkinCollection.Tube:
-                return TubeDatas;
             case TypeSkinCollection.Ball:
                 return BallDatas;
             case TypeSkinCollection.Theme:

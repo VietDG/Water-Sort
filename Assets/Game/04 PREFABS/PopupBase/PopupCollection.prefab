@@ -213,7 +213,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4757902482484104226
 RectTransform:
   m_ObjectHideFlags: 0
@@ -598,20 +598,18 @@ MonoBehaviour:
   showAnimationClip: {fileID: 0}
   hideAnimationClip: {fileID: 0}
   atlasBG: {fileID: 4343727234628468602, guid: 907cee4ee35878b46afd3f8f6d54f8f8, type: 2}
-  atlasBall: {fileID: 4343727234628468602, guid: 303f22aa8b955024393e1a01215c7cd1, type: 2}
+  atlasBall: {fileID: 4343727234628468602, guid: ebbf9a9827925fb42afb9af53dbe0876, type: 2}
   atlasTube: {fileID: 4343727234628468602, guid: b91b7ea687aaeed4ca2d523c7612ffb0, type: 2}
-  _tubeDataSO: {fileID: 11400000, guid: 2544e8005458264458480de30f1d61c8, type: 2}
+  _tubeDataSO: {fileID: 0}
   _ballDataSO: {fileID: 11400000, guid: 7095935e72871434997802463a8dfdae, type: 2}
   _themeDataSo: {fileID: 11400000, guid: 2cdbf230eaafc484ab1ed552b63fdf9a, type: 2}
   _itemTubePrefab: {fileID: 3373862526799238187, guid: b48cac68bc2c214489c046bcc908cbcb, type: 3}
   _itemBallPrefab: {fileID: 5254207798716023268, guid: ac732c46b03a33148845ce5eb5c69fa7, type: 3}
   _itemThemePrefab: {fileID: 8318146089259745056, guid: e41e24728bc61b34b90ba82ff365d4d3, type: 3}
   _tabTrans:
-  - {fileID: 7082358674540548557}
   - {fileID: 8896821013444478547}
   - {fileID: 4192428375102221240}
   _btnTrans:
-  - {fileID: 5007737664027340822}
   - {fileID: 8158791724183731115}
   - {fileID: 8407425482819985506}
   spr: {fileID: 1340583984, guid: 97153f39b547ffe4ebf8c511c78e0824, type: 3}
@@ -940,7 +938,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4247269070876933943
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1121,7 +1119,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 326, y: -115}
+  m_AnchoredPosition: {x: 164, y: -115}
   m_SizeDelta: {x: 277, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1169063911206211567
@@ -1213,7 +1211,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1557,7 +1555,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 72}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &3712078990244035173
 MonoBehaviour:
@@ -1776,7 +1774,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -115}
+  m_AnchoredPosition: {x: -162, y: -115}
   m_SizeDelta: {x: 277, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8158791724183731112
@@ -1807,7 +1805,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -248365943, guid: 8983207ac9b4af143872cd7190bf195b, type: 3}
+  m_Sprite: {fileID: 1340583984, guid: 97153f39b547ffe4ebf8c511c78e0824, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1868,7 +1866,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

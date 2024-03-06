@@ -8,10 +8,9 @@ public class PopupCollection : SingletonPopup<PopupCollection>
 {
     [Header("Data Input")]
     [SerializeField] SpriteAtlas atlasBG;
-    [SerializeField] SpriteAtlas atlasBall, atlasTube;
-    [SerializeField] CollectionSkinDataSO _tubeDataSO, _ballDataSO, _themeDataSo;
+    [SerializeField] SpriteAtlas atlasBall;
+    [SerializeField] CollectionSkinDataSO /*/*_tubeDataSO*/ _ballDataSO, _themeDataSo;
     [Header("REFFERENCE")]
-    [SerializeField] ItemCollection _itemTubePrefab;
     [SerializeField] ItemCollection _itemBallPrefab, _itemThemePrefab;
     [SerializeField] Transform[] _tabTrans;
     [SerializeField] TabButtonBase[] _btnTrans;
@@ -26,7 +25,7 @@ public class PopupCollection : SingletonPopup<PopupCollection>
     private void Start()
     {
         Init();
-        OnClickCollection((int)TypeSkinCollection.Tube);
+        OnClickCollection(0);
     }
 
     public void Close()
@@ -36,26 +35,26 @@ public class PopupCollection : SingletonPopup<PopupCollection>
 
     public void Init()
     {
-        for (int i = 0; i < atlasTube.spriteCount; i++)
-        {
-            ItemCollection item = Instantiate(_itemTubePrefab, _tabTrans[0]);
+        //for (int i = 0; i < atlasTube.spriteCount; i++)
+        //{
+        //    ItemCollection item = Instantiate(_itemTubePrefab, _tabTrans[0]);
 
-            DataItemSkin data = new DataItemSkin(i, i < 4 ? 0 : 200 * i, _tubeDataSO.dataItemSkins[i].LevelUnlock);
-            item.Init(data, atlasTube.GetSprite($"Bottle{i + 1:00}"));
-        }
+        //    DataItemSkin data = new DataItemSkin(i, i < 4 ? 0 : 200 * i, _tubeDataSO.dataItemSkins[i].LevelUnlock);
+        //    item.Init(data, atlasTube.GetSprite($"Bottle{i + 1:00}"));
+        //}
 
         for (int i = 0; i < atlasBall.spriteCount; i++)
         {
-            ItemCollection item = Instantiate(_itemBallPrefab, _tabTrans[1]);
+            ItemCollection item = Instantiate(_itemBallPrefab, _tabTrans[0]);
             DataItemSkin data = new DataItemSkin(i, i < 6 ? 0 : 150 * i, _ballDataSO.dataItemSkins[i].LevelUnlock);
             item.Init(data, atlasBall.GetSprite($"top" + $"{i + 1:00}"));
         }
 
         for (int i = 0; i < atlasBG.spriteCount; i++)
         {
-            ItemCollection item = Instantiate(_itemThemePrefab, _tabTrans[2]);
+            ItemCollection item = Instantiate(_itemThemePrefab, _tabTrans[1]);
             DataItemSkin data = new DataItemSkin(i, i < 5 ? 0 : 100 * i, _themeDataSo.dataItemSkins[i].LevelUnlock);
-            item.Init(data, atlasBG.GetSprite($"BG{i + 1:00}"));
+            item.Init(data, atlasBG.GetSprite($"BG_{i + 1:00}"));
         }
     }
 

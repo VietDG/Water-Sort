@@ -127,7 +127,7 @@ public class ItemCollection : MonoBehaviour
         _isEquip = true;
         iconReceive.SetActive(true);
         CollectionData.ShopData.EquipItem(type, dataBall.Index, _isEquip);
-        ActionEvent.OnSelectSkin?.Invoke(type);
+        ActionEvent.OnSetSkin?.Invoke(type);
     }
 
     public void OnClickBuyWithCoin()
@@ -142,7 +142,7 @@ public class ItemCollection : MonoBehaviour
                 _isEquip = true;
                 CollectionData.ShopData.BuyItem(type, dataBall.Index);
                 DisplayItemUnlock();
-                ActionEvent.OnSelectSkin?.Invoke(type);
+                ActionEvent.OnSetSkin?.Invoke(type);
             }
             else
             {
@@ -153,32 +153,31 @@ public class ItemCollection : MonoBehaviour
 
     public void OnClickBuyWithAds()
     {
-        bool _isShow = false;
-        AdsManager.Instance.ShowRewardedAd(() =>
-        {
-            _isShow = true;
-        }, () =>
-        {
-            if (_isShow)
-            {
-                ActionEvent.OnChangeSkinEquip?.Invoke();
-                _isUnlock = true;
-                _isEquip = true;
-                CollectionData.ShopData.BuyItem(type, dataBall.Index);
-                DisplayItemUnlock();
-                ActionEvent.OnSelectSkin?.Invoke(type);
-            }
-            else
-            {
-                ActionEvent.OnShowToast?.Invoke(Const.KEY_ERROR_ADS);
-            }
-        });
+        //bool _isShow = false;
+        //AdsManager.Instance.ShowRewardedAd(() =>
+        //{
+        //    _isShow = true;
+        //}, () =>
+        //{
+        //    if (_isShow)
+        //    {
+        ActionEvent.OnChangeSkinEquip?.Invoke();
+        _isUnlock = true;
+        _isEquip = true;
+        CollectionData.ShopData.BuyItem(type, dataBall.Index);
+        DisplayItemUnlock();
+        ActionEvent.OnSetSkin?.Invoke(type);
+        //    }
+        //    else
+        //    {
+        //        ActionEvent.OnShowToast?.Invoke(Const.KEY_ERROR_ADS);
+        //    }
+        //});
     }
 }
 
 public enum TypeSkinCollection
 {
-    Tube = 0,
-    Theme = 1,
-    Ball = 2,
+    Ball = 1,
+    Theme = 2,
 }

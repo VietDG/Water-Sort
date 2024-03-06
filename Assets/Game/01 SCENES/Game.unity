@@ -2098,7 +2098,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c9699a31180063948a6491427fc76104, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 277da96f14597bc42be6f0380c1da950, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2878,7 +2878,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   preInstantiate: 0
   _dataWaterSO: {fileID: 11400000, guid: e20a9c0ada8ab8d4494f51923f1acb14, type: 2}
-  _controller: {fileID: 18984623}
+  controller: {fileID: 18984623}
+  topDataSO: {fileID: 11400000, guid: 9073c174d40c06247b7793c11d96cec8, type: 2}
+  bgDataSO: {fileID: 11400000, guid: 36cbfd0d4dd809c46b662150e16ae382, type: 2}
   <Level>k__BackingField:
     level: 0
     tube: 0

@@ -19,19 +19,19 @@ public class CollectionData : MonoBehaviour
     {
         if (!PlayerPrefs.HasKey(Const.KEY_USER_COLLECTION_DATA))
         {
-            for (int i = 0; i < 10; i++)
-            {
-                UserItemCollection item;
-                if (i == 0)
-                {
-                    item = new UserItemCollection(i, true, true);
-                }
-                else
-                {
-                    item = new UserItemCollection(i, false, false);
-                }
-                ShopData.TubeDatas.Add(item);
-            }
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    UserItemCollection item;
+            //    if (i == 0)
+            //    {
+            //        item = new UserItemCollection(i, true, true);
+            //    }
+            //    else
+            //    {
+            //        item = new UserItemCollection(i, false, false);
+            //    }
+            //    ShopData.TubeDatas.Add(item);
+            //}
 
             for (int i = 0; i < 10; i++)
             {

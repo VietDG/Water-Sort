@@ -1,1 +1,1 @@
-{"HighestLevel":1,"Coin":20,"ValueToRate":0,"BoosterBack":5,"BoosterAddTube":1,"CurrentRewardValue":0,"RewardValueMax":0}
+{"HighestLevel":0,"Coin":20,"ValueToRate":0,"BoosterBack":5,"BoosterAddTube":1,"CurrentRewardValue":0,"RewardValueMax":0}

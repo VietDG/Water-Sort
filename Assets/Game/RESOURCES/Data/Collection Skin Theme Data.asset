@@ -39,7 +39,7 @@ MonoBehaviour:
     LevelUnlock: 75
   - Index: 6
     Type: 1
-    Price: 1
+    Price: 0
     LevelUnlock: 90
   - Index: 7
     Type: 1
@@ -47,5 +47,17 @@ MonoBehaviour:
     LevelUnlock: 105
   - Index: 8
     Type: 1
-    Price: 1
+    Price: 0
     LevelUnlock: 120
+  - Index: 9
+    Type: 1
+    Price: 0
+    LevelUnlock: 135
+  - Index: 10
+    Type: 1
+    Price: 1
+    LevelUnlock: 150
+  - Index: 11
+    Type: 1
+    Price: 1
+    LevelUnlock: 160
