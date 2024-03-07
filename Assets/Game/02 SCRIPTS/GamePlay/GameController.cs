@@ -374,6 +374,7 @@ public class GameController : MonoBehaviour
     private void AddPrevTube(BottleController from, BottleController to)
     {
         _prevTube.Add(new KeyValuePair<BottleController, BottleController>(from, to));
+        Debug.LogError($"{from}" + $"{to}");
     }
 
     #region Booster
@@ -391,13 +392,13 @@ public class GameController : MonoBehaviour
                 _holdingBottle = null;
             }
 
-            List<WaterData> moveBalls = new List<WaterData>();
+            //   List<WaterData> moveBalls = new List<WaterData>();
             int cd = 1;
             for (int i = _prevTube.Count - 1; i >= 0; i--)
             {
                 BottleController first = _prevTube[i].Value;
                 BottleController second = _prevTube[i].Key;
-                moveBalls.Add(first.GetWaterData());
+                //  moveBalls.Add(first.GetWaterData());
                 second.datawaterColor.waterDa.Add(first.GetWaterData());
                 first.datawaterColor.waterDa.Remove(first.GetWaterData());
 
@@ -410,7 +411,7 @@ public class GameController : MonoBehaviour
             }
             // from.ChangeState(StateTube.Active);
             // to.ChangeState(StateTube.Active);
-            for (int i = 0; i < moveBalls.Count; i++)
+            for (int i = 0; i < _prevTube.Count; i++)
             {
 
                 //  to.ChangeState(StateTube.Deactive);
