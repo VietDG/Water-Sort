@@ -12,18 +12,24 @@ public class DataManager : SingletonMonoBehaviour<DataManager>
         if (pause)
         {
             Debug.Log("Is Pause Game");
-            PlayerData.SaveUserData();
+            SaveAllData();
         }
     }
 
     private void OnApplicationQuit()
     {
         Debug.Log("Is Quit Game");
-        PlayerData.SaveUserData();
+        //   SaveAllData();
     }
     #endregion
 
     #region Public Method
+    public void SaveAllData()
+    {
+        PlayerData.SaveUserData();
+        CollectionData.SaveData();
+    }
+
 
     #endregion
 }

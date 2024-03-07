@@ -153,31 +153,31 @@ public class ItemCollection : MonoBehaviour
 
     public void OnClickBuyWithAds()
     {
-        //bool _isShow = false;
-        //AdsManager.Instance.ShowRewardedAd(() =>
-        //{
-        //    _isShow = true;
-        //}, () =>
-        //{
-        //    if (_isShow)
-        //    {
-        ActionEvent.OnChangeSkinEquip?.Invoke();
-        _isUnlock = true;
-        _isEquip = true;
-        CollectionData.ShopData.BuyItem(type, dataBall.Index);
-        DisplayItemUnlock();
-        ActionEvent.OnSetSkin?.Invoke(type);
-        //    }
-        //    else
-        //    {
-        //        ActionEvent.OnShowToast?.Invoke(Const.KEY_ERROR_ADS);
-        //    }
-        //});
+        bool _isShow = false;
+        AdsManager.Instance.ShowRewardedAd(() =>
+        {
+            _isShow = true;
+        }, () =>
+        {
+            if (_isShow)
+            {
+                ActionEvent.OnChangeSkinEquip?.Invoke();
+                _isUnlock = true;
+                _isEquip = true;
+                CollectionData.ShopData.BuyItem(type, dataBall.Index);
+                DisplayItemUnlock();
+                ActionEvent.OnSetSkin?.Invoke(type);
+            }
+            else
+            {
+                ActionEvent.OnShowToast?.Invoke(Const.KEY_ERROR_ADS);
+            }
+        });
     }
 }
 
 public enum TypeSkinCollection
 {
-    Ball = 1,
-    Theme = 2,
+    Ball = 0,
+    Theme = 1,
 }

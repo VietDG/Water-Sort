@@ -30,9 +30,9 @@ public class IAPPacks : MonoBehaviour
 
         if (pd != null)
         {
-            IAPManager.Instance.BuyProductId(packId, delegate (object res, object pr)
+            IAPManager.Instance.BuyProductId(packId, (res, pd) =>
             {
-                if ((bool)res)
+                if (res)
                 {
                     //[!] Mua thành công
 

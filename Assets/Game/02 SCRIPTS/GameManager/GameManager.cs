@@ -61,7 +61,8 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         ActionEvent.OnNextLevel?.Invoke();
         FunctionCommon.DelayTime(2f, () =>
         {
-            ActionEvent.OnResetGamePlay?.Invoke();
+            // ActionEvent.OnResetGamePlay?.Invoke();
+            PopupWin.Instance.Show();
         });
     }
 

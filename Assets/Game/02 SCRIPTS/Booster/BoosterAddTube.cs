@@ -29,7 +29,22 @@ public class BoosterAddTube : BoosterController
         }
         else
         {
-            Debug.LogError("Show Ads");
+            bool _isShow = false;
+            AdsManager.Instance.ShowRewardedAd(() =>
+            {
+                _isShow = true;
+            }, () =>
+            {
+                if (_isShow)
+                {
+                    PlayerData.UserData.BoosterAddTube.RefIntCrementWithAmount(5);
+                    UpdateQuality();
+                }
+                else
+                {
+                    ActionEvent.OnShowToast?.Invoke(Const.KEY_ERROR_ADS);
+                }
+            });
         }
     }
 

@@ -709,6 +709,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MainModule_get_duration_mDCB80E6BD3B6B2
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MainModule_get_loop_Injected_mB2E11A7A29523C771FC0A9D2A4C061B25716E3F9 (MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9* ___0__unity_self, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.ParticleSystem/MainModule::get_loop()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MainModule_get_loop_m4F75CD377C0555635995F7C1F8D580517473EDF8 (MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.ParticleSystem/MainModule::set_loop_Injected(UnityEngine.ParticleSystem/MainModule&,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainModule_set_loop_Injected_mF673B0C6B2194F3C5FD0DCAB438350685E5CE815 (MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9* ___0__unity_self, bool ___1_value, const RuntimeMethod* method) ;
+// System.Void UnityEngine.ParticleSystem/MainModule::set_loop(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainModule_set_loop_mB3FC83A6DA8D248D15C53388D6B9B7711ADD89BE (MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.ParticleSystem/MainModule::get_prewarm_Injected(UnityEngine.ParticleSystem/MainModule&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MainModule_get_prewarm_Injected_m7B17EFC0A2D51E04E264EE33B4E5B93F45718C12 (MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9* ___0__unity_self, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.ParticleSystem/MainModule::get_prewarm()
@@ -1250,6 +1254,22 @@ IL2CPP_EXTERN_C  bool MainModule_get_loop_m4F75CD377C0555635995F7C1F8D580517473E
 	_returnValue = MainModule_get_loop_m4F75CD377C0555635995F7C1F8D580517473EDF8(_thisAdjusted, method);
 	return _returnValue;
 }
+// System.Void UnityEngine.ParticleSystem/MainModule::set_loop(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainModule_set_loop_mB3FC83A6DA8D248D15C53388D6B9B7711ADD89BE (MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = ___0_value;
+		MainModule_set_loop_Injected_mF673B0C6B2194F3C5FD0DCAB438350685E5CE815(__this, L_0, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void MainModule_set_loop_mB3FC83A6DA8D248D15C53388D6B9B7711ADD89BE_AdjustorThunk (RuntimeObject* __this, bool ___0_value, const RuntimeMethod* method)
+{
+	MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9*>(__this + _offset);
+	MainModule_set_loop_mB3FC83A6DA8D248D15C53388D6B9B7711ADD89BE(_thisAdjusted, ___0_value, method);
+}
 // System.Boolean UnityEngine.ParticleSystem/MainModule::get_prewarm()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MainModule_get_prewarm_m2B4B37F0B20CA2FDAB53315FC47E8FDCF3BBCD72 (MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9* __this, const RuntimeMethod* method) 
 {
@@ -1341,6 +1361,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MainModule_get_loop_Injected_mB2E11A7A29
 	_il2cpp_icall_func = (MainModule_get_loop_Injected_mB2E11A7A29523C771FC0A9D2A4C061B25716E3F9_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ParticleSystem/MainModule::get_loop_Injected(UnityEngine.ParticleSystem/MainModule&)");
 	bool icallRetVal = _il2cpp_icall_func(___0__unity_self);
 	return icallRetVal;
+}
+// System.Void UnityEngine.ParticleSystem/MainModule::set_loop_Injected(UnityEngine.ParticleSystem/MainModule&,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainModule_set_loop_Injected_mF673B0C6B2194F3C5FD0DCAB438350685E5CE815 (MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9* ___0__unity_self, bool ___1_value, const RuntimeMethod* method) 
+{
+	typedef void (*MainModule_set_loop_Injected_mF673B0C6B2194F3C5FD0DCAB438350685E5CE815_ftn) (MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9*, bool);
+	static MainModule_set_loop_Injected_mF673B0C6B2194F3C5FD0DCAB438350685E5CE815_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (MainModule_set_loop_Injected_mF673B0C6B2194F3C5FD0DCAB438350685E5CE815_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ParticleSystem/MainModule::set_loop_Injected(UnityEngine.ParticleSystem/MainModule&,System.Boolean)");
+	_il2cpp_icall_func(___0__unity_self, ___1_value);
 }
 // System.Boolean UnityEngine.ParticleSystem/MainModule::get_prewarm_Injected(UnityEngine.ParticleSystem/MainModule&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MainModule_get_prewarm_Injected_m7B17EFC0A2D51E04E264EE33B4E5B93F45718C12 (MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9* ___0__unity_self, const RuntimeMethod* method) 

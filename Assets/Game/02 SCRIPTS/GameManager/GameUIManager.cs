@@ -13,6 +13,8 @@ public class GameUIManager : SingletonMonoBehaviour<GameUIManager>
     public override void Awake()
     {
         ActionEvent.OnResetGamePlay += DisPlayLevelText;
+
+        ActionEvent.OnSetSkin += DisPlayTheme;
     }
 
     private void Start()
@@ -23,18 +25,18 @@ public class GameUIManager : SingletonMonoBehaviour<GameUIManager>
     private void OnDestroy()
     {
         ActionEvent.OnResetGamePlay -= DisPlayLevelText;
+        ActionEvent.OnSetSkin -= DisPlayTheme;
     }
 
     private void DisPlayLevelText()
     {
         _levelTxt.text = $"{PlayerData.UserData.HighestLevel + 1:00}";
-        DisPlayTheme(TypeSkinColect.Theme);
-
+        DisPlayTheme(TypeSkinCollection.Theme);
     }
 
-    private void DisPlayTheme(TypeSkinColect type)
+    private void DisPlayTheme(TypeSkinCollection type)
     {
-        if (type.Equals(TypeSkinColect.Theme))
+        if (type.Equals(TypeSkinCollection.Theme))
         {
             _bg.sprite = GameManager.Instance.getBG();
         }
@@ -46,9 +48,3 @@ public class GameUIManager : SingletonMonoBehaviour<GameUIManager>
     }
 }
 
-public enum TypeSkinColect
-{
-    Tube = 0,
-    Theme = 1,
-    Ball = 2,
-}

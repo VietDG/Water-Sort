@@ -11,9 +11,9 @@ public class PopupWin : SingletonPopup<PopupWin>
 {
     [Header("REFFERENCE")]
     [SerializeField] RewardDataSO _rewardDataSO;
-    [SerializeField] CollectionSkinDataSO _tubeDataSO, _ballDataSO, _themeDataSO;
+    [SerializeField] CollectionSkinDataSO /*_tubeDataSO*/ _ballDataSO, _themeDataSO;
     [SerializeField] SpriteAtlas atlasBG;
-    [SerializeField] SpriteAtlas atlasBall/*, atlasTube*/;
+    [SerializeField] SpriteAtlas atlasBall /*atlasTube*/;
     [SerializeField] Progress _processReward;
     [SerializeField] Progress _processUnlockSkin;
     [SerializeField] Image _chestImg, _skinUnlockImg;
@@ -30,7 +30,7 @@ public class PopupWin : SingletonPopup<PopupWin>
 
     public void Show()
     {
-        base.canCloseWithOverlay = true;
+        //  base.canCloseWithOverlay = true;
         DisplayUI();
         base.Show(() =>
         {
@@ -51,10 +51,9 @@ public class PopupWin : SingletonPopup<PopupWin>
 
     public void OnClickNextLevel()
     {
-        // GameController.Instance.OnClickRestart();
+        ActionEvent.OnResetGamePlay?.Invoke();
         base.Hide(() =>
         {
-            ActionEvent.OnResetGamePlay?.Invoke();
             //if (GameManager.Instance.Level.level % 5 == 0 && PlayerData.UserData.ValueToRate <= 0)
             //{
             //    PopupCallToRate.Instance.Show();
@@ -134,7 +133,7 @@ public class PopupWin : SingletonPopup<PopupWin>
 
         _processUnlockSkin.UpdateProcess(valueMin, valueMax);
 
-        //   _skinUnlockImg.sprite = getIconSkin(_DataItemSkin.Type, _DataItemSkin.Index);
+        _skinUnlockImg.sprite = getIconSkin(_DataItemSkin.Type, _DataItemSkin.Index);
     }
 
     private void CallProcessUnlockSkin()
@@ -165,17 +164,17 @@ public class PopupWin : SingletonPopup<PopupWin>
     {
         List<DataItemSkin> list = new List<DataItemSkin>();
 
-        foreach (var tube in _tubeDataSO.dataItemSkins)
-        {
-            if (tube.LevelUnlock <= 0 || tube.Price > 0) continue;
+        //foreach (var tube in _tubeDataSO.dataItemSkins)
+        //{
+        //    if (tube.LevelUnlock <= 0 || tube.Price > 0) continue;
 
-            if (PlayerData.UserData.HighestLevel - 1 < tube.LevelUnlock)
-            {
-                list.Add(tube);
-                //  Debug.Log($"level Unlock Tube: {tube.LevelUnlock} ");
-                break;
-            }
-        }
+        //    if (PlayerData.UserData.HighestLevel - 1 < tube.LevelUnlock)
+        //    {
+        //        list.Add(tube);
+        //        //  Debug.Log($"level Unlock Tube: {tube.LevelUnlock} ");
+        //        break;
+        //    }
+        //}
         foreach (var ball in _ballDataSO.dataItemSkins)
         {
             if (ball.LevelUnlock <= 0 || ball.Price > 0) continue;
@@ -218,20 +217,18 @@ public class PopupWin : SingletonPopup<PopupWin>
         return tmp;
     }
 
-    //private Sprite getIconSkin(TypeSkinCollection type, int id)
-    //{
-    //    //switch (type)
-    //    //{
-    //    //    case TypeSkinCollection.Tube:
-    //    //        return atlasTube.GetSprite($"Ui_Rewards_Icon_Card_{id + 1:00}");
-    //    //    case TypeSkinCollection.Ball:
-    //    //        return atlasBall.GetSprite($"Ui_Shop_Ball{id + 1:00}");
-    //    //    case TypeSkinCollection.Theme:
-    //    //        return atlasBG.GetSprite($"Ui_Shop_Theme{id + 1:00}_B");
-    //    //    default:
-    //    //        return null;
-    //    //}
-    //}
+    private Sprite getIconSkin(TypeSkinCollection type, int id)
+    {
+        switch (type)
+        {
+            case TypeSkinCollection.Ball:
+                return atlasBall.GetSprite($"top{id + 1:00}");
+            case TypeSkinCollection.Theme:
+                return atlasBG.GetSprite($"BG_{id + 1:00}");
+            default:
+                return null;
+        }
+    }
 
     private void DisplayButton(bool value)
     {
@@ -257,6 +254,6 @@ public class PopupWin : SingletonPopup<PopupWin>
 
     public void ShowPopupUnlockSkin()
     {
-        //   PopupUnlockSkin.Instance.Show(_DataItemSkin, _skinUnlockImg.sprite);
+        PopupUnlockSkin.Instance.Show(_DataItemSkin, _skinUnlockImg.sprite);
     }
 }

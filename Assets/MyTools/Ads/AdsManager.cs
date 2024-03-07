@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class AdsManager : SingletonMonoBehaviour<AdsManager>
 {
     [Header("---SDK ID---")]
@@ -12,14 +13,13 @@ public class AdsManager : SingletonMonoBehaviour<AdsManager>
     public string rewardID;
     int retryAttempt;
 
-    public Action actionClose, actionClaim;
-
-    private Action actionCloseBanner;
-    private float adCloseInterDelayTime = 0f;
+    private Action actionCloseInter;
+    private Action actionCloseReward, actionClaimReward;
 
     private DateTime? lastTime = null;
-    bool timeShowAds => lastTime == null ? true : (DateTime.Now - lastTime)?.TotalSeconds > 45 /* inter ad tần suất (s)*/;
+    bool timeShowAds => lastTime == null ? true : (DateTime.Now - lastTime)?.TotalSeconds > AppConfig.Instance.InterFrequencyTime /* inter ad tần suất (s)*/;
     public bool isShowBanner;
+    public bool CanLoadAds;
 
     public override void Awake()
     {
@@ -54,25 +54,25 @@ public class AdsManager : SingletonMonoBehaviour<AdsManager>
         MaxSdkCallbacks.OnSdkInitializedEvent += (MaxSdkBase.SdkConfiguration sdkConfiguration) =>
         {
             // AppLovin SDK is initialized, start loading ads   
+            this.CanLoadAds = true;
         };
 
         MaxSdk.SetSdkKey(sdkID);
         MaxSdk.SetUserId("USER_ID");
         MaxSdk.InitializeSdk();
-        //   Debug.Log("Ads ");
+
         InitializeBannerAds();
         InitializeInterstitialAds();
         InitializeRewardedAds();
         InitializeAd_impression();
-
-        // Load the first rewarded ad
     }
+
     #region InitBanner
     public void InitializeBannerAds()
     {
         // Banners are automatically sized to 320×50 on phones and 728×90 on tablets
         // You may call the utility method MaxSdkUtils.isTablet() to help with view sizing adjustments
-        MaxSdk.CreateBanner(bannerID, MaxSdkBase.BannerPosition.TopCenter);
+        MaxSdk.CreateBanner(bannerID, MaxSdkBase.BannerPosition.BottomCenter);
 
         // Set background or background color for banners to be fully functional
         //    MaxSdk.SetBannerBackgroundColor(bannerAdUnitId, Color.black);
@@ -112,7 +112,8 @@ public class AdsManager : SingletonMonoBehaviour<AdsManager>
 
     public void ShowBanner()
     {
-        if (!GlobalSetting.NetWorkRequirements()) return;
+        if (!GlobalSetting.NetWorkRequirements() || PlayerData.UserData.HighestLevel + 1 < AppConfig.Instance.BannerAdLevel) return;
+
         MaxSdk.ShowBanner(bannerID);
         isShowBanner = true;
         // GlobalEventManager.Instance.AdBannerTimes();
@@ -174,24 +175,18 @@ public class AdsManager : SingletonMonoBehaviour<AdsManager>
 
     private void OnInterstitialHiddenEvent(string adUnitId, MaxSdkBase.AdInfo adInfo)
     {
-        //canShowOpenAd = false;
-        FunctionCommon.DelayTime(adCloseInterDelayTime, (() =>
-        {
-            actionCloseBanner?.Invoke();
-        }));
+        actionCloseInter?.Invoke();
+        actionCloseInter = null;
         // Interstitial ad is hidden. Pre-load the next ad.
         LoadInterstitial();
         lastTime = DateTime.Now;
 
-        // GlobalEventManager.Instance.OnCloseInterstitial();
+        GlobalEventManager.OnCloseInterstitial();
     }
 
-    public void ShowInterstitial(Action Close_CallBack = null, float nextActionDelay = 0f)
+    public void ShowInterstitial(Action Close_CallBack = null)
     {
-        // Debug.LogError($"FirtTime: {lastTime}");
-        // Debug.LogError((DateTime.Now - lastTime)?.TotalSeconds);
-        //  Debug.LogError($"{ PlayerData.Instance.HighestLevel <= AppConfig.Instance.INITIAL_INTER_AD_LEVEL }, {timeShowAds}");
-        if (!NetworkRequirement() /*|| !timeShowAds*/)
+        if (!NetworkRequirement() || !timeShowAds || PlayerData.UserData.HighestLevel < AppConfig.Instance.InterAdLevel)
         {
             // Debug.LogError("Dont show ads");
             Close_CallBack?.Invoke();
@@ -199,17 +194,18 @@ public class AdsManager : SingletonMonoBehaviour<AdsManager>
         }
         if (MaxSdk.IsInterstitialReady(interstitialID))
         {
-            adCloseInterDelayTime = nextActionDelay;
-            actionCloseBanner = Close_CallBack;
-            MaxSdk.ShowInterstitial(interstitialID);
+            GlobalSetting.Instance.ShowLoadingAd(() =>
+            {
+                actionCloseInter = Close_CallBack;
+                MaxSdk.ShowInterstitial(interstitialID);
 
-            //  GlobalEventManager.Instance.AdIntertitialTimes();
+                GlobalEventManager.OnShowInterstitial();
+            });
         }
         else
         {
             Close_CallBack?.Invoke();
         }
-        //  GlobalEventManager.Instance.OnShowInterstitial();
     }
     #endregion
 
@@ -266,23 +262,20 @@ public class AdsManager : SingletonMonoBehaviour<AdsManager>
 
     private void OnRewardedAdHiddenEvent(string adUnitId, MaxSdkBase.AdInfo adInfo)
     {
-        //  canShowOpenAd = false;
         // Rewarded ad is hidden. Pre-load the next ad
-        //  Debug.Log("Rewarded close");
-        actionClose?.Invoke();
-        actionClose = null;
+        actionCloseReward?.Invoke();
+        actionCloseReward = null;
         LoadRewardedAd();
         lastTime = DateTime.Now;
-        // GlobalEventManager.Instance.AdRewardedTimes();
     }
 
     private void OnRewardedAdReceivedRewardEvent(string adUnitId, MaxSdk.Reward reward, MaxSdkBase.AdInfo adInfo)
     {
         // The rewarded ad displayed and the user should receive the reward.
-        // Debug.Log("Rewarded run");
-        actionClaim?.Invoke();
-        actionClaim = null;
-        //Debug.LogError(adsLocation);
+        actionClaimReward?.Invoke();
+        actionClaimReward = null;
+
+        GlobalEventManager.OnRewardedComplete(PlayerData.UserData.HighestLevel + 1);
     }
 
     private void OnRewardedAdRevenuePaidEvent(string adUnitId, MaxSdkBase.AdInfo adInfo)
@@ -290,25 +283,27 @@ public class AdsManager : SingletonMonoBehaviour<AdsManager>
         // Ad revenue paid. Use this callback to track user revenue.
     }
 
-    bool rewardedVideoAvailability;
-    string adsLocation;
     public void ShowRewardedAd(Action onClaim, Action onClose, Action onClick = null, string localtion = "")
     {
+        if (!NetworkRequirement())
+        {
+            ActionEvent.OnShowToast?.Invoke(Const.KEY_NO_INTERNET);
+            return;
+        }
+
         if (MaxSdk.IsRewardedAdReady(rewardID))
         {
-            adsLocation = localtion;
             MaxSdk.ShowRewardedAd(rewardID);
-            actionClaim = onClaim;
-            actionClose = onClose;
+            actionClaimReward = onClaim;
+            actionCloseReward = onClose;
 
-            //  GlobalEventManager.Instance.OnShowRewarded();
+            GlobalEventManager.OnShowRewarded(PlayerData.UserData.HighestLevel + 1);
         }
         else
         {
             LoadRewardedAd();
+            ActionEvent.OnShowToast?.Invoke(Const.KEY_CANNOT_LOAD_ADS);
         }
-
-        // GlobalEventManager.Instance.OnShowRewarded();
     }
 
     public static bool NetworkRequirement()
@@ -327,26 +322,55 @@ public class AdsManager : SingletonMonoBehaviour<AdsManager>
 
     private void OnAdRevenuePaidEvent(string adUnitId, MaxSdkBase.AdInfo impressionData)
     {
-        //        double revenue = impressionData.Revenue;
-        //        var impressionParameters = new[] {
-        //        new Firebase.Analytics.Parameter("ad_platform", "AppLovin"),
-        //        new Firebase.Analytics.Parameter("ad_source", impressionData.NetworkName),
-        //        new Firebase.Analytics.Parameter("ad_unit_name", impressionData.AdUnitIdentifier),
-        //        new Firebase.Analytics.Parameter("ad_format", impressionData.AdFormat),
-        //        new Firebase.Analytics.Parameter("value", revenue),
-        //        new Firebase.Analytics.Parameter("currency", "USD"), // All AppLovin revenue is sent in USD
-        //};
-        //        Firebase.Analytics.FirebaseAnalytics.LogEvent("ad_impression", impressionParameters);
+        if (impressionData != null)
+        {
+            Firebase.Analytics.Parameter[] impressionParameters = {
+                new Firebase.Analytics.Parameter("ad_platform", "AppLovin"),
+                new Firebase.Analytics.Parameter("ad_source", impressionData.NetworkName),
+                new Firebase.Analytics.Parameter("ad_unit_name", impressionData.AdUnitIdentifier),
+                new Firebase.Analytics.Parameter("ad_format", impressionData.AdFormat),
+                new Firebase.Analytics.Parameter("value", (double)impressionData.Revenue),
+                new Firebase.Analytics.Parameter("country_code", MaxSdk.GetSdkConfiguration().CountryCode),
+                new Firebase.Analytics.Parameter("currency", "USD"), // All AppLovin revenue is sent in USD
+            };
+            Firebase.Analytics.FirebaseAnalytics.LogEvent("ad_impression", impressionParameters);
+        }
     }
-}
 
-public class AdsEvent
-{
-    public delegate void NoParamEvent();
+    private void OnDestroy()
+    {
+        //Banner
+        MaxSdkCallbacks.Banner.OnAdLoadedEvent -= OnBannerAdLoadedEvent;
+        MaxSdkCallbacks.Banner.OnAdLoadFailedEvent -= OnBannerAdLoadFailedEvent;
+        MaxSdkCallbacks.Banner.OnAdClickedEvent -= OnBannerAdClickedEvent;
+        MaxSdkCallbacks.Banner.OnAdExpandedEvent -= OnBannerAdExpandedEvent;
+        MaxSdkCallbacks.Banner.OnAdCollapsedEvent -= OnBannerAdCollapsedEvent;
 
-    public delegate void BoolEvent(bool result);
+        //Inter
+        MaxSdkCallbacks.Interstitial.OnAdLoadedEvent -= OnInterstitialLoadedEvent;
+        MaxSdkCallbacks.Interstitial.OnAdLoadFailedEvent -= OnInterstitialLoadFailedEvent;
+        MaxSdkCallbacks.Interstitial.OnAdDisplayedEvent -= OnInterstitialDisplayedEvent;
+        MaxSdkCallbacks.Interstitial.OnAdClickedEvent -= OnInterstitialClickedEvent;
+        MaxSdkCallbacks.Interstitial.OnAdHiddenEvent -= OnInterstitialHiddenEvent;
+        MaxSdkCallbacks.Interstitial.OnAdDisplayFailedEvent -= OnInterstitialAdFailedToDisplayEvent;
 
-    public delegate void OneParamsEvent(object param1);
+        //Reward
+        MaxSdkCallbacks.Rewarded.OnAdLoadedEvent -= OnRewardedAdLoadedEvent;
+        MaxSdkCallbacks.Rewarded.OnAdLoadFailedEvent -= OnRewardedAdLoadFailedEvent;
+        MaxSdkCallbacks.Rewarded.OnAdDisplayedEvent -= OnRewardedAdDisplayedEvent;
+        MaxSdkCallbacks.Rewarded.OnAdClickedEvent -= OnRewardedAdClickedEvent;
+        MaxSdkCallbacks.Rewarded.OnAdHiddenEvent -= OnRewardedAdHiddenEvent;
+        MaxSdkCallbacks.Rewarded.OnAdDisplayFailedEvent -= OnRewardedAdFailedToDisplayEvent;
+        MaxSdkCallbacks.Rewarded.OnAdReceivedRewardEvent -= OnRewardedAdReceivedRewardEvent;
 
-    public delegate void TwoParamsEvent(object param1, object param2);
+        //impression
+        MaxSdkCallbacks.Interstitial.OnAdRevenuePaidEvent -= OnAdRevenuePaidEvent;
+        MaxSdkCallbacks.Rewarded.OnAdRevenuePaidEvent -= OnAdRevenuePaidEvent;
+        MaxSdkCallbacks.Banner.OnAdRevenuePaidEvent -= OnAdRevenuePaidEvent;
+        MaxSdkCallbacks.MRec.OnAdRevenuePaidEvent -= OnAdRevenuePaidEvent;
+
+        //Banner
+        //ActionEvent.OnShowBanner -= ShowBanner;
+        //ActionEvent.OnHideBanner -= HideBanner;
+    }
 }

@@ -14,24 +14,32 @@ public class GameController : MonoBehaviour
     public BottleController _holdingBottle;
 
     private GameManager _gameManager;
-    private UserData _userData;
 
     [Header("------------------------------------VALUE--------------------------")]
-    private Camera _camera;
+    public Camera _camera;
     [SerializeField] private float _minCameraSize;
     [SerializeField] private float _maxCameraSize;
     private List<KeyValuePair<BottleController, BottleController>> _prevTube = new List<KeyValuePair<BottleController, BottleController>>();
 
     public void Awake()
     {
+        //   _camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         _gameManager = GameManager.Instance;
-        _userData = PlayerData.UserData;
-        _camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
 
         ActionEvent.OnUserBoosterBack += UserBack;
         ActionEvent.OnResetGamePlay += Reset;
         ActionEvent.OnUserBoosterAddTube += UseAddTube;
         //   Init();
+
+    }
+
+    private void Start()
+    {
+        Init();
+
+
+        Invoke(nameof(InitScreen), 0.01f);
+        // InitScreen();
     }
 
     private void OnDestroy()
@@ -56,12 +64,7 @@ public class GameController : MonoBehaviour
 #endif
     }
 
-    private void Start()
-    {
-        Init();
-        Invoke(nameof(InitScreen), 0.02f);
-        //InitScreen();
-    }
+
 
     private void Init()
     {
@@ -125,6 +128,7 @@ public class GameController : MonoBehaviour
         }
         bottleList.Clear();
         _prevTube.Clear();
+        _cdAddTube = 0;
         _holdingBottle = null;
         Init();
         Invoke(nameof(InitScreen), 0.02f);
@@ -136,9 +140,9 @@ public class GameController : MonoBehaviour
         BottleController bottle = waterObj.GetComponent<BottleController>();
         // bottle.Init(data, index);
 
-        Vector2 target = new Vector2(x * (bottle.weight / 2 + _spaceHorizontal), y);
-
         DataBottle data = new DataBottle(value, dataWater);
+
+        Vector2 target = new Vector2(x * (bottle.weight / 2 + _spaceHorizontal), y);
 
         bottle.InitPos(target, value);
         bottle.Init(data, value);
@@ -208,7 +212,7 @@ public class GameController : MonoBehaviour
             if (_holdingBottle.Equals(newBottle))
             {
                 newBottle.ChangeState(StateTube.Active);
-                newBottle.StartMove(newBottle, false, 0);
+                newBottle.StartMove(newBottle, false);
                 _holdingBottle = null;
             }
             else
@@ -218,7 +222,7 @@ public class GameController : MonoBehaviour
                     if (newBottle.state.Equals(StateTube.Open)) return;
                     _holdingBottle.ChangeState(StateTube.Deactive);
                     newBottle.ChangeState(StateTube.Active);
-                    _holdingBottle.StartMove(_holdingBottle, false, 0);
+                    _holdingBottle.StartMove(_holdingBottle, false);
                     newBottle.StartMove(newBottle, true);
                     _holdingBottle = newBottle;
                 }
@@ -339,11 +343,7 @@ public class GameController : MonoBehaviour
                 }
                 moveBalls.Add(from.datawaterColor.waterDa[i]);
 
-                //  to.bottleColors.Add(from.datawaterColor.waterDa[i].color);
                 from.datawaterColor.waterDa.RemoveAt(i);
-                // from.bottleColors.RemoveAt(i);
-                //from.UpdateStartColor();
-                //to.UpdateStartColor();
 
                 max++;
             }
@@ -387,21 +387,19 @@ public class GameController : MonoBehaviour
             if (_holdingBottle != null)
             {
                 if (to != _holdingBottle)
-                    _holdingBottle.StartMove(_holdingBottle, false, _holdingBottle.datawaterColor.waterDa.Count - 1);
+                    _holdingBottle.StartMove(_holdingBottle, false);
                 _holdingBottle = null;
             }
 
-            int countBall = from.datawaterColor.waterDa.Count;
             List<WaterData> moveBalls = new List<WaterData>();
             int cd = 1;
             for (int i = _prevTube.Count - 1; i >= 0; i--)
             {
-                Debug.LogError(i);
                 BottleController first = _prevTube[i].Value;
                 BottleController second = _prevTube[i].Key;
-                moveBalls.Add(first.GetLastWater());
-                second.datawaterColor.waterDa.Add(first.GetLastWater());
-                first.datawaterColor.waterDa.Remove(first.GetLastWater());
+                moveBalls.Add(first.GetWaterData());
+                second.datawaterColor.waterDa.Add(first.GetWaterData());
+                first.datawaterColor.waterDa.Remove(first.GetWaterData());
 
                 cd++;
                 if (_prevTube.Count == 1 || first.datawaterColor.waterDa.Count <= 0) break;
@@ -410,23 +408,14 @@ public class GameController : MonoBehaviour
                     break;
                 }
             }
-
-            from.ChangeState(StateTube.Active);
-            to.ChangeState(StateTube.Active);
+            // from.ChangeState(StateTube.Active);
+            // to.ChangeState(StateTube.Active);
             for (int i = 0; i < moveBalls.Count; i++)
             {
-                if (i == moveBalls.Count - 1)
-                {
-                    from.ChangeState(StateTube.Deactive);
-                    to.ChangeState(StateTube.Deactive);
-                    from.SetColorBooster();
-                    to.SetColorBooster();
-                }
-                else
-                {
-                    from.SetColorBooster();
-                    to.SetColorBooster();
-                }
+
+                //  to.ChangeState(StateTube.Deactive);
+                from.SetColorBooster();
+                to.SetColorBooster();
 
                 if (_prevTube.Count > 0)
                 {
@@ -438,26 +427,33 @@ public class GameController : MonoBehaviour
         }
         else
         {
-            Debug.Log("Khong co luot de su dung booster");
+            ActionEvent.OnShowToast?.Invoke(Const.KEY_OUT_BOOSTER_REVOKE);
         }
     }
-
+    private int _cdAddTube;
     private void UseAddTube()
     {
         int slotTube = _gameManager.Level.tubeSlot;
         _holdingBottle = null;
-
-        if (bottleList.Count <= _gameManager.Level.tube)
+        if (_cdAddTube < slotTube)
         {
+            //if (bottleList.Count <= _gameManager.Level.tube)
+            //{
             SpawnBottleWater(0f, 0f, 4, new List<WaterData>());
             SortTube(bottleList.Count);
             Invoke(nameof(InitScreen), 0.02f);
+            //}
+            //else
+            //{
+            //    // bottleList[^1].UpdadeTubeBonus();
+            //}
+            _cdAddTube++;
+            PlayerData.UserData.UpdateValueBooster(TypeBooster.Tube, -1);
         }
         else
         {
-            Debug.LogError("da du canh");
+            ActionEvent.OnShowToast?.Invoke(Const.KEY_OUT_BOOSTER_ADD_TUBE);
         }
-        PlayerData.UserData.UpdateValueBooster(TypeBooster.Tube, -1);
     }
 
     public bool isMoving()

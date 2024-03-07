@@ -4113,6 +4113,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2_set_Item_mEF309880B9
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Mathf::Clamp01(System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Vector2::Scale(UnityEngine.Vector2)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2_Scale_mEACE26803ED193717CE821462D85F1CA0573C051_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_scale, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Vector2::get_magnitude()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector2_get_magnitude_m5C59B4056420AEFDB291AD0914A3F675330A75CE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, const RuntimeMethod* method) ;
 // UnityEngine.Vector2 UnityEngine.Vector2::op_Division(UnityEngine.Vector2,System.Single)
@@ -9494,6 +9496,28 @@ IL_0023:
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_9 = V_0;
 		return L_9;
 	}
+}
+// System.Void UnityEngine.Vector2::Scale(UnityEngine.Vector2)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vector2_Scale_mEACE26803ED193717CE821462D85F1CA0573C051 (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_scale, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = __this->___x_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1 = ___0_scale;
+		float L_2 = L_1.___x_0;
+		__this->___x_0 = ((float)il2cpp_codegen_multiply(L_0, L_2));
+		float L_3 = __this->___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4 = ___0_scale;
+		float L_5 = L_4.___y_1;
+		__this->___y_1 = ((float)il2cpp_codegen_multiply(L_3, L_5));
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void Vector2_Scale_mEACE26803ED193717CE821462D85F1CA0573C051_AdjustorThunk (RuntimeObject* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_scale, const RuntimeMethod* method)
+{
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*>(__this + _offset);
+	Vector2_Scale_mEACE26803ED193717CE821462D85F1CA0573C051_inline(_thisAdjusted, ___0_scale, method);
 }
 // System.Void UnityEngine.Vector2::Normalize()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vector2_Normalize_m56DABCAB5967DF37A6B96710477D3660D800C652 (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, const RuntimeMethod* method) 
@@ -17633,6 +17657,57 @@ IL_003d:
 		return L_9;
 	}
 }
+// UnityEngine.Color32 UnityEngine.Color32::Lerp(UnityEngine.Color32,UnityEngine.Color32,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B Color32_Lerp_mA2474A351A93CC63EA568E92C99B6E8D91065F7C (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___0_a, Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___1_b, float ___2_t, const RuntimeMethod* method) 
+{
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		float L_0 = ___2_t;
+		float L_1;
+		L_1 = Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline(L_0, NULL);
+		___2_t = L_1;
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_2 = ___0_a;
+		uint8_t L_3 = L_2.___r_1;
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_4 = ___1_b;
+		uint8_t L_5 = L_4.___r_1;
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_6 = ___0_a;
+		uint8_t L_7 = L_6.___r_1;
+		float L_8 = ___2_t;
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_9 = ___0_a;
+		uint8_t L_10 = L_9.___g_2;
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_11 = ___1_b;
+		uint8_t L_12 = L_11.___g_2;
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_13 = ___0_a;
+		uint8_t L_14 = L_13.___g_2;
+		float L_15 = ___2_t;
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_16 = ___0_a;
+		uint8_t L_17 = L_16.___b_3;
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_18 = ___1_b;
+		uint8_t L_19 = L_18.___b_3;
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_20 = ___0_a;
+		uint8_t L_21 = L_20.___b_3;
+		float L_22 = ___2_t;
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_23 = ___0_a;
+		uint8_t L_24 = L_23.___a_4;
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_25 = ___1_b;
+		uint8_t L_26 = L_25.___a_4;
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_27 = ___0_a;
+		uint8_t L_28 = L_27.___a_4;
+		float L_29 = ___2_t;
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_30;
+		memset((&L_30), 0, sizeof(L_30));
+		Color32__ctor_mC9C6B443F0C7CA3F8B174158B2AF6F05E18EAC4E_inline((&L_30), (uint8_t)il2cpp_codegen_cast_floating_point<uint8_t, int32_t, float>(((float)il2cpp_codegen_add(((float)L_3), ((float)il2cpp_codegen_multiply(((float)((int32_t)il2cpp_codegen_subtract((int32_t)L_5, (int32_t)L_7))), L_8))))), (uint8_t)il2cpp_codegen_cast_floating_point<uint8_t, int32_t, float>(((float)il2cpp_codegen_add(((float)L_10), ((float)il2cpp_codegen_multiply(((float)((int32_t)il2cpp_codegen_subtract((int32_t)L_12, (int32_t)L_14))), L_15))))), (uint8_t)il2cpp_codegen_cast_floating_point<uint8_t, int32_t, float>(((float)il2cpp_codegen_add(((float)L_17), ((float)il2cpp_codegen_multiply(((float)((int32_t)il2cpp_codegen_subtract((int32_t)L_19, (int32_t)L_21))), L_22))))), (uint8_t)il2cpp_codegen_cast_floating_point<uint8_t, int32_t, float>(((float)il2cpp_codegen_add(((float)L_24), ((float)il2cpp_codegen_multiply(((float)((int32_t)il2cpp_codegen_subtract((int32_t)L_26, (int32_t)L_28))), L_29))))), /*hidden argument*/NULL);
+		V_0 = L_30;
+		goto IL_0075;
+	}
+
+IL_0075:
+	{
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_31 = V_0;
+		return L_31;
+	}
+}
 // System.String UnityEngine.Color32::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Color32_ToString_mB1EFBF981F901A76ABF2FEA19EB290A2D8CAFC32 (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B* __this, const RuntimeMethod* method) 
 {
@@ -20822,6 +20897,48 @@ IL_000b:
 	{
 		float L_4 = V_0;
 		return L_4;
+	}
+}
+// System.Single UnityEngine.Mathf::LerpAngle(System.Single,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_LerpAngle_m0653422E15193C2E4A4E5AF05236B6315C789C23 (float ___0_a, float ___1_b, float ___2_t, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	bool V_1 = false;
+	float V_2 = 0.0f;
+	{
+		float L_0 = ___1_b;
+		float L_1 = ___0_a;
+		float L_2;
+		L_2 = Mathf_Repeat_m6F1560A163481BB311D685294E1B463C3E4EB3BA_inline(((float)il2cpp_codegen_subtract(L_0, L_1)), (360.0f), NULL);
+		V_0 = L_2;
+		float L_3 = V_0;
+		V_1 = (bool)((((float)L_3) > ((float)(180.0f)))? 1 : 0);
+		bool L_4 = V_1;
+		if (!L_4)
+		{
+			goto IL_0023;
+		}
+	}
+	{
+		float L_5 = V_0;
+		V_0 = ((float)il2cpp_codegen_subtract(L_5, (360.0f)));
+	}
+
+IL_0023:
+	{
+		float L_6 = ___0_a;
+		float L_7 = V_0;
+		float L_8 = ___2_t;
+		float L_9;
+		L_9 = Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline(L_8, NULL);
+		V_2 = ((float)il2cpp_codegen_add(L_6, ((float)il2cpp_codegen_multiply(L_7, L_9))));
+		goto IL_0030;
+	}
+
+IL_0030:
+	{
+		float L_10 = V_2;
+		return L_10;
 	}
 }
 // System.Single UnityEngine.Mathf::MoveTowards(System.Single,System.Single,System.Single)
@@ -26296,6 +26413,20 @@ IL_002d:
 	{
 		float L_5 = V_1;
 		return L_5;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2_Scale_mEACE26803ED193717CE821462D85F1CA0573C051_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_scale, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = __this->___x_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1 = ___0_scale;
+		float L_2 = L_1.___x_0;
+		__this->___x_0 = ((float)il2cpp_codegen_multiply(L_0, L_2));
+		float L_3 = __this->___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4 = ___0_scale;
+		float L_5 = L_4.___y_1;
+		__this->___y_1 = ((float)il2cpp_codegen_multiply(L_3, L_5));
+		return;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector2_get_magnitude_m5C59B4056420AEFDB291AD0914A3F675330A75CE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, const RuntimeMethod* method) 

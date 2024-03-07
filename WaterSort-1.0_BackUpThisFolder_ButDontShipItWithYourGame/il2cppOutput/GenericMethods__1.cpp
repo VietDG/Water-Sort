@@ -145,6 +145,8 @@ struct AsyncOperationBase_1_t777EC3ACED7579A0B8EFE3EEE605D824516B3C13;
 struct AsyncOperationBase_1_t53CEC258A81CC6E6C433249F4DBF1B719395DBD7;
 // UnityEngine.UIElements.UIR.BasicNode`1<UnityEngine.UIElements.UIR.TextureEntry>
 struct BasicNode_1_t7B4D545DCD6949B2E1C85D63DF038E44602F7DDB;
+// System.Converter`2<System.Object,System.Object>
+struct Converter_2_tC9AFAC88B7B2F2A78BE628A4D126535F0A4A1486;
 // DelegateList`1<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1<System.Object>>
 struct DelegateList_1_tE5214C095910CA36010DD471BBF1F8F7EA6D4787;
 // DelegateList`1<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
@@ -171,6 +173,8 @@ struct Dictionary_2_t8BF76F08F2E28AE3B97CD39EBC7A0FE57398B1B0;
 struct Dictionary_2_t4055F6540F36F21F9FEDAFB92D8E0089B38EBBC8;
 // System.EventHandler`1<System.Threading.Tasks.UnobservedTaskExceptionEventArgs>
 struct EventHandler_1_tE698654C3F437D97ABCCA3FD0AD8F86E776DC77A;
+// Spine.ExposedList`1<System.Object>
+struct ExposedList_1_t90C5D64C7E11EBF0854CF0859FD55DF94D6ED6B7;
 // System.Func`1<System.Boolean>
 struct Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457;
 // System.Func`1<Firebase.DependencyStatus>
@@ -795,6 +799,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral1F03A0244B539D5FF8B08074B554A3564A565A10
 IL2CPP_EXTERN_C String_t* _stringLiteral23EACB35CC15DB0204337EADAFEEF7A3DB883517;
 IL2CPP_EXTERN_C String_t* _stringLiteral295C1C91484E27E03B860FDA8F1EE84730518E64;
 IL2CPP_EXTERN_C String_t* _stringLiteral42646B33B50B6AA15E22733C8900716F0FE19E1D;
+IL2CPP_EXTERN_C String_t* _stringLiteral5E8864981A1D9D7DF38E3ABBDE863B7C527DFF86;
 IL2CPP_EXTERN_C String_t* _stringLiteral66F9618FDA792CAB23AF2D7FFB50AB2D3E393DC5;
 IL2CPP_EXTERN_C String_t* _stringLiteral761343BCB71B641148BBAEA497947A0E9E2AC1BC;
 IL2CPP_EXTERN_C String_t* _stringLiteral92BF5D2AB9AD1A68596BC5F92B31A8D6A6C3F5BF;
@@ -830,6 +835,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_First_TisAsyncOperationHandle_t5
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_mD00E44F3CADC84CC565FE5C5AC30E01A729DC139_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m565A1489A4290AA7ED87CE46AF71C8210A6CE2B2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_mAFC9C56C8EBBDAD298B115B5CDC28BD959F95ED9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ExposedList_1_ConvertAll_TisRuntimeObject_m304867CFCDEC90BC62844E60EBE47B0CDFEFC52D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* HashSet_1_Clear_mA7F8C045C64214028CD48536E3CBAE61F4AD54A4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m5DE0C8DDAECC15B655D006B90E510B5BB8096398_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_mF45216BAD4CA0605C8602687F4493D6908A2670F_RuntimeMethod_var;
@@ -1062,6 +1068,17 @@ struct Dictionary_2_tCF0DE186C024D133CC46FA0B271E5359DBFAD9B4  : public RuntimeO
 	ValueCollection_t33AEB5992AC103AD1D4892CBD33A1E81E56A2883* ____values_8;
 	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
 	RuntimeObject* ____syncRoot_9;
+};
+
+// Spine.ExposedList`1<System.Object>
+struct ExposedList_1_t90C5D64C7E11EBF0854CF0859FD55DF94D6ED6B7  : public RuntimeObject
+{
+	// T[] Spine.ExposedList`1::Items
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___Items_0;
+	// System.Int32 Spine.ExposedList`1::Count
+	int32_t ___Count_1;
+	// System.Int32 Spine.ExposedList`1::version
+	int32_t ___version_4;
 };
 
 // System.Linq.Lookup`2/Grouping<System.Object,System.Object>
@@ -5098,6 +5115,11 @@ struct Action_4_t3096C7A549E6DC8808C9BE177EB2F99C32BE9AAD  : public MulticastDel
 {
 };
 
+// System.Converter`2<System.Object,System.Object>
+struct Converter_2_tC9AFAC88B7B2F2A78BE628A4D126535F0A4A1486  : public MulticastDelegate_t
+{
+};
+
 // System.Func`1<System.Boolean>
 struct Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457  : public MulticastDelegate_t
 {
@@ -5742,6 +5764,15 @@ struct MissingMethodException_t3D861B41F6520C32A7994A884343802925703155  : publi
 // System.Collections.Generic.Dictionary`2<System.Object,UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
 
 // System.Collections.Generic.Dictionary`2<System.Object,UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
+
+// Spine.ExposedList`1<System.Object>
+struct ExposedList_1_t90C5D64C7E11EBF0854CF0859FD55DF94D6ED6B7_StaticFields
+{
+	// T[] Spine.ExposedList`1::EmptyArray
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___EmptyArray_3;
+};
+
+// Spine.ExposedList`1<System.Object>
 
 // System.Linq.Lookup`2/Grouping<System.Object,System.Object>
 
@@ -6928,6 +6959,10 @@ struct VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115_StaticFields
 
 // System.Data.Listeners`1/Action`4<System.Object,System.Object,System.Object,System.Object,System.Object>
 
+// System.Converter`2<System.Object,System.Object>
+
+// System.Converter`2<System.Object,System.Object>
+
 // System.Func`1<System.Boolean>
 
 // System.Func`1<System.Boolean>
@@ -7932,6 +7967,8 @@ inline void AsyncValueTaskMethodBuilder_1_Start_TisRuntimeObject_m55DA5DA01C3062
 {
 	((  void (*) (AsyncValueTaskMethodBuilder_1_tC52370C9D79190662723A5015241A6CA0D150DC2*, RuntimeObject**, const RuntimeMethod*))AsyncValueTaskMethodBuilder_1_Start_TisRuntimeObject_m55DA5DA01C3062E2C184C227ADFB7B06F755DA52_gshared_inline)(__this, ___0_stateMachine, method);
 }
+// System.Void System.ArgumentNullException::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* __this, String_t* ___0_paramName, const RuntimeMethod* method) ;
 // System.Exception System.Linq.Error::ArgumentNull(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Exception_t* Error_ArgumentNull_m1141D2C9AF8AB6ACC45E7488789598C5283D4EEE (String_t* ___0_s, const RuntimeMethod* method) ;
 // Unity.Collections.NativeArray`1<U> Unity.Collections.NativeArray`1<System.Single>::InternalReinterpret<System.UInt32>(System.Int32)
@@ -7996,8 +8033,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Type_get_IsValueType_m59AE2E0439DC06347B
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.String System.String::Format(System.String,System.Object[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_m918500C1EFB475181349A79989BB79BB36102894 (String_t* ___0_format, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
-// System.Void System.ArgumentNullException::.ctor(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* __this, String_t* ___0_paramName, const RuntimeMethod* method) ;
 // System.Void System.Threading.Tasks.TaskFactory::CheckFromAsyncOptions(System.Threading.Tasks.TaskCreationOptions,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskFactory_CheckFromAsyncOptions_m4A9F58FE062B3FA48BE85BA90A45F842AFC8D372 (int32_t ___0_creationOptions, bool ___1_hasBeginMethod, const RuntimeMethod* method) ;
 // System.Boolean System.Threading.Tasks.DebuggerSupport::get_LoggingOn()
@@ -9862,6 +9897,92 @@ IL2CPP_EXTERN_C  void AsyncValueTaskMethodBuilder_1_Start_TisRuntimeObject_m55DA
 	int32_t _offset = 1;
 	_thisAdjusted = reinterpret_cast<AsyncValueTaskMethodBuilder_1_tC52370C9D79190662723A5015241A6CA0D150DC2*>(__this + _offset);
 	AsyncValueTaskMethodBuilder_1_Start_TisRuntimeObject_m55DA5DA01C3062E2C184C227ADFB7B06F755DA52_inline(_thisAdjusted, ___0_stateMachine, method);
+}
+// Spine.ExposedList`1<TOutput> Spine.ExposedList`1<System.Object>::ConvertAll<System.Object>(System.Converter`2<T,TOutput>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ExposedList_1_t90C5D64C7E11EBF0854CF0859FD55DF94D6ED6B7* ExposedList_1_ConvertAll_TisRuntimeObject_m304867CFCDEC90BC62844E60EBE47B0CDFEFC52D_gshared (ExposedList_1_t90C5D64C7E11EBF0854CF0859FD55DF94D6ED6B7* __this, Converter_2_tC9AFAC88B7B2F2A78BE628A4D126535F0A4A1486* ___0_converter, const RuntimeMethod* method) 
+{
+	ExposedList_1_t90C5D64C7E11EBF0854CF0859FD55DF94D6ED6B7* V_0 = NULL;
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* V_1 = NULL;
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* V_2 = NULL;
+	int32_t V_3 = 0;
+	{
+		// if (converter == null)
+		Converter_2_tC9AFAC88B7B2F2A78BE628A4D126535F0A4A1486* L_0 = ___0_converter;
+		if (L_0)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		// throw new ArgumentNullException("converter");
+		ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* L_1 = (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var)));
+		NullCheck(L_1);
+		ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B(L_1, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral5E8864981A1D9D7DF38E3ABBDE863B7C527DFF86)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ExposedList_1_ConvertAll_TisRuntimeObject_m304867CFCDEC90BC62844E60EBE47B0CDFEFC52D_RuntimeMethod_var)));
+	}
+
+IL_000e:
+	{
+		// ExposedList<TOutput> u = new ExposedList<TOutput>(Count);
+		int32_t L_2 = (int32_t)__this->___Count_1;
+		ExposedList_1_t90C5D64C7E11EBF0854CF0859FD55DF94D6ED6B7* L_3 = (ExposedList_1_t90C5D64C7E11EBF0854CF0859FD55DF94D6ED6B7*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->rgctx_data, 0));
+		NullCheck(L_3);
+		((  void (*) (ExposedList_1_t90C5D64C7E11EBF0854CF0859FD55DF94D6ED6B7*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 1)))(L_3, L_2, il2cpp_rgctx_method(method->rgctx_data, 1));
+		V_0 = L_3;
+		// u.Count = Count;
+		ExposedList_1_t90C5D64C7E11EBF0854CF0859FD55DF94D6ED6B7* L_4 = V_0;
+		int32_t L_5 = (int32_t)__this->___Count_1;
+		NullCheck(L_4);
+		L_4->___Count_1 = L_5;
+		// T[] items = Items;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)__this->___Items_0;
+		V_1 = L_6;
+		// TOutput[] uItems = u.Items;
+		ExposedList_1_t90C5D64C7E11EBF0854CF0859FD55DF94D6ED6B7* L_7 = V_0;
+		NullCheck(L_7);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_8 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)L_7->___Items_0;
+		V_2 = L_8;
+		// for (int i = 0; i < Count; i++)
+		V_3 = 0;
+		goto IL_0050;
+	}
+
+IL_0038:
+	{
+		// uItems[i] = converter(items[i]);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_9 = V_2;
+		int32_t L_10 = V_3;
+		Converter_2_tC9AFAC88B7B2F2A78BE628A4D126535F0A4A1486* L_11 = ___0_converter;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_12 = V_1;
+		int32_t L_13 = V_3;
+		NullCheck(L_12);
+		int32_t L_14 = L_13;
+		RuntimeObject* L_15 = (L_12)->GetAt(static_cast<il2cpp_array_size_t>(L_14));
+		NullCheck(L_11);
+		RuntimeObject* L_16;
+		L_16 = ((  RuntimeObject* (*) (Converter_2_tC9AFAC88B7B2F2A78BE628A4D126535F0A4A1486*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 3)))(L_11, L_15, il2cpp_rgctx_method(method->rgctx_data, 3));
+		NullCheck(L_9);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(L_10), (RuntimeObject*)L_16);
+		// for (int i = 0; i < Count; i++)
+		int32_t L_17 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_17, 1));
+	}
+
+IL_0050:
+	{
+		// for (int i = 0; i < Count; i++)
+		int32_t L_18 = V_3;
+		int32_t L_19 = (int32_t)__this->___Count_1;
+		if ((((int32_t)L_18) < ((int32_t)L_19)))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		// return u;
+		ExposedList_1_t90C5D64C7E11EBF0854CF0859FD55DF94D6ED6B7* L_20 = V_0;
+		return L_20;
+	}
 }
 // System.Void System.Data.Listeners`1<System.Object>::Notify<System.Int32Enum,System.Object,System.Boolean>(T1,T2,T3,System.Data.Listeners`1/Action`4<TElem,TElem,T1,T2,T3>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Listeners_1_Notify_TisInt32Enum_tCBAC8BA2BFF3A845FA599F303093BBBA374B6F0C_TisRuntimeObject_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_m57328E690FAB8FE08062C070104EACBAAEC55135_gshared (Listeners_1_t36E445BF12D171BD2978AAF5789584FE331DF56D* __this, int32_t ___0_arg1, RuntimeObject* ___1_arg2, bool ___2_arg3, Action_4_t7D895ADAA7142B1AA2A954C1E193B3CF08D36C48* ___3_action, const RuntimeMethod* method) 

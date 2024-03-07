@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Purchasing;
 using UnityEngine.Purchasing.Extension;
@@ -6,59 +8,36 @@ using UnityEngine.Purchasing.Security;
 
 public class IAPManager : SingletonMonoBehaviour<IAPManager>, IStoreListener, IDetailedStoreListener
 {
-    #region Instance
-    #endregion
-
-    #region Static variables
     private static IStoreController storeController;
     private static IExtensionProvider extensionProvider;
 
-    // Product id
-    #endregion
-
-    #region Inspector variables
     [SerializeField]
     public IAPPack[] packs;
-    public IAPPack FindIAPPack(string _id)
-    {
-        for (int i = 0; i < packs.Length; i++)
-        {
-            if (packs[i].google_id_pack == _id)
-                return packs[i];
-        }
-        return null;
-    }
-    #endregion
 
-    #region Member Variables
-    private AdsEvent.TwoParamsEvent callback;
-    #endregion
-
-    #region Unity Methods
+    private Action<bool, Product> callback;
 
     public override void Awake()
     {
+        base.Awake();
         Init();
     }
-    #endregion
-
-    #region Public Methods
 
     public void Init()
     {
         if (storeController == null)
             InitializePurchasing();
     }
-    public void BuyProductId(string productId, AdsEvent.TwoParamsEvent callback)
+    public void BuyProductId(string productId, Action<bool, Product> callback)
     {
 #if UNITY_EDITOR || DEBUG_MODE
+        Debug.LogError("Buy RemoveAds");
         this.callback = callback;
         ProcessPurchase(null);
 #elif UNITY_ANDROID || UNITY_IOS
         if (IsInitialized())
-        {
+        {           
             Product product = storeController.products.WithID(productId);
-            if (product != null && product.availableToPurchase)
+            if(product!=null && product.availableToPurchase)
             {
                 Debug.Log("[IAPManager]: Purchasing product : " + productId);
                 storeController.InitiatePurchase(product);
@@ -66,7 +45,7 @@ public class IAPManager : SingletonMonoBehaviour<IAPManager>, IStoreListener, ID
             }
             else
             {
-                Debug.LogError("[IAPManager]: BuyProductId: " + productId + " fail-> not purchasing or not found");
+                Debug.LogError("[IAPManager]: BuyProductId: "+ productId+" fail-> not purchasing or not found");
             }
         }
         else
@@ -136,9 +115,7 @@ public class IAPManager : SingletonMonoBehaviour<IAPManager>, IStoreListener, ID
         return "";
 #endif
     }
-    #endregion
 
-    #region Private Methods
     private void InitializePurchasing()
     {
         if (IsInitialized())
@@ -159,9 +136,7 @@ public class IAPManager : SingletonMonoBehaviour<IAPManager>, IStoreListener, ID
     {
         return storeController != null && extensionProvider != null;
     }
-    #endregion
 
-    #region Interface Methods
     public void OnInitialized(IStoreController controller, IExtensionProvider extensions)
     {
         Debug.Log("[IAPManager]: IAP Initialized!");
@@ -239,7 +214,7 @@ public class IAPManager : SingletonMonoBehaviour<IAPManager>, IStoreListener, ID
         // Prepare the validator with the secrets we prepared in the Editor
         // obfuscation window.
         var validator = new CrossPlatformValidator(GooglePlayTangle.Data(),
-             AppleTangle.Data(), Application.identifier);
+            AppleTangle.Data(), Application.identifier);
 
         try
         {
@@ -271,7 +246,7 @@ public class IAPManager : SingletonMonoBehaviour<IAPManager>, IStoreListener, ID
                 callback(true, e.purchasedProduct);
                 callback = null;
                 // Sent event to appflyer
-                // AppsflyerManager.Instance.TrackAppflyerPurchase(pro.definition.id, (float)pro.metadata.localizedPrice, pro.metadata.isoCurrencyCode, pro.transactionID);
+               // AppsflyerManager.Instance.TrackAppflyerPurchase(pro.definition.id, (float)pro.metadata.localizedPrice, pro.metadata.isoCurrencyCode, pro.transactionID);
             }
             else
             {
@@ -293,7 +268,7 @@ public class IAPManager : SingletonMonoBehaviour<IAPManager>, IStoreListener, ID
             {
                 callback(false, e.purchasedProduct);
                 callback = null;
-            }
+            }           
         }
 #endif
         return PurchaseProcessingResult.Complete;
@@ -308,7 +283,6 @@ public class IAPManager : SingletonMonoBehaviour<IAPManager>, IStoreListener, ID
     {
         throw new NotImplementedException();
     }
-    #endregion
 }
 
 [Serializable]
@@ -319,5 +293,6 @@ public class IAPPack
     public string packName;
     public string packPrice;
     public string currencyCode;
+    [SerializeField]
     public ProductType type;
 }

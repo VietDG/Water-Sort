@@ -146,7 +146,7 @@ MonoBehaviour:
     Type: 0
     Price: 0
     LevelUnlock: 0
-  type: 2
+  type: 0
   iconItem: {fileID: 9173058806367917097}
   textLv: {fileID: 7421577674660626965}
   textPrice: {fileID: 8497595067189746317}

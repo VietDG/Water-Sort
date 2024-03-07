@@ -53,8 +53,8 @@ public class PopupCollection : SingletonPopup<PopupCollection>
         for (int i = 0; i < atlasBG.spriteCount; i++)
         {
             ItemCollection item = Instantiate(_itemThemePrefab, _tabTrans[1]);
-            DataItemSkin data = new DataItemSkin(i, i < 5 ? 0 : 100 * i, _themeDataSo.dataItemSkins[i].LevelUnlock);
-            item.Init(data, atlasBG.GetSprite($"BG_{i + 1:00}"));
+            DataItemSkin data = new DataItemSkin(i, i < 8 ? 0 : 100 * i, _themeDataSo.dataItemSkins[i].LevelUnlock);
+            item.Init(data, atlasBG.GetSprite($"BG_" + $"{i + 1:00}"));
         }
     }
 

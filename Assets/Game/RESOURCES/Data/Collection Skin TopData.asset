@@ -14,42 +14,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataItemSkins:
   - Index: 0
-    Type: 2
+    Type: 0
     Price: 0
     LevelUnlock: 0
   - Index: 1
-    Type: 2
+    Type: 0
     Price: 0
-    LevelUnlock: 10
+    LevelUnlock: 5
   - Index: 2
-    Type: 2
+    Type: 0
     Price: 0
-    LevelUnlock: 25
+    LevelUnlock: 20
   - Index: 3
-    Type: 2
+    Type: 0
     Price: 0
-    LevelUnlock: 40
+    LevelUnlock: 35
   - Index: 4
-    Type: 2
+    Type: 0
     Price: 0
-    LevelUnlock: 55
+    LevelUnlock: 50
   - Index: 5
-    Type: 2
+    Type: 0
     Price: 0
-    LevelUnlock: 70
+    LevelUnlock: 65
   - Index: 6
-    Type: 2
+    Type: 0
     Price: 1
-    LevelUnlock: 85
+    LevelUnlock: 80
   - Index: 7
-    Type: 2
+    Type: 0
     Price: 1
-    LevelUnlock: 110
+    LevelUnlock: 95
   - Index: 8
-    Type: 2
+    Type: 0
     Price: 1
     LevelUnlock: 115
   - Index: 9
-    Type: 2
+    Type: 0
     Price: 1
     LevelUnlock: 130

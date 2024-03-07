@@ -89,6 +89,8 @@ public class BottleController : MonoBehaviour
 
     [SerializeField] ParticleSystem _vfx;
     [field: SerializeField] public StateTube state { get; private set; }
+    public string[] _colorName = new string[] { "C1", "C2", "C3", "C4" }; // Update Start Color
+    private float _duration = 0.5f;
 
     #region UNITY_METHOD
     private void Awake()
@@ -125,25 +127,9 @@ public class BottleController : MonoBehaviour
         ActionEvent.OnSetSkin -= SetSkinTop;
     }
     #endregion
-    public void Complete()
-    {
-        _bottleTop.gameObject.SetActive(true);
-        _bottleTop.transform.DOMoveY(_bottleTop.transform.position.y - 0.5f, 0.2f).SetDelay(0.1f).SetEase(Ease.InQuad);
-        SoundManager.Instance.PlaySfxRewind(GlobalSetting.GetSFX("TopComplete"));
 
-        _vfx.Play();
-    }
-
-    //private void AddColor()
-    //{
-    //    for (int i = 0; i < datawaterColor.waterDa.Count; i++)
-    //    {
-    //        bottleColors.Add(datawaterColor.waterDa[i].color);
-    //    }
-    //}
 
     #region Skin
-
     private void SetSkinTop(TypeSkinCollection type)
     {
         if (type.Equals(TypeSkinCollection.Ball))
@@ -155,28 +141,17 @@ public class BottleController : MonoBehaviour
 
     #endregion
 
-    public bool isEmpty()
-    {
-        if (datawaterColor.waterDa.Count > 0)
-        {
-            return false;
-        }
-        return true;
-    }
-
+    #region HandleStart
     public void HandleColor()
     {
         bottleMask.material.SetFloat("_FillAmout", fillAmouts[datawaterColor.waterDa.Count]);
     }
-
     public void Init(DataBottle dataColor, int value)
     {
         datawaterColor = dataColor;
         dataColor.slot = value;
         this._slot = dataColor.slot;
-        // AddColor();
         HandleColor();
-
         SetSkinTop(TypeSkinCollection.Ball);
         _bottleTop.SetActive(false);
         UpdateStartColor();
@@ -195,6 +170,18 @@ public class BottleController : MonoBehaviour
         _topPos = _bottleTop.transform.position;
     }
 
+    public void UpdateStartColor()
+    {
+        for (int i = 0; i < datawaterColor.waterDa.Count; i++)
+        {
+            bottleMask.material.SetColor(_colorName[i], datawaterColor.waterDa[i].color);
+        }
+    }
+    #endregion
+
+
+    #region MoveMent
+
     public void StartColorTransfer(BottleController bottle)
     {
         ChoseRotationPointAndDirection(bottle);
@@ -205,17 +192,6 @@ public class BottleController : MonoBehaviour
         this.ChangeState(StateTube.Moving);
         bottle.ChangeState(StateTube.Open);
     }
-
-    public string[] _colorName = new string[] { "C1", "C2", "C3", "C4" }; // Update Start Color
-    public void UpdateStartColor()
-    {
-        for (int i = 0; i < datawaterColor.waterDa.Count; i++)
-        {
-            bottleMask.material.SetColor(_colorName[i], datawaterColor.waterDa[i].color);
-        }
-    }
-
-    private float _duration = 0.5f;
 
     public void Rote(BottleController bottle)
     {
@@ -230,7 +206,7 @@ public class BottleController : MonoBehaviour
 
         Vector2 target = new Vector2(endPosition.x/*+ directionMultiple*/, endPosition.y);
 
-        this.transform.DOMove(target, 0.2f).SetEase(Ease.Linear).SetDelay(0.1f).OnComplete(() =>
+        this.transform.DOMove(target, 0.1f).SetEase(Ease.Linear).SetDelay(0.1f).OnComplete(() =>
         {
             if (datawaterColor.waterDa.Count == 0)
             {
@@ -255,7 +231,7 @@ public class BottleController : MonoBehaviour
             bottle.bottleMask.material.DOFloat(bottle.fillAmouts[bottle.datawaterColor.waterDa.Count], "_FillAmout", _duration).SetEase(Ease.Linear).SetDelay(0.2f);
             bottle.UpdateStartColor();
 
-            FunctionCommon.DelayTime(0.2f, () =>
+            FunctionCommon.DelayTime(0.1f, () =>
             {
                 StartCoroutine(SetLine(bottle));
             });
@@ -270,14 +246,12 @@ public class BottleController : MonoBehaviour
 
     public void SetColorBooster()
     {
-        //  bottleColors.Clear();
         bottleMask.material.SetFloat("_FillAmout", fillAmouts[datawaterColor.waterDa.Count]);
         // AddColor();
         for (int i = 0; i < datawaterColor.waterDa.Count; i++)
         {
             bottleMask.material.SetColor(_colorName[i], datawaterColor.waterDa[i].color);
         }
-        //   UpdateStartColor();
         _bottleTop.SetActive(false);
         _bottleTop.transform.position = _topPos;
     }
@@ -292,8 +266,8 @@ public class BottleController : MonoBehaviour
     {
         float t = 0;
         _lineRenderer.gameObject.SetActive(true);
-        _lineRenderer.startColor = bottle.GetLastWater().color;//
-        _lineRenderer.endColor = bottle.GetLastWater().color;
+        _lineRenderer.startColor = bottle.GetWaterData().color;//
+        _lineRenderer.endColor = bottle.GetWaterData().color;
         _lineRenderer.enabled = true;
         ChoseRotationPointAndDirection(bottle);
         while (t <= 0.4f)
@@ -313,7 +287,7 @@ public class BottleController : MonoBehaviour
         bottleMask.material.DOFloat(0.7f, "_scale", _duration).SetEase(Ease.Linear);
         this.transform.DORotate(new Vector3(0, 0, 0), _duration).SetDelay(0.1f).OnComplete(() =>
         {
-            this.transform.DOMove(endPosition, 0.2f).SetEase(Ease.Linear).OnComplete(() =>
+            this.transform.DOMove(endPosition, 0.1f).SetEase(Ease.Linear).OnComplete(() =>
             {
                 _ava.sortingOrder -= 3;
                 bottleMask.sortingOrder -= 3;
@@ -323,7 +297,7 @@ public class BottleController : MonoBehaviour
         });
     }
 
-    public void StartMove(BottleController tube, bool value, float index = 0)
+    public void StartMove(BottleController tube, bool value)
     {
         float duration = 0.2f;
         if (value)
@@ -340,6 +314,25 @@ public class BottleController : MonoBehaviour
                 tube.ChangeState(StateTube.Deactive);
             });
         }
+    }
+
+    #endregion
+
+    public void Complete()
+    {
+        _bottleTop.gameObject.SetActive(true);
+        _bottleTop.transform.DOMoveY(_bottleTop.transform.position.y - 0.5f, 0.2f).SetDelay(0.1f).SetEase(Ease.InQuad);
+        SoundManager.Instance.PlaySfxRewind(GlobalSetting.GetSFX("TopComplete"));
+        _vfx.Play();
+    }
+
+    public bool isEmpty()
+    {
+        if (datawaterColor.waterDa.Count > 0)
+        {
+            return false;
+        }
+        return true;
     }
 
     public void ChangeState(StateTube state)
@@ -360,22 +353,12 @@ public class BottleController : MonoBehaviour
             return false;
         }
 
-        bool isSameColor = GetLastWater().index == tube.GetLastWater().index;
+        bool isSameColor = GetWaterData().index == tube.GetWaterData().index;
         if (!isSameColor)
         {
             return false;
         }
         return true;
-    }
-
-    public WaterData GetLastWater()
-    {
-        if (!isEmpty())
-        {
-            WaterData data = datawaterColor.waterDa[^1];
-            return data;
-        }
-        return null;
     }
 
     public bool isDone()
@@ -416,10 +399,22 @@ public class BottleController : MonoBehaviour
         if (!isEmpty())
         {
             WaterData waterData = datawaterColor.waterDa[datawaterColor.waterDa.Count - 1];
+            Debug.Log(datawaterColor.waterDa.Count - 1);
             return waterData;
         }
         return null;
     }
+
+    //public WaterData GetLastWater()
+    //{
+    //    if (!isEmpty())
+    //    {
+    //        WaterData data = datawaterColor.waterDa[^1];
+    //        return data;
+    //    }
+    //    return null;
+    //}
+
 }
 
 public enum StateTube

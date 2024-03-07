@@ -24,9 +24,14 @@ public class LoadingController : MonoBehaviour
     {
         _loadingText.text = $"{value}%";
     }
-
     private void OnCounterComplete()
     {
+        StartCoroutine(WaitCounterComplete());
+    }
+
+    private IEnumerator WaitCounterComplete()
+    {
+        yield return new WaitUntil(() => AdsManager.Instance.CanLoadAds);
         SceneManager.LoadScene(Const.SCENE_GAME);
     }
 }

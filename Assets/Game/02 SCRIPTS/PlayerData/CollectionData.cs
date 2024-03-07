@@ -33,7 +33,7 @@ public class CollectionData : MonoBehaviour
             //    ShopData.TubeDatas.Add(item);
             //}
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 9; i++)
             {
                 UserItemCollection item;
                 if (i == 0)
@@ -47,7 +47,7 @@ public class CollectionData : MonoBehaviour
                 ShopData.BallDatas.Add(item);
             }
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 11; i++)
             {
                 UserItemCollection item;
                 if (i == 0)

@@ -2016,7 +2016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   wasPlayAnim: 0
-  showAnimationClip: {fileID: 0}
+  showAnimationClip: {fileID: 7400000, guid: e40a885b5b7665d4597a31a47c4144be, type: 2}
   hideAnimationClip: {fileID: 0}
   _sfx: {fileID: 8058276154957469405}
   _vibrate: {fileID: 8059740128323332785}
@@ -2849,9 +2849,9 @@ RectTransform:
   m_Father: {fileID: 7877498338027914715}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 388, y: -112}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 388, y: 0}
   m_SizeDelta: {x: 680, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &7879102416016841931

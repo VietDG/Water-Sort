@@ -83,6 +83,6 @@ public class PopupSetting : SingletonPopup<PopupSetting>
 
     public void OnClickLanguage()
     {
-        //  ActionEvent.OnShowToast?.Invoke("Coming soon!");
+        ActionEvent.OnShowToast?.Invoke("Coming soon!");
     }
 }

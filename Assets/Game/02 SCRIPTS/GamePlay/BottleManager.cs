@@ -8,7 +8,4 @@ public class BottleManager : SingletonMonoBehaviour<BottleManager>
     [SerializeField] float _spaceHorizontal, _spaceVertical, _tubeHorizontalMax;
     public List<BottleController> bottleList = new List<BottleController>();
     public BottleController _holdingBottle;
-
-
-
 }
