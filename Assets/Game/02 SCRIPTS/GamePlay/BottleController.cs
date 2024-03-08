@@ -70,7 +70,7 @@ public class BottleController : MonoBehaviour
 
     private float directionMultiple = 1f;
 
-    Vector3 originalPosition;
+    public Vector3 originalPosition;
     Vector3 endPosition;
 
     public float weight;
@@ -102,6 +102,7 @@ public class BottleController : MonoBehaviour
     private void OnMouseDown()
     {
         if (PopupManager.Instance.hasPopupShowing) return;
+        if (!IsTutLevel()) return;
         if (state.Equals(StateTube.Active) || state.Equals(StateTube.Moving)) return;
         GameManager.Instance.controller.OnClick(this);
     }
@@ -231,7 +232,7 @@ public class BottleController : MonoBehaviour
             bottle.bottleMask.material.DOFloat(bottle.fillAmouts[bottle.datawaterColor.waterDa.Count], "_FillAmout", _duration).SetEase(Ease.Linear).SetDelay(0.2f);
             bottle.UpdateStartColor();
 
-            FunctionCommon.DelayTime(0.1f, () =>
+            FunctionCommon.DelayTime(0.2f, () =>
             {
                 StartCoroutine(SetLine(bottle));
             });
@@ -246,6 +247,11 @@ public class BottleController : MonoBehaviour
 
     public void SetColorBooster()
     {
+        if (datawaterColor.waterDa.Count == 0)
+        {
+            bottleMask.material.SetFloat("_FillAmout", fillAmouts[0]);
+            return;
+        }
         bottleMask.material.SetFloat("_FillAmout", fillAmouts[datawaterColor.waterDa.Count]);
         // AddColor();
         for (int i = 0; i < datawaterColor.waterDa.Count; i++)
@@ -284,7 +290,7 @@ public class BottleController : MonoBehaviour
     public void RoteBack(Vector2 target, BottleController newBottle)
     {
         endPosition = originalPosition;
-        bottleMask.material.DOFloat(0.7f, "_scale", _duration).SetEase(Ease.Linear);
+        bottleMask.material.DOFloat(0.7f, "_scale", _duration - 0.1f).SetEase(Ease.Linear);
         this.transform.DORotate(new Vector3(0, 0, 0), _duration).SetDelay(0.1f).OnComplete(() =>
         {
             this.transform.DOMove(endPosition, 0.1f).SetEase(Ease.Linear).OnComplete(() =>
@@ -399,22 +405,27 @@ public class BottleController : MonoBehaviour
         if (!isEmpty())
         {
             WaterData waterData = datawaterColor.waterDa[datawaterColor.waterDa.Count - 1];
-            Debug.Log(datawaterColor.waterDa.Count - 1);
             return waterData;
         }
         return null;
     }
 
-    //public WaterData GetLastWater()
-    //{
-    //    if (!isEmpty())
-    //    {
-    //        WaterData data = datawaterColor.waterDa[^1];
-    //        return data;
-    //    }
-    //    return null;
-    //}
-
+    private bool IsTutLevel()
+    {
+        if (GameManager.Instance.Level.level == 1)
+        {
+            if (datawaterColor.waterDa.Count == 3 && !GameManager.Instance.TutorialController.IsTutLevel1)
+            {
+                return false;
+            }
+            if (datawaterColor.waterDa.Count == 1 && GameManager.Instance.TutorialController.IsTutLevel1)
+            {
+                return false;
+            }
+            if (!GameManager.Instance.TutorialController.IsTutLevel1) GameManager.Instance.TutorialController.DisplayTutLevel1Step2();
+        }
+        return true;
+    }
 }
 
 public enum StateTube

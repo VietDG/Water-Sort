@@ -51,18 +51,18 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 8db8ba1cf3b17d74a83b3d4d6258abb3, type: 3}
   - {fileID: 21300000, guid: af33be2c98d851347be14418772d8798, type: 3}
   m_PackedSpriteNamesToIndex:
-  - BG_09
-  - BG_06
   - BG_08
+  - BG_09
+  - BG_11
   - BG_04
   - BG_07
-  - BG_10
+  - BG_05
   - BG_01
-  - BG_11
+  - BG_06
   - BG_02
   - BG_03
   - BG_12
-  - BG_05
+  - BG_10
   m_RenderDataMap: {}
   m_Tag: BG
   m_IsVariant: 0

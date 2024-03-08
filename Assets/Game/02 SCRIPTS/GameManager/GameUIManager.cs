@@ -9,6 +9,10 @@ public class GameUIManager : SingletonMonoBehaviour<GameUIManager>
     [Header("REFERENCE")]
     [SerializeField] TMP_Text _levelTxt;
     [SerializeField] Image _bg;
+    [SerializeField] GameObject _displayLevel;
+    [SerializeField] GameObject[] _btnGameUI;
+    [Header("TUTORIAL")]
+    [SerializeField] TMP_Text _tutTxt;
 
     public override void Awake()
     {
@@ -32,6 +36,7 @@ public class GameUIManager : SingletonMonoBehaviour<GameUIManager>
     {
         _levelTxt.text = $"{PlayerData.UserData.HighestLevel + 1:00}";
         DisPlayTheme(TypeSkinCollection.Theme);
+        DisplayGameUI(true);
     }
 
     private void DisPlayTheme(TypeSkinCollection type)
@@ -45,6 +50,22 @@ public class GameUIManager : SingletonMonoBehaviour<GameUIManager>
     public void OnClickSetting()
     {
         PopupSetting.Instance.Show();
+    }
+
+    public void DisplayGameUI(bool isValue)
+    {
+        foreach (var btn in _btnGameUI)
+        {
+            btn.SetActive(isValue);
+        }
+
+        _displayLevel.SetActive(isValue);
+    }
+
+    public void DisplayTut(string value, bool isValue)
+    {
+        _tutTxt.text = value;
+        _tutTxt.gameObject.SetActive(isValue);
     }
 }
 

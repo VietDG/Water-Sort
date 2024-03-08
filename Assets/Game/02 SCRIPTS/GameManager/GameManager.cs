@@ -16,6 +16,8 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     private UserData _userData;
     [Header("REFFERENCE")]
     [SerializeField] int _level;
+    [SerializeField] TutorialController _tutorialController;
+    public TutorialController TutorialController => _tutorialController;
 
     public override void Awake()
     {
@@ -59,8 +61,9 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         //{
         //});
         ActionEvent.OnNextLevel?.Invoke();
-        FunctionCommon.DelayTime(2f, () =>
+        FunctionCommon.DelayTime(1.5f, () =>
         {
+            SoundManager.Instance.PlaySfxRewind(GlobalSetting.GetSFX("victory1"));
             // ActionEvent.OnResetGamePlay?.Invoke();
             PopupWin.Instance.Show();
         });

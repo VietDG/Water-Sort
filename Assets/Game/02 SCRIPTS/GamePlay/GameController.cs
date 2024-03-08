@@ -19,27 +19,27 @@ public class GameController : MonoBehaviour
     public Camera _camera;
     [SerializeField] private float _minCameraSize;
     [SerializeField] private float _maxCameraSize;
+
     private List<KeyValuePair<BottleController, BottleController>> _prevTube = new List<KeyValuePair<BottleController, BottleController>>();
 
     public void Awake()
     {
-        //   _camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         _gameManager = GameManager.Instance;
 
         ActionEvent.OnUserBoosterBack += UserBack;
         ActionEvent.OnResetGamePlay += Reset;
         ActionEvent.OnUserBoosterAddTube += UseAddTube;
-        //   Init();
-
     }
 
     private void Start()
     {
         Init();
 
-
-        Invoke(nameof(InitScreen), 0.01f);
+        Invoke(nameof(InitScreen), 0.02f);
         // InitScreen();
+
+        // InitTutorial();
+        Invoke(nameof(InitTutorial), 0.02f);
     }
 
     private void OnDestroy()
@@ -60,11 +60,8 @@ public class GameController : MonoBehaviour
         {
             _gameManager.Win();
         }
-        //    InitScreen();
 #endif
     }
-
-
 
     private void Init()
     {
@@ -132,14 +129,15 @@ public class GameController : MonoBehaviour
         _holdingBottle = null;
         Init();
         Invoke(nameof(InitScreen), 0.02f);
+
+        Invoke(nameof(InitTutorial), 0.02f);
     }
 
     private void SpawnBottleWater(float x, float y, int value, List<WaterData> dataWater)
     {
         GameObject waterObj = SimplePool.Spawn(_waterPrefab, Vector2.zero, Quaternion.identity);
         BottleController bottle = waterObj.GetComponent<BottleController>();
-        // bottle.Init(data, index);
-
+        waterObj.transform.SetParent(this.transform);
         DataBottle data = new DataBottle(value, dataWater);
 
         Vector2 target = new Vector2(x * (bottle.weight / 2 + _spaceHorizontal), y);
@@ -154,20 +152,16 @@ public class GameController : MonoBehaviour
     {
         if (value <= 2)
         {
-            Debug.LogError("0.5");
             return 0.7f;
         }
         else if (value > 2 && value <= 5)
         {
-            Debug.LogError("0.6");
             return 0.5f;
         }
         else if (value > 5 && value <= 7)
         {
-            Debug.LogError("0.6");
             return 0.3f;
         }
-        Debug.LogError("0.4 return");
         return 0.2f;
     }
 
@@ -237,25 +231,23 @@ public class GameController : MonoBehaviour
         }
         void OnMoveComplete()
         {
-            //  newBottle.ChangeState(StateTube.Deactive);
-            // newBottle.ChangeState(StateTube.Deactive);
             if (newBottle.isDone())
             {
                 FunctionCommon.DelayTime(1f, () =>
                 {
                     newBottle.Complete();
+                    //   newTube.PlayVfx();
+                    VibrationManager.Vibrate(15);
                 });
-                //   newTube.PlayVfx();
-                //  VibrationManager.Vibrate(15);
-                //  SoundManager.Instance.PlaySfxRewind(GlobalSetting.GetSFX("complete1"));
+                //SoundManager.Instance.PlaySfxRewind(GlobalSetting.GetSFX("complete1"));
                 // Debug.LogError($"{newTube.name} is done");
                 if (ConditionWin())
                 {
-                    // Debug.Log("you win");
-                    //    _gameManager.Win();
-                    //  }
-                    // _userData.UpdateHighestLevel();
                     _gameManager.Win();
+                    if (_gameManager.TutorialController.IsTutLevel1)
+                    {
+                        _gameManager.TutorialController.DeactiveTut();
+                    }
                 }
             }
         }
@@ -374,13 +366,13 @@ public class GameController : MonoBehaviour
     private void AddPrevTube(BottleController from, BottleController to)
     {
         _prevTube.Add(new KeyValuePair<BottleController, BottleController>(from, to));
-        Debug.LogError($"{from}" + $"{to}");
     }
 
     #region Booster
 
     private void UserBack()
     {
+        Debug.LogError(_prevTube.Count);
         if (_prevTube.Count > 0)
         {
             BottleController from = _prevTube[^1].Key;
@@ -392,13 +384,13 @@ public class GameController : MonoBehaviour
                 _holdingBottle = null;
             }
 
-            //   List<WaterData> moveBalls = new List<WaterData>();
+            List<WaterData> moveBalls = new List<WaterData>();
             int cd = 1;
             for (int i = _prevTube.Count - 1; i >= 0; i--)
             {
                 BottleController first = _prevTube[i].Value;
                 BottleController second = _prevTube[i].Key;
-                //  moveBalls.Add(first.GetWaterData());
+                moveBalls.Add(first.GetWaterData());
                 second.datawaterColor.waterDa.Add(first.GetWaterData());
                 first.datawaterColor.waterDa.Remove(first.GetWaterData());
 
@@ -411,7 +403,7 @@ public class GameController : MonoBehaviour
             }
             // from.ChangeState(StateTube.Active);
             // to.ChangeState(StateTube.Active);
-            for (int i = 0; i < _prevTube.Count; i++)
+            for (int i = 0; i < moveBalls.Count; i++)
             {
 
                 //  to.ChangeState(StateTube.Deactive);
@@ -454,6 +446,20 @@ public class GameController : MonoBehaviour
         else
         {
             ActionEvent.OnShowToast?.Invoke(Const.KEY_OUT_BOOSTER_ADD_TUBE);
+        }
+    }
+
+    private void InitTutorial()
+    {
+        if (_gameManager.Level.level == 1)
+        {
+            Vector2 target = bottleList[0].originalPosition;
+            _gameManager.TutorialController.DisplayTutLevel1Step1(target + new Vector2(1, -1));
+        }
+
+        if (_gameManager.Level.level == 2)
+        {
+            _gameManager.TutorialController.DisplayTutLevel2Step1();
         }
     }
 

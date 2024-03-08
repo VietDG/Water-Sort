@@ -44,6 +44,16 @@
       "Index": 8,
       "IsUnlock": false,
       "isEquip": false
+    },
+    {
+      "Index": 9,
+      "IsUnlock": false,
+      "isEquip": false
+    },
+    {
+      "Index": 10,
+      "IsUnlock": false,
+      "isEquip": false
     }
   ],
   "ThemeDatas": [
@@ -99,6 +109,11 @@
     },
     {
       "Index": 10,
+      "IsUnlock": false,
+      "isEquip": false
+    },
+    {
+      "Index": 11,
       "IsUnlock": false,
       "isEquip": false
     }
