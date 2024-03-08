@@ -112,7 +112,7 @@ public class AdsManager : SingletonMonoBehaviour<AdsManager>
 
     public void ShowBanner()
     {
-        if (!GlobalSetting.NetWorkRequirements() || PlayerData.UserData.HighestLevel + 1 < AppConfig.Instance.BannerAdLevel) return;
+        // if (!GlobalSetting.NetWorkRequirements() || PlayerData.UserData.HighestLevel + 1 < AppConfig.Instance.BannerAdLevel) return;
 
         MaxSdk.ShowBanner(bannerID);
         isShowBanner = true;

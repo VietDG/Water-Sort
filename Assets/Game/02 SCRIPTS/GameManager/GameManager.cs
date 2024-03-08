@@ -34,6 +34,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     public void InitLevel()
     {
+        AdsManager.Instance.ShowBanner();
         this.Level = Datamanager.LevelDataSO.getLevel(_userData.HighestLevel);
     }
 
