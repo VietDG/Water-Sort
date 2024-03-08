@@ -8,7 +8,7 @@
     <package>com.applovin:applovin-sdk:12.1.0</package>
     <package>com.google.android.gms:play-services-base:17.6.0</package>
     <package>com.google.android.ump:user-messaging-platform:2.1.0</package>
-    <package>com.google.firebase:firebase-analytics:20.0.0</package>
+    <package>com.google.firebase:firebase-analytics:20.1.2</package>
     <package>com.google.firebase:firebase-analytics-unity:8.8.0</package>
     <package>com.google.firebase:firebase-app-unity:8.8.0</package>
     <package>com.google.firebase:firebase-common:20.0.0</package>

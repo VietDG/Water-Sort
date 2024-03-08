@@ -21,9 +21,11 @@ IL2CPP_EXTERN_C Il2CppInteropData g_Il2CppInteropData[];
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_AssemblyU2DCSharpU2Dfirstpass_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_DOTween_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Firebase_Analytics_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Firebase_App_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Firebase_Crashlytics_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Firebase_Platform_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Firebase_RemoteConfig_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Firebase_TaskExtension_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_MaxSdk_Scripts_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Mono_Security_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Newtonsoft_Json_CodeGenModule;
@@ -76,7 +78,6 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityWebRequestAssetBund
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityWebRequestModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_VRModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_XRModule_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_Addressables_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_Burst_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_Burst_Unsafe_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_Compat_CodeGenModule;
@@ -84,7 +85,6 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_Mathematics_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_RenderPipeline_Universal_ShaderLibrary_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_RenderPipelines_Core_Runtime_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_RenderPipelines_Universal_Runtime_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_ResourceManager_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_Services_Core_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_Services_Core_Configuration_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_Services_Core_Device_CodeGenModule;
@@ -107,9 +107,11 @@ const Il2CppCodeGenModule* g_CodeGenModules[83] =
 	(&g_AssemblyU2DCSharpU2Dfirstpass_CodeGenModule),
 	(&g_AssemblyU2DCSharp_CodeGenModule),
 	(&g_DOTween_CodeGenModule),
+	(&g_Firebase_Analytics_CodeGenModule),
 	(&g_Firebase_App_CodeGenModule),
-	(&g_Firebase_Crashlytics_CodeGenModule),
 	(&g_Firebase_Platform_CodeGenModule),
+	(&g_Firebase_RemoteConfig_CodeGenModule),
+	(&g_Firebase_TaskExtension_CodeGenModule),
 	(&g_MaxSdk_Scripts_CodeGenModule),
 	(&g_Mono_Security_CodeGenModule),
 	(&g_Newtonsoft_Json_CodeGenModule),
@@ -162,7 +164,6 @@ const Il2CppCodeGenModule* g_CodeGenModules[83] =
 	(&g_UnityEngine_UnityWebRequestModule_CodeGenModule),
 	(&g_UnityEngine_VRModule_CodeGenModule),
 	(&g_UnityEngine_XRModule_CodeGenModule),
-	(&g_Unity_Addressables_CodeGenModule),
 	(&g_Unity_Burst_CodeGenModule),
 	(&g_Unity_Burst_Unsafe_CodeGenModule),
 	(&g_Unity_Compat_CodeGenModule),
@@ -170,7 +171,6 @@ const Il2CppCodeGenModule* g_CodeGenModules[83] =
 	(&g_Unity_RenderPipeline_Universal_ShaderLibrary_CodeGenModule),
 	(&g_Unity_RenderPipelines_Core_Runtime_CodeGenModule),
 	(&g_Unity_RenderPipelines_Universal_Runtime_CodeGenModule),
-	(&g_Unity_ResourceManager_CodeGenModule),
 	(&g_Unity_Services_Core_CodeGenModule),
 	(&g_Unity_Services_Core_Configuration_CodeGenModule),
 	(&g_Unity_Services_Core_Device_CodeGenModule),
@@ -191,16 +191,16 @@ const Il2CppCodeGenModule* g_CodeGenModules[83] =
 IL2CPP_EXTERN_C const Il2CppCodeRegistration g_CodeRegistration;
 const Il2CppCodeRegistration g_CodeRegistration = 
 {
-	45,
+	61,
 	g_ReversePInvokeWrapperPointers,
-	56663,
+	53789,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	13939,
+	13515,
 	g_Il2CppInvokerPointers,
-	1968,
+	1870,
 	g_UnresolvedVirtualMethodPointers,
-	626,
+	615,
 	g_Il2CppInteropData,
 	0,
 	NULL,
