@@ -37,7 +37,7 @@ public class MaxSdkUnityEditor : MaxSdkBase
         get { return MaxUserServiceUnityEditor.Instance; }
     }
 
-    [RuntimeInitializeOnLoadMethod]
+    //   [RuntimeInitializeOnLoadMethod]
     public static void InitializeMaxSdkUnityEditorOnLoad()
     {
         // Unity destroys the stub banners each time the editor exits play mode, but the StubBanners stays in memory if Enter Play Mode settings is enabled.
@@ -1395,7 +1395,7 @@ public class MaxSdkUnityEditor : MaxSdkBase
     /// </summary>
     /// <param name="advertisingIdentifiers">String list of advertising identifiers from devices to receive test ads.</param>
     public static void SetTestDeviceAdvertisingIdentifiers(string[] advertisingIdentifiers)
-    { 
+    {
         if (IsInitialized())
         {
             MaxSdkLogger.UserError("Test Device Advertising Identifiers must be set before SDK initialization.");
