@@ -207,7 +207,7 @@ public class BottleController : MonoBehaviour
 
         Vector2 target = new Vector2(endPosition.x/*+ directionMultiple*/, endPosition.y);
 
-        this.transform.DOMove(target, 0.1f).SetEase(Ease.Linear).SetDelay(0.1f).OnComplete(() =>
+        this.transform.DOMove(target, 0.2f).SetEase(Ease.InQuad).OnComplete(() =>
         {
             if (datawaterColor.waterDa.Count == 0)
             {
@@ -239,8 +239,8 @@ public class BottleController : MonoBehaviour
             this.transform.DORotate(new Vector3(0, 0, directionMultiple * rotationValues[datawaterColor.waterDa.Count]), _duration).OnComplete(() =>
             {
                 RoteBack(target, bottle);
-                _lineRenderer.enabled = false;
-                _lineRenderer.gameObject.SetActive(false);
+                //_lineRenderer.enabled = false;
+                //_lineRenderer.gameObject.SetActive(false);
             });
         });
     }
@@ -293,7 +293,7 @@ public class BottleController : MonoBehaviour
         bottleMask.material.DOFloat(0.7f, "_scale", _duration - 0.1f).SetEase(Ease.Linear);
         this.transform.DORotate(new Vector3(0, 0, 0), _duration).OnComplete(() =>
         {
-            this.transform.DOMove(endPosition, 0.1f).SetEase(Ease.Linear).OnComplete(() =>
+            this.transform.DOMove(endPosition, 0.2f).SetEase(Ease.OutQuad).OnComplete(() =>
             {
                 _ava.sortingOrder -= 3;
                 bottleMask.sortingOrder -= 3;
