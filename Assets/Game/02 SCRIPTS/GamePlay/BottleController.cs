@@ -4,8 +4,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
-using static UnityEngine.Rendering.DebugUI;
 
 public enum ColorShader
 {
@@ -85,8 +83,6 @@ public class BottleController : MonoBehaviour
     private Vector3 _rightPos;
     public Vector3 RightPos => _rightPos;
 
-    private Vector3 _topPos;
-
     [SerializeField] ParticleSystem _vfx;
     [field: SerializeField] public StateTube state { get; private set; }
     public string[] _colorName = new string[] { "C1", "C2", "C3", "C4" }; // Update Start Color
@@ -108,17 +104,20 @@ public class BottleController : MonoBehaviour
     }
     private void OnEnable()
     {
-        ActionEvent.OnResetGamePlay += ResetPos;
+        ActionEvent.OnResetGamePlay += Reset;
         ActionEvent.OnSetSkin += SetSkinTop;
     }
 
     private void Reset()
     {
-        this.datawaterColor = null;
         this.state = StateTube.Deactive;
         _vfx.Stop();
-        originalPosition = this.transform.position;
-        _bottleTop.transform.position = _topPos;
+        _bottleTop.SetActive(false);
+    }
+
+    public void StopVfx()
+    {
+        _vfx.Stop();
     }
 
     private void OnDisable()
@@ -168,7 +167,6 @@ public class BottleController : MonoBehaviour
         this.transform.position = target;
         _startPosMove = _spawnTrans.position;
         originalPosition = target;
-        _topPos = _bottleTop.transform.position;
     }
 
     public void UpdateStartColor()
@@ -180,13 +178,11 @@ public class BottleController : MonoBehaviour
     }
     #endregion
 
-
     #region MoveMent
 
     public void StartColorTransfer(BottleController bottle)
     {
         ChoseRotationPointAndDirection(bottle);
-
         _ava.sortingOrder += 3;
         bottleMask.sortingOrder += 3;
         Rote(bottle);
@@ -239,8 +235,6 @@ public class BottleController : MonoBehaviour
             this.transform.DORotate(new Vector3(0, 0, directionMultiple * rotationValues[datawaterColor.waterDa.Count]), _duration).OnComplete(() =>
             {
                 RoteBack(target, bottle);
-                //_lineRenderer.enabled = false;
-                //_lineRenderer.gameObject.SetActive(false);
             });
         });
     }
@@ -259,13 +253,6 @@ public class BottleController : MonoBehaviour
             bottleMask.material.SetColor(_colorName[i], datawaterColor.waterDa[i].color);
         }
         _bottleTop.SetActive(false);
-        _bottleTop.transform.position = _topPos;
-    }
-
-    private void ResetPos()
-    {
-        originalPosition = this.transform.position;
-        _bottleTop.transform.position = _topPos;
     }
 
     IEnumerator SetLine(BottleController bottle)
@@ -327,7 +314,6 @@ public class BottleController : MonoBehaviour
     public void Complete()
     {
         _bottleTop.gameObject.SetActive(true);
-        _bottleTop.transform.DOMoveY(_bottleTop.transform.position.y - 0.5f, 0.2f).SetDelay(0.1f).SetEase(Ease.InQuad);
         SoundManager.Instance.PlaySfxRewind(GlobalSetting.GetSFX("TopComplete"));
         _vfx.Play();
     }

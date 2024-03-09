@@ -62,7 +62,12 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         //{
         //});
         ActionEvent.OnNextLevel?.Invoke();
-        FunctionCommon.DelayTime(1.5f, () =>
+
+        foreach (var item in controller.bottleList)
+        {
+            item.StopVfx();
+        }
+        FunctionCommon.DelayTime(2f, () =>
         {
             SoundManager.Instance.PlaySfxNoRewind(GlobalSetting.GetSFX("victory1"));
             // ActionEvent.OnResetGamePlay?.Invoke();

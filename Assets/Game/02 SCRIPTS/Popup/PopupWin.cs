@@ -54,6 +54,7 @@ public class PopupWin : SingletonPopup<PopupWin>
         ActionEvent.OnResetGamePlay?.Invoke();
         base.Hide(() =>
         {
+            // Manager.Load(Const.SCENE_GAME);
             //if (GameManager.Instance.Level.level % 5 == 0 && PlayerData.UserData.ValueToRate <= 0)
             //{
             //    PopupCallToRate.Instance.Show();

@@ -372,7 +372,6 @@ public class GameController : MonoBehaviour
 
     private void UserBack()
     {
-        Debug.LogError(_prevTube.Count);
         if (_prevTube.Count > 0)
         {
             BottleController from = _prevTube[^1].Key;
