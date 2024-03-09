@@ -19,7 +19,7 @@ public class PopupUnlockSkin : SingletonPopup<PopupUnlockSkin>
 
         _iconSkinImag.sprite = sprite;
         _skinData = skinData;
-        SoundManager.Instance.PlaySfxRewind(GlobalSetting.GetSFX("reward_shining"));
+        SoundManager.Instance.PlaySfxNoRewind(GlobalSetting.GetSFX("reward_shining"));
 
         HideUI();
 

@@ -291,7 +291,7 @@ public class BottleController : MonoBehaviour
     {
         endPosition = originalPosition;
         bottleMask.material.DOFloat(0.7f, "_scale", _duration - 0.1f).SetEase(Ease.Linear);
-        this.transform.DORotate(new Vector3(0, 0, 0), _duration).SetDelay(0.1f).OnComplete(() =>
+        this.transform.DORotate(new Vector3(0, 0, 0), _duration).OnComplete(() =>
         {
             this.transform.DOMove(endPosition, 0.1f).SetEase(Ease.Linear).OnComplete(() =>
             {
