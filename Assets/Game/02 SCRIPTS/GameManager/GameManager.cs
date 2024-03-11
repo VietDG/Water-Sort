@@ -2,7 +2,6 @@ using SS.View;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : SingletonMonoBehaviour<GameManager>
 {
@@ -32,10 +31,19 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         ActionEvent.OnNextLevel -= InitLevel;
     }
 
+    private void OnApplicationPause(bool pause)
+    {
+        if (pause)
+        {
+            AdsManager.Instance.ShowInterstitial();
+        }
+    }
+
     public void InitLevel()
     {
         AdsManager.Instance.ShowBanner();
         this.Level = Datamanager.LevelDataSO.getLevel(_userData.HighestLevel);
+        GlobalEventManager.OnLevelPlay(Level.level);
     }
 
     public DataWaterSO getBallDataSO()
@@ -58,26 +66,31 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     public void Win()
     {
         _userData.UpdateHighestLevel();
-        //FunctionCommon.DelayTime(5, () =>
-        //{
-        //});
         ActionEvent.OnNextLevel?.Invoke();
-
+        Datamanager.SaveAllData();
         foreach (var item in controller.bottleList)
         {
             item.StopVfx();
         }
+        GlobalEventManager.OnLevelComplete(Level.level);
         FunctionCommon.DelayTime(2f, () =>
         {
-            SoundManager.Instance.PlaySfxNoRewind(GlobalSetting.GetSFX("victory1"));
-            // ActionEvent.OnResetGamePlay?.Invoke();
-            PopupWin.Instance.Show();
+            AdsManager.Instance.ShowInterstitial(() =>
+            {
+                SoundManager.Instance.PlaySfxNoRewind(GlobalSetting.GetSFX("victory1"));
+                PopupWin.Instance.Show();
+            });
         });
     }
 
     public void OnClickRestart()
     {
         if (!controller.isMoving()) return;
-        ActionEvent.OnResetGamePlay?.Invoke();
+        AdsManager.Instance.ShowInterstitial(() =>
+        {
+
+            ActionEvent.OnResetGamePlay?.Invoke();
+            GlobalEventManager.OnLevelReplay(Level.level);
+        });
     }
 }

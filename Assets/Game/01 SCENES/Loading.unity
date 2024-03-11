@@ -525,9 +525,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   preInstantiate: 1
   sdkID: QzzbL8aG4ezPV9WMEy8mG0BmlSoXVxPCP8vTTOriXP7xVrFl7NqTdTDRNRQIwbceWJ_cXD1__Lduo2MdKetggT
-  bannerID: 2e43dd283bd9595c
-  interstitialID: a715a7588ffed818
-  rewardID: c2b5a5f9deff9c19
+  bannerID: df7b6cb5b54dd8ed
+  interstitialID: 74352291ad722067
+  rewardID: 28d6cf5e0849c59f
   isShowBanner: 0
   CanLoadAds: 0
 --- !u!1 &537560317
@@ -1237,10 +1237,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   preInstantiate: 1
   _bannerAdLevel: 1
-  _interAdLevel: 50
+  _interAdLevel: 5
   _interFrequencyTime: 120
   _isShowInterWithClosePopupRemoveAds: 0
-  ValueIsFetch: '|1||50||90||True|'
+  ValueIsFetch: 
 --- !u!1 &1673694218
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,7 +1358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _loadingText: {fileID: 1688577259994352089}
   _percent: 100
-  _delayTime: 0.1
+  _delayTime: 0.01
   _loadingSlider: {fileID: 1688577259754403371}
 --- !u!1001 &1685759170
 PrefabInstance:

@@ -1,0 +1,9953 @@
+﻿#include "pch-cpp.hpp"
+
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include <limits>
+
+
+template <typename T1>
+struct VirtualActionInvoker1
+{
+	typedef void (*Action)(void*, T1, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename R>
+struct VirtualFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+template <typename R, typename T1>
+struct VirtualFuncInvoker1
+{
+	typedef R (*Func)(void*, T1, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+struct InterfaceActionInvoker0
+{
+	typedef void (*Action)(void*, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+template <typename R>
+struct InterfaceFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+
+// System.Action`1<Google.Play.Common.PlayAsyncOperation`2<Google.Play.AppUpdate.AppUpdateInfo,Google.Play.AppUpdate.AppUpdateErrorCode>>
+struct Action_1_t1C9BD9999340D3F5B08F52D986D0F0D38E27B3C4;
+// System.Action`1<Google.Play.Common.PlayAsyncOperation`2<Google.Play.AssetDelivery.ConfirmationDialogResult,Google.Play.AssetDelivery.AssetDeliveryErrorCode>>
+struct Action_1_tE20890CBCDF8F53570E19267201E316B9B9B5105;
+// System.Action`1<Google.Play.Common.PlayAsyncOperation`2<System.Int64,Google.Play.AssetDelivery.AssetDeliveryErrorCode>>
+struct Action_1_tAB0FB726E43E3FD66FEF472E70E080C251B15757;
+// System.Action`1<Google.Play.Common.PlayAsyncOperation`2<Google.Play.Common.VoidResult,Google.Play.AppUpdate.AppUpdateErrorCode>>
+struct Action_1_tF14D56596120A0F451E8A053E29F54FD86B1905E;
+// System.Action`1<Google.Play.Common.PlayAsyncOperation`2<Google.Play.Common.VoidResult,Google.Play.AssetDelivery.AssetDeliveryErrorCode>>
+struct Action_1_tBEB54B60AC7043F20551CFD8ACEBF5E44CBB3BEC;
+// System.Action`1<UnityEngine.AndroidJavaObject>
+struct Action_1_tBD9457F0872CC7E6C1468CA37E6EF9D4403E1594;
+// System.Action`1<Google.Play.AppUpdate.AppUpdateRequest>
+struct Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4;
+// System.Action`1<Google.Play.AppUpdate.Internal.AppUpdateState>
+struct Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C;
+// System.Action`1<UnityEngine.AsyncOperation>
+struct Action_1_tE8693FF0E67CDBA52BAFB211BFF1844D076ABAFB;
+// System.Action`1<System.Int32>
+struct Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404;
+// System.Action`1<System.Object>
+struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87;
+// System.Action`1<Google.Play.AssetDelivery.PlayAssetBundleRequest>
+struct Action_1_t90B046B6C5A46889901256E7FE445D87DD3D0F52;
+// System.Action`1<Google.Play.AssetDelivery.PlayAssetPackBatchRequest>
+struct Action_1_tD3B6C9D99DD28F54511BE03819C3E5DB2144A97C;
+// System.Action`1<Google.Play.AssetDelivery.PlayAssetPackRequest>
+struct Action_1_t6C653CA94F6E4C002C5DEFFE0C93E3DDEE648147;
+// System.Action`1<Google.Play.Common.VoidResult>
+struct Action_1_t1CE90521DFC32B00F1A467A02F12F52B0F03C219;
+// System.Action`2<System.Object,System.Int32>
+struct Action_2_tAC461AE4F7B507965CE2E6A32853473F8C02CD75;
+// System.Action`2<System.String,System.Int32>
+struct Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF;
+// Google.Play.AppUpdate.Internal.AppUpdateAsyncOperation`1<Google.Play.AppUpdate.AppUpdateInfo>
+struct AppUpdateAsyncOperation_1_tEC33166ACB2F2393015C72F1DE26C129C951E940;
+// Google.Play.AppUpdate.Internal.AppUpdateAsyncOperation`1<System.Object>
+struct AppUpdateAsyncOperation_1_tAC8CD35289DDF1552B4AC51C7F78CD2D7294DBCC;
+// Google.Play.AppUpdate.Internal.AppUpdateAsyncOperation`1<Google.Play.Common.VoidResult>
+struct AppUpdateAsyncOperation_1_t75D772868C7DB917560A77CD6FE35354A5BF1147;
+// Google.Play.AssetDelivery.Internal.AssetDeliveryAsyncOperation`1<Google.Play.AssetDelivery.ConfirmationDialogResult>
+struct AssetDeliveryAsyncOperation_1_t33C31211B6C7DF542271167C1436C3884F277D39;
+// Google.Play.AssetDelivery.Internal.AssetDeliveryAsyncOperation`1<System.Int64>
+struct AssetDeliveryAsyncOperation_1_t290D8C237F9F8659DAA13335EE19A29699DF9A3E;
+// Google.Play.AssetDelivery.Internal.AssetDeliveryAsyncOperation`1<Google.Play.Common.VoidResult>
+struct AssetDeliveryAsyncOperation_1_t543238F0246E8409055801D271356CBBEA0A5810;
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateErrorCode>
+struct Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E;
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateStatus>
+struct Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692;
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateType>
+struct Dictionary_2_t7AAFE60DBE071FF1583BEA36BFB195214FB795CD;
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AssetDelivery.AssetDeliveryErrorCode>
+struct Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13;
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AssetDelivery.AssetDeliveryStatus>
+struct Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC;
+// System.Collections.Generic.Dictionary`2<System.Int32,System.Int32Enum>
+struct Dictionary_2_t8692D65464844EB649ABD241057B7447F5B945B6;
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.UpdateAvailability>
+struct Dictionary_2_tC8A0936A5A6577AFC135261FE851A2B8667D267C;
+// System.Collections.Generic.Dictionary`2<System.Object,System.Object>
+struct Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA;
+// System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.AssetPackState>
+struct Dictionary_2_tBDC5B9503D2DB7BCF576510A61B3DA7ADE65A9D6;
+// System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl>
+struct Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55;
+// System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.PlayAssetPackRequest>
+struct Dictionary_2_t3EFA4D10E3094CC14D7BC611CD307E8DF0F580B0;
+// System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>
+struct Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0;
+// System.Func`2<System.Object,System.Boolean>
+struct Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00;
+// System.Func`2<System.Object,System.Object>
+struct Func_2_tACBF5A1656250800CE861707354491F0611F6624;
+// System.Func`2<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl,System.Boolean>
+struct Func_2_t791489D9497D5BC0F497E038655BCE0E393C8639;
+// System.Func`2<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl,Google.Play.AssetDelivery.PlayAssetPackRequest>
+struct Func_2_t5046017BD492967250D8044DFF77E6C6ED3E3B60;
+// System.Func`2<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl,System.String>
+struct Func_2_t9DEF496CE413EBA35AC4F404085FC769C4A8C110;
+// System.Collections.Generic.HashSet`1<System.Object>
+struct HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885;
+// System.Collections.Generic.HashSet`1<System.String>
+struct HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178;
+// System.Collections.Generic.IDictionary`2<System.String,Google.Play.AssetDelivery.PlayAssetPackRequest>
+struct IDictionary_2_tCDF317ACA078B5D9B4CF3A8AD303AB5E528114CC;
+// System.Collections.Generic.IEnumerable`1<System.Object>
+struct IEnumerable_1_tF95C9E01A913DD50575531C8305932628663D9E9;
+// System.Collections.Generic.IEnumerable`1<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>
+struct IEnumerable_1_tA1B82DE36D158D17C65163C7E8888D9992E77614;
+// System.Collections.Generic.IEnumerable`1<System.String>
+struct IEnumerable_1_t349E66EC5F09B881A8E52EE40A1AB9EC60E08E44;
+// System.Collections.Generic.IEqualityComparer`1<System.Int32>
+struct IEqualityComparer_1_tDBFC8496F14612776AF930DBF84AFE7D06D1F0E9;
+// System.Collections.Generic.IEqualityComparer`1<System.Object>
+struct IEqualityComparer_1_t2CA7720C7ADCCDECD3B02E45878B4478619D5347;
+// System.Collections.Generic.IEqualityComparer`1<System.String>
+struct IEqualityComparer_1_tAE94C8F24AD5B94D4EE85CA9FC59E3409D41CAF7;
+// System.Collections.Generic.IList`1<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>
+struct IList_1_tEF162BF700BDD185881470CCDC5E945A4F35E52B;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.Int32,Google.Play.AppUpdate.AppUpdateErrorCode>
+struct KeyCollection_tC50F9A3FE4B36AC6FF750CDABB20A5376ECE7A1F;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.Int32,Google.Play.AppUpdate.AppUpdateStatus>
+struct KeyCollection_tD0DB4A17B761D82C12256CF8AFCC6C60973A4114;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.Int32,Google.Play.AppUpdate.AppUpdateType>
+struct KeyCollection_tE54D55A4E2B2DA2CA21C98C9C116B8B98CC5D5FE;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.Int32,Google.Play.AssetDelivery.AssetDeliveryErrorCode>
+struct KeyCollection_tCCB3608E2C1FBD86B50D9C526567C045E49010C7;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.Int32,Google.Play.AssetDelivery.AssetDeliveryStatus>
+struct KeyCollection_tC46E258BA5A47AEC82FE437C36587D03C94197C0;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.Int32,Google.Play.AppUpdate.UpdateAvailability>
+struct KeyCollection_t03E6748DEB137D4CB824EFB9CF6AB7E419235D81;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.Object,System.Object>
+struct KeyCollection_tB45A861D090B15129521119AE48ED3813820A974;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.String,Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl>
+struct KeyCollection_t6DEACB931C585B731341EDE3400A6BE04A418DF3;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.String,Google.Play.AssetDelivery.PlayAssetPackRequest>
+struct KeyCollection_tF2DFFD7B4741427CCFDF79A924F46424D5976E8F;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>
+struct KeyCollection_t85F308B8A8F103FA2411C9157460C86160FADD7A;
+// System.Collections.Generic.List`1<System.Object>
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
+// System.Collections.Generic.List`1<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>
+struct List_1_t73CB53E75D60F4AF3A6F962752DE8CF2D8910DF0;
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.AppUpdate.AppUpdateInfo,Google.Play.AppUpdate.AppUpdateErrorCode>
+struct PlayAsyncOperationImpl_2_tD5929558BD68987D72A9FF54078482B548A45596;
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.AssetDelivery.ConfirmationDialogResult,Google.Play.AssetDelivery.AssetDeliveryErrorCode>
+struct PlayAsyncOperationImpl_2_t9D0D21EEA9E39EE0F8634E8A65EF81F82570B39A;
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<System.Int32Enum,System.Int32Enum>
+struct PlayAsyncOperationImpl_2_t173F29216BEE54FBDB4700D751EB0ECB4D71AE54;
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<System.Int64,Google.Play.AssetDelivery.AssetDeliveryErrorCode>
+struct PlayAsyncOperationImpl_2_t47189B680EB02A59150C62CE435DD0BE3D7F1F39;
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<System.Int64,System.Int32Enum>
+struct PlayAsyncOperationImpl_2_t8BF59FBB3EE37485475D7CAFC13C6D8F7979BC87;
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<System.Object,System.Int32Enum>
+struct PlayAsyncOperationImpl_2_tD10916A0F8FEFDED4C47AC9B70A773C0AB83BA33;
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.Common.VoidResult,Google.Play.AppUpdate.AppUpdateErrorCode>
+struct PlayAsyncOperationImpl_2_t8D42C1E55C0B6B29A1001BAC07DA7BC4EF877083;
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.Common.VoidResult,Google.Play.AssetDelivery.AssetDeliveryErrorCode>
+struct PlayAsyncOperationImpl_2_t776E04678C6917D87DCD2CAABC92490BF9B2038D;
+// Google.Play.Common.PlayAsyncOperation`2<Google.Play.AppUpdate.AppUpdateInfo,Google.Play.AppUpdate.AppUpdateErrorCode>
+struct PlayAsyncOperation_2_t39D5C6763CB7F06C186D9A8C75D9F63698F753C6;
+// Google.Play.Common.PlayAsyncOperation`2<Google.Play.Common.VoidResult,Google.Play.AppUpdate.AppUpdateErrorCode>
+struct PlayAsyncOperation_2_t70D0CB32A79B3B657D0C9EE6606ABA6F5A958F15;
+// Google.Play.Core.Internal.PlayCoreTask`1<UnityEngine.AndroidJavaObject>
+struct PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E;
+// Google.Play.Core.Internal.PlayCoreTask`1<System.Int32>
+struct PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F;
+// Google.Play.Core.Internal.PlayCoreTask`1<System.Object>
+struct PlayCoreTask_1_t462AF85AE7E00CB9B532E6D4B3524B33C5E2D24F;
+// Google.Play.Core.Internal.PlayCoreTask`1<Google.Play.Common.VoidResult>
+struct PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,Google.Play.AppUpdate.AppUpdateErrorCode>
+struct ValueCollection_t63BF23C7A417AFEE1185465F7617C8EA343E350F;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,Google.Play.AppUpdate.AppUpdateStatus>
+struct ValueCollection_t80732173931C801BE26DA2016AA80AD8344D19E8;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,Google.Play.AppUpdate.AppUpdateType>
+struct ValueCollection_tB8B0211DC896A4970BE539564FE7FA528BF6080E;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,Google.Play.AssetDelivery.AssetDeliveryErrorCode>
+struct ValueCollection_t30D828BA9D72EE5EF2A708C6061705D1772427BD;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,Google.Play.AssetDelivery.AssetDeliveryStatus>
+struct ValueCollection_t5181881FED921D3F7D649FD7E5AA427E7717FCD2;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,Google.Play.AppUpdate.UpdateAvailability>
+struct ValueCollection_tF2F95F92838B30A4106DFEB9327A4931441C8FE9;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.Object,System.Object>
+struct ValueCollection_t038245E04B5D2A80048D9F8021A23E69A0C9DBAA;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl>
+struct ValueCollection_t28BD89AC51713093C021F88D60C53DB7292DF341;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,Google.Play.AssetDelivery.PlayAssetPackRequest>
+struct ValueCollection_tE4187742688FEAEAF25A670A3C2464682FE97ACE;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>
+struct ValueCollection_t61E003F560D440A9E1E8071CB58BB65495DE50D1;
+// System.Collections.Generic.Dictionary`2/Entry<System.Int32,Google.Play.AppUpdate.AppUpdateErrorCode>[]
+struct EntryU5BU5D_t8CC76148025C91E8CB89D3F41B9024253A36AFF8;
+// System.Collections.Generic.Dictionary`2/Entry<System.Int32,Google.Play.AppUpdate.AppUpdateStatus>[]
+struct EntryU5BU5D_t1A58D5179A8C4FCD992926FBC25F763DFEC70764;
+// System.Collections.Generic.Dictionary`2/Entry<System.Int32,Google.Play.AppUpdate.AppUpdateType>[]
+struct EntryU5BU5D_tDF70835539C4858B13485F883506787761CBEE44;
+// System.Collections.Generic.Dictionary`2/Entry<System.Int32,Google.Play.AssetDelivery.AssetDeliveryErrorCode>[]
+struct EntryU5BU5D_t0EEF469A67A22EC685E045C917676749F690DB89;
+// System.Collections.Generic.Dictionary`2/Entry<System.Int32,Google.Play.AssetDelivery.AssetDeliveryStatus>[]
+struct EntryU5BU5D_t8B19F0101C1E1D86388B5B162DD38F0A3CE53270;
+// System.Collections.Generic.Dictionary`2/Entry<System.Int32,Google.Play.AppUpdate.UpdateAvailability>[]
+struct EntryU5BU5D_t3105066E09E00DB8C5226256CB5E17930BA07377;
+// System.Collections.Generic.Dictionary`2/Entry<System.String,Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl>[]
+struct EntryU5BU5D_t79789A5B8FDD069F4208465413173AFA3BCE9AD8;
+// System.Collections.Generic.Dictionary`2/Entry<System.String,Google.Play.AssetDelivery.PlayAssetPackRequest>[]
+struct EntryU5BU5D_tF9DEA2B54754A1AE94E086C48C6A09EB9C2BEAB3;
+// System.Collections.Generic.Dictionary`2/Entry<System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>[]
+struct EntryU5BU5D_t5EED43A5778C096DDD9407025A411B543CA43F5B;
+// System.Collections.Generic.HashSet`1/Slot<System.Object>[]
+struct SlotU5BU5D_tF596AD324082C553DB364C768406A40BB3C85343;
+// System.Collections.Generic.HashSet`1/Slot<System.String>[]
+struct SlotU5BU5D_t8B8EE191EEC1575F1F0CAC91A208DBFDF2821D01;
+// System.Byte[]
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+// System.Char[]
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
+// System.Delegate[]
+struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
+// System.Int32[]
+struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
+// System.IntPtr[]
+struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
+// System.Object[]
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+// Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl[]
+struct PlayAssetPackRequestImplU5BU5D_t33CB9D4E9563937677004F1BD01FC2833766AADB;
+// System.Diagnostics.StackTrace[]
+struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
+// System.String[]
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
+// System.Action
+struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
+// UnityEngine.AndroidJavaClass
+struct AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03;
+// UnityEngine.AndroidJavaObject
+struct AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0;
+// UnityEngine.AndroidJavaProxy
+struct AndroidJavaProxy_tE5521F9761F7B95444B9C39FB15FDFC23F80A78D;
+// Google.Play.AppUpdate.Internal.AppUpdateHandler
+struct AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E;
+// Google.Play.AppUpdate.AppUpdateInfo
+struct AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9;
+// Google.Play.AppUpdate.AppUpdateManager
+struct AppUpdateManager_tAF831F0CC00B3888CA1DE3A768108806D1DF08EA;
+// Google.Play.AppUpdate.Internal.AppUpdateManagerInternal
+struct AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9;
+// Google.Play.AppUpdate.Internal.AppUpdateManagerPlayCore
+struct AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637;
+// Google.Play.AppUpdate.AppUpdateOptions
+struct AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225;
+// Google.Play.AppUpdate.AppUpdateRequest
+struct AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855;
+// Google.Play.AppUpdate.Internal.AppUpdateRequestImpl
+struct AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7;
+// Google.Play.AppUpdate.Internal.AppUpdateState
+struct AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12;
+// Google.Play.AppUpdate.Internal.AppUpdateStateListener
+struct AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161;
+// System.ArgumentException
+struct ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263;
+// System.ArgumentNullException
+struct ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129;
+// UnityEngine.AssetBundle
+struct AssetBundle_tB38418819A49060CD738CB21541649340F082943;
+// UnityEngine.AssetBundleCreateRequest
+struct AssetBundleCreateRequest_t73B8714B9459A01540E091C3770A408E67188CF6;
+// Google.Play.AssetDelivery.Internal.AssetDeliveryUpdateHandler
+struct AssetDeliveryUpdateHandler_t09BF5560CE2FB9459F07A0FDEBC653D706874470;
+// Google.Play.AssetDelivery.AssetLocation
+struct AssetLocation_t4E83832DC33FFD7DEF9067BCC90C0E2C03D8A5C0;
+// Google.Play.AssetDelivery.Internal.AssetPackManager
+struct AssetPackManager_t4FE399402B3A856645FFF2B7AAAC737A7FC30454;
+// Google.Play.AssetDelivery.Internal.AssetPackStates
+struct AssetPackStates_tF29EB9AEFDF74D53DB10977AB96AD4D8E8923FCB;
+// UnityEngine.CustomYieldInstruction
+struct CustomYieldInstruction_t6B81A50D5D210C1ACAAE247FB53B65CDFFEB7617;
+// System.Delegate
+struct Delegate_t;
+// System.DelegateData
+struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
+// System.Enum
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2;
+// UnityEngine.GameObject
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
+// UnityEngine.GlobalJavaObjectRef
+struct GlobalJavaObjectRef_t20D8E5AAFC2EB2518FCABBF40465855E797FF0D8;
+// System.Collections.IDictionary
+struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
+// System.InvalidOperationException
+struct InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB;
+// System.Reflection.MethodInfo
+struct MethodInfo_t;
+// UnityEngine.MonoBehaviour
+struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71;
+// System.NotImplementedException
+struct NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8;
+// System.NullReferenceException
+struct NullReferenceException_tBDE63A6D24569B964908408389070C6A9F5005BB;
+// UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
+// Google.Play.AssetDelivery.PlayAssetBundleRequest
+struct PlayAssetBundleRequest_t9646E260F4C11DDF3F9BC026B44769B7B1E37B5F;
+// Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl
+struct PlayAssetBundleRequestImpl_tC7F57ABFE28C1E3E41C12E6F1FA46B2DF31F964C;
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal
+struct PlayAssetDeliveryInternal_t6D3BC5056F40448DAE64A56BF9C28103D31CE195;
+// Google.Play.AssetDelivery.PlayAssetPackBatchRequest
+struct PlayAssetPackBatchRequest_tA71C1C7470D71B0B2D5C8F7EC28FA14EFE50A96B;
+// Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl
+struct PlayAssetPackBatchRequestImpl_tC82BC03D5E3AA6978BD90055586C419EDFDFFFE7;
+// Google.Play.AssetDelivery.PlayAssetPackRequest
+struct PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673;
+// Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl
+struct PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF;
+// Google.Play.AssetDelivery.Internal.PlayRequestRepository
+struct PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B;
+// System.Runtime.Serialization.SafeSerializationManager
+struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
+// System.Runtime.Serialization.SerializationInfo
+struct SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37;
+// System.String
+struct String_t;
+// System.Text.StringBuilder
+struct StringBuilder_t;
+// System.Void
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
+// Google.Play.Common.VoidResult
+struct VoidResult_t2EF77C7575B288CA1B347EDF1877D2236759ED9C;
+// Google.Play.AppUpdate.Internal.AppUpdateHandler/<>c
+struct U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370;
+// Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass10_0
+struct U3CU3Ec__DisplayClass10_0_tB13DA84C4ECFFE89A9BE7603A7D01F0E5EF260AF;
+// Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass5_0
+struct U3CU3Ec__DisplayClass5_0_t445BD6C105483E94956697869C826EBE2E731EC6;
+// Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass9_0
+struct U3CU3Ec__DisplayClass9_0_t3A2F8C92672F0E3AE53F59E0F6D2D131936823CF;
+// Google.Play.AppUpdate.AppUpdateRequest/<>c
+struct U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36;
+// Google.Play.AppUpdate.Internal.AppUpdateStateListener/<>c
+struct U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8;
+// Google.Play.AppUpdate.Internal.AppUpdateStateListener/<>c__DisplayClass4_0
+struct U3CU3Ec__DisplayClass4_0_t1A6064DBD19D052DA4A95AA5835DEB7DF35B49FD;
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass10_0
+struct U3CU3Ec__DisplayClass10_0_t08C481C206404FEE818C307898CDF566F87B42C0;
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass10_1
+struct U3CU3Ec__DisplayClass10_1_t169233B0571398354428A4A9EE18A05E311F738E;
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass11_0
+struct U3CU3Ec__DisplayClass11_0_t7154261D7B6602B81815819D10310ADCC9A4FE8B;
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass12_0
+struct U3CU3Ec__DisplayClass12_0_tDA637901046F222FF8E632BBDACBA3C384DB91D6;
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass13_0
+struct U3CU3Ec__DisplayClass13_0_tF4C60CDC13F4815983AF9E0B015876B7E6E1703B;
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass16_0
+struct U3CU3Ec__DisplayClass16_0_tC67150A3C438FF4E5F69CD0C1D1CA927EA87C3C0;
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass20_0
+struct U3CU3Ec__DisplayClass20_0_tE8F82E9C90C95D8B076B6E8A5BCF11C67326186F;
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass7_0
+struct U3CU3Ec__DisplayClass7_0_t1DDCC5DDCCF2CD32AF5B9AD99C0B67D0F6B6A600;
+// Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl/<>c
+struct U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68;
+// Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl/<>c
+struct U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48;
+// Google.Play.AssetDelivery.Internal.PlayRequestRepository/<>c__DisplayClass7_0
+struct U3CU3Ec__DisplayClass7_0_tCA553FFEEF1003FFE329D85247BEBFEFD473EDC1;
+
+IL2CPP_EXTERN_C RuntimeClass* Action_1_t1CE90521DFC32B00F1A467A02F12F52B0F03C219_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Action_1_t6C653CA94F6E4C002C5DEFFE0C93E3DDEE648147_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Action_1_tBD9457F0872CC7E6C1468CA37E6EF9D4403E1594_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AndroidJavaProxy_tE5521F9761F7B95444B9C39FB15FDFC23F80A78D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AppUpdateAsyncOperation_1_t75D772868C7DB917560A77CD6FE35354A5BF1147_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AppUpdateAsyncOperation_1_tEC33166ACB2F2393015C72F1DE26C129C951E940_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AppUpdateErrorCode_t4ACD9167EA62A5ECB29547DAB41020D23FEBC932_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AppUpdateStatus_tF2B3C17AA93719CB1AEBBAFC52FCCEFB77F7D472_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AppUpdateType_t749CC263DD9FE541232518FC95E45C5DC8933263_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AssetPackStates_tF29EB9AEFDF74D53DB10977AB96AD4D8E8923FCB_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t7AAFE60DBE071FF1583BEA36BFB195214FB795CD_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_tC8A0936A5A6577AFC135261FE851A2B8667D267C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Func_2_t5046017BD492967250D8044DFF77E6C6ED3E3B60_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Func_2_t791489D9497D5BC0F497E038655BCE0E393C8639_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Func_2_t9DEF496CE413EBA35AC4F404085FC769C4A8C110_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ICollection_1_tEB85392496CFDE8689FB4C0C01B88E34759B0BF7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IDictionary_2_tCDF317ACA078B5D9B4CF3A8AD303AB5E528114CC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnumerable_1_t0F32D8173C2B7929A933182AF89B36AB888A90E0_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnumerable_1_tC4AE5E1F8260C2816C6100CA640B5A0FAE9AE489_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnumerator_1_tDED69DF92E01EB0D1FDEA585BC7550EC7A6E94DB_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnumerator_1_tF66AF85EF77C19E070515ACEB4F1755D738EFBA0_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* NullReferenceException_tBDE63A6D24569B964908408389070C6A9F5005BB_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* StringBuilder_t_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass10_0_tB13DA84C4ECFFE89A9BE7603A7D01F0E5EF260AF_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass4_0_t1A6064DBD19D052DA4A95AA5835DEB7DF35B49FD_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass5_0_t445BD6C105483E94956697869C826EBE2E731EC6_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass7_0_tCA553FFEEF1003FFE329D85247BEBFEFD473EDC1_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass9_0_t3A2F8C92672F0E3AE53F59E0F6D2D131936823CF_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* UpdateAvailability_t2BE1320DD3BC7E90329381D380A7BD3292B89712_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* VoidResult_t2EF77C7575B288CA1B347EDF1877D2236759ED9C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral0540212BC8D01CEA8329E140D2124BD07BFF2EC7;
+IL2CPP_EXTERN_C String_t* _stringLiteral07075322EF62DC88C79BC907400F25BC6934F767;
+IL2CPP_EXTERN_C String_t* _stringLiteral18B13376AF1971AA622EBCC3C691A582DE44685A;
+IL2CPP_EXTERN_C String_t* _stringLiteral1928D1579953A0A6C6E7D22A4698E36A6D792654;
+IL2CPP_EXTERN_C String_t* _stringLiteral1DED1FE4DC3D681DFAD9D9CB968D797D54654DFB;
+IL2CPP_EXTERN_C String_t* _stringLiteral22BDC6DB76BDB0475A8D4D2C9CBC9F38C8AD2FBA;
+IL2CPP_EXTERN_C String_t* _stringLiteral299A4AE7C84F7A5E5D53339AC6305C9EBECC3838;
+IL2CPP_EXTERN_C String_t* _stringLiteral2AB8C4D5CF03ABCD1E5790F105BC756A71434A47;
+IL2CPP_EXTERN_C String_t* _stringLiteral31EC1637CD5E3B364BC250D53148909FAE317F35;
+IL2CPP_EXTERN_C String_t* _stringLiteral36A0119BD1BA20656C3D67DDCD7CFE7D15216629;
+IL2CPP_EXTERN_C String_t* _stringLiteral36DE4495C0EC647F5B8FD516B5D10613CB6EA74E;
+IL2CPP_EXTERN_C String_t* _stringLiteral373987AF855C33F15202219DB6447E71E2D18129;
+IL2CPP_EXTERN_C String_t* _stringLiteral397D5F4433EAB886D4C9A90EB63283B5172FB828;
+IL2CPP_EXTERN_C String_t* _stringLiteral3BD104280D2FCB1CACC6D2DA2686C9E9B5C1BCAD;
+IL2CPP_EXTERN_C String_t* _stringLiteral3CC0AB5B1A64196B45E94786E0AC1E5A077B588B;
+IL2CPP_EXTERN_C String_t* _stringLiteral3DBC6E65EFFB84E26D3064A90F8F02566E5A20C2;
+IL2CPP_EXTERN_C String_t* _stringLiteral4195BE4867D6E78FB923052AF34A532E9C8567A9;
+IL2CPP_EXTERN_C String_t* _stringLiteral48EE8FA1F27411E4771589A28037B07003548016;
+IL2CPP_EXTERN_C String_t* _stringLiteral4A66A44C28A3F8E4D1BC9C7C8743D74AC97AB112;
+IL2CPP_EXTERN_C String_t* _stringLiteral565D6D845D54747D4F15E70103BF82C1B66A1132;
+IL2CPP_EXTERN_C String_t* _stringLiteral576DE1DC39EED16C68ED00DD6709D3CFCA86ED68;
+IL2CPP_EXTERN_C String_t* _stringLiteral5DEB9C6D092F5904C61EA3A4A2E4705A6BAB7D80;
+IL2CPP_EXTERN_C String_t* _stringLiteral5E3CC3D9E2C8F66698212750CBC59DC25C5B4302;
+IL2CPP_EXTERN_C String_t* _stringLiteral6F5962048E51719F459202BC6321C5E40AC9BAF3;
+IL2CPP_EXTERN_C String_t* _stringLiteral700DA381E8C3217D139C031EBEFE6D2C8AD763C4;
+IL2CPP_EXTERN_C String_t* _stringLiteral71115E84CCAF26F0A22537295087FA06CCC56A78;
+IL2CPP_EXTERN_C String_t* _stringLiteral75FAF73308668FD490C851CC686D98C743D7461C;
+IL2CPP_EXTERN_C String_t* _stringLiteral768F82A25AC6375BDD08F33D316E23F3C9E9872A;
+IL2CPP_EXTERN_C String_t* _stringLiteral778AD59B9C3ACE8CF7DE22D9B29343E9AA91E41B;
+IL2CPP_EXTERN_C String_t* _stringLiteral779880947B42AA00349532A5C9BEF8B3207E53A5;
+IL2CPP_EXTERN_C String_t* _stringLiteral82B5EC2A49EF4C35204EC8CB6F305B6A1A7CA57C;
+IL2CPP_EXTERN_C String_t* _stringLiteral82DEFBE43B7B4EFE46CF0D145B40EDFE6776E216;
+IL2CPP_EXTERN_C String_t* _stringLiteral85B3C933E24A38E4B582B65F80458AB7057E2E15;
+IL2CPP_EXTERN_C String_t* _stringLiteral91D78299C880F594D3CA25495E9CA7D87BDF4459;
+IL2CPP_EXTERN_C String_t* _stringLiteral920617EEBD229EA5BBB788DC30AC9F5E323A448D;
+IL2CPP_EXTERN_C String_t* _stringLiteral98700854E1382A8D1CF64D95CE5853F4530AA5B4;
+IL2CPP_EXTERN_C String_t* _stringLiteral9AA87AA4A420192EA8D51DBF578A4BD5886937AF;
+IL2CPP_EXTERN_C String_t* _stringLiteral9D2E793B284D53AFEA6CBA2151BBADF6FA6538A4;
+IL2CPP_EXTERN_C String_t* _stringLiteralA67FF7C0D33FDE50BB64070C337020F894872A55;
+IL2CPP_EXTERN_C String_t* _stringLiteralA68377FA6C791A6AF1D252BAA114669071DA16E8;
+IL2CPP_EXTERN_C String_t* _stringLiteralA733C7FC19A8317471D21AD091D1A9A6F973A728;
+IL2CPP_EXTERN_C String_t* _stringLiteralAA54966926EB64A8BF901AF1F5AF1F9BD6671D7D;
+IL2CPP_EXTERN_C String_t* _stringLiteralAB5A5180371E886C655E129F11D7176561D4581B;
+IL2CPP_EXTERN_C String_t* _stringLiteralBF55A0CAFB90637DCAD318D355F27142D7CF47C6;
+IL2CPP_EXTERN_C String_t* _stringLiteralCCC4D077264EB63F7FC9CFF6E2E006EA57EC6D35;
+IL2CPP_EXTERN_C String_t* _stringLiteralCDA33B853C851F908A6621450C1B99E8892F2C76;
+IL2CPP_EXTERN_C String_t* _stringLiteralD09A9C10AD610683A6F54C20D1D65790DB6B52D4;
+IL2CPP_EXTERN_C String_t* _stringLiteralD33C6E9A8F14752E7D697A9E7CCE76B9FF5D6152;
+IL2CPP_EXTERN_C String_t* _stringLiteralE2776E6C4A2902E859FFA78E545FDF865AD761C6;
+IL2CPP_EXTERN_C String_t* _stringLiteralE3105DF2BF7880E64CB64A1976D774B8B6AB3D07;
+IL2CPP_EXTERN_C String_t* _stringLiteralE94F67292842EEBE05D89BE49B72C3D46F3E1314;
+IL2CPP_EXTERN_C String_t* _stringLiteralF5612CA011CD9188E0C60D3ACEE2FEE52DC4900B;
+IL2CPP_EXTERN_C String_t* _stringLiteralF6DA5F09626DE73E37A7B0200D1E6D24E5FB308B;
+IL2CPP_EXTERN_C String_t* _stringLiteralF89E2B8AEFEFD95D439A48449E4C25ACB8455C5B;
+IL2CPP_EXTERN_C String_t* _stringLiteralFB306F660024EB940C90A92256F3EEBA97CF1E36;
+IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_CallStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m398EA96C1DE1BB885F2B1DD0E00E8BBA86B49E63_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_Call_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m020246E0988293B6126B690BD6CE4D894276AA3D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_Call_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_m05D3284A3FA772D032190A0FE82363C61000F1DF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_Call_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_m63E24F733CDC205FED0CF4659E49DB4AE06ADBB9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_Call_TisUInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_m116DA4AF7DB9E6C514C6FCC8AE948078D4AF4795_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AppUpdateAsyncOperation_1__ctor_m0549B0A1B22AA510E1BFFFE385D44542AD808D82_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AppUpdateAsyncOperation_1__ctor_mA2F154EB9793BABF281721C1D0D8A593FF8FC1A9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AppUpdateHandler_OnStateUpdateReceived_mBF8678A1C1342CA0F3B5B6F5E150ADEC0152A93F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AppUpdateHandler_ProcessUpdateInfo_mF41BD492E57E6972E90C2E21E08F6DA605B2631D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AppUpdateHandler_Start_m7BAB461324EA94BDA20188494DBC5EF4831FAC58_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AppUpdateManagerInternal_ProcessStateUpdate_m0E5BE160608ACEDB721582186A09A16080BC81CA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AppUpdateManagerInternal_StartUpdateInternal_m3E365F64383219D731425164B1A1E0E5560B18DA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AppUpdateManagerInternal_U3CStartUpdateInternalU3Eb__8_0_m9BCE2D91661C631EC2D3750E14E9C96A16F93165_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AppUpdateManagerPlayCore__ctor_mA1B98C6071B03F58B4F72ED7D3ECFFAB15DAE0E9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AppUpdateOptions__ctor_m70DD47B5E923A94BCD3BC753F8BB47E3AE5F0D48_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AppUpdatePlayCoreTranslator_TranslatePlayCoreAppUpdateType_mC027D3372A880034B196C3EB930A38CDF840F04E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AppUpdatePlayCoreTranslator_TranslatePlayCoreErrorCode_mE59EB28FDB77F65BDF0FEA455F050C9936C4C6C5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AppUpdatePlayCoreTranslator_TranslatePlayCoreUpdateAvailabilities_m21CE11FB4CD033F203D40C47D0DEBA704B85D2A1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AppUpdatePlayCoreTranslator_TranslatePlayCoreUpdateStatus_m5F4CE37AE2073F90DD6DF42DDF4F7371D405BA00_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AppUpdatePlayCoreTranslator_TranslateUpdateActivityResult_m587E8CCFA62ECAE22DBDB3DFCDB844CDA90D9560_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_m5AE17B91EBB2B51FC9CDFAEA41A812DE6DCCDC6D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_m85BAA36A8E802BB0B42D6141BF059011DBE2608C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_m895D7CF7F316439A6DA8FA42E82ED50BFF263AE3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_m921EF5876404282B67EC3B031A7C44FC4BD3F69E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_m955026197BD6540FDD6C9B0A7A4AD04F01833700_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_mD4BABC0648090BFED92098217CB1D70820E94BC9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_ContainsKey_m0290F180F2AD38C7266EDEEF6ADA67D7B803AD45_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_ContainsKey_m3086064E0FEEAEF4E57516CF3DCCD1DF8447AE2C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Remove_m322E60266999EF408510DCECC98E1F341949069C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Remove_m3F89880A33B9D52B491DFC35F84BCAF6D05CF28D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_TryGetValue_m01DF52861A968413F0004B702ACBD624A651CE89_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_TryGetValue_m1B4627D8E489032D5B78A58BCC7EDC3E580B3338_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_TryGetValue_m1FDE4D34B1FEB997100281FFBC7ECAFC0766C7DA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_TryGetValue_m32FD27FFE62B1388B8E3ED60EB28AE456614A202_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_TryGetValue_m38C2456D2DF42BFDB4E2593B6DAA2C4C08458DC9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_TryGetValue_m5FEA856EA377318DEFB13F5DB9A8D43C4FEA1B49_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_TryGetValue_m74465B8FDC479C85F7A7C30351CE15421A289CA8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_TryGetValue_mEB72BB68172FBF3D2454470E9119233F693B92BE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m0E21B7EAA817B7C69002AE178FF2B48F92AA4F34_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m17A42B6F97B8392301C4C698F9B2961225E3037C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m440C792ED7574CAB8132A70EC328C28B8A77F6A5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m52BE9EF2EE12124F0FA27368384783DB85BE8535_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m65988B702DA64A2CCC5DAEC3B25E9592D84DE366_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m6A57AB5D6243E83A3B448C13BE2E59F6291AB374_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m94C607216DEEE513A4B3A0466DC74C2377C25A73_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_mA5CDAC65FA3D30CB44CECAA21ED94DFB45BF3457_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_get_Keys_m575EE431066A5E11BA7FA21778B7227A40D2DD45_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_get_Values_m380CC5A5AC0267504EAAA83F1507D55C1FBA395A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_ToArray_TisString_t_m3B23EE2DD15B2996E7D2ECA6E74696DA892AA194_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_ToDictionary_TisPlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_TisString_t_TisPlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673_m4335CBE55AC7B90B955973464B6C466564A7ADAB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_ToList_TisPlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_m257DA9CFCC89EDBA25AF4D6921A8D4E9FD08B458_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_Where_TisPlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_mDD458CEE20B946ECF9330F0E23E4B081FCBF8D62_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisAppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E_mF9BB90995626221266903C883E6917587C6C7C00_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* HashSet_1_Add_mF3D4CF6D0150392127D5561A87DCDEDA9A81BE5D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* HashSet_1__ctor_m780CFB8A2D23543157D1A0E1FADF781E1AF81E03_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* HashSet_1_get_Count_mAF52C76F83E02DA4DDF4B21CD4D2910BA7CF157F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Value_m94FF5F8624F96A75FA65134023C4D6790E1CC6E6_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayAssetPackBatchRequestImpl_OnChildPackCompleted_m280F1771D022AE509B38B3CCB919C2224BDDBDEB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayAssetPackBatchRequestImpl_OnInitializationErrorOccurred_m0D8D5AE285890CFE0F4582893E7343C12CAC3768_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayAssetPackBatchRequestImpl_OnInitializedInPlayCore_m22A3BD3B53E060C56A64E0EE139090DF2D60099E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayAssetPackRequestImpl_U3CDeferCancelPlayCoreU3Eb__18_0_m754B11C1ADFA91E89C1C2489A1CE8829DE652A7A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayAssetPackRequestImpl_U3COnInitializedInPlayCoreU3Eb__11_0_mA97C0088DFD0266FEDDE500431143F07F70E8FB9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayAsyncOperationImpl_2_SetError_m12F09686B5072581BB81687950E10CD49B3E30D0_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayAsyncOperationImpl_2_SetError_m19F45E26735475B3F4592612A0FD4317F93E31D6_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayAsyncOperationImpl_2_SetError_m9D2E1F99FBEFDBA70757E6CC6092380F358F38B4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayAsyncOperationImpl_2_SetError_mBB436252BD06E688A82F64131C6955C636564B04_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayAsyncOperationImpl_2_SetError_mD4713F37FF29477CF241FE11AFF354902EF4E4E0_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayAsyncOperationImpl_2_SetResult_m44C069D1589ADF93B612E1904C8AA5579AFA234A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayAsyncOperationImpl_2_SetResult_m93BFB6A3A6BA37EFDF2179E4F009E6379B1575BC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayAsyncOperationImpl_2_SetResult_m950096A20B8814CDD43807557258F6DEEEE8DDAD_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayAsyncOperationImpl_2_SetResult_mBF264A6422E52A2CCDF15714B8C17E1FC5723E0F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayAsyncOperationImpl_2_SetResult_mF255A462DC9C24B3CDFF8B8DFA075AE8694C7A26_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayCoreTask_1_Dispose_m00ED1653B30AFA878BBA3EA3B72E17FCC8522355_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayCoreTask_1_Dispose_mF100515D3E945380CE4A58671ABE8C470A886AA2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayCoreTask_1_RegisterOnFailureCallback_m06E72120A3D0DAA0C848D711476BC60114328F58_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayCoreTask_1_RegisterOnFailureCallback_m81B59CC2CA8782959209C1CA9B9410E5859026E5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayCoreTask_1_RegisterOnFailureCallback_mF8543DC0C206CD3ABC2BB7692B2A7BFEE263E694_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayCoreTask_1_RegisterOnSuccessCallback_m2B6E163F1A0A385BD0C1EBBD9380257154294EA4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayCoreTask_1_RegisterOnSuccessCallback_m2F3393B9B94A1866DE7C446909B4D07D642A835C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayCoreTask_1_RegisterOnSuccessCallback_m922BB75531BDB5082724C57F1D7DFE8A476D3AD8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayCoreTask_1__ctor_m53AA82372694AFE445086983C504393B9EB26D51_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayCoreTask_1__ctor_mDAA5455BA547162FA6EA8C79EF4A38E0D0A62B8D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayCoreTask_1__ctor_mFF5887DD94D8E7A1F3B1BB63266E75628AF494C8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayCoreTranslator_TranslatePlayCoreErrorCode_mBE37A0C9CC75E81F98D5B1909F1C2E4A7FF0A896_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayCoreTranslator_TranslatePlayCorePackStatus_m07E1DCFA9B90DAEFF6C1C2A3968ED4FE02F0E08E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3C_ctorU3Eb__15_0_m9B85B7ED478D4A1F320ADC070450182DDBDA50F0_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3C_ctorU3Eb__1_0_mE7A760D25D68A37F29CDE0B5179B11E1F1843F6D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3C_ctorU3Eb__1_1_mD328C5E6AC058752AB2E50F94ED14B62448912F1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3C_ctorU3Eb__30_0_m82F50B5260DE24022F96F9A809889447B05980D7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3C_ctorU3Eb__3_0_m17571F5C6B929E29250E6A45F4A09EF327A93192_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3C_ctorU3Eb__6_0_m986DA32E5B57F0450DA41F80957FCFAD593C4603_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass10_0_U3CInitiateRequestU3Eb__0_mEC8D597BAC2740014790AB9FFCB7EF687624864E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass10_0_U3CInitiateRequestU3Eb__1_m51F87D565ED2B14A0436E4F9B3C538333834BA32_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass4_0_U3ConStateUpdateU3Eb__0_mAF5C916284C9206B2C7ADBC8FE75484B83F3CE3B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass5_0_U3CGetAppUpdateInfoInternalU3Eb__0_mB60DCD7B317C690FA4F5BFE86A46DE0F9B6DDC5A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass5_0_U3CGetAppUpdateInfoInternalU3Eb__1_m2AA8101CB642228DE0DAABD6C4E2D0F300B57D9C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass7_0_U3CGetRequestsWithStatusU3Eb__0_m328EDD68F3B6CB4E7122AE4A4E9FEDBB06BA96B0_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass9_0_U3CCompleteUpdateInternalU3Eb__0_mB2E7A0267E90DA648FD379A779FD96E0B39163D0_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass9_0_U3CCompleteUpdateInternalU3Eb__1_mD3C739CD5CC17F3B4E8AC4D70E1EAF43C848CF83_RuntimeMethod_var;
+struct Delegate_t_marshaled_com;
+struct Delegate_t_marshaled_pinvoke;
+struct Exception_t_marshaled_com;
+struct Exception_t_marshaled_pinvoke;
+
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
+
+IL2CPP_EXTERN_C_BEGIN
+IL2CPP_EXTERN_C_END
+
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateErrorCode>
+struct Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_t8CC76148025C91E8CB89D3F41B9024253A36AFF8* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_tC50F9A3FE4B36AC6FF750CDABB20A5376ECE7A1F* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_t63BF23C7A417AFEE1185465F7617C8EA343E350F* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
+
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateStatus>
+struct Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_t1A58D5179A8C4FCD992926FBC25F763DFEC70764* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_tD0DB4A17B761D82C12256CF8AFCC6C60973A4114* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_t80732173931C801BE26DA2016AA80AD8344D19E8* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
+
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateType>
+struct Dictionary_2_t7AAFE60DBE071FF1583BEA36BFB195214FB795CD  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_tDF70835539C4858B13485F883506787761CBEE44* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_tE54D55A4E2B2DA2CA21C98C9C116B8B98CC5D5FE* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_tB8B0211DC896A4970BE539564FE7FA528BF6080E* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
+
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AssetDelivery.AssetDeliveryErrorCode>
+struct Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_t0EEF469A67A22EC685E045C917676749F690DB89* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_tCCB3608E2C1FBD86B50D9C526567C045E49010C7* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_t30D828BA9D72EE5EF2A708C6061705D1772427BD* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
+
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AssetDelivery.AssetDeliveryStatus>
+struct Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_t8B19F0101C1E1D86388B5B162DD38F0A3CE53270* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_tC46E258BA5A47AEC82FE437C36587D03C94197C0* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_t5181881FED921D3F7D649FD7E5AA427E7717FCD2* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
+
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.UpdateAvailability>
+struct Dictionary_2_tC8A0936A5A6577AFC135261FE851A2B8667D267C  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_t3105066E09E00DB8C5226256CB5E17930BA07377* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_t03E6748DEB137D4CB824EFB9CF6AB7E419235D81* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_tF2F95F92838B30A4106DFEB9327A4931441C8FE9* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
+
+// System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl>
+struct Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_t79789A5B8FDD069F4208465413173AFA3BCE9AD8* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_t6DEACB931C585B731341EDE3400A6BE04A418DF3* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_t28BD89AC51713093C021F88D60C53DB7292DF341* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
+
+// System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.PlayAssetPackRequest>
+struct Dictionary_2_t3EFA4D10E3094CC14D7BC611CD307E8DF0F580B0  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_tF9DEA2B54754A1AE94E086C48C6A09EB9C2BEAB3* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_tF2DFFD7B4741427CCFDF79A924F46424D5976E8F* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_tE4187742688FEAEAF25A670A3C2464682FE97ACE* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
+
+// System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>
+struct Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_t5EED43A5778C096DDD9407025A411B543CA43F5B* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_t85F308B8A8F103FA2411C9157460C86160FADD7A* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_t61E003F560D440A9E1E8071CB58BB65495DE50D1* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
+
+// System.EmptyArray`1<System.Object>
+struct EmptyArray_1_tDF0DD7256B115243AA6BD5558417387A734240EE  : public RuntimeObject
+{
+};
+
+// System.Collections.Generic.HashSet`1<System.Object>
+struct HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.HashSet`1::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_7;
+	// System.Collections.Generic.HashSet`1/Slot<T>[] System.Collections.Generic.HashSet`1::_slots
+	SlotU5BU5D_tF596AD324082C553DB364C768406A40BB3C85343* ____slots_8;
+	// System.Int32 System.Collections.Generic.HashSet`1::_count
+	int32_t ____count_9;
+	// System.Int32 System.Collections.Generic.HashSet`1::_lastIndex
+	int32_t ____lastIndex_10;
+	// System.Int32 System.Collections.Generic.HashSet`1::_freeList
+	int32_t ____freeList_11;
+	// System.Collections.Generic.IEqualityComparer`1<T> System.Collections.Generic.HashSet`1::_comparer
+	RuntimeObject* ____comparer_12;
+	// System.Int32 System.Collections.Generic.HashSet`1::_version
+	int32_t ____version_13;
+	// System.Runtime.Serialization.SerializationInfo System.Collections.Generic.HashSet`1::_siInfo
+	SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ____siInfo_14;
+};
+
+// System.Collections.Generic.HashSet`1<System.String>
+struct HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.HashSet`1::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_7;
+	// System.Collections.Generic.HashSet`1/Slot<T>[] System.Collections.Generic.HashSet`1::_slots
+	SlotU5BU5D_t8B8EE191EEC1575F1F0CAC91A208DBFDF2821D01* ____slots_8;
+	// System.Int32 System.Collections.Generic.HashSet`1::_count
+	int32_t ____count_9;
+	// System.Int32 System.Collections.Generic.HashSet`1::_lastIndex
+	int32_t ____lastIndex_10;
+	// System.Int32 System.Collections.Generic.HashSet`1::_freeList
+	int32_t ____freeList_11;
+	// System.Collections.Generic.IEqualityComparer`1<T> System.Collections.Generic.HashSet`1::_comparer
+	RuntimeObject* ____comparer_12;
+	// System.Int32 System.Collections.Generic.HashSet`1::_version
+	int32_t ____version_13;
+	// System.Runtime.Serialization.SerializationInfo System.Collections.Generic.HashSet`1::_siInfo
+	SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ____siInfo_14;
+};
+
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>
+struct KeyCollection_t85F308B8A8F103FA2411C9157460C86160FADD7A  : public RuntimeObject
+{
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/KeyCollection::_dictionary
+	Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0* ____dictionary_0;
+};
+
+// System.Collections.Generic.List`1<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>
+struct List_1_t73CB53E75D60F4AF3A6F962752DE8CF2D8910DF0  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	PlayAssetPackRequestImplU5BU5D_t33CB9D4E9563937677004F1BD01FC2833766AADB* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+// Google.Play.Core.Internal.PlayCoreTask`1<UnityEngine.AndroidJavaObject>
+struct PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E  : public RuntimeObject
+{
+	// UnityEngine.AndroidJavaObject Google.Play.Core.Internal.PlayCoreTask`1::_javaTask
+	AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ____javaTask_0;
+};
+
+// Google.Play.Core.Internal.PlayCoreTask`1<System.Int32>
+struct PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F  : public RuntimeObject
+{
+	// UnityEngine.AndroidJavaObject Google.Play.Core.Internal.PlayCoreTask`1::_javaTask
+	AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ____javaTask_0;
+};
+
+// Google.Play.Core.Internal.PlayCoreTask`1<Google.Play.Common.VoidResult>
+struct PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075  : public RuntimeObject
+{
+	// UnityEngine.AndroidJavaObject Google.Play.Core.Internal.PlayCoreTask`1::_javaTask
+	AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ____javaTask_0;
+};
+
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>
+struct ValueCollection_t61E003F560D440A9E1E8071CB58BB65495DE50D1  : public RuntimeObject
+{
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/ValueCollection::_dictionary
+	Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0* ____dictionary_0;
+};
+
+// UnityEngine.AndroidJavaObject
+struct AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0  : public RuntimeObject
+{
+	// UnityEngine.GlobalJavaObjectRef UnityEngine.AndroidJavaObject::m_jobject
+	GlobalJavaObjectRef_t20D8E5AAFC2EB2518FCABBF40465855E797FF0D8* ___m_jobject_1;
+	// UnityEngine.GlobalJavaObjectRef UnityEngine.AndroidJavaObject::m_jclass
+	GlobalJavaObjectRef_t20D8E5AAFC2EB2518FCABBF40465855E797FF0D8* ___m_jclass_2;
+};
+
+// Google.Play.AppUpdate.AppUpdateInfo
+struct AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9  : public RuntimeObject
+{
+	// UnityEngine.AndroidJavaObject Google.Play.AppUpdate.AppUpdateInfo::_javaAppUpdateInfo
+	AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ____javaAppUpdateInfo_0;
+};
+
+// Google.Play.AppUpdate.AppUpdateManager
+struct AppUpdateManager_tAF831F0CC00B3888CA1DE3A768108806D1DF08EA  : public RuntimeObject
+{
+	// Google.Play.AppUpdate.Internal.AppUpdateManagerInternal Google.Play.AppUpdate.AppUpdateManager::_appUpdateManagerInternal
+	AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* ____appUpdateManagerInternal_0;
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdateManagerInternal
+struct AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9  : public RuntimeObject
+{
+	// Google.Play.AppUpdate.Internal.AppUpdateManagerPlayCore Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::_appUpdateManagerPlayCore
+	AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637* ____appUpdateManagerPlayCore_0;
+	// Google.Play.AppUpdate.Internal.AppUpdateHandler Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::_appUpdateHandler
+	AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* ____appUpdateHandler_1;
+	// Google.Play.AppUpdate.Internal.AppUpdateRequestImpl Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::_appUpdateRequest
+	AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* ____appUpdateRequest_2;
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdateManagerPlayCore
+struct AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637  : public RuntimeObject
+{
+	// UnityEngine.AndroidJavaObject Google.Play.AppUpdate.Internal.AppUpdateManagerPlayCore::_javaAppUpdateManager
+	AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ____javaAppUpdateManager_0;
+};
+
+// Google.Play.AppUpdate.AppUpdateOptions
+struct AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225  : public RuntimeObject
+{
+	// UnityEngine.AndroidJavaObject Google.Play.AppUpdate.AppUpdateOptions::_javaAppUpdateOptions
+	AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ____javaAppUpdateOptions_0;
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator
+struct AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F  : public RuntimeObject
+{
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdateState
+struct AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12  : public RuntimeObject
+{
+	// System.Int64 Google.Play.AppUpdate.Internal.AppUpdateState::<BytesDownloaded>k__BackingField
+	int64_t ___U3CBytesDownloadedU3Ek__BackingField_0;
+	// System.Int64 Google.Play.AppUpdate.Internal.AppUpdateState::<TotalBytesToDownload>k__BackingField
+	int64_t ___U3CTotalBytesToDownloadU3Ek__BackingField_1;
+	// System.Int32 Google.Play.AppUpdate.Internal.AppUpdateState::<Status>k__BackingField
+	int32_t ___U3CStatusU3Ek__BackingField_2;
+	// System.Int32 Google.Play.AppUpdate.Internal.AppUpdateState::<ErrorCode>k__BackingField
+	int32_t ___U3CErrorCodeU3Ek__BackingField_3;
+};
+
+// Google.Play.AssetDelivery.AssetLocation
+struct AssetLocation_t4E83832DC33FFD7DEF9067BCC90C0E2C03D8A5C0  : public RuntimeObject
+{
+	// System.String Google.Play.AssetDelivery.AssetLocation::<Path>k__BackingField
+	String_t* ___U3CPathU3Ek__BackingField_0;
+	// System.UInt64 Google.Play.AssetDelivery.AssetLocation::<Offset>k__BackingField
+	uint64_t ___U3COffsetU3Ek__BackingField_1;
+	// System.UInt64 Google.Play.AssetDelivery.AssetLocation::<Size>k__BackingField
+	uint64_t ___U3CSizeU3Ek__BackingField_2;
+};
+
+// Google.Play.AssetDelivery.Internal.AssetPackManager
+struct AssetPackManager_t4FE399402B3A856645FFF2B7AAAC737A7FC30454  : public RuntimeObject
+{
+	// UnityEngine.AndroidJavaObject Google.Play.AssetDelivery.Internal.AssetPackManager::_javaAssetPackManager
+	AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ____javaAssetPackManager_0;
+};
+
+// Google.Play.AssetDelivery.Internal.AssetPackStates
+struct AssetPackStates_tF29EB9AEFDF74D53DB10977AB96AD4D8E8923FCB  : public RuntimeObject
+{
+	// System.Int64 Google.Play.AssetDelivery.Internal.AssetPackStates::<TotalBytes>k__BackingField
+	int64_t ___U3CTotalBytesU3Ek__BackingField_0;
+	// System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.AssetPackState> Google.Play.AssetDelivery.Internal.AssetPackStates::<PackStates>k__BackingField
+	Dictionary_2_tBDC5B9503D2DB7BCF576510A61B3DA7ADE65A9D6* ___U3CPackStatesU3Ek__BackingField_1;
+};
+
+// UnityEngine.CustomYieldInstruction
+struct CustomYieldInstruction_t6B81A50D5D210C1ACAAE247FB53B65CDFFEB7617  : public RuntimeObject
+{
+};
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal
+struct PlayAssetDeliveryInternal_t6D3BC5056F40448DAE64A56BF9C28103D31CE195  : public RuntimeObject
+{
+	// Google.Play.AssetDelivery.Internal.AssetPackManager Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal::_assetPackManager
+	AssetPackManager_t4FE399402B3A856645FFF2B7AAAC737A7FC30454* ____assetPackManager_1;
+	// Google.Play.AssetDelivery.Internal.AssetDeliveryUpdateHandler Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal::_updateHandler
+	AssetDeliveryUpdateHandler_t09BF5560CE2FB9459F07A0FDEBC653D706874470* ____updateHandler_2;
+	// Google.Play.AssetDelivery.Internal.PlayRequestRepository Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal::_requestRepository
+	PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* ____requestRepository_3;
+};
+
+// Google.Play.AssetDelivery.Internal.PlayCoreTranslator
+struct PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B  : public RuntimeObject
+{
+};
+
+// Google.Play.AssetDelivery.Internal.PlayRequestRepository
+struct PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B  : public RuntimeObject
+{
+	// System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl> Google.Play.AssetDelivery.Internal.PlayRequestRepository::_requestsByName
+	Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0* ____requestsByName_0;
+	// System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl> Google.Play.AssetDelivery.Internal.PlayRequestRepository::_assetBundleRequestsByName
+	Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55* ____assetBundleRequestsByName_1;
+};
+
+// System.String
+struct String_t  : public RuntimeObject
+{
+	// System.Int32 System.String::_stringLength
+	int32_t ____stringLength_4;
+	// System.Char System.String::_firstChar
+	Il2CppChar ____firstChar_5;
+};
+
+// System.Text.StringBuilder
+struct StringBuilder_t  : public RuntimeObject
+{
+	// System.Char[] System.Text.StringBuilder::m_ChunkChars
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___m_ChunkChars_0;
+	// System.Text.StringBuilder System.Text.StringBuilder::m_ChunkPrevious
+	StringBuilder_t* ___m_ChunkPrevious_1;
+	// System.Int32 System.Text.StringBuilder::m_ChunkLength
+	int32_t ___m_ChunkLength_2;
+	// System.Int32 System.Text.StringBuilder::m_ChunkOffset
+	int32_t ___m_ChunkOffset_3;
+	// System.Int32 System.Text.StringBuilder::m_MaxCapacity
+	int32_t ___m_MaxCapacity_4;
+};
+
+// System.ValueType
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F  : public RuntimeObject
+{
+};
+// Native definition for P/Invoke marshalling of System.ValueType
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
+{
+};
+// Native definition for COM marshalling of System.ValueType
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
+{
+};
+
+// Google.Play.Common.VoidResult
+struct VoidResult_t2EF77C7575B288CA1B347EDF1877D2236759ED9C  : public RuntimeObject
+{
+};
+
+// UnityEngine.YieldInstruction
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D  : public RuntimeObject
+{
+};
+// Native definition for P/Invoke marshalling of UnityEngine.YieldInstruction
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+};
+// Native definition for COM marshalling of UnityEngine.YieldInstruction
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdateHandler/<>c
+struct U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370  : public RuntimeObject
+{
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass10_0
+struct U3CU3Ec__DisplayClass10_0_tB13DA84C4ECFFE89A9BE7603A7D01F0E5EF260AF  : public RuntimeObject
+{
+	// Google.Play.AppUpdate.Internal.AppUpdateRequestImpl Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass10_0::request
+	AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* ___request_0;
+	// Google.Play.Core.Internal.PlayCoreTask`1<System.Int32> Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass10_0::requestFlowTask
+	PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F* ___requestFlowTask_1;
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass5_0
+struct U3CU3Ec__DisplayClass5_0_t445BD6C105483E94956697869C826EBE2E731EC6  : public RuntimeObject
+{
+	// Google.Play.AppUpdate.Internal.AppUpdateAsyncOperation`1<Google.Play.AppUpdate.AppUpdateInfo> Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass5_0::appUpdateAsyncOperation
+	AppUpdateAsyncOperation_1_tEC33166ACB2F2393015C72F1DE26C129C951E940* ___appUpdateAsyncOperation_0;
+	// Google.Play.Core.Internal.PlayCoreTask`1<UnityEngine.AndroidJavaObject> Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass5_0::appUpdateInfoTask
+	PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* ___appUpdateInfoTask_1;
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass9_0
+struct U3CU3Ec__DisplayClass9_0_t3A2F8C92672F0E3AE53F59E0F6D2D131936823CF  : public RuntimeObject
+{
+	// Google.Play.AppUpdate.Internal.AppUpdateAsyncOperation`1<Google.Play.Common.VoidResult> Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass9_0::completeUpdateAsyncOperation
+	AppUpdateAsyncOperation_1_t75D772868C7DB917560A77CD6FE35354A5BF1147* ___completeUpdateAsyncOperation_0;
+	// Google.Play.Core.Internal.PlayCoreTask`1<Google.Play.Common.VoidResult> Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass9_0::completeUpdateTask
+	PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075* ___completeUpdateTask_1;
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator/PlayCoreAppUpdateType
+struct PlayCoreAppUpdateType_t9DB29DB9A98879596A72420C5CC4EA3635EB9051  : public RuntimeObject
+{
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator/PlayCoreInstallErrorCode
+struct PlayCoreInstallErrorCode_t39378AFB6D945F54D541540578E4BA91E7D6ABBE  : public RuntimeObject
+{
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator/PlayCoreUpdateAvailability
+struct PlayCoreUpdateAvailability_t347D8D4986B8F2A603A9EC9506F913380B53AE38  : public RuntimeObject
+{
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator/PlayCoreUpdateStatus
+struct PlayCoreUpdateStatus_tA3AAA983212112206E2B419954AFCDE8DCFC8068  : public RuntimeObject
+{
+};
+
+// Google.Play.AppUpdate.AppUpdateRequest/<>c
+struct U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36  : public RuntimeObject
+{
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdateStateListener/<>c
+struct U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8  : public RuntimeObject
+{
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdateStateListener/<>c__DisplayClass4_0
+struct U3CU3Ec__DisplayClass4_0_t1A6064DBD19D052DA4A95AA5835DEB7DF35B49FD  : public RuntimeObject
+{
+	// Google.Play.AppUpdate.Internal.AppUpdateStateListener Google.Play.AppUpdate.Internal.AppUpdateStateListener/<>c__DisplayClass4_0::<>4__this
+	AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161* ___U3CU3E4__this_0;
+	// Google.Play.AppUpdate.Internal.AppUpdateState Google.Play.AppUpdate.Internal.AppUpdateStateListener/<>c__DisplayClass4_0::updateState
+	AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* ___updateState_1;
+};
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass10_0
+struct U3CU3Ec__DisplayClass10_0_t08C481C206404FEE818C307898CDF566F87B42C0  : public RuntimeObject
+{
+	// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass10_0::<>4__this
+	PlayAssetDeliveryInternal_t6D3BC5056F40448DAE64A56BF9C28103D31CE195* ___U3CU3E4__this_0;
+	// Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass10_0::batchRequest
+	PlayAssetPackBatchRequestImpl_tC82BC03D5E3AA6978BD90055586C419EDFDFFFE7* ___batchRequest_1;
+	// Google.Play.Core.Internal.PlayCoreTask`1<UnityEngine.AndroidJavaObject> Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass10_0::fetchTask
+	PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* ___fetchTask_2;
+};
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass10_1
+struct U3CU3Ec__DisplayClass10_1_t169233B0571398354428A4A9EE18A05E311F738E  : public RuntimeObject
+{
+	// Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass10_1::request
+	PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* ___request_0;
+	// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass10_0 Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass10_1::CS$<>8__locals1
+	U3CU3Ec__DisplayClass10_0_t08C481C206404FEE818C307898CDF566F87B42C0* ___CSU24U3CU3E8__locals1_1;
+};
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass11_0
+struct U3CU3Ec__DisplayClass11_0_t7154261D7B6602B81815819D10310ADCC9A4FE8B  : public RuntimeObject
+{
+	// Google.Play.AssetDelivery.Internal.AssetDeliveryAsyncOperation`1<Google.Play.AssetDelivery.ConfirmationDialogResult> Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass11_0::operation
+	AssetDeliveryAsyncOperation_1_t33C31211B6C7DF542271167C1436C3884F277D39* ___operation_0;
+	// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass11_0::<>4__this
+	PlayAssetDeliveryInternal_t6D3BC5056F40448DAE64A56BF9C28103D31CE195* ___U3CU3E4__this_1;
+	// Google.Play.Core.Internal.PlayCoreTask`1<System.Int32> Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass11_0::task
+	PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F* ___task_2;
+};
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass12_0
+struct U3CU3Ec__DisplayClass12_0_tDA637901046F222FF8E632BBDACBA3C384DB91D6  : public RuntimeObject
+{
+	// Google.Play.AssetDelivery.Internal.AssetDeliveryAsyncOperation`1<System.Int64> Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass12_0::operation
+	AssetDeliveryAsyncOperation_1_t290D8C237F9F8659DAA13335EE19A29699DF9A3E* ___operation_0;
+	// Google.Play.Core.Internal.PlayCoreTask`1<UnityEngine.AndroidJavaObject> Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass12_0::task
+	PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* ___task_1;
+};
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass13_0
+struct U3CU3Ec__DisplayClass13_0_tF4C60CDC13F4815983AF9E0B015876B7E6E1703B  : public RuntimeObject
+{
+	// Google.Play.AssetDelivery.Internal.AssetDeliveryAsyncOperation`1<Google.Play.Common.VoidResult> Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass13_0::operation
+	AssetDeliveryAsyncOperation_1_t543238F0246E8409055801D271356CBBEA0A5810* ___operation_0;
+	// Google.Play.Core.Internal.PlayCoreTask`1<UnityEngine.AndroidJavaObject> Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass13_0::task
+	PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* ___task_1;
+};
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass16_0
+struct U3CU3Ec__DisplayClass16_0_tC67150A3C438FF4E5F69CD0C1D1CA927EA87C3C0  : public RuntimeObject
+{
+	// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass16_0::<>4__this
+	PlayAssetDeliveryInternal_t6D3BC5056F40448DAE64A56BF9C28103D31CE195* ___U3CU3E4__this_0;
+	// System.String Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass16_0::assetPackName
+	String_t* ___assetPackName_1;
+};
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass20_0
+struct U3CU3Ec__DisplayClass20_0_tE8F82E9C90C95D8B076B6E8A5BCF11C67326186F  : public RuntimeObject
+{
+	// Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass20_0::request
+	PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* ___request_0;
+	// Google.Play.Core.Internal.PlayCoreTask`1<UnityEngine.AndroidJavaObject> Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass20_0::fetchTask
+	PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* ___fetchTask_1;
+};
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass7_0
+struct U3CU3Ec__DisplayClass7_0_t1DDCC5DDCCF2CD32AF5B9AD99C0B67D0F6B6A600  : public RuntimeObject
+{
+	// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass7_0::<>4__this
+	PlayAssetDeliveryInternal_t6D3BC5056F40448DAE64A56BF9C28103D31CE195* ___U3CU3E4__this_0;
+	// System.String Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass7_0::assetBundleName
+	String_t* ___assetBundleName_1;
+};
+
+// Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl/<>c
+struct U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68  : public RuntimeObject
+{
+};
+
+// Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl/<>c
+struct U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48  : public RuntimeObject
+{
+};
+
+// Google.Play.AssetDelivery.Internal.PlayCoreTranslator/AssetPackErrorCode
+struct AssetPackErrorCode_tAA437032ACEE72421450DF39601F0193036A60F1  : public RuntimeObject
+{
+};
+
+// Google.Play.AssetDelivery.Internal.PlayCoreTranslator/AssetPackStatus
+struct AssetPackStatus_t6D4C0B9D091FDA8E449C24537B2F76852C8854DD  : public RuntimeObject
+{
+};
+
+// Google.Play.AssetDelivery.Internal.PlayRequestRepository/<>c__DisplayClass7_0
+struct U3CU3Ec__DisplayClass7_0_tCA553FFEEF1003FFE329D85247BEBFEFD473EDC1  : public RuntimeObject
+{
+	// Google.Play.AssetDelivery.AssetDeliveryStatus Google.Play.AssetDelivery.Internal.PlayRequestRepository/<>c__DisplayClass7_0::status
+	int32_t ___status_0;
+};
+
+// System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>
+struct KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 
+{
+	// TKey System.Collections.Generic.KeyValuePair`2::key
+	RuntimeObject* ___key_0;
+	// TValue System.Collections.Generic.KeyValuePair`2::value
+	RuntimeObject* ___value_1;
+};
+
+// System.Collections.Generic.KeyValuePair`2<System.String,Google.Play.AssetDelivery.PlayAssetPackRequest>
+struct KeyValuePair_2_tFA7501048F15B1D4E16F48EE197DD55516CD1241 
+{
+	// TKey System.Collections.Generic.KeyValuePair`2::key
+	String_t* ___key_0;
+	// TValue System.Collections.Generic.KeyValuePair`2::value
+	PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* ___value_1;
+};
+
+// System.Nullable`1<System.Int32>
+struct Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	int32_t ___value_1;
+};
+
+// Google.Play.Common.PlayAsyncOperation`2<Google.Play.AppUpdate.AppUpdateInfo,Google.Play.AppUpdate.AppUpdateErrorCode>
+struct PlayAsyncOperation_2_t39D5C6763CB7F06C186D9A8C75D9F63698F753C6  : public CustomYieldInstruction_t6B81A50D5D210C1ACAAE247FB53B65CDFFEB7617
+{
+	// System.Boolean Google.Play.Common.PlayAsyncOperation`2::<IsDone>k__BackingField
+	bool ___U3CIsDoneU3Ek__BackingField_0;
+	// TError Google.Play.Common.PlayAsyncOperation`2::<Error>k__BackingField
+	int32_t ___U3CErrorU3Ek__BackingField_1;
+	// System.Action`1<Google.Play.Common.PlayAsyncOperation`2<TResult,TError>> Google.Play.Common.PlayAsyncOperation`2::Completed
+	Action_1_t1C9BD9999340D3F5B08F52D986D0F0D38E27B3C4* ___Completed_2;
+};
+
+// Google.Play.Common.PlayAsyncOperation`2<Google.Play.AssetDelivery.ConfirmationDialogResult,Google.Play.AssetDelivery.AssetDeliveryErrorCode>
+struct PlayAsyncOperation_2_tF6854964B8FBFBBC4EC821A187B18AD33EC40C7B  : public CustomYieldInstruction_t6B81A50D5D210C1ACAAE247FB53B65CDFFEB7617
+{
+	// System.Boolean Google.Play.Common.PlayAsyncOperation`2::<IsDone>k__BackingField
+	bool ___U3CIsDoneU3Ek__BackingField_0;
+	// TError Google.Play.Common.PlayAsyncOperation`2::<Error>k__BackingField
+	int32_t ___U3CErrorU3Ek__BackingField_1;
+	// System.Action`1<Google.Play.Common.PlayAsyncOperation`2<TResult,TError>> Google.Play.Common.PlayAsyncOperation`2::Completed
+	Action_1_tE20890CBCDF8F53570E19267201E316B9B9B5105* ___Completed_2;
+};
+
+// Google.Play.Common.PlayAsyncOperation`2<System.Int64,Google.Play.AssetDelivery.AssetDeliveryErrorCode>
+struct PlayAsyncOperation_2_t92E19F853E1EED5A5421A0BCF2E743BC4DDD78DB  : public CustomYieldInstruction_t6B81A50D5D210C1ACAAE247FB53B65CDFFEB7617
+{
+	// System.Boolean Google.Play.Common.PlayAsyncOperation`2::<IsDone>k__BackingField
+	bool ___U3CIsDoneU3Ek__BackingField_0;
+	// TError Google.Play.Common.PlayAsyncOperation`2::<Error>k__BackingField
+	int32_t ___U3CErrorU3Ek__BackingField_1;
+	// System.Action`1<Google.Play.Common.PlayAsyncOperation`2<TResult,TError>> Google.Play.Common.PlayAsyncOperation`2::Completed
+	Action_1_tAB0FB726E43E3FD66FEF472E70E080C251B15757* ___Completed_2;
+};
+
+// Google.Play.Common.PlayAsyncOperation`2<Google.Play.Common.VoidResult,Google.Play.AppUpdate.AppUpdateErrorCode>
+struct PlayAsyncOperation_2_t70D0CB32A79B3B657D0C9EE6606ABA6F5A958F15  : public CustomYieldInstruction_t6B81A50D5D210C1ACAAE247FB53B65CDFFEB7617
+{
+	// System.Boolean Google.Play.Common.PlayAsyncOperation`2::<IsDone>k__BackingField
+	bool ___U3CIsDoneU3Ek__BackingField_0;
+	// TError Google.Play.Common.PlayAsyncOperation`2::<Error>k__BackingField
+	int32_t ___U3CErrorU3Ek__BackingField_1;
+	// System.Action`1<Google.Play.Common.PlayAsyncOperation`2<TResult,TError>> Google.Play.Common.PlayAsyncOperation`2::Completed
+	Action_1_tF14D56596120A0F451E8A053E29F54FD86B1905E* ___Completed_2;
+};
+
+// Google.Play.Common.PlayAsyncOperation`2<Google.Play.Common.VoidResult,Google.Play.AssetDelivery.AssetDeliveryErrorCode>
+struct PlayAsyncOperation_2_tB8356D7B2C03AB5069EE1FF0E4441F9BF850C437  : public CustomYieldInstruction_t6B81A50D5D210C1ACAAE247FB53B65CDFFEB7617
+{
+	// System.Boolean Google.Play.Common.PlayAsyncOperation`2::<IsDone>k__BackingField
+	bool ___U3CIsDoneU3Ek__BackingField_0;
+	// TError Google.Play.Common.PlayAsyncOperation`2::<Error>k__BackingField
+	int32_t ___U3CErrorU3Ek__BackingField_1;
+	// System.Action`1<Google.Play.Common.PlayAsyncOperation`2<TResult,TError>> Google.Play.Common.PlayAsyncOperation`2::Completed
+	Action_1_tBEB54B60AC7043F20551CFD8ACEBF5E44CBB3BEC* ___Completed_2;
+};
+
+// UnityEngine.AndroidJavaClass
+struct AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03  : public AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0
+{
+};
+
+// Google.Play.AppUpdate.AppUpdateRequest
+struct AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855  : public CustomYieldInstruction_t6B81A50D5D210C1ACAAE247FB53B65CDFFEB7617
+{
+	// System.Action`1<Google.Play.AppUpdate.AppUpdateRequest> Google.Play.AppUpdate.AppUpdateRequest::Completed
+	Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* ___Completed_0;
+	// System.Boolean Google.Play.AppUpdate.AppUpdateRequest::<IsDone>k__BackingField
+	bool ___U3CIsDoneU3Ek__BackingField_1;
+	// Google.Play.AppUpdate.AppUpdateStatus Google.Play.AppUpdate.AppUpdateRequest::<Status>k__BackingField
+	int32_t ___U3CStatusU3Ek__BackingField_2;
+	// Google.Play.AppUpdate.AppUpdateErrorCode Google.Play.AppUpdate.AppUpdateRequest::<Error>k__BackingField
+	int32_t ___U3CErrorU3Ek__BackingField_3;
+	// System.Single Google.Play.AppUpdate.AppUpdateRequest::<DownloadProgress>k__BackingField
+	float ___U3CDownloadProgressU3Ek__BackingField_4;
+	// System.UInt64 Google.Play.AppUpdate.AppUpdateRequest::<BytesDownloaded>k__BackingField
+	uint64_t ___U3CBytesDownloadedU3Ek__BackingField_5;
+	// System.UInt64 Google.Play.AppUpdate.AppUpdateRequest::<TotalBytesToDownload>k__BackingField
+	uint64_t ___U3CTotalBytesToDownloadU3Ek__BackingField_6;
+};
+
+// System.Boolean
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22 
+{
+	// System.Boolean System.Boolean::m_value
+	bool ___m_value_0;
+};
+
+// System.Char
+struct Char_t521A6F19B456D956AF452D926C32709DC03D6B17 
+{
+	// System.Char System.Char::m_value
+	Il2CppChar ___m_value_0;
+};
+
+// System.Enum
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
+{
+};
+// Native definition for P/Invoke marshalling of System.Enum
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
+{
+};
+// Native definition for COM marshalling of System.Enum
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_com
+{
+};
+
+// System.Int32
+struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C 
+{
+	// System.Int32 System.Int32::m_value
+	int32_t ___m_value_0;
+};
+
+// System.Int64
+struct Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3 
+{
+	// System.Int64 System.Int64::m_value
+	int64_t ___m_value_0;
+};
+
+// System.IntPtr
+struct IntPtr_t 
+{
+	// System.Void* System.IntPtr::m_value
+	void* ___m_value_0;
+};
+
+// Google.Play.AssetDelivery.PlayAssetBundleRequest
+struct PlayAssetBundleRequest_t9646E260F4C11DDF3F9BC026B44769B7B1E37B5F  : public CustomYieldInstruction_t6B81A50D5D210C1ACAAE247FB53B65CDFFEB7617
+{
+	// System.Single Google.Play.AssetDelivery.PlayAssetBundleRequest::<DownloadProgress>k__BackingField
+	float ___U3CDownloadProgressU3Ek__BackingField_0;
+	// Google.Play.AssetDelivery.AssetDeliveryErrorCode Google.Play.AssetDelivery.PlayAssetBundleRequest::<Error>k__BackingField
+	int32_t ___U3CErrorU3Ek__BackingField_1;
+	// System.Boolean Google.Play.AssetDelivery.PlayAssetBundleRequest::<IsDone>k__BackingField
+	bool ___U3CIsDoneU3Ek__BackingField_2;
+	// Google.Play.AssetDelivery.AssetDeliveryStatus Google.Play.AssetDelivery.PlayAssetBundleRequest::<Status>k__BackingField
+	int32_t ___U3CStatusU3Ek__BackingField_3;
+	// UnityEngine.AssetBundle Google.Play.AssetDelivery.PlayAssetBundleRequest::<AssetBundle>k__BackingField
+	AssetBundle_tB38418819A49060CD738CB21541649340F082943* ___U3CAssetBundleU3Ek__BackingField_4;
+	// System.Action`1<Google.Play.AssetDelivery.PlayAssetBundleRequest> Google.Play.AssetDelivery.PlayAssetBundleRequest::Completed
+	Action_1_t90B046B6C5A46889901256E7FE445D87DD3D0F52* ___Completed_5;
+};
+
+// Google.Play.AssetDelivery.PlayAssetPackBatchRequest
+struct PlayAssetPackBatchRequest_tA71C1C7470D71B0B2D5C8F7EC28FA14EFE50A96B  : public CustomYieldInstruction_t6B81A50D5D210C1ACAAE247FB53B65CDFFEB7617
+{
+	// System.Collections.Generic.IDictionary`2<System.String,Google.Play.AssetDelivery.PlayAssetPackRequest> Google.Play.AssetDelivery.PlayAssetPackBatchRequest::Requests
+	RuntimeObject* ___Requests_0;
+	// System.Boolean Google.Play.AssetDelivery.PlayAssetPackBatchRequest::<IsDone>k__BackingField
+	bool ___U3CIsDoneU3Ek__BackingField_1;
+	// System.Action`1<Google.Play.AssetDelivery.PlayAssetPackBatchRequest> Google.Play.AssetDelivery.PlayAssetPackBatchRequest::Completed
+	Action_1_tD3B6C9D99DD28F54511BE03819C3E5DB2144A97C* ___Completed_2;
+};
+
+// Google.Play.AssetDelivery.PlayAssetPackRequest
+struct PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673  : public CustomYieldInstruction_t6B81A50D5D210C1ACAAE247FB53B65CDFFEB7617
+{
+	// System.Single Google.Play.AssetDelivery.PlayAssetPackRequest::<DownloadProgress>k__BackingField
+	float ___U3CDownloadProgressU3Ek__BackingField_0;
+	// Google.Play.AssetDelivery.AssetDeliveryErrorCode Google.Play.AssetDelivery.PlayAssetPackRequest::<Error>k__BackingField
+	int32_t ___U3CErrorU3Ek__BackingField_1;
+	// System.Boolean Google.Play.AssetDelivery.PlayAssetPackRequest::<IsDone>k__BackingField
+	bool ___U3CIsDoneU3Ek__BackingField_2;
+	// Google.Play.AssetDelivery.AssetDeliveryStatus Google.Play.AssetDelivery.PlayAssetPackRequest::<Status>k__BackingField
+	int32_t ___U3CStatusU3Ek__BackingField_3;
+	// System.Action`1<Google.Play.AssetDelivery.PlayAssetPackRequest> Google.Play.AssetDelivery.PlayAssetPackRequest::Completed
+	Action_1_t6C653CA94F6E4C002C5DEFFE0C93E3DDEE648147* ___Completed_4;
+};
+
+// System.Single
+struct Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C 
+{
+	// System.Single System.Single::m_value
+	float ___m_value_0;
+};
+
+// System.UInt32
+struct UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B 
+{
+	// System.UInt32 System.UInt32::m_value
+	uint32_t ___m_value_0;
+};
+
+// System.UInt64
+struct UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF 
+{
+	// System.UInt64 System.UInt64::m_value
+	uint64_t ___m_value_0;
+};
+
+// System.Void
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915 
+{
+	union
+	{
+		struct
+		{
+		};
+		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
+	};
+};
+
+// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=1095
+struct __StaticArrayInitTypeSizeU3D1095_t56A5F32D2554FC3A9A514EFDE349A891B390DEA2 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D1095_t56A5F32D2554FC3A9A514EFDE349A891B390DEA2__padding[1095];
+	};
+};
+
+// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=244
+struct __StaticArrayInitTypeSizeU3D244_tFACA36C4BD12BA57FB3DF99F2EF1CFF3E6E210ED 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D244_tFACA36C4BD12BA57FB3DF99F2EF1CFF3E6E210ED__padding[244];
+	};
+};
+
+// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=6
+struct __StaticArrayInitTypeSizeU3D6_t38FD8BCE7DBF33FCFABA6823EC6C9368D958290D 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D6_t38FD8BCE7DBF33FCFABA6823EC6C9368D958290D__padding[6];
+	};
+};
+
+// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=60
+struct __StaticArrayInitTypeSizeU3D60_t28DCDB387E585965787FF852575673A4F7B6A5E3 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D60_t28DCDB387E585965787FF852575673A4F7B6A5E3__padding[60];
+	};
+};
+
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.AppUpdate.AppUpdateInfo,Google.Play.AppUpdate.AppUpdateErrorCode>
+struct PlayAsyncOperationImpl_2_tD5929558BD68987D72A9FF54078482B548A45596  : public PlayAsyncOperation_2_t39D5C6763CB7F06C186D9A8C75D9F63698F753C6
+{
+	// TResult Google.Play.Common.Internal.PlayAsyncOperationImpl`2::_result
+	AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* ____result_3;
+};
+
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.AssetDelivery.ConfirmationDialogResult,Google.Play.AssetDelivery.AssetDeliveryErrorCode>
+struct PlayAsyncOperationImpl_2_t9D0D21EEA9E39EE0F8634E8A65EF81F82570B39A  : public PlayAsyncOperation_2_tF6854964B8FBFBBC4EC821A187B18AD33EC40C7B
+{
+	// TResult Google.Play.Common.Internal.PlayAsyncOperationImpl`2::_result
+	int32_t ____result_3;
+};
+
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<System.Int64,Google.Play.AssetDelivery.AssetDeliveryErrorCode>
+struct PlayAsyncOperationImpl_2_t47189B680EB02A59150C62CE435DD0BE3D7F1F39  : public PlayAsyncOperation_2_t92E19F853E1EED5A5421A0BCF2E743BC4DDD78DB
+{
+	// TResult Google.Play.Common.Internal.PlayAsyncOperationImpl`2::_result
+	int64_t ____result_3;
+};
+
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.Common.VoidResult,Google.Play.AppUpdate.AppUpdateErrorCode>
+struct PlayAsyncOperationImpl_2_t8D42C1E55C0B6B29A1001BAC07DA7BC4EF877083  : public PlayAsyncOperation_2_t70D0CB32A79B3B657D0C9EE6606ABA6F5A958F15
+{
+	// TResult Google.Play.Common.Internal.PlayAsyncOperationImpl`2::_result
+	VoidResult_t2EF77C7575B288CA1B347EDF1877D2236759ED9C* ____result_3;
+};
+
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.Common.VoidResult,Google.Play.AssetDelivery.AssetDeliveryErrorCode>
+struct PlayAsyncOperationImpl_2_t776E04678C6917D87DCD2CAABC92490BF9B2038D  : public PlayAsyncOperation_2_tB8356D7B2C03AB5069EE1FF0E4441F9BF850C437
+{
+	// TResult Google.Play.Common.Internal.PlayAsyncOperationImpl`2::_result
+	VoidResult_t2EF77C7575B288CA1B347EDF1877D2236759ED9C* ____result_3;
+};
+
+// <PrivateImplementationDetails>
+struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA  : public RuntimeObject
+{
+};
+
+// UnityEngine.AndroidJavaProxy
+struct AndroidJavaProxy_tE5521F9761F7B95444B9C39FB15FDFC23F80A78D  : public RuntimeObject
+{
+	// UnityEngine.AndroidJavaClass UnityEngine.AndroidJavaProxy::javaInterface
+	AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* ___javaInterface_0;
+	// System.IntPtr UnityEngine.AndroidJavaProxy::proxyObject
+	intptr_t ___proxyObject_1;
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdateRequestImpl
+struct AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7  : public AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855
+{
+};
+
+// UnityEngine.AsyncOperation
+struct AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C  : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D
+{
+	// System.IntPtr UnityEngine.AsyncOperation::m_Ptr
+	intptr_t ___m_Ptr_0;
+	// System.Action`1<UnityEngine.AsyncOperation> UnityEngine.AsyncOperation::m_completeCallback
+	Action_1_tE8693FF0E67CDBA52BAFB211BFF1844D076ABAFB* ___m_completeCallback_1;
+};
+// Native definition for P/Invoke marshalling of UnityEngine.AsyncOperation
+struct AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C_marshaled_pinvoke : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+	intptr_t ___m_Ptr_0;
+	Il2CppMethodPointer ___m_completeCallback_1;
+};
+// Native definition for COM marshalling of UnityEngine.AsyncOperation
+struct AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C_marshaled_com : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+	intptr_t ___m_Ptr_0;
+	Il2CppMethodPointer ___m_completeCallback_1;
+};
+
+// System.Delegate
+struct Delegate_t  : public RuntimeObject
+{
+	// System.IntPtr System.Delegate::method_ptr
+	Il2CppMethodPointer ___method_ptr_0;
+	// System.IntPtr System.Delegate::invoke_impl
+	intptr_t ___invoke_impl_1;
+	// System.Object System.Delegate::m_target
+	RuntimeObject* ___m_target_2;
+	// System.IntPtr System.Delegate::method
+	intptr_t ___method_3;
+	// System.IntPtr System.Delegate::delegate_trampoline
+	intptr_t ___delegate_trampoline_4;
+	// System.IntPtr System.Delegate::extra_arg
+	intptr_t ___extra_arg_5;
+	// System.IntPtr System.Delegate::method_code
+	intptr_t ___method_code_6;
+	// System.IntPtr System.Delegate::interp_method
+	intptr_t ___interp_method_7;
+	// System.IntPtr System.Delegate::interp_invoke_impl
+	intptr_t ___interp_invoke_impl_8;
+	// System.Reflection.MethodInfo System.Delegate::method_info
+	MethodInfo_t* ___method_info_9;
+	// System.Reflection.MethodInfo System.Delegate::original_method_info
+	MethodInfo_t* ___original_method_info_10;
+	// System.DelegateData System.Delegate::data
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
+	// System.Boolean System.Delegate::method_is_virtual
+	bool ___method_is_virtual_12;
+};
+// Native definition for P/Invoke marshalling of System.Delegate
+struct Delegate_t_marshaled_pinvoke
+{
+	intptr_t ___method_ptr_0;
+	intptr_t ___invoke_impl_1;
+	Il2CppIUnknown* ___m_target_2;
+	intptr_t ___method_3;
+	intptr_t ___delegate_trampoline_4;
+	intptr_t ___extra_arg_5;
+	intptr_t ___method_code_6;
+	intptr_t ___interp_method_7;
+	intptr_t ___interp_invoke_impl_8;
+	MethodInfo_t* ___method_info_9;
+	MethodInfo_t* ___original_method_info_10;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
+	int32_t ___method_is_virtual_12;
+};
+// Native definition for COM marshalling of System.Delegate
+struct Delegate_t_marshaled_com
+{
+	intptr_t ___method_ptr_0;
+	intptr_t ___invoke_impl_1;
+	Il2CppIUnknown* ___m_target_2;
+	intptr_t ___method_3;
+	intptr_t ___delegate_trampoline_4;
+	intptr_t ___extra_arg_5;
+	intptr_t ___method_code_6;
+	intptr_t ___interp_method_7;
+	intptr_t ___interp_invoke_impl_8;
+	MethodInfo_t* ___method_info_9;
+	MethodInfo_t* ___original_method_info_10;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
+	int32_t ___method_is_virtual_12;
+};
+
+// System.Exception
+struct Exception_t  : public RuntimeObject
+{
+	// System.String System.Exception::_className
+	String_t* ____className_1;
+	// System.String System.Exception::_message
+	String_t* ____message_2;
+	// System.Collections.IDictionary System.Exception::_data
+	RuntimeObject* ____data_3;
+	// System.Exception System.Exception::_innerException
+	Exception_t* ____innerException_4;
+	// System.String System.Exception::_helpURL
+	String_t* ____helpURL_5;
+	// System.Object System.Exception::_stackTrace
+	RuntimeObject* ____stackTrace_6;
+	// System.String System.Exception::_stackTraceString
+	String_t* ____stackTraceString_7;
+	// System.String System.Exception::_remoteStackTraceString
+	String_t* ____remoteStackTraceString_8;
+	// System.Int32 System.Exception::_remoteStackIndex
+	int32_t ____remoteStackIndex_9;
+	// System.Object System.Exception::_dynamicMethods
+	RuntimeObject* ____dynamicMethods_10;
+	// System.Int32 System.Exception::_HResult
+	int32_t ____HResult_11;
+	// System.String System.Exception::_source
+	String_t* ____source_12;
+	// System.Runtime.Serialization.SafeSerializationManager System.Exception::_safeSerializationManager
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	// System.Diagnostics.StackTrace[] System.Exception::captured_traces
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	// System.IntPtr[] System.Exception::native_trace_ips
+	IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832* ___native_trace_ips_15;
+	// System.Int32 System.Exception::caught_in_unmanaged
+	int32_t ___caught_in_unmanaged_16;
+};
+// Native definition for P/Invoke marshalling of System.Exception
+struct Exception_t_marshaled_pinvoke
+{
+	char* ____className_1;
+	char* ____message_2;
+	RuntimeObject* ____data_3;
+	Exception_t_marshaled_pinvoke* ____innerException_4;
+	char* ____helpURL_5;
+	Il2CppIUnknown* ____stackTrace_6;
+	char* ____stackTraceString_7;
+	char* ____remoteStackTraceString_8;
+	int32_t ____remoteStackIndex_9;
+	Il2CppIUnknown* ____dynamicMethods_10;
+	int32_t ____HResult_11;
+	char* ____source_12;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
+	int32_t ___caught_in_unmanaged_16;
+};
+// Native definition for COM marshalling of System.Exception
+struct Exception_t_marshaled_com
+{
+	Il2CppChar* ____className_1;
+	Il2CppChar* ____message_2;
+	RuntimeObject* ____data_3;
+	Exception_t_marshaled_com* ____innerException_4;
+	Il2CppChar* ____helpURL_5;
+	Il2CppIUnknown* ____stackTrace_6;
+	Il2CppChar* ____stackTraceString_7;
+	Il2CppChar* ____remoteStackTraceString_8;
+	int32_t ____remoteStackIndex_9;
+	Il2CppIUnknown* ____dynamicMethods_10;
+	int32_t ____HResult_11;
+	Il2CppChar* ____source_12;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
+	int32_t ___caught_in_unmanaged_16;
+};
+
+// UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
+{
+	// System.IntPtr UnityEngine.Object::m_CachedPtr
+	intptr_t ___m_CachedPtr_0;
+};
+// Native definition for P/Invoke marshalling of UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
+{
+	intptr_t ___m_CachedPtr_0;
+};
+// Native definition for COM marshalling of UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
+{
+	intptr_t ___m_CachedPtr_0;
+};
+
+// Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl
+struct PlayAssetBundleRequestImpl_tC7F57ABFE28C1E3E41C12E6F1FA46B2DF31F964C  : public PlayAssetBundleRequest_t9646E260F4C11DDF3F9BC026B44769B7B1E37B5F
+{
+	// Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl::PackRequest
+	PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* ___PackRequest_6;
+	// Google.Play.AssetDelivery.Internal.AssetDeliveryUpdateHandler Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl::_updateHandler
+	AssetDeliveryUpdateHandler_t09BF5560CE2FB9459F07A0FDEBC653D706874470* ____updateHandler_7;
+	// Google.Play.AssetDelivery.AssetDeliveryStatus Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl::_loadingStatus
+	int32_t ____loadingStatus_8;
+	// Google.Play.AssetDelivery.AssetDeliveryErrorCode Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl::_loadingError
+	int32_t ____loadingError_9;
+};
+
+// Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl
+struct PlayAssetPackBatchRequestImpl_tC82BC03D5E3AA6978BD90055586C419EDFDFFFE7  : public PlayAssetPackBatchRequest_tA71C1C7470D71B0B2D5C8F7EC28FA14EFE50A96B
+{
+	// System.Collections.Generic.HashSet`1<System.String> Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl::_completedPackNames
+	HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178* ____completedPackNames_3;
+};
+
+// Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl
+struct PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF  : public PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673
+{
+	// System.String Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::AssetPackName
+	String_t* ___AssetPackName_5;
+	// Google.Play.AssetDelivery.Internal.AssetPackManager Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::_assetPackManager
+	AssetPackManager_t4FE399402B3A856645FFF2B7AAAC737A7FC30454* ____assetPackManager_7;
+	// System.Boolean Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::_initializedInPlayCore
+	bool ____initializedInPlayCore_8;
+	// Google.Play.AssetDelivery.Internal.PlayRequestRepository Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::_requestRepository
+	PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* ____requestRepository_9;
+	// System.Action Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::_onInitializedInPlayCore
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ____onInitializedInPlayCore_10;
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdateAsyncOperation`1<Google.Play.AppUpdate.AppUpdateInfo>
+struct AppUpdateAsyncOperation_1_tEC33166ACB2F2393015C72F1DE26C129C951E940  : public PlayAsyncOperationImpl_2_tD5929558BD68987D72A9FF54078482B548A45596
+{
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdateAsyncOperation`1<Google.Play.Common.VoidResult>
+struct AppUpdateAsyncOperation_1_t75D772868C7DB917560A77CD6FE35354A5BF1147  : public PlayAsyncOperationImpl_2_t8D42C1E55C0B6B29A1001BAC07DA7BC4EF877083
+{
+};
+
+// Google.Play.AssetDelivery.Internal.AssetDeliveryAsyncOperation`1<Google.Play.AssetDelivery.ConfirmationDialogResult>
+struct AssetDeliveryAsyncOperation_1_t33C31211B6C7DF542271167C1436C3884F277D39  : public PlayAsyncOperationImpl_2_t9D0D21EEA9E39EE0F8634E8A65EF81F82570B39A
+{
+};
+
+// Google.Play.AssetDelivery.Internal.AssetDeliveryAsyncOperation`1<System.Int64>
+struct AssetDeliveryAsyncOperation_1_t290D8C237F9F8659DAA13335EE19A29699DF9A3E  : public PlayAsyncOperationImpl_2_t47189B680EB02A59150C62CE435DD0BE3D7F1F39
+{
+};
+
+// Google.Play.AssetDelivery.Internal.AssetDeliveryAsyncOperation`1<Google.Play.Common.VoidResult>
+struct AssetDeliveryAsyncOperation_1_t543238F0246E8409055801D271356CBBEA0A5810  : public PlayAsyncOperationImpl_2_t776E04678C6917D87DCD2CAABC92490BF9B2038D
+{
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdateStateListener
+struct AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161  : public AndroidJavaProxy_tE5521F9761F7B95444B9C39FB15FDFC23F80A78D
+{
+	// System.Action`1<Google.Play.AppUpdate.Internal.AppUpdateState> Google.Play.AppUpdate.Internal.AppUpdateStateListener::OnStateUpdateEvent
+	Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* ___OnStateUpdateEvent_4;
+};
+
+// UnityEngine.AssetBundleCreateRequest
+struct AssetBundleCreateRequest_t73B8714B9459A01540E091C3770A408E67188CF6  : public AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C
+{
+};
+// Native definition for P/Invoke marshalling of UnityEngine.AssetBundleCreateRequest
+struct AssetBundleCreateRequest_t73B8714B9459A01540E091C3770A408E67188CF6_marshaled_pinvoke : public AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C_marshaled_pinvoke
+{
+};
+// Native definition for COM marshalling of UnityEngine.AssetBundleCreateRequest
+struct AssetBundleCreateRequest_t73B8714B9459A01540E091C3770A408E67188CF6_marshaled_com : public AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C_marshaled_com
+{
+};
+
+// UnityEngine.Component
+struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+
+// UnityEngine.GameObject
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+
+// System.MulticastDelegate
+struct MulticastDelegate_t  : public Delegate_t
+{
+	// System.Delegate[] System.MulticastDelegate::delegates
+	DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771* ___delegates_13;
+};
+// Native definition for P/Invoke marshalling of System.MulticastDelegate
+struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvoke
+{
+	Delegate_t_marshaled_pinvoke** ___delegates_13;
+};
+// Native definition for COM marshalling of System.MulticastDelegate
+struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
+{
+	Delegate_t_marshaled_com** ___delegates_13;
+};
+
+// System.SystemException
+struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
+{
+};
+
+// System.Action`1<UnityEngine.AndroidJavaObject>
+struct Action_1_tBD9457F0872CC7E6C1468CA37E6EF9D4403E1594  : public MulticastDelegate_t
+{
+};
+
+// System.Action`1<Google.Play.AppUpdate.AppUpdateRequest>
+struct Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4  : public MulticastDelegate_t
+{
+};
+
+// System.Action`1<Google.Play.AppUpdate.Internal.AppUpdateState>
+struct Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C  : public MulticastDelegate_t
+{
+};
+
+// System.Action`1<System.Int32>
+struct Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404  : public MulticastDelegate_t
+{
+};
+
+// System.Action`1<System.Object>
+struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87  : public MulticastDelegate_t
+{
+};
+
+// System.Action`1<Google.Play.AssetDelivery.PlayAssetPackBatchRequest>
+struct Action_1_tD3B6C9D99DD28F54511BE03819C3E5DB2144A97C  : public MulticastDelegate_t
+{
+};
+
+// System.Action`1<Google.Play.AssetDelivery.PlayAssetPackRequest>
+struct Action_1_t6C653CA94F6E4C002C5DEFFE0C93E3DDEE648147  : public MulticastDelegate_t
+{
+};
+
+// System.Action`1<Google.Play.Common.VoidResult>
+struct Action_1_t1CE90521DFC32B00F1A467A02F12F52B0F03C219  : public MulticastDelegate_t
+{
+};
+
+// System.Action`2<System.String,System.Int32>
+struct Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF  : public MulticastDelegate_t
+{
+};
+
+// System.Func`2<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl,System.Boolean>
+struct Func_2_t791489D9497D5BC0F497E038655BCE0E393C8639  : public MulticastDelegate_t
+{
+};
+
+// System.Func`2<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl,Google.Play.AssetDelivery.PlayAssetPackRequest>
+struct Func_2_t5046017BD492967250D8044DFF77E6C6ED3E3B60  : public MulticastDelegate_t
+{
+};
+
+// System.Func`2<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl,System.String>
+struct Func_2_t9DEF496CE413EBA35AC4F404085FC769C4A8C110  : public MulticastDelegate_t
+{
+};
+
+// System.Action
+struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07  : public MulticastDelegate_t
+{
+};
+
+// System.ArgumentException
+struct ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
+{
+	// System.String System.ArgumentException::_paramName
+	String_t* ____paramName_18;
+};
+
+// UnityEngine.Behaviour
+struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+
+// System.InvalidOperationException
+struct InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
+{
+};
+
+// System.NotImplementedException
+struct NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
+{
+};
+
+// System.NullReferenceException
+struct NullReferenceException_tBDE63A6D24569B964908408389070C6A9F5005BB  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
+{
+};
+
+// System.ArgumentNullException
+struct ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129  : public ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263
+{
+};
+
+// UnityEngine.MonoBehaviour
+struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdateHandler
+struct AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// System.Action`1<Google.Play.AppUpdate.Internal.AppUpdateState> Google.Play.AppUpdate.Internal.AppUpdateHandler::OnStateUpdateEvent
+	Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* ___OnStateUpdateEvent_4;
+	// Google.Play.AppUpdate.Internal.AppUpdateStateListener Google.Play.AppUpdate.Internal.AppUpdateHandler::_stateUpdateListener
+	AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161* ____stateUpdateListener_5;
+	// Google.Play.AppUpdate.Internal.AppUpdateManagerInternal Google.Play.AppUpdate.Internal.AppUpdateHandler::_appUpdateManagerInternal
+	AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* ____appUpdateManagerInternal_6;
+};
+
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateErrorCode>
+
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateErrorCode>
+
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateStatus>
+
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateStatus>
+
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateType>
+
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateType>
+
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AssetDelivery.AssetDeliveryErrorCode>
+
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AssetDelivery.AssetDeliveryErrorCode>
+
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AssetDelivery.AssetDeliveryStatus>
+
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AssetDelivery.AssetDeliveryStatus>
+
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.UpdateAvailability>
+
+// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.UpdateAvailability>
+
+// System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl>
+
+// System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl>
+
+// System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.PlayAssetPackRequest>
+
+// System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.PlayAssetPackRequest>
+
+// System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>
+
+// System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>
+
+// System.EmptyArray`1<System.Object>
+struct EmptyArray_1_tDF0DD7256B115243AA6BD5558417387A734240EE_StaticFields
+{
+	// T[] System.EmptyArray`1::Value
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___Value_0;
+};
+
+// System.EmptyArray`1<System.Object>
+
+// System.Collections.Generic.HashSet`1<System.Object>
+
+// System.Collections.Generic.HashSet`1<System.Object>
+
+// System.Collections.Generic.HashSet`1<System.String>
+
+// System.Collections.Generic.HashSet`1<System.String>
+
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>
+
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>
+
+// System.Collections.Generic.List`1<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>
+struct List_1_t73CB53E75D60F4AF3A6F962752DE8CF2D8910DF0_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	PlayAssetPackRequestImplU5BU5D_t33CB9D4E9563937677004F1BD01FC2833766AADB* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>
+
+// Google.Play.Core.Internal.PlayCoreTask`1<UnityEngine.AndroidJavaObject>
+
+// Google.Play.Core.Internal.PlayCoreTask`1<UnityEngine.AndroidJavaObject>
+
+// Google.Play.Core.Internal.PlayCoreTask`1<System.Int32>
+
+// Google.Play.Core.Internal.PlayCoreTask`1<System.Int32>
+
+// Google.Play.Core.Internal.PlayCoreTask`1<Google.Play.Common.VoidResult>
+
+// Google.Play.Core.Internal.PlayCoreTask`1<Google.Play.Common.VoidResult>
+
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>
+
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>
+
+// UnityEngine.AndroidJavaObject
+struct AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_StaticFields
+{
+	// System.Boolean UnityEngine.AndroidJavaObject::enableDebugPrints
+	bool ___enableDebugPrints_0;
+};
+
+// UnityEngine.AndroidJavaObject
+
+// Google.Play.AppUpdate.AppUpdateInfo
+
+// Google.Play.AppUpdate.AppUpdateInfo
+
+// Google.Play.AppUpdate.AppUpdateManager
+
+// Google.Play.AppUpdate.AppUpdateManager
+
+// Google.Play.AppUpdate.Internal.AppUpdateManagerInternal
+
+// Google.Play.AppUpdate.Internal.AppUpdateManagerInternal
+
+// Google.Play.AppUpdate.Internal.AppUpdateManagerPlayCore
+
+// Google.Play.AppUpdate.Internal.AppUpdateManagerPlayCore
+
+// Google.Play.AppUpdate.AppUpdateOptions
+
+// Google.Play.AppUpdate.AppUpdateOptions
+
+// Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator
+struct AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_StaticFields
+{
+	// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateErrorCode> Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator::PlayCoreToAppUpdateErrorCode
+	Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E* ___PlayCoreToAppUpdateErrorCode_0;
+	// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateStatus> Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator::PlayCoreToUpdateStatuses
+	Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692* ___PlayCoreToUpdateStatuses_1;
+	// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.UpdateAvailability> Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator::PlayCoreToUpdateAvailabilities
+	Dictionary_2_tC8A0936A5A6577AFC135261FE851A2B8667D267C* ___PlayCoreToUpdateAvailabilities_2;
+	// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateType> Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator::PlayCoreToAppUpdateType
+	Dictionary_2_t7AAFE60DBE071FF1583BEA36BFB195214FB795CD* ___PlayCoreToAppUpdateType_3;
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator
+
+// Google.Play.AppUpdate.Internal.AppUpdateState
+
+// Google.Play.AppUpdate.Internal.AppUpdateState
+
+// Google.Play.AssetDelivery.AssetLocation
+
+// Google.Play.AssetDelivery.AssetLocation
+
+// Google.Play.AssetDelivery.Internal.AssetPackManager
+
+// Google.Play.AssetDelivery.Internal.AssetPackManager
+
+// Google.Play.AssetDelivery.Internal.AssetPackStates
+
+// Google.Play.AssetDelivery.Internal.AssetPackStates
+
+// UnityEngine.CustomYieldInstruction
+
+// UnityEngine.CustomYieldInstruction
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal
+
+// Google.Play.AssetDelivery.Internal.PlayCoreTranslator
+struct PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_StaticFields
+{
+	// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AssetDelivery.AssetDeliveryErrorCode> Google.Play.AssetDelivery.Internal.PlayCoreTranslator::PlayCoreToAssetDeliveryErrors
+	Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13* ___PlayCoreToAssetDeliveryErrors_0;
+	// System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AssetDelivery.AssetDeliveryStatus> Google.Play.AssetDelivery.Internal.PlayCoreTranslator::PlayCoreToAssetDeliveryStatuses
+	Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC* ___PlayCoreToAssetDeliveryStatuses_1;
+};
+
+// Google.Play.AssetDelivery.Internal.PlayCoreTranslator
+
+// Google.Play.AssetDelivery.Internal.PlayRequestRepository
+
+// Google.Play.AssetDelivery.Internal.PlayRequestRepository
+
+// System.String
+struct String_t_StaticFields
+{
+	// System.String System.String::Empty
+	String_t* ___Empty_6;
+};
+
+// System.String
+
+// System.Text.StringBuilder
+
+// System.Text.StringBuilder
+
+// Google.Play.Common.VoidResult
+
+// Google.Play.Common.VoidResult
+
+// Google.Play.AppUpdate.Internal.AppUpdateHandler/<>c
+struct U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370_StaticFields
+{
+	// Google.Play.AppUpdate.Internal.AppUpdateHandler/<>c Google.Play.AppUpdate.Internal.AppUpdateHandler/<>c::<>9
+	U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370* ___U3CU3E9_0;
+	// System.Action`1<Google.Play.AppUpdate.Internal.AppUpdateState> Google.Play.AppUpdate.Internal.AppUpdateHandler/<>c::<>9__15_0
+	Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* ___U3CU3E9__15_0_1;
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdateHandler/<>c
+
+// Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass10_0
+
+// Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass10_0
+
+// Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass5_0
+
+// Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass5_0
+
+// Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass9_0
+
+// Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass9_0
+
+// Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator/PlayCoreAppUpdateType
+
+// Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator/PlayCoreAppUpdateType
+
+// Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator/PlayCoreInstallErrorCode
+
+// Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator/PlayCoreInstallErrorCode
+
+// Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator/PlayCoreUpdateAvailability
+
+// Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator/PlayCoreUpdateAvailability
+
+// Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator/PlayCoreUpdateStatus
+
+// Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator/PlayCoreUpdateStatus
+
+// Google.Play.AppUpdate.AppUpdateRequest/<>c
+struct U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36_StaticFields
+{
+	// Google.Play.AppUpdate.AppUpdateRequest/<>c Google.Play.AppUpdate.AppUpdateRequest/<>c::<>9
+	U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36* ___U3CU3E9_0;
+	// System.Action`1<Google.Play.AppUpdate.AppUpdateRequest> Google.Play.AppUpdate.AppUpdateRequest/<>c::<>9__30_0
+	Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* ___U3CU3E9__30_0_1;
+};
+
+// Google.Play.AppUpdate.AppUpdateRequest/<>c
+
+// Google.Play.AppUpdate.Internal.AppUpdateStateListener/<>c
+struct U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8_StaticFields
+{
+	// Google.Play.AppUpdate.Internal.AppUpdateStateListener/<>c Google.Play.AppUpdate.Internal.AppUpdateStateListener/<>c::<>9
+	U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8* ___U3CU3E9_0;
+	// System.Action`1<Google.Play.AppUpdate.Internal.AppUpdateState> Google.Play.AppUpdate.Internal.AppUpdateStateListener/<>c::<>9__3_0
+	Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* ___U3CU3E9__3_0_1;
+};
+
+// Google.Play.AppUpdate.Internal.AppUpdateStateListener/<>c
+
+// Google.Play.AppUpdate.Internal.AppUpdateStateListener/<>c__DisplayClass4_0
+
+// Google.Play.AppUpdate.Internal.AppUpdateStateListener/<>c__DisplayClass4_0
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass10_0
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass10_0
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass10_1
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass10_1
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass11_0
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass11_0
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass12_0
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass12_0
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass13_0
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass13_0
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass16_0
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass16_0
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass20_0
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass20_0
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass7_0
+
+// Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass7_0
+
+// Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl/<>c
+struct U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_StaticFields
+{
+	// Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl/<>c Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl/<>c::<>9
+	U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68* ___U3CU3E9_0;
+	// System.Func`2<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl,System.String> Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl/<>c::<>9__1_0
+	Func_2_t9DEF496CE413EBA35AC4F404085FC769C4A8C110* ___U3CU3E9__1_0_1;
+	// System.Func`2<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl,Google.Play.AssetDelivery.PlayAssetPackRequest> Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl/<>c::<>9__1_1
+	Func_2_t5046017BD492967250D8044DFF77E6C6ED3E3B60* ___U3CU3E9__1_1_2;
+};
+
+// Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl/<>c
+
+// Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl/<>c
+struct U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48_StaticFields
+{
+	// Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl/<>c Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl/<>c::<>9
+	U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48* ___U3CU3E9_0;
+	// System.Action Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl/<>c::<>9__6_0
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___U3CU3E9__6_0_1;
+};
+
+// Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl/<>c
+
+// Google.Play.AssetDelivery.Internal.PlayCoreTranslator/AssetPackErrorCode
+
+// Google.Play.AssetDelivery.Internal.PlayCoreTranslator/AssetPackErrorCode
+
+// Google.Play.AssetDelivery.Internal.PlayCoreTranslator/AssetPackStatus
+
+// Google.Play.AssetDelivery.Internal.PlayCoreTranslator/AssetPackStatus
+
+// Google.Play.AssetDelivery.Internal.PlayRequestRepository/<>c__DisplayClass7_0
+
+// Google.Play.AssetDelivery.Internal.PlayRequestRepository/<>c__DisplayClass7_0
+
+// System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>
+
+// System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>
+
+// System.Collections.Generic.KeyValuePair`2<System.String,Google.Play.AssetDelivery.PlayAssetPackRequest>
+
+// System.Collections.Generic.KeyValuePair`2<System.String,Google.Play.AssetDelivery.PlayAssetPackRequest>
+
+// System.Nullable`1<System.Int32>
+
+// System.Nullable`1<System.Int32>
+
+// Google.Play.Common.PlayAsyncOperation`2<Google.Play.AppUpdate.AppUpdateInfo,Google.Play.AppUpdate.AppUpdateErrorCode>
+
+// Google.Play.Common.PlayAsyncOperation`2<Google.Play.AppUpdate.AppUpdateInfo,Google.Play.AppUpdate.AppUpdateErrorCode>
+
+// Google.Play.Common.PlayAsyncOperation`2<Google.Play.Common.VoidResult,Google.Play.AppUpdate.AppUpdateErrorCode>
+
+// Google.Play.Common.PlayAsyncOperation`2<Google.Play.Common.VoidResult,Google.Play.AppUpdate.AppUpdateErrorCode>
+
+// UnityEngine.AndroidJavaClass
+
+// UnityEngine.AndroidJavaClass
+
+// Google.Play.AppUpdate.AppUpdateRequest
+
+// Google.Play.AppUpdate.AppUpdateRequest
+
+// System.Boolean
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	// System.String System.Boolean::TrueString
+	String_t* ___TrueString_5;
+	// System.String System.Boolean::FalseString
+	String_t* ___FalseString_6;
+};
+
+// System.Boolean
+
+// System.Char
+struct Char_t521A6F19B456D956AF452D926C32709DC03D6B17_StaticFields
+{
+	// System.Byte[] System.Char::s_categoryForLatin1
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___s_categoryForLatin1_3;
+};
+
+// System.Char
+
+// System.Enum
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_StaticFields
+{
+	// System.Char[] System.Enum::enumSeperatorCharArray
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___enumSeperatorCharArray_0;
+};
+
+// System.Enum
+
+// System.Int32
+
+// System.Int32
+
+// System.Int64
+
+// System.Int64
+
+// System.IntPtr
+struct IntPtr_t_StaticFields
+{
+	// System.IntPtr System.IntPtr::Zero
+	intptr_t ___Zero_1;
+};
+
+// System.IntPtr
+
+// Google.Play.AssetDelivery.PlayAssetBundleRequest
+
+// Google.Play.AssetDelivery.PlayAssetBundleRequest
+
+// Google.Play.AssetDelivery.PlayAssetPackBatchRequest
+
+// Google.Play.AssetDelivery.PlayAssetPackBatchRequest
+
+// Google.Play.AssetDelivery.PlayAssetPackRequest
+
+// Google.Play.AssetDelivery.PlayAssetPackRequest
+
+// System.Single
+
+// System.Single
+
+// System.UInt32
+
+// System.UInt32
+
+// System.UInt64
+
+// System.UInt64
+
+// System.Void
+
+// System.Void
+
+// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=1095
+
+// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=1095
+
+// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=244
+
+// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=244
+
+// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=6
+
+// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=6
+
+// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=60
+
+// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=60
+
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.AppUpdate.AppUpdateInfo,Google.Play.AppUpdate.AppUpdateErrorCode>
+
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.AppUpdate.AppUpdateInfo,Google.Play.AppUpdate.AppUpdateErrorCode>
+
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.AssetDelivery.ConfirmationDialogResult,Google.Play.AssetDelivery.AssetDeliveryErrorCode>
+
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.AssetDelivery.ConfirmationDialogResult,Google.Play.AssetDelivery.AssetDeliveryErrorCode>
+
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<System.Int64,Google.Play.AssetDelivery.AssetDeliveryErrorCode>
+
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<System.Int64,Google.Play.AssetDelivery.AssetDeliveryErrorCode>
+
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.Common.VoidResult,Google.Play.AppUpdate.AppUpdateErrorCode>
+
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.Common.VoidResult,Google.Play.AppUpdate.AppUpdateErrorCode>
+
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.Common.VoidResult,Google.Play.AssetDelivery.AssetDeliveryErrorCode>
+
+// Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.Common.VoidResult,Google.Play.AssetDelivery.AssetDeliveryErrorCode>
+
+// <PrivateImplementationDetails>
+struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields
+{
+	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=6 <PrivateImplementationDetails>::3D0C470B24FA37C8E55CFDD6B0969F6C4EACB8F0DB37192B9B66D97B89AABA51
+	__StaticArrayInitTypeSizeU3D6_t38FD8BCE7DBF33FCFABA6823EC6C9368D958290D ___3D0C470B24FA37C8E55CFDD6B0969F6C4EACB8F0DB37192B9B66D97B89AABA51_0;
+	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=244 <PrivateImplementationDetails>::966D8E18E06D99FB1EC024542A753F7A2367413F56E71C4D886BBF8843CF118C
+	__StaticArrayInitTypeSizeU3D244_tFACA36C4BD12BA57FB3DF99F2EF1CFF3E6E210ED ___966D8E18E06D99FB1EC024542A753F7A2367413F56E71C4D886BBF8843CF118C_1;
+	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=60 <PrivateImplementationDetails>::AA385EB44F26F448D7FAD421D4DEB7B4F2F55087118A3BEF8EBED922A49A3F46
+	__StaticArrayInitTypeSizeU3D60_t28DCDB387E585965787FF852575673A4F7B6A5E3 ___AA385EB44F26F448D7FAD421D4DEB7B4F2F55087118A3BEF8EBED922A49A3F46_2;
+	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=1095 <PrivateImplementationDetails>::F0FD6C5B410F25CB25C3B53346C8972FAE30F8EE7411DF910480AD6B2D60DB83
+	__StaticArrayInitTypeSizeU3D1095_t56A5F32D2554FC3A9A514EFDE349A891B390DEA2 ___F0FD6C5B410F25CB25C3B53346C8972FAE30F8EE7411DF910480AD6B2D60DB83_3;
+};
+
+// <PrivateImplementationDetails>
+
+// UnityEngine.AndroidJavaProxy
+struct AndroidJavaProxy_tE5521F9761F7B95444B9C39FB15FDFC23F80A78D_StaticFields
+{
+	// UnityEngine.GlobalJavaObjectRef UnityEngine.AndroidJavaProxy::s_JavaLangSystemClass
+	GlobalJavaObjectRef_t20D8E5AAFC2EB2518FCABBF40465855E797FF0D8* ___s_JavaLangSystemClass_2;
+	// System.IntPtr UnityEngine.AndroidJavaProxy::s_HashCodeMethodID
+	intptr_t ___s_HashCodeMethodID_3;
+};
+
+// UnityEngine.AndroidJavaProxy
+
+// Google.Play.AppUpdate.Internal.AppUpdateRequestImpl
+
+// Google.Play.AppUpdate.Internal.AppUpdateRequestImpl
+
+// System.Delegate
+
+// System.Delegate
+
+// UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
+{
+	// System.Int32 UnityEngine.Object::OffsetOfInstanceIDInCPlusPlusObject
+	int32_t ___OffsetOfInstanceIDInCPlusPlusObject_1;
+};
+
+// UnityEngine.Object
+
+// Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl
+
+// Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl
+
+// Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl
+
+// Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl
+
+// Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl
+
+// Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl
+
+// Google.Play.AppUpdate.Internal.AppUpdateAsyncOperation`1<Google.Play.AppUpdate.AppUpdateInfo>
+
+// Google.Play.AppUpdate.Internal.AppUpdateAsyncOperation`1<Google.Play.AppUpdate.AppUpdateInfo>
+
+// Google.Play.AppUpdate.Internal.AppUpdateAsyncOperation`1<Google.Play.Common.VoidResult>
+
+// Google.Play.AppUpdate.Internal.AppUpdateAsyncOperation`1<Google.Play.Common.VoidResult>
+
+// Google.Play.AssetDelivery.Internal.AssetDeliveryAsyncOperation`1<Google.Play.AssetDelivery.ConfirmationDialogResult>
+
+// Google.Play.AssetDelivery.Internal.AssetDeliveryAsyncOperation`1<Google.Play.AssetDelivery.ConfirmationDialogResult>
+
+// Google.Play.AssetDelivery.Internal.AssetDeliveryAsyncOperation`1<System.Int64>
+
+// Google.Play.AssetDelivery.Internal.AssetDeliveryAsyncOperation`1<System.Int64>
+
+// Google.Play.AssetDelivery.Internal.AssetDeliveryAsyncOperation`1<Google.Play.Common.VoidResult>
+
+// Google.Play.AssetDelivery.Internal.AssetDeliveryAsyncOperation`1<Google.Play.Common.VoidResult>
+
+// Google.Play.AppUpdate.Internal.AppUpdateStateListener
+
+// Google.Play.AppUpdate.Internal.AppUpdateStateListener
+
+// UnityEngine.AssetBundleCreateRequest
+
+// UnityEngine.AssetBundleCreateRequest
+
+// UnityEngine.GameObject
+
+// UnityEngine.GameObject
+
+// System.Action`1<UnityEngine.AndroidJavaObject>
+
+// System.Action`1<UnityEngine.AndroidJavaObject>
+
+// System.Action`1<Google.Play.AppUpdate.AppUpdateRequest>
+
+// System.Action`1<Google.Play.AppUpdate.AppUpdateRequest>
+
+// System.Action`1<Google.Play.AppUpdate.Internal.AppUpdateState>
+
+// System.Action`1<Google.Play.AppUpdate.Internal.AppUpdateState>
+
+// System.Action`1<System.Int32>
+
+// System.Action`1<System.Int32>
+
+// System.Action`1<System.Object>
+
+// System.Action`1<System.Object>
+
+// System.Action`1<Google.Play.AssetDelivery.PlayAssetPackBatchRequest>
+
+// System.Action`1<Google.Play.AssetDelivery.PlayAssetPackBatchRequest>
+
+// System.Action`1<Google.Play.AssetDelivery.PlayAssetPackRequest>
+
+// System.Action`1<Google.Play.AssetDelivery.PlayAssetPackRequest>
+
+// System.Action`1<Google.Play.Common.VoidResult>
+
+// System.Action`1<Google.Play.Common.VoidResult>
+
+// System.Action`2<System.String,System.Int32>
+
+// System.Action`2<System.String,System.Int32>
+
+// System.Func`2<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl,System.Boolean>
+
+// System.Func`2<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl,System.Boolean>
+
+// System.Func`2<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl,Google.Play.AssetDelivery.PlayAssetPackRequest>
+
+// System.Func`2<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl,Google.Play.AssetDelivery.PlayAssetPackRequest>
+
+// System.Func`2<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl,System.String>
+
+// System.Func`2<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl,System.String>
+
+// System.Action
+
+// System.Action
+
+// System.ArgumentException
+
+// System.ArgumentException
+
+// System.InvalidOperationException
+
+// System.InvalidOperationException
+
+// System.NotImplementedException
+
+// System.NotImplementedException
+
+// System.NullReferenceException
+
+// System.NullReferenceException
+
+// System.ArgumentNullException
+
+// System.ArgumentNullException
+
+// UnityEngine.MonoBehaviour
+
+// UnityEngine.MonoBehaviour
+
+// Google.Play.AppUpdate.Internal.AppUpdateHandler
+
+// Google.Play.AppUpdate.Internal.AppUpdateHandler
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// System.Object[]
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeArray
+{
+	ALIGN_FIELD (8) RuntimeObject* m_Items[1];
+
+	inline RuntimeObject* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline RuntimeObject* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// System.String[]
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248  : public RuntimeArray
+{
+	ALIGN_FIELD (8) String_t* m_Items[1];
+
+	inline String_t* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, String_t* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline String_t* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, String_t* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+
+
+// System.Void Google.Play.Core.Internal.PlayCoreTask`1<System.Object>::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayCoreTask_1_Dispose_m7866FFF1AAEA7F49862785889C2D6F02EE6EEB8B_gshared (PlayCoreTask_1_t462AF85AE7E00CB9B532E6D4B3524B33C5E2D24F* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.Common.Internal.PlayAsyncOperationImpl`2<System.Int32Enum,System.Int32Enum>::SetResult(TResult)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAsyncOperationImpl_2_SetResult_mE904396A847B5B22004744DCE652867831841B98_gshared (PlayAsyncOperationImpl_2_t173F29216BEE54FBDB4700D751EB0ECB4D71AE54* __this, int32_t ___0_result, const RuntimeMethod* method) ;
+// System.Void Google.Play.Core.Internal.PlayCoreTask`1<System.Int32>::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayCoreTask_1_Dispose_m00ED1653B30AFA878BBA3EA3B72E17FCC8522355_gshared (PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.Common.Internal.PlayAsyncOperationImpl`2<System.Int32Enum,System.Int32Enum>::SetError(TError)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAsyncOperationImpl_2_SetError_mC1450990EF33E5E761C4EEE44D2A07BFE7907AEE_gshared (PlayAsyncOperationImpl_2_t173F29216BEE54FBDB4700D751EB0ECB4D71AE54* __this, int32_t ___0_errorCode, const RuntimeMethod* method) ;
+// System.Void Google.Play.Common.Internal.PlayAsyncOperationImpl`2<System.Int64,System.Int32Enum>::SetResult(TResult)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAsyncOperationImpl_2_SetResult_m43EF7F29EAEF0CEE16BB942B1769CB81E648C9B9_gshared (PlayAsyncOperationImpl_2_t8BF59FBB3EE37485475D7CAFC13C6D8F7979BC87* __this, int64_t ___0_result, const RuntimeMethod* method) ;
+// System.Void Google.Play.Common.Internal.PlayAsyncOperationImpl`2<System.Int64,System.Int32Enum>::SetError(TError)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAsyncOperationImpl_2_SetError_mEEEF085D887DAA9A75353D9D0BAA33B89438AD21_gshared (PlayAsyncOperationImpl_2_t8BF59FBB3EE37485475D7CAFC13C6D8F7979BC87* __this, int32_t ___0_errorCode, const RuntimeMethod* method) ;
+// System.Void Google.Play.Common.Internal.PlayAsyncOperationImpl`2<System.Object,System.Int32Enum>::SetResult(TResult)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAsyncOperationImpl_2_SetResult_m7B46A4A52A6903275FEC86680EB0B4BE912AAB23_gshared (PlayAsyncOperationImpl_2_tD10916A0F8FEFDED4C47AC9B70A773C0AB83BA33* __this, RuntimeObject* ___0_result, const RuntimeMethod* method) ;
+// System.Void Google.Play.Common.Internal.PlayAsyncOperationImpl`2<System.Object,System.Int32Enum>::SetError(TError)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAsyncOperationImpl_2_SetError_m6D71BBADAE6485EF50402A6764BDC338AD49A792_gshared (PlayAsyncOperationImpl_2_tD10916A0F8FEFDED4C47AC9B70A773C0AB83BA33* __this, int32_t ___0_errorCode, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.HashSet`1<System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1__ctor_m9132EE1422BAA45E44B7FFF495F378790D36D90E_gshared (HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885* __this, const RuntimeMethod* method) ;
+// System.Void System.Func`2<System.Object,System.Object>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_m7F8A01C0B02BC1D4063F4EB1E817F7A48562A398_gshared (Func_2_tACBF5A1656250800CE861707354491F0611F6624* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+// System.Collections.Generic.Dictionary`2<TKey,TElement> System.Linq.Enumerable::ToDictionary<System.Object,System.Object,System.Object>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TKey>,System.Func`2<TSource,TElement>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* Enumerable_ToDictionary_TisRuntimeObject_TisRuntimeObject_TisRuntimeObject_mA712BB5A297282995D1266B8F0BD27C3C7E16E9A_gshared (RuntimeObject* ___0_source, Func_2_tACBF5A1656250800CE861707354491F0611F6624* ___1_keySelector, Func_2_tACBF5A1656250800CE861707354491F0611F6624* ___2_elementSelector, const RuntimeMethod* method) ;
+// TValue System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>::get_Value()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) ;
+// System.Void System.Action`1<System.Object>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m2E1DFA67718FC1A0B6E5DFEB78831FFE9C059EB4_gshared (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+// System.Void System.Action`1<System.Object>::Invoke(T)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.HashSet`1<System.Object>::Add(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_Add_m2CD7657B3459B61DD4BBA47024AC71F7D319658B_gshared (HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
+// System.Int32 System.Collections.Generic.HashSet`1<System.Object>::get_Count()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t HashSet_1_get_Count_m41CC85EEB7855CEFA3BC7A32F115387939318ED3_gshared_inline (HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,System.Int32Enum>::TryGetValue(TKey,TValue&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_TryGetValue_m9C7A828C0B5419633EB1A5AA73FC2E06284E639E_gshared (Dictionary_2_t8692D65464844EB649ABD241057B7447F5B945B6* __this, int32_t ___0_key, int32_t* ___1_value, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Int32Enum>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_mC9C175D184F142682355D54F32FC231BBDCE6FD0_gshared (Dictionary_2_t8692D65464844EB649ABD241057B7447F5B945B6* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Int32Enum>::Add(TKey,TValue)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_m95641EE4325D83C122BF87ECF2A0F729A1CF14D3_gshared (Dictionary_2_t8692D65464844EB649ABD241057B7447F5B945B6* __this, int32_t ___0_key, int32_t ___1_value, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Add(TKey,TValue)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___0_key, RuntimeObject* ___1_value, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Remove(TKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_Remove_m5C7C45E75D951A75843F3F7AADD56ECD64F6BC86_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___0_key, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::TryGetValue(TKey,TValue&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_TryGetValue_mD15380A4ED7CDEE99EA45881577D26BA9CE1B849_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___0_key, RuntimeObject** ___1_value, const RuntimeMethod* method) ;
+// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Object,System.Object>::get_Values()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueCollection_t038245E04B5D2A80048D9F8021A23E69A0C9DBAA* Dictionary_2_get_Values_mA0C01DEA55329E55380E96BBD04D4D228B437EC5_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
+// System.Void System.Func`2<System.Object,System.Boolean>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_m13C0A7F33154D861E2A041B52E88461832DA1697_gshared (Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+// System.Collections.Generic.IEnumerable`1<TSource> System.Linq.Enumerable::Where<System.Object>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Where_TisRuntimeObject_m5DAF16724887B42DDBBF391C7F375749E8AA4AD7_gshared (RuntimeObject* ___0_source, Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00* ___1_predicate, const RuntimeMethod* method) ;
+// System.Collections.Generic.List`1<TSource> System.Linq.Enumerable::ToList<System.Object>(System.Collections.Generic.IEnumerable`1<TSource>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* Enumerable_ToList_TisRuntimeObject_m6456D63764F29E6B5B2422C3DE25113577CF51EE_gshared (RuntimeObject* ___0_source, const RuntimeMethod* method) ;
+// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Object,System.Object>::get_Keys()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyCollection_tB45A861D090B15129521119AE48ED3813820A974* Dictionary_2_get_Keys_m72D290F90654BFD683FA7AA7C63D9F4F692218B6_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
+// TSource[] System.Linq.Enumerable::ToArray<System.Object>(System.Collections.Generic.IEnumerable`1<TSource>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Enumerable_ToArray_TisRuntimeObject_mA54265C2C8A0864929ECD300B75E4952D553D17D_gshared (RuntimeObject* ___0_source, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::ContainsKey(TKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_ContainsKey_m703047C213F7AB55C9DC346596287773A1F670CD_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___0_key, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
+// T[] System.Array::Empty<System.Object>()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_gshared_inline (const RuntimeMethod* method) ;
+// ReturnType UnityEngine.AndroidJavaObject::Call<System.Int32>(System.String,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC_gshared (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
+// ReturnType UnityEngine.AndroidJavaObject::Call<System.Object>(System.String,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AndroidJavaObject_Call_TisRuntimeObject_mA5AF1A9E0463CE91F0ACB6AC2FE0C1922B579EF7_gshared (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
+// System.Void System.Nullable`1<System.Int32>::.ctor(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_gshared (Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28* __this, int32_t ___0_value, const RuntimeMethod* method) ;
+// ReturnType UnityEngine.AndroidJavaObject::Call<System.UInt64>(System.String,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t AndroidJavaObject_Call_TisUInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_m116DA4AF7DB9E6C514C6FCC8AE948078D4AF4795_gshared (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
+// ReturnType UnityEngine.AndroidJavaObject::Call<System.Boolean>(System.String,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AndroidJavaObject_Call_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_m05D3284A3FA772D032190A0FE82363C61000F1DF_gshared (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
+// ReturnType UnityEngine.AndroidJavaObject::CallStatic<System.Object>(System.String,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AndroidJavaObject_CallStatic_TisRuntimeObject_mCAFE27630F6092C4910E14592B050DACFCBE146F_gshared (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
+// T UnityEngine.GameObject::AddComponent<System.Object>()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.Core.Internal.PlayCoreTask`1<System.Object>::RegisterOnSuccessCallback(System.Action`1<TAndroidJava>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayCoreTask_1_RegisterOnSuccessCallback_mE39E6EE8B8D0C569A69FDBC1243322814712196F_gshared (PlayCoreTask_1_t462AF85AE7E00CB9B532E6D4B3524B33C5E2D24F* __this, Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* ___0_onSuccess, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateAsyncOperation`1<System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateAsyncOperation_1__ctor_m621494F9A464C28FD4A42A11569DBC0CE1061B87_gshared (AppUpdateAsyncOperation_1_tAC8CD35289DDF1552B4AC51C7F78CD2D7294DBCC* __this, const RuntimeMethod* method) ;
+// System.Void System.Action`2<System.Object,System.Int32>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_2__ctor_m07C6392BB276FFCCFD4E495842992EA26FA44882_gshared (Action_2_tAC461AE4F7B507965CE2E6A32853473F8C02CD75* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+// System.Void Google.Play.Core.Internal.PlayCoreTask`1<System.Object>::RegisterOnFailureCallback(System.Action`2<System.String,System.Int32>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayCoreTask_1_RegisterOnFailureCallback_mDF35CA6F0EE35B0588B55738BD57F87BC9E190BA_gshared (PlayCoreTask_1_t462AF85AE7E00CB9B532E6D4B3524B33C5E2D24F* __this, Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF* ___0_onFailure, const RuntimeMethod* method) ;
+// System.Void System.Action`1<System.Int32>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m1BA854F3F4319EA4A4294DDFDA21C395B8D0FF87_gshared (Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+// System.Void Google.Play.Core.Internal.PlayCoreTask`1<System.Int32>::RegisterOnSuccessCallback(System.Action`1<TAndroidJava>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayCoreTask_1_RegisterOnSuccessCallback_m2B6E163F1A0A385BD0C1EBBD9380257154294EA4_gshared (PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F* __this, Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* ___0_onSuccess, const RuntimeMethod* method) ;
+// System.Void Google.Play.Core.Internal.PlayCoreTask`1<System.Int32>::RegisterOnFailureCallback(System.Action`2<System.String,System.Int32>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayCoreTask_1_RegisterOnFailureCallback_mF8543DC0C206CD3ABC2BB7692B2A7BFEE263E694_gshared (PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F* __this, Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF* ___0_onFailure, const RuntimeMethod* method) ;
+// System.Void Google.Play.Core.Internal.PlayCoreTask`1<System.Object>::.ctor(UnityEngine.AndroidJavaObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayCoreTask_1__ctor_mCBC23C35230AF9B8D3347D1C82F20482C5EFF896_gshared (PlayCoreTask_1_t462AF85AE7E00CB9B532E6D4B3524B33C5E2D24F* __this, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ___0_javaTask, const RuntimeMethod* method) ;
+// System.Void Google.Play.Core.Internal.PlayCoreTask`1<System.Int32>::.ctor(UnityEngine.AndroidJavaObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayCoreTask_1__ctor_mFF5887DD94D8E7A1F3B1BB63266E75628AF494C8_gshared (PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F* __this, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ___0_javaTask, const RuntimeMethod* method) ;
+// ReturnType UnityEngine.AndroidJavaObject::Call<System.Int64>(System.String,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t AndroidJavaObject_Call_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_m63E24F733CDC205FED0CF4659E49DB4AE06ADBB9_gshared (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
+
+// System.Void System.Object::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.AssetDelivery.Internal.PlayRequestRepository::RemoveRequest(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayRequestRepository_RemoveRequest_m933E6F3F77462893ABDC58009CB808487A859C76 (PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* __this, String_t* ___0_name, const RuntimeMethod* method) ;
+// System.Boolean Google.Play.AssetDelivery.Internal.PlayRequestRepository::ContainsAssetBundleRequest(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayRequestRepository_ContainsAssetBundleRequest_m61DD6FAEF3DF73A21C54A8BBE807F4062BC7148A (PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* __this, String_t* ___0_name, const RuntimeMethod* method) ;
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl::OnInitializedInPlayCore()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackBatchRequestImpl_OnInitializedInPlayCore_m22A3BD3B53E060C56A64E0EE139090DF2D60099E (PlayAssetPackBatchRequestImpl_tC82BC03D5E3AA6978BD90055586C419EDFDFFFE7* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.Core.Internal.PlayCoreTask`1<UnityEngine.AndroidJavaObject>::Dispose()
+inline void PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8 (PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* __this, const RuntimeMethod* method)
+{
+	((  void (*) (PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E*, const RuntimeMethod*))PlayCoreTask_1_Dispose_m7866FFF1AAEA7F49862785889C2D6F02EE6EEB8B_gshared)(__this, method);
+}
+// System.String System.String::Concat(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Debug::LogError(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2 (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
+// Google.Play.AssetDelivery.AssetDeliveryErrorCode Google.Play.AssetDelivery.Internal.PlayCoreTranslator::TranslatePlayCoreErrorCode(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PlayCoreTranslator_TranslatePlayCoreErrorCode_mBE37A0C9CC75E81F98D5B1909F1C2E4A7FF0A896 (int32_t ___0_assetPackErrorCode, const RuntimeMethod* method) ;
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl::OnInitializationErrorOccurred(Google.Play.AssetDelivery.AssetDeliveryErrorCode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackBatchRequestImpl_OnInitializationErrorOccurred_m0D8D5AE285890CFE0F4582893E7343C12CAC3768 (PlayAssetPackBatchRequestImpl_tC82BC03D5E3AA6978BD90055586C419EDFDFFFE7* __this, int32_t ___0_errorCode, const RuntimeMethod* method) ;
+// Google.Play.AssetDelivery.ConfirmationDialogResult Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal::ConvertToConfirmationDialogResult(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PlayAssetDeliveryInternal_ConvertToConfirmationDialogResult_m8602D1D07DEC515B0B42EDDD28261797A51ADE97 (PlayAssetDeliveryInternal_t6D3BC5056F40448DAE64A56BF9C28103D31CE195* __this, int32_t ___0_resultCode, const RuntimeMethod* method) ;
+// System.Void Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.AssetDelivery.ConfirmationDialogResult,Google.Play.AssetDelivery.AssetDeliveryErrorCode>::SetResult(TResult)
+inline void PlayAsyncOperationImpl_2_SetResult_mBF264A6422E52A2CCDF15714B8C17E1FC5723E0F (PlayAsyncOperationImpl_2_t9D0D21EEA9E39EE0F8634E8A65EF81F82570B39A* __this, int32_t ___0_result, const RuntimeMethod* method)
+{
+	((  void (*) (PlayAsyncOperationImpl_2_t9D0D21EEA9E39EE0F8634E8A65EF81F82570B39A*, int32_t, const RuntimeMethod*))PlayAsyncOperationImpl_2_SetResult_mE904396A847B5B22004744DCE652867831841B98_gshared)(__this, ___0_result, method);
+}
+// System.Void Google.Play.Core.Internal.PlayCoreTask`1<System.Int32>::Dispose()
+inline void PlayCoreTask_1_Dispose_m00ED1653B30AFA878BBA3EA3B72E17FCC8522355 (PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F* __this, const RuntimeMethod* method)
+{
+	((  void (*) (PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F*, const RuntimeMethod*))PlayCoreTask_1_Dispose_m00ED1653B30AFA878BBA3EA3B72E17FCC8522355_gshared)(__this, method);
+}
+// System.Void Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.AssetDelivery.ConfirmationDialogResult,Google.Play.AssetDelivery.AssetDeliveryErrorCode>::SetError(TError)
+inline void PlayAsyncOperationImpl_2_SetError_m12F09686B5072581BB81687950E10CD49B3E30D0 (PlayAsyncOperationImpl_2_t9D0D21EEA9E39EE0F8634E8A65EF81F82570B39A* __this, int32_t ___0_errorCode, const RuntimeMethod* method)
+{
+	((  void (*) (PlayAsyncOperationImpl_2_t9D0D21EEA9E39EE0F8634E8A65EF81F82570B39A*, int32_t, const RuntimeMethod*))PlayAsyncOperationImpl_2_SetError_mC1450990EF33E5E761C4EEE44D2A07BFE7907AEE_gshared)(__this, ___0_errorCode, method);
+}
+// System.Void Google.Play.AssetDelivery.Internal.AssetPackStates::.ctor(UnityEngine.AndroidJavaObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssetPackStates__ctor_mF427C3B49EA8CBE003FCAC69D6D0522C9DDEFA89 (AssetPackStates_tF29EB9AEFDF74D53DB10977AB96AD4D8E8923FCB* __this, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ___0_packStates, const RuntimeMethod* method) ;
+// System.Int64 Google.Play.AssetDelivery.Internal.AssetPackStates::get_TotalBytes()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int64_t AssetPackStates_get_TotalBytes_mAFC0111A353E0ACC2ED7492018180601611EDAB9_inline (AssetPackStates_tF29EB9AEFDF74D53DB10977AB96AD4D8E8923FCB* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.Common.Internal.PlayAsyncOperationImpl`2<System.Int64,Google.Play.AssetDelivery.AssetDeliveryErrorCode>::SetResult(TResult)
+inline void PlayAsyncOperationImpl_2_SetResult_m93BFB6A3A6BA37EFDF2179E4F009E6379B1575BC (PlayAsyncOperationImpl_2_t47189B680EB02A59150C62CE435DD0BE3D7F1F39* __this, int64_t ___0_result, const RuntimeMethod* method)
+{
+	((  void (*) (PlayAsyncOperationImpl_2_t47189B680EB02A59150C62CE435DD0BE3D7F1F39*, int64_t, const RuntimeMethod*))PlayAsyncOperationImpl_2_SetResult_m43EF7F29EAEF0CEE16BB942B1769CB81E648C9B9_gshared)(__this, ___0_result, method);
+}
+// System.Void Google.Play.Common.Internal.PlayAsyncOperationImpl`2<System.Int64,Google.Play.AssetDelivery.AssetDeliveryErrorCode>::SetError(TError)
+inline void PlayAsyncOperationImpl_2_SetError_m19F45E26735475B3F4592612A0FD4317F93E31D6 (PlayAsyncOperationImpl_2_t47189B680EB02A59150C62CE435DD0BE3D7F1F39* __this, int32_t ___0_errorCode, const RuntimeMethod* method)
+{
+	((  void (*) (PlayAsyncOperationImpl_2_t47189B680EB02A59150C62CE435DD0BE3D7F1F39*, int32_t, const RuntimeMethod*))PlayAsyncOperationImpl_2_SetError_mEEEF085D887DAA9A75353D9D0BAA33B89438AD21_gshared)(__this, ___0_errorCode, method);
+}
+// System.Void Google.Play.Common.VoidResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VoidResult__ctor_m667217F9AE721104DABC4FEBDD1FD16DF8EF93B3 (VoidResult_t2EF77C7575B288CA1B347EDF1877D2236759ED9C* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.Common.VoidResult,Google.Play.AssetDelivery.AssetDeliveryErrorCode>::SetResult(TResult)
+inline void PlayAsyncOperationImpl_2_SetResult_m44C069D1589ADF93B612E1904C8AA5579AFA234A (PlayAsyncOperationImpl_2_t776E04678C6917D87DCD2CAABC92490BF9B2038D* __this, VoidResult_t2EF77C7575B288CA1B347EDF1877D2236759ED9C* ___0_result, const RuntimeMethod* method)
+{
+	((  void (*) (PlayAsyncOperationImpl_2_t776E04678C6917D87DCD2CAABC92490BF9B2038D*, VoidResult_t2EF77C7575B288CA1B347EDF1877D2236759ED9C*, const RuntimeMethod*))PlayAsyncOperationImpl_2_SetResult_m7B46A4A52A6903275FEC86680EB0B4BE912AAB23_gshared)(__this, ___0_result, method);
+}
+// System.Void Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.Common.VoidResult,Google.Play.AssetDelivery.AssetDeliveryErrorCode>::SetError(TError)
+inline void PlayAsyncOperationImpl_2_SetError_mD4713F37FF29477CF241FE11AFF354902EF4E4E0 (PlayAsyncOperationImpl_2_t776E04678C6917D87DCD2CAABC92490BF9B2038D* __this, int32_t ___0_errorCode, const RuntimeMethod* method)
+{
+	((  void (*) (PlayAsyncOperationImpl_2_t776E04678C6917D87DCD2CAABC92490BF9B2038D*, int32_t, const RuntimeMethod*))PlayAsyncOperationImpl_2_SetError_m6D71BBADAE6485EF50402A6764BDC338AD49A792_gshared)(__this, ___0_errorCode, method);
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::OnInitializedInPlayCore()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackRequestImpl_OnInitializedInPlayCore_mE93B3D7C4F0493C2CC17B5F810D43B3E21675EF7 (PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Debug::LogErrorFormat(System.String,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogErrorFormat_m96690322C941D23A125E5769C9803606859A707C (String_t* ___0_format, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::OnErrorOccured(Google.Play.AssetDelivery.AssetDeliveryErrorCode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackRequestImpl_OnErrorOccured_mFA751C138B147A9ED2141E1C42B6648798E74F1E (PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* __this, int32_t ___0_errorCode, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.HashSet`1<System.String>::.ctor()
+inline void HashSet_1__ctor_m780CFB8A2D23543157D1A0E1FADF781E1AF81E03 (HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178* __this, const RuntimeMethod* method)
+{
+	((  void (*) (HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178*, const RuntimeMethod*))HashSet_1__ctor_m9132EE1422BAA45E44B7FFF495F378790D36D90E_gshared)(__this, method);
+}
+// System.Void Google.Play.AssetDelivery.PlayAssetPackBatchRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackBatchRequest__ctor_mCEE54CB9A40A3E76C5D569A23F65B645563701FD (PlayAssetPackBatchRequest_tA71C1C7470D71B0B2D5C8F7EC28FA14EFE50A96B* __this, const RuntimeMethod* method) ;
+// System.Void System.Func`2<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl,System.String>::.ctor(System.Object,System.IntPtr)
+inline void Func_2__ctor_mAFAD46667F2E6A868B9ABB01AA3894BDA5AE5ED5 (Func_2_t9DEF496CE413EBA35AC4F404085FC769C4A8C110* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (Func_2_t9DEF496CE413EBA35AC4F404085FC769C4A8C110*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_m7F8A01C0B02BC1D4063F4EB1E817F7A48562A398_gshared)(__this, ___0_object, ___1_method, method);
+}
+// System.Void System.Func`2<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl,Google.Play.AssetDelivery.PlayAssetPackRequest>::.ctor(System.Object,System.IntPtr)
+inline void Func_2__ctor_m753270A39E099E0F5FE99992D18F92F393880D13 (Func_2_t5046017BD492967250D8044DFF77E6C6ED3E3B60* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (Func_2_t5046017BD492967250D8044DFF77E6C6ED3E3B60*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_m7F8A01C0B02BC1D4063F4EB1E817F7A48562A398_gshared)(__this, ___0_object, ___1_method, method);
+}
+// System.Collections.Generic.Dictionary`2<TKey,TElement> System.Linq.Enumerable::ToDictionary<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl,System.String,Google.Play.AssetDelivery.PlayAssetPackRequest>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TKey>,System.Func`2<TSource,TElement>)
+inline Dictionary_2_t3EFA4D10E3094CC14D7BC611CD307E8DF0F580B0* Enumerable_ToDictionary_TisPlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_TisString_t_TisPlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673_m4335CBE55AC7B90B955973464B6C466564A7ADAB (RuntimeObject* ___0_source, Func_2_t9DEF496CE413EBA35AC4F404085FC769C4A8C110* ___1_keySelector, Func_2_t5046017BD492967250D8044DFF77E6C6ED3E3B60* ___2_elementSelector, const RuntimeMethod* method)
+{
+	return ((  Dictionary_2_t3EFA4D10E3094CC14D7BC611CD307E8DF0F580B0* (*) (RuntimeObject*, Func_2_t9DEF496CE413EBA35AC4F404085FC769C4A8C110*, Func_2_t5046017BD492967250D8044DFF77E6C6ED3E3B60*, const RuntimeMethod*))Enumerable_ToDictionary_TisRuntimeObject_TisRuntimeObject_TisRuntimeObject_mA712BB5A297282995D1266B8F0BD27C3C7E16E9A_gshared)(___0_source, ___1_keySelector, ___2_elementSelector, method);
+}
+// TValue System.Collections.Generic.KeyValuePair`2<System.String,Google.Play.AssetDelivery.PlayAssetPackRequest>::get_Value()
+inline PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* KeyValuePair_2_get_Value_m94FF5F8624F96A75FA65134023C4D6790E1CC6E6_inline (KeyValuePair_2_tFA7501048F15B1D4E16F48EE197DD55516CD1241* __this, const RuntimeMethod* method)
+{
+	return ((  PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* (*) (KeyValuePair_2_tFA7501048F15B1D4E16F48EE197DD55516CD1241*, const RuntimeMethod*))KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline)(__this, method);
+}
+// System.Void System.Action`1<Google.Play.AssetDelivery.PlayAssetPackRequest>::.ctor(System.Object,System.IntPtr)
+inline void Action_1__ctor_m2234E8C8967A4E619B953FD2A12DAACC49F3AFCE (Action_1_t6C653CA94F6E4C002C5DEFFE0C93E3DDEE648147* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_t6C653CA94F6E4C002C5DEFFE0C93E3DDEE648147*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_1__ctor_m2E1DFA67718FC1A0B6E5DFEB78831FFE9C059EB4_gshared)(__this, ___0_object, ___1_method, method);
+}
+// System.Boolean Google.Play.AssetDelivery.PlayAssetPackBatchRequest::get_IsDone()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool PlayAssetPackBatchRequest_get_IsDone_m01EACA2D80CEA4B89B15147B28E09F8BADB4F348_inline (PlayAssetPackBatchRequest_tA71C1C7470D71B0B2D5C8F7EC28FA14EFE50A96B* __this, const RuntimeMethod* method) ;
+// System.Void System.Action`1<Google.Play.AssetDelivery.PlayAssetPackBatchRequest>::Invoke(T)
+inline void Action_1_Invoke_m308E4172507880FF3970450BFC7F3198B3EC7397_inline (Action_1_tD3B6C9D99DD28F54511BE03819C3E5DB2144A97C* __this, PlayAssetPackBatchRequest_tA71C1C7470D71B0B2D5C8F7EC28FA14EFE50A96B* ___0_obj, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_tD3B6C9D99DD28F54511BE03819C3E5DB2144A97C*, PlayAssetPackBatchRequest_tA71C1C7470D71B0B2D5C8F7EC28FA14EFE50A96B*, const RuntimeMethod*))Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline)(__this, ___0_obj, method);
+}
+// System.Void Google.Play.AssetDelivery.PlayAssetPackBatchRequest::add_Completed(System.Action`1<Google.Play.AssetDelivery.PlayAssetPackBatchRequest>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackBatchRequest_add_Completed_m5700D655929250387F34F1D923D5E3F3BC92DF02 (PlayAssetPackBatchRequest_tA71C1C7470D71B0B2D5C8F7EC28FA14EFE50A96B* __this, Action_1_tD3B6C9D99DD28F54511BE03819C3E5DB2144A97C* ___0_value, const RuntimeMethod* method) ;
+// System.Void Google.Play.AssetDelivery.PlayAssetPackBatchRequest::remove_Completed(System.Action`1<Google.Play.AssetDelivery.PlayAssetPackBatchRequest>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackBatchRequest_remove_Completed_mCE8F6EF1C6F32C5FADE4A52FC2DB9151105A3B93 (PlayAssetPackBatchRequest_tA71C1C7470D71B0B2D5C8F7EC28FA14EFE50A96B* __this, Action_1_tD3B6C9D99DD28F54511BE03819C3E5DB2144A97C* ___0_value, const RuntimeMethod* method) ;
+// System.Void System.ArgumentException::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465 (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* __this, String_t* ___0_message, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.HashSet`1<System.String>::Add(T)
+inline bool HashSet_1_Add_mF3D4CF6D0150392127D5561A87DCDEDA9A81BE5D (HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178* __this, String_t* ___0_item, const RuntimeMethod* method)
+{
+	return ((  bool (*) (HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178*, String_t*, const RuntimeMethod*))HashSet_1_Add_m2CD7657B3459B61DD4BBA47024AC71F7D319658B_gshared)(__this, ___0_item, method);
+}
+// System.Int32 System.Collections.Generic.HashSet`1<System.String>::get_Count()
+inline int32_t HashSet_1_get_Count_mAF52C76F83E02DA4DDF4B21CD4D2910BA7CF157F_inline (HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178*, const RuntimeMethod*))HashSet_1_get_Count_m41CC85EEB7855CEFA3BC7A32F115387939318ED3_gshared_inline)(__this, method);
+}
+// System.Void Google.Play.AssetDelivery.PlayAssetPackBatchRequest::set_IsDone(System.Boolean)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PlayAssetPackBatchRequest_set_IsDone_mCEBAEFE0F71398AF529D026DCB12DA385E84F545_inline (PlayAssetPackBatchRequest_tA71C1C7470D71B0B2D5C8F7EC28FA14EFE50A96B* __this, bool ___0_value, const RuntimeMethod* method) ;
+// System.Void Google.Play.AssetDelivery.PlayAssetPackBatchRequest::InvokeCompletedEvent()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackBatchRequest_InvokeCompletedEvent_m8ECC0DE380EFC4588E7B4936B89D955CAF38D2D2 (PlayAssetPackBatchRequest_tA71C1C7470D71B0B2D5C8F7EC28FA14EFE50A96B* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl/<>c::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m97312C17C32200D50A0481E3F6A76803531F0501 (U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68* __this, const RuntimeMethod* method) ;
+// System.Void System.Action::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+// System.Void Google.Play.AssetDelivery.PlayAssetPackRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackRequest__ctor_m59C53626C3110AB3D4848454DB9A36208D9FFAFB (PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* __this, const RuntimeMethod* method) ;
+// System.Boolean Google.Play.AssetDelivery.PlayAssetPackRequest::get_IsDone()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool PlayAssetPackRequest_get_IsDone_m839704DF8C10B15FF3C7C7BCED35EAABC5013EA1_inline (PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* __this, const RuntimeMethod* method) ;
+// System.Void System.Action`1<Google.Play.AssetDelivery.PlayAssetPackRequest>::Invoke(T)
+inline void Action_1_Invoke_m56507AC1998B64411A148F6BD8A3EDA1D83D09A7_inline (Action_1_t6C653CA94F6E4C002C5DEFFE0C93E3DDEE648147* __this, PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* ___0_obj, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_t6C653CA94F6E4C002C5DEFFE0C93E3DDEE648147*, PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673*, const RuntimeMethod*))Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline)(__this, ___0_obj, method);
+}
+// System.Void Google.Play.AssetDelivery.PlayAssetPackRequest::add_Completed(System.Action`1<Google.Play.AssetDelivery.PlayAssetPackRequest>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackRequest_add_Completed_m6F457A051326A7C4F14E1635669DFC6651BAD5C5 (PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* __this, Action_1_t6C653CA94F6E4C002C5DEFFE0C93E3DDEE648147* ___0_value, const RuntimeMethod* method) ;
+// System.Void Google.Play.AssetDelivery.PlayAssetPackRequest::remove_Completed(System.Action`1<Google.Play.AssetDelivery.PlayAssetPackRequest>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackRequest_remove_Completed_m8DC9172EC27B591842A44D040EC1AE489B4ECF9F (PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* __this, Action_1_t6C653CA94F6E4C002C5DEFFE0C93E3DDEE648147* ___0_value, const RuntimeMethod* method) ;
+// System.Void Google.Play.AssetDelivery.PlayAssetPackRequest::set_DownloadProgress(System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PlayAssetPackRequest_set_DownloadProgress_m76595EB101B8FBDE71A3C905DF2BBFE384A9443A_inline (PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* __this, float ___0_value, const RuntimeMethod* method) ;
+// System.Void Google.Play.AssetDelivery.PlayAssetPackRequest::set_Status(Google.Play.AssetDelivery.AssetDeliveryStatus)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PlayAssetPackRequest_set_Status_m39B276A4C8F828D81D4838877A86A33053C47032_inline (PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* __this, int32_t ___0_value, const RuntimeMethod* method) ;
+// Google.Play.AssetDelivery.AssetDeliveryStatus Google.Play.AssetDelivery.PlayAssetPackRequest::get_Status()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PlayAssetPackRequest_get_Status_mF0E848D2064C9B37DA90B23F602AD2D80B7AE763_inline (PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::OnPackAvailable()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackRequestImpl_OnPackAvailable_mA94E56CC69CCD5381AB50EC13BDDC71DA6DE9103 (PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.Core.Internal.PlayCoreEventHandler::HandleEvent(System.Action)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayCoreEventHandler_HandleEvent_m6344840A759B6C257811B9B6F25E457CF2F610C1 (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_action, const RuntimeMethod* method) ;
+// System.Void Google.Play.AssetDelivery.PlayAssetPackRequest::set_IsDone(System.Boolean)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PlayAssetPackRequest_set_IsDone_mF85B396480802F1BB043D86C265629D9B7B94E06_inline (PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* __this, bool ___0_value, const RuntimeMethod* method) ;
+// System.Void Google.Play.AssetDelivery.PlayAssetPackRequest::InvokeCompletedEvent()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackRequest_InvokeCompletedEvent_m421C696CEBE00EBC12579DFC5CCD3D316020456C (PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.AssetDelivery.PlayAssetPackRequest::set_Error(Google.Play.AssetDelivery.AssetDeliveryErrorCode)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PlayAssetPackRequest_set_Error_m768879DE94B4BB96262A72DD4BCB8179D4AE5C54_inline (PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* __this, int32_t ___0_value, const RuntimeMethod* method) ;
+// System.String[] System.String::Split(System.Char,System.StringSplitOptions)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* String_Split_m9530B73D02054692283BF35C3A27C8F2230946F4 (String_t* __this, Il2CppChar ___0_separator, int32_t ___1_options, const RuntimeMethod* method) ;
+// System.Boolean System.String::Equals(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_Equals_mCD5F35DEDCAFE51ACD4E033726FC2EF8DF7E9B4D (String_t* __this, String_t* ___0_value, const RuntimeMethod* method) ;
+// System.String Google.Play.AssetDelivery.AssetLocation::get_Path()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* AssetLocation_get_Path_mD0FFF67F07E8B24895D6E2CF671934BBDE37174A_inline (AssetLocation_t4E83832DC33FFD7DEF9067BCC90C0E2C03D8A5C0* __this, const RuntimeMethod* method) ;
+// System.UInt64 Google.Play.AssetDelivery.AssetLocation::get_Offset()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint64_t AssetLocation_get_Offset_m24DB27A05BFED41D9E073A756E4743EFD92547D2_inline (AssetLocation_t4E83832DC33FFD7DEF9067BCC90C0E2C03D8A5C0* __this, const RuntimeMethod* method) ;
+// UnityEngine.AssetBundleCreateRequest UnityEngine.AssetBundle::LoadFromFileAsync(System.String,System.UInt32,System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AssetBundleCreateRequest_t73B8714B9459A01540E091C3770A408E67188CF6* AssetBundle_LoadFromFileAsync_mF5C6B1FF491A8B654AA72057F3EDE17EEBC6B000 (String_t* ___0_path, uint32_t ___1_crc, uint64_t ___2_offset, const RuntimeMethod* method) ;
+// System.String System.IO.Path::Combine(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE (String_t* ___0_path1, String_t* ___1_path2, const RuntimeMethod* method) ;
+// Google.Play.AssetDelivery.AssetLocation Google.Play.AssetDelivery.Internal.AssetPackManager::GetAssetLocation(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AssetLocation_t4E83832DC33FFD7DEF9067BCC90C0E2C03D8A5C0* AssetPackManager_GetAssetLocation_m90FC48DC9FFBA8812496A999B54A1767CA2557C4 (AssetPackManager_t4FE399402B3A856645FFF2B7AAAC737A7FC30454* __this, String_t* ___0_assetPackName, String_t* ___1_assetPath, const RuntimeMethod* method) ;
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::CancelPlayCore()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackRequestImpl_CancelPlayCore_m0BED57162CF3B74A804C61BC3B4A86B76DF1C7B2 (PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::DeferCancelPlayCore()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackRequestImpl_DeferCancelPlayCore_m0AFDFD01DF84D5E241503F5C720527D1380511A3 (PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* __this, const RuntimeMethod* method) ;
+// UnityEngine.AndroidJavaObject Google.Play.AssetDelivery.Internal.AssetPackManager::Cancel(System.String[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* AssetPackManager_Cancel_m77565CDDA07F3B1B172C97AAAA984AF95E474D2E (AssetPackManager_t4FE399402B3A856645FFF2B7AAAC737A7FC30454* __this, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___0_assetPackNames, const RuntimeMethod* method) ;
+// System.Void UnityEngine.AndroidJavaObject::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidJavaObject_Dispose_m2B1593C20B3CE1C8FF95982F638F50985F9DD9E6 (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, const RuntimeMethod* method) ;
+// System.Void System.Action::Invoke()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, const RuntimeMethod* method) ;
+// System.Boolean Google.Play.AssetDelivery.Internal.PlayRequestRepository::ContainsRequest(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayRequestRepository_ContainsRequest_m270CE47AA6A796D60AC8C3D7ACCAD0A5157BB4B1 (PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* __this, String_t* ___0_name, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Debug::LogFormat(System.String,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogFormat_mD555556327B42AA3482D077EFAEB16B0AFDF72C7 (String_t* ___0_format, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl/<>c::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mFB8E51D2CEF80DB4B6E8564B27B55F7F94E23881 (U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AssetDelivery.AssetDeliveryErrorCode>::TryGetValue(TKey,TValue&)
+inline bool Dictionary_2_TryGetValue_mEB72BB68172FBF3D2454470E9119233F693B92BE (Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13* __this, int32_t ___0_key, int32_t* ___1_value, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13*, int32_t, int32_t*, const RuntimeMethod*))Dictionary_2_TryGetValue_m9C7A828C0B5419633EB1A5AA73FC2E06284E639E_gshared)(__this, ___0_key, ___1_value, method);
+}
+// System.String System.Int32::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5 (int32_t* __this, const RuntimeMethod* method) ;
+// System.Void System.NotImplementedException::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotImplementedException__ctor_m8339D1A685E8D77CAC9D3260C06B38B5C7CA7742 (NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8* __this, String_t* ___0_message, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AssetDelivery.AssetDeliveryStatus>::TryGetValue(TKey,TValue&)
+inline bool Dictionary_2_TryGetValue_m5FEA856EA377318DEFB13F5DB9A8D43C4FEA1B49 (Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC* __this, int32_t ___0_key, int32_t* ___1_value, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC*, int32_t, int32_t*, const RuntimeMethod*))Dictionary_2_TryGetValue_m9C7A828C0B5419633EB1A5AA73FC2E06284E639E_gshared)(__this, ___0_key, ___1_value, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AssetDelivery.AssetDeliveryErrorCode>::.ctor()
+inline void Dictionary_2__ctor_m52BE9EF2EE12124F0FA27368384783DB85BE8535 (Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13*, const RuntimeMethod*))Dictionary_2__ctor_mC9C175D184F142682355D54F32FC231BBDCE6FD0_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AssetDelivery.AssetDeliveryErrorCode>::Add(TKey,TValue)
+inline void Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF (Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13* __this, int32_t ___0_key, int32_t ___1_value, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13*, int32_t, int32_t, const RuntimeMethod*))Dictionary_2_Add_m95641EE4325D83C122BF87ECF2A0F729A1CF14D3_gshared)(__this, ___0_key, ___1_value, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AssetDelivery.AssetDeliveryStatus>::.ctor()
+inline void Dictionary_2__ctor_m94C607216DEEE513A4B3A0466DC74C2377C25A73 (Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC*, const RuntimeMethod*))Dictionary_2__ctor_mC9C175D184F142682355D54F32FC231BBDCE6FD0_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AssetDelivery.AssetDeliveryStatus>::Add(TKey,TValue)
+inline void Dictionary_2_Add_m955026197BD6540FDD6C9B0A7A4AD04F01833700 (Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC* __this, int32_t ___0_key, int32_t ___1_value, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC*, int32_t, int32_t, const RuntimeMethod*))Dictionary_2_Add_m95641EE4325D83C122BF87ECF2A0F729A1CF14D3_gshared)(__this, ___0_key, ___1_value, method);
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayRequestRepository::AddRequest(Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayRequestRepository_AddRequest_m63A7F9BCD90A941A487046551A7FD21CFD00B2C8 (PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* __this, PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* ___0_request, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl>::Add(TKey,TValue)
+inline void Dictionary_2_Add_m921EF5876404282B67EC3B031A7C44FC4BD3F69E (Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55* __this, String_t* ___0_key, PlayAssetBundleRequestImpl_tC7F57ABFE28C1E3E41C12E6F1FA46B2DF31F964C* ___1_value, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55*, String_t*, PlayAssetBundleRequestImpl_tC7F57ABFE28C1E3E41C12E6F1FA46B2DF31F964C*, const RuntimeMethod*))Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared)(__this, ___0_key, ___1_value, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>::Add(TKey,TValue)
+inline void Dictionary_2_Add_m5AE17B91EBB2B51FC9CDFAEA41A812DE6DCCDC6D (Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0* __this, String_t* ___0_key, PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* ___1_value, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0*, String_t*, PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF*, const RuntimeMethod*))Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared)(__this, ___0_key, ___1_value, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>::Remove(TKey)
+inline bool Dictionary_2_Remove_m322E60266999EF408510DCECC98E1F341949069C (Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0* __this, String_t* ___0_key, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0*, String_t*, const RuntimeMethod*))Dictionary_2_Remove_m5C7C45E75D951A75843F3F7AADD56ECD64F6BC86_gshared)(__this, ___0_key, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl>::Remove(TKey)
+inline bool Dictionary_2_Remove_m3F89880A33B9D52B491DFC35F84BCAF6D05CF28D (Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55* __this, String_t* ___0_key, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55*, String_t*, const RuntimeMethod*))Dictionary_2_Remove_m5C7C45E75D951A75843F3F7AADD56ECD64F6BC86_gshared)(__this, ___0_key, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl>::TryGetValue(TKey,TValue&)
+inline bool Dictionary_2_TryGetValue_m1FDE4D34B1FEB997100281FFBC7ECAFC0766C7DA (Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55* __this, String_t* ___0_key, PlayAssetBundleRequestImpl_tC7F57ABFE28C1E3E41C12E6F1FA46B2DF31F964C** ___1_value, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55*, String_t*, PlayAssetBundleRequestImpl_tC7F57ABFE28C1E3E41C12E6F1FA46B2DF31F964C**, const RuntimeMethod*))Dictionary_2_TryGetValue_mD15380A4ED7CDEE99EA45881577D26BA9CE1B849_gshared)(__this, ___0_key, ___1_value, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>::TryGetValue(TKey,TValue&)
+inline bool Dictionary_2_TryGetValue_m32FD27FFE62B1388B8E3ED60EB28AE456614A202 (Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0* __this, String_t* ___0_key, PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF** ___1_value, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0*, String_t*, PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF**, const RuntimeMethod*))Dictionary_2_TryGetValue_mD15380A4ED7CDEE99EA45881577D26BA9CE1B849_gshared)(__this, ___0_key, ___1_value, method);
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayRequestRepository/<>c__DisplayClass7_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass7_0__ctor_m07761A3EFB2F35461DBE3978D3DC6DF1E5639320 (U3CU3Ec__DisplayClass7_0_tCA553FFEEF1003FFE329D85247BEBFEFD473EDC1* __this, const RuntimeMethod* method) ;
+// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>::get_Values()
+inline ValueCollection_t61E003F560D440A9E1E8071CB58BB65495DE50D1* Dictionary_2_get_Values_m380CC5A5AC0267504EAAA83F1507D55C1FBA395A (Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0* __this, const RuntimeMethod* method)
+{
+	return ((  ValueCollection_t61E003F560D440A9E1E8071CB58BB65495DE50D1* (*) (Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0*, const RuntimeMethod*))Dictionary_2_get_Values_mA0C01DEA55329E55380E96BBD04D4D228B437EC5_gshared)(__this, method);
+}
+// System.Void System.Func`2<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl,System.Boolean>::.ctor(System.Object,System.IntPtr)
+inline void Func_2__ctor_m29E53338240E08F78447DBF87CD6FC8A4FA1F18C (Func_2_t791489D9497D5BC0F497E038655BCE0E393C8639* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (Func_2_t791489D9497D5BC0F497E038655BCE0E393C8639*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_m13C0A7F33154D861E2A041B52E88461832DA1697_gshared)(__this, ___0_object, ___1_method, method);
+}
+// System.Collections.Generic.IEnumerable`1<TSource> System.Linq.Enumerable::Where<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
+inline RuntimeObject* Enumerable_Where_TisPlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_mDD458CEE20B946ECF9330F0E23E4B081FCBF8D62 (RuntimeObject* ___0_source, Func_2_t791489D9497D5BC0F497E038655BCE0E393C8639* ___1_predicate, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (RuntimeObject*, Func_2_t791489D9497D5BC0F497E038655BCE0E393C8639*, const RuntimeMethod*))Enumerable_Where_TisRuntimeObject_m5DAF16724887B42DDBBF391C7F375749E8AA4AD7_gshared)(___0_source, ___1_predicate, method);
+}
+// System.Collections.Generic.List`1<TSource> System.Linq.Enumerable::ToList<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>(System.Collections.Generic.IEnumerable`1<TSource>)
+inline List_1_t73CB53E75D60F4AF3A6F962752DE8CF2D8910DF0* Enumerable_ToList_TisPlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_m257DA9CFCC89EDBA25AF4D6921A8D4E9FD08B458 (RuntimeObject* ___0_source, const RuntimeMethod* method)
+{
+	return ((  List_1_t73CB53E75D60F4AF3A6F962752DE8CF2D8910DF0* (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_ToList_TisRuntimeObject_m6456D63764F29E6B5B2422C3DE25113577CF51EE_gshared)(___0_source, method);
+}
+// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>::get_Keys()
+inline KeyCollection_t85F308B8A8F103FA2411C9157460C86160FADD7A* Dictionary_2_get_Keys_m575EE431066A5E11BA7FA21778B7227A40D2DD45 (Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0* __this, const RuntimeMethod* method)
+{
+	return ((  KeyCollection_t85F308B8A8F103FA2411C9157460C86160FADD7A* (*) (Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0*, const RuntimeMethod*))Dictionary_2_get_Keys_m72D290F90654BFD683FA7AA7C63D9F4F692218B6_gshared)(__this, method);
+}
+// TSource[] System.Linq.Enumerable::ToArray<System.String>(System.Collections.Generic.IEnumerable`1<TSource>)
+inline StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* Enumerable_ToArray_TisString_t_m3B23EE2DD15B2996E7D2ECA6E74696DA892AA194 (RuntimeObject* ___0_source, const RuntimeMethod* method)
+{
+	return ((  StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_ToArray_TisRuntimeObject_mA54265C2C8A0864929ECD300B75E4952D553D17D_gshared)(___0_source, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl>::ContainsKey(TKey)
+inline bool Dictionary_2_ContainsKey_m3086064E0FEEAEF4E57516CF3DCCD1DF8447AE2C (Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55* __this, String_t* ___0_key, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55*, String_t*, const RuntimeMethod*))Dictionary_2_ContainsKey_m703047C213F7AB55C9DC346596287773A1F670CD_gshared)(__this, ___0_key, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>::ContainsKey(TKey)
+inline bool Dictionary_2_ContainsKey_m0290F180F2AD38C7266EDEEF6ADA67D7B803AD45 (Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0* __this, String_t* ___0_key, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0*, String_t*, const RuntimeMethod*))Dictionary_2_ContainsKey_m703047C213F7AB55C9DC346596287773A1F670CD_gshared)(__this, ___0_key, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>::.ctor()
+inline void Dictionary_2__ctor_m6A57AB5D6243E83A3B448C13BE2E59F6291AB374 (Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0*, const RuntimeMethod*))Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.String,Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl>::.ctor()
+inline void Dictionary_2__ctor_m440C792ED7574CAB8132A70EC328C28B8A77F6A5 (Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55*, const RuntimeMethod*))Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared)(__this, method);
+}
+// T[] System.Array::Empty<System.Object>()
+inline ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline (const RuntimeMethod* method)
+{
+	return ((  ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* (*) (const RuntimeMethod*))Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_gshared_inline)(method);
+}
+// ReturnType UnityEngine.AndroidJavaObject::Call<System.Int32>(System.String,System.Object[])
+inline int32_t AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*, const RuntimeMethod*))AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC_gshared)(__this, ___0_methodName, ___1_args, method);
+}
+// Google.Play.AppUpdate.UpdateAvailability Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator::TranslatePlayCoreUpdateAvailabilities(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdatePlayCoreTranslator_TranslatePlayCoreUpdateAvailabilities_m21CE11FB4CD033F203D40C47D0DEBA704B85D2A1 (int32_t ___0_playCoreAvailability, const RuntimeMethod* method) ;
+// Google.Play.AppUpdate.AppUpdateStatus Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator::TranslatePlayCoreUpdateStatus(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdatePlayCoreTranslator_TranslatePlayCoreUpdateStatus_m5F4CE37AE2073F90DD6DF42DDF4F7371D405BA00 (int32_t ___0_playCoreUpdateStatus, const RuntimeMethod* method) ;
+// ReturnType UnityEngine.AndroidJavaObject::Call<UnityEngine.AndroidJavaObject>(System.String,System.Object[])
+inline AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* AndroidJavaObject_Call_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m020246E0988293B6126B690BD6CE4D894276AA3D (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method)
+{
+	return ((  AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* (*) (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*, const RuntimeMethod*))AndroidJavaObject_Call_TisRuntimeObject_mA5AF1A9E0463CE91F0ACB6AC2FE0C1922B579EF7_gshared)(__this, ___0_methodName, ___1_args, method);
+}
+// System.Boolean Google.Play.Core.Internal.PlayCoreHelper::IsNull(UnityEngine.AndroidJavaObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayCoreHelper_IsNull_mCFCB50978A87E5A44561F28B70A9F8302E72C63C (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ___0_javaObject, const RuntimeMethod* method) ;
+// System.Void System.Nullable`1<System.Int32>::.ctor(T)
+inline void Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703 (Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28* __this, int32_t ___0_value, const RuntimeMethod* method)
+{
+	((  void (*) (Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28*, int32_t, const RuntimeMethod*))Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_gshared)(__this, ___0_value, method);
+}
+// ReturnType UnityEngine.AndroidJavaObject::Call<System.UInt64>(System.String,System.Object[])
+inline uint64_t AndroidJavaObject_Call_TisUInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_m116DA4AF7DB9E6C514C6FCC8AE948078D4AF4795 (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method)
+{
+	return ((  uint64_t (*) (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*, const RuntimeMethod*))AndroidJavaObject_Call_TisUInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_m116DA4AF7DB9E6C514C6FCC8AE948078D4AF4795_gshared)(__this, ___0_methodName, ___1_args, method);
+}
+// UnityEngine.AndroidJavaObject Google.Play.AppUpdate.AppUpdateOptions::GetJavaAppUpdateOptions()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* AppUpdateOptions_GetJavaAppUpdateOptions_mA92EC78AA57FEE570CFC694E1706E5CE92216C47_inline (AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* __this, const RuntimeMethod* method) ;
+// ReturnType UnityEngine.AndroidJavaObject::Call<System.Boolean>(System.String,System.Object[])
+inline bool AndroidJavaObject_Call_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_m05D3284A3FA772D032190A0FE82363C61000F1DF (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method)
+{
+	return ((  bool (*) (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*, const RuntimeMethod*))AndroidJavaObject_Call_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_m05D3284A3FA772D032190A0FE82363C61000F1DF_gshared)(__this, ___0_methodName, ___1_args, method);
+}
+// System.Void System.Text.StringBuilder::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D (StringBuilder_t* __this, const RuntimeMethod* method) ;
+// System.Int32 Google.Play.AppUpdate.AppUpdateInfo::get_AvailableVersionCode()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdateInfo_get_AvailableVersionCode_mB9017C4FEF3E47E7E05B2BD44B509D2710759217 (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, const RuntimeMethod* method) ;
+// System.Text.StringBuilder System.Text.StringBuilder::AppendFormat(System.String,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t* StringBuilder_AppendFormat_mFA88863E4018C2912D1A783E0EA6DAE4F594124F (StringBuilder_t* __this, String_t* ___0_format, RuntimeObject* ___1_arg0, const RuntimeMethod* method) ;
+// Google.Play.AppUpdate.AppUpdateStatus Google.Play.AppUpdate.AppUpdateInfo::get_AppUpdateStatus()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdateInfo_get_AppUpdateStatus_mB70421853E9C26EB3951EA8875B2FA5B03E379F4 (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, const RuntimeMethod* method) ;
+// Google.Play.AppUpdate.UpdateAvailability Google.Play.AppUpdate.AppUpdateInfo::get_UpdateAvailability()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdateInfo_get_UpdateAvailability_m0A4A8FE659A65B4213C8CF0EE4431E56238D198D (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, const RuntimeMethod* method) ;
+// System.UInt64 Google.Play.AppUpdate.AppUpdateInfo::get_BytesDownloaded()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t AppUpdateInfo_get_BytesDownloaded_mE6DAC9FAA284EF7EE98FCD2FBE579493711A97E5 (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, const RuntimeMethod* method) ;
+// System.Int32 Google.Play.AppUpdate.AppUpdateInfo::get_UpdatePriority()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdateInfo_get_UpdatePriority_m07AD61862B2346A657FD0D1B0C19AD47849CFF84 (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, const RuntimeMethod* method) ;
+// System.Nullable`1<System.Int32> Google.Play.AppUpdate.AppUpdateInfo::get_ClientVersionStalenessDays()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 AppUpdateInfo_get_ClientVersionStalenessDays_m6C950D22DF86D78F1FE49888EB4BCAB7799442FB (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, const RuntimeMethod* method) ;
+// System.UInt64 Google.Play.AppUpdate.AppUpdateInfo::get_TotalBytesToDownload()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t AppUpdateInfo_get_TotalBytesToDownload_m7CFBB7ACC6973D070DC5E61DA55C6393A0F5D77E (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, const RuntimeMethod* method) ;
+// Google.Play.AppUpdate.AppUpdateOptions Google.Play.AppUpdate.AppUpdateOptions::ImmediateAppUpdateOptions(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* AppUpdateOptions_ImmediateAppUpdateOptions_m6EEEB8B15CAE0C1FCB40503FF22B557945783B6D (bool ___0_allowAssetPackDeletion, const RuntimeMethod* method) ;
+// System.Boolean Google.Play.AppUpdate.AppUpdateInfo::IsUpdateTypeAllowed(Google.Play.AppUpdate.AppUpdateOptions)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AppUpdateInfo_IsUpdateTypeAllowed_m7D5F243FA5E089D5726A5FBCA75CD0C197450374 (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* ___0_appUpdateOptions, const RuntimeMethod* method) ;
+// Google.Play.AppUpdate.AppUpdateOptions Google.Play.AppUpdate.AppUpdateOptions::FlexibleAppUpdateOptions(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* AppUpdateOptions_FlexibleAppUpdateOptions_m4418263ACA74E7445C526B9363A7DFFC21C3768E (bool ___0_allowAssetPackDeletion, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateManagerInternal__ctor_m1D761154579C4807D595C98046C4928019B349B1 (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* __this, const RuntimeMethod* method) ;
+// Google.Play.Common.PlayAsyncOperation`2<Google.Play.AppUpdate.AppUpdateInfo,Google.Play.AppUpdate.AppUpdateErrorCode> Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::GetAppUpdateInfoInternal()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayAsyncOperation_2_t39D5C6763CB7F06C186D9A8C75D9F63698F753C6* AppUpdateManagerInternal_GetAppUpdateInfoInternal_m15FF747958520E0C61149AAE61CCB5B81A543A59 (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* __this, const RuntimeMethod* method) ;
+// Google.Play.AppUpdate.AppUpdateRequest Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::StartUpdateInternal(Google.Play.AppUpdate.AppUpdateInfo,Google.Play.AppUpdate.AppUpdateOptions)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* AppUpdateManagerInternal_StartUpdateInternal_m3E365F64383219D731425164B1A1E0E5560B18DA (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* __this, AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* ___0_appUpdateInfo, AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* ___1_appUpdateOptions, const RuntimeMethod* method) ;
+// Google.Play.Common.PlayAsyncOperation`2<Google.Play.Common.VoidResult,Google.Play.AppUpdate.AppUpdateErrorCode> Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::CompleteUpdateInternal()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayAsyncOperation_2_t70D0CB32A79B3B657D0C9EE6606ABA6F5A958F15* AppUpdateManagerInternal_CompleteUpdateInternal_m7D90E40DA2362D98150421BA377E68B3F61B9F99 (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.AppUpdateOptions::.ctor(Google.Play.AppUpdate.AppUpdateType,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateOptions__ctor_m70DD47B5E923A94BCD3BC753F8BB47E3AE5F0D48 (AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* __this, int32_t ___0_appUpdateType, bool ___1_allowAssetPackDeletion, const RuntimeMethod* method) ;
+// Google.Play.AppUpdate.AppUpdateType Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator::TranslatePlayCoreAppUpdateType(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdatePlayCoreTranslator_TranslatePlayCoreAppUpdateType_mC027D3372A880034B196C3EB930A38CDF840F04E (int32_t ___0_playCoreAppUpdateType, const RuntimeMethod* method) ;
+// System.Void UnityEngine.AndroidJavaClass::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidJavaClass__ctor_mB5466169E1151B8CC44C8FED234D79984B431389 (AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* __this, String_t* ___0_className, const RuntimeMethod* method) ;
+// ReturnType UnityEngine.AndroidJavaObject::CallStatic<UnityEngine.AndroidJavaObject>(System.String,System.Object[])
+inline AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* AndroidJavaObject_CallStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m398EA96C1DE1BB885F2B1DD0E00E8BBA86B49E63 (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method)
+{
+	return ((  AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* (*) (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*, const RuntimeMethod*))AndroidJavaObject_CallStatic_TisRuntimeObject_mCAFE27630F6092C4910E14592B050DACFCBE146F_gshared)(__this, ___0_methodName, ___1_args, method);
+}
+// System.Void System.NullReferenceException::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NullReferenceException__ctor_mA41317A57F5C1C0E3F59C7EB25ABD484564B23D4 (NullReferenceException_tBDE63A6D24569B964908408389070C6A9F5005BB* __this, String_t* ___0_message, const RuntimeMethod* method) ;
+// System.Delegate System.Delegate::Combine(System.Delegate,System.Delegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00 (Delegate_t* ___0_a, Delegate_t* ___1_b, const RuntimeMethod* method) ;
+// System.Delegate System.Delegate::Remove(System.Delegate,System.Delegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3 (Delegate_t* ___0_source, Delegate_t* ___1_value, const RuntimeMethod* method) ;
+// System.Boolean Google.Play.AppUpdate.AppUpdateRequest::get_IsDone()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool AppUpdateRequest_get_IsDone_m345F4E193257A5E6C87A61AF48DA197893AA78D2_inline (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, const RuntimeMethod* method) ;
+// System.Void System.Action`1<Google.Play.AppUpdate.AppUpdateRequest>::Invoke(T)
+inline void Action_1_Invoke_mD7916A61A940774CDB895F00A5A36260E8E77118_inline (Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* __this, AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* ___0_obj, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4*, AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855*, const RuntimeMethod*))Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline)(__this, ___0_obj, method);
+}
+// System.Void System.Action`1<Google.Play.AppUpdate.AppUpdateRequest>::.ctor(System.Object,System.IntPtr)
+inline void Action_1__ctor_m737467E71A96B7AC055B39A166513966ECA4EA76 (Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_1__ctor_m2E1DFA67718FC1A0B6E5DFEB78831FFE9C059EB4_gshared)(__this, ___0_object, ___1_method, method);
+}
+// System.Void UnityEngine.CustomYieldInstruction::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CustomYieldInstruction__ctor_mB64531EC09E871EF60BFAC16918A774C977C7B50 (CustomYieldInstruction_t6B81A50D5D210C1ACAAE247FB53B65CDFFEB7617* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.AppUpdateRequest/<>c::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m5CC3E14C6CC346837C38147B944EF2418E0275C4 (U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.GameObject::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject__ctor_m7D0340DE160786E6EFA8DABD39EC3B694DA30AAD (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Object::set_name(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, String_t* ___0_value, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Object::DontDestroyOnLoad(UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_DontDestroyOnLoad_m4B70C3AEF886C176543D1295507B6455C9DCAEA7 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_target, const RuntimeMethod* method) ;
+// T UnityEngine.GameObject::AddComponent<Google.Play.AppUpdate.Internal.AppUpdateHandler>()
+inline AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* GameObject_AddComponent_TisAppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E_mF9BB90995626221266903C883E6917587C6C7C00 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared)(__this, method);
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateHandler::Init(Google.Play.AppUpdate.Internal.AppUpdateManagerInternal)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateHandler_Init_m83232A6CA5EBE761B3B979EFA8F71AC8C4366897 (AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* __this, AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* ___0_appUpdateManagerInternal, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateStateListener::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateStateListener__ctor_mBE7234E95DA23644D8A9803EF9E1B45279DC387B (AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161* __this, const RuntimeMethod* method) ;
+// System.Void System.Action`1<Google.Play.AppUpdate.Internal.AppUpdateState>::.ctor(System.Object,System.IntPtr)
+inline void Action_1__ctor_mC9070FAAEDE7EDBF76F93ABC0320BD49BEBDAFDF (Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_1__ctor_m2E1DFA67718FC1A0B6E5DFEB78831FFE9C059EB4_gshared)(__this, ___0_object, ___1_method, method);
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateStateListener::add_OnStateUpdateEvent(System.Action`1<Google.Play.AppUpdate.Internal.AppUpdateState>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateStateListener_add_OnStateUpdateEvent_mE3A67C0B36575BFEBF95A54B8E85335C584A3896 (AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161* __this, Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* ___0_value, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateHandler::StartListeningForUpdates()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateHandler_StartListeningForUpdates_mCB0B5FFDBEB1950B0B4BA6E3200531F06381A7B5 (AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* __this, const RuntimeMethod* method) ;
+// System.Void System.InvalidOperationException::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InvalidOperationException__ctor_mE4CB6F4712AB6D99A2358FBAE2E052B3EE976162 (InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB* __this, String_t* ___0_message, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateHandler::StopListeningForUpdates()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateHandler_StopListeningForUpdates_mBB60AD723AEB5CC5FBA350BEEEB2E0981A9480C1 (AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateHandler::ForceStatesUpdate()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateHandler_ForceStatesUpdate_m585E14145063F19488A5C01EF682D7EE6FB2660B (AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* __this, const RuntimeMethod* method) ;
+// Google.Play.Core.Internal.PlayCoreTask`1<UnityEngine.AndroidJavaObject> Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::GetAppUpdateInfo()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* AppUpdateManagerInternal_GetAppUpdateInfo_m4542E5E375C0270C56A53D8C53593F7A82360C9B (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* __this, const RuntimeMethod* method) ;
+// System.Void System.Action`1<UnityEngine.AndroidJavaObject>::.ctor(System.Object,System.IntPtr)
+inline void Action_1__ctor_mAD4F64E1D47B76FC413CEBA12F172E968C83AD04 (Action_1_tBD9457F0872CC7E6C1468CA37E6EF9D4403E1594* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_tBD9457F0872CC7E6C1468CA37E6EF9D4403E1594*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_1__ctor_m2E1DFA67718FC1A0B6E5DFEB78831FFE9C059EB4_gshared)(__this, ___0_object, ___1_method, method);
+}
+// System.Void Google.Play.Core.Internal.PlayCoreTask`1<UnityEngine.AndroidJavaObject>::RegisterOnSuccessCallback(System.Action`1<TAndroidJava>)
+inline void PlayCoreTask_1_RegisterOnSuccessCallback_m2F3393B9B94A1866DE7C446909B4D07D642A835C (PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* __this, Action_1_tBD9457F0872CC7E6C1468CA37E6EF9D4403E1594* ___0_onSuccess, const RuntimeMethod* method)
+{
+	((  void (*) (PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E*, Action_1_tBD9457F0872CC7E6C1468CA37E6EF9D4403E1594*, const RuntimeMethod*))PlayCoreTask_1_RegisterOnSuccessCallback_mE39E6EE8B8D0C569A69FDBC1243322814712196F_gshared)(__this, ___0_onSuccess, method);
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateState::.ctor(UnityEngine.AndroidJavaObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateState__ctor_m1AD5DA53FA23DDE6978682ADB4C57D9FB26FBCEF (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ___0_javaAppUpdateInfo, const RuntimeMethod* method) ;
+// System.Void System.Action`1<Google.Play.AppUpdate.Internal.AppUpdateState>::Invoke(T)
+inline void Action_1_Invoke_mB67B37DC02404F365CF680F4D9B371CB11A4A8CB_inline (Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* __this, AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* ___0_obj, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*, AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12*, const RuntimeMethod*))Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline)(__this, ___0_obj, method);
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::RegisterListener(UnityEngine.AndroidJavaProxy)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateManagerInternal_RegisterListener_mD766E41F06BB9E12E29E89072B02A2B22709D9D9 (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* __this, AndroidJavaProxy_tE5521F9761F7B95444B9C39FB15FDFC23F80A78D* ___0_listener, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::UnregisterListener(UnityEngine.AndroidJavaProxy)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateManagerInternal_UnregisterListener_m6CAB1C26941DD546DF41ED45A99EBE7090BCF47C (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* __this, AndroidJavaProxy_tE5521F9761F7B95444B9C39FB15FDFC23F80A78D* ___0_listener, const RuntimeMethod* method) ;
+// System.Void UnityEngine.MonoBehaviour::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateHandler/<>c::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mE5B5600BCFB4F073839C666AC394BFFE02235866 (U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerPlayCore::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateManagerPlayCore__ctor_mA1B98C6071B03F58B4F72ED7D3ECFFAB15DAE0E9 (AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637* __this, const RuntimeMethod* method) ;
+// Google.Play.AppUpdate.Internal.AppUpdateHandler Google.Play.AppUpdate.Internal.AppUpdateHandler::CreateInScene(Google.Play.AppUpdate.Internal.AppUpdateManagerInternal)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* AppUpdateHandler_CreateInScene_mA2432889592EBB5D7C74398A8EC68E9EB9FCC10C (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* ___0_appUpdateManagerInternal, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateHandler::add_OnStateUpdateEvent(System.Action`1<Google.Play.AppUpdate.Internal.AppUpdateState>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateHandler_add_OnStateUpdateEvent_mE08D5CCC1A2151EEC1963F96149518B26E1C3196 (AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* __this, Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* ___0_value, const RuntimeMethod* method) ;
+// System.Void Google.Play.Core.Internal.PlayCoreEventHandler::CreateInScene()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayCoreEventHandler_CreateInScene_m45C2939032F2F941F023B15ECA3EC5172A17E31E (const RuntimeMethod* method) ;
+// Google.Play.Core.Internal.PlayCoreTask`1<UnityEngine.AndroidJavaObject> Google.Play.AppUpdate.Internal.AppUpdateManagerPlayCore::GetAppUpdateInfo()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* AppUpdateManagerPlayCore_GetAppUpdateInfo_m4F699624BE052395C0FA2EFE4A5B71C1B6C6EE60 (AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass5_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass5_0__ctor_m7C0797C0052AEA5903D752819C9E8C772B68AEEB (U3CU3Ec__DisplayClass5_0_t445BD6C105483E94956697869C826EBE2E731EC6* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateAsyncOperation`1<Google.Play.AppUpdate.AppUpdateInfo>::.ctor()
+inline void AppUpdateAsyncOperation_1__ctor_mA2F154EB9793BABF281721C1D0D8A593FF8FC1A9 (AppUpdateAsyncOperation_1_tEC33166ACB2F2393015C72F1DE26C129C951E940* __this, const RuntimeMethod* method)
+{
+	((  void (*) (AppUpdateAsyncOperation_1_tEC33166ACB2F2393015C72F1DE26C129C951E940*, const RuntimeMethod*))AppUpdateAsyncOperation_1__ctor_m621494F9A464C28FD4A42A11569DBC0CE1061B87_gshared)(__this, method);
+}
+// System.Void System.Action`2<System.String,System.Int32>::.ctor(System.Object,System.IntPtr)
+inline void Action_2__ctor_m84E5BF3DC27EF88D8F87DBBF1C1EC426F2FA4975 (Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_2__ctor_m07C6392BB276FFCCFD4E495842992EA26FA44882_gshared)(__this, ___0_object, ___1_method, method);
+}
+// System.Void Google.Play.Core.Internal.PlayCoreTask`1<UnityEngine.AndroidJavaObject>::RegisterOnFailureCallback(System.Action`2<System.String,System.Int32>)
+inline void PlayCoreTask_1_RegisterOnFailureCallback_m81B59CC2CA8782959209C1CA9B9410E5859026E5 (PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* __this, Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF* ___0_onFailure, const RuntimeMethod* method)
+{
+	((  void (*) (PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E*, Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF*, const RuntimeMethod*))PlayCoreTask_1_RegisterOnFailureCallback_mDF35CA6F0EE35B0588B55738BD57F87BC9E190BA_gshared)(__this, ___0_onFailure, method);
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerPlayCore::RegisterListener(UnityEngine.AndroidJavaProxy)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateManagerPlayCore_RegisterListener_m7545822D68039FEB1A5969DDB76F5C1881EF65F0 (AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637* __this, AndroidJavaProxy_tE5521F9761F7B95444B9C39FB15FDFC23F80A78D* ___0_listener, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerPlayCore::UnregisterListener(UnityEngine.AndroidJavaProxy)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateManagerPlayCore_UnregisterListener_m0D039D55F0D5EEB8B4AE8E92566C01C5E45C7E72 (AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637* __this, AndroidJavaProxy_tE5521F9761F7B95444B9C39FB15FDFC23F80A78D* ___0_listener, const RuntimeMethod* method) ;
+// System.Void System.ArgumentNullException::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* __this, String_t* ___0_paramName, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateRequestImpl::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequestImpl__ctor_m43911C5E7488D8A115EDB0BD13F5FC47B3639DA7 (AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateRequestImpl::OnErrorOccurred(Google.Play.AppUpdate.AppUpdateErrorCode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequestImpl_OnErrorOccurred_m992A7E58EA6C060B4FE4AA2AAE38DE72F83FDE26 (AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* __this, int32_t ___0_errorCode, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::InitiateRequest(Google.Play.AppUpdate.Internal.AppUpdateRequestImpl,Google.Play.AppUpdate.AppUpdateInfo,Google.Play.AppUpdate.AppUpdateOptions)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateManagerInternal_InitiateRequest_m37AAA5B9590C15DECA95053D3AEA7D93ABB0DBF9 (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* __this, AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* ___0_request, AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* ___1_appUpdateInfo, AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* ___2_appUpdateOptions, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass9_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass9_0__ctor_mBCAACDA88F8D35930CF244D03AF395C524B4FDD0 (U3CU3Ec__DisplayClass9_0_t3A2F8C92672F0E3AE53F59E0F6D2D131936823CF* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateAsyncOperation`1<Google.Play.Common.VoidResult>::.ctor()
+inline void AppUpdateAsyncOperation_1__ctor_m0549B0A1B22AA510E1BFFFE385D44542AD808D82 (AppUpdateAsyncOperation_1_t75D772868C7DB917560A77CD6FE35354A5BF1147* __this, const RuntimeMethod* method)
+{
+	((  void (*) (AppUpdateAsyncOperation_1_t75D772868C7DB917560A77CD6FE35354A5BF1147*, const RuntimeMethod*))AppUpdateAsyncOperation_1__ctor_m621494F9A464C28FD4A42A11569DBC0CE1061B87_gshared)(__this, method);
+}
+// Google.Play.Core.Internal.PlayCoreTask`1<Google.Play.Common.VoidResult> Google.Play.AppUpdate.Internal.AppUpdateManagerPlayCore::CompleteUpdate()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075* AppUpdateManagerPlayCore_CompleteUpdate_m9A9204D3E346CE3F56DC5BA4B102C5F1E53495B2 (AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637* __this, const RuntimeMethod* method) ;
+// System.Void System.Action`1<Google.Play.Common.VoidResult>::.ctor(System.Object,System.IntPtr)
+inline void Action_1__ctor_mE66F12D709B4E16D29BFB5860EF5B54737A0EBDB (Action_1_t1CE90521DFC32B00F1A467A02F12F52B0F03C219* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_t1CE90521DFC32B00F1A467A02F12F52B0F03C219*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_1__ctor_m2E1DFA67718FC1A0B6E5DFEB78831FFE9C059EB4_gshared)(__this, ___0_object, ___1_method, method);
+}
+// System.Void Google.Play.Core.Internal.PlayCoreTask`1<Google.Play.Common.VoidResult>::RegisterOnSuccessCallback(System.Action`1<TAndroidJava>)
+inline void PlayCoreTask_1_RegisterOnSuccessCallback_m922BB75531BDB5082724C57F1D7DFE8A476D3AD8 (PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075* __this, Action_1_t1CE90521DFC32B00F1A467A02F12F52B0F03C219* ___0_onSuccess, const RuntimeMethod* method)
+{
+	((  void (*) (PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075*, Action_1_t1CE90521DFC32B00F1A467A02F12F52B0F03C219*, const RuntimeMethod*))PlayCoreTask_1_RegisterOnSuccessCallback_mE39E6EE8B8D0C569A69FDBC1243322814712196F_gshared)(__this, ___0_onSuccess, method);
+}
+// System.Void Google.Play.Core.Internal.PlayCoreTask`1<Google.Play.Common.VoidResult>::RegisterOnFailureCallback(System.Action`2<System.String,System.Int32>)
+inline void PlayCoreTask_1_RegisterOnFailureCallback_m06E72120A3D0DAA0C848D711476BC60114328F58 (PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075* __this, Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF* ___0_onFailure, const RuntimeMethod* method)
+{
+	((  void (*) (PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075*, Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF*, const RuntimeMethod*))PlayCoreTask_1_RegisterOnFailureCallback_mDF35CA6F0EE35B0588B55738BD57F87BC9E190BA_gshared)(__this, ___0_onFailure, method);
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass10_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass10_0__ctor_m4B7CD913D17642EE9097E93D93B8E354EA1BCF79 (U3CU3Ec__DisplayClass10_0_tB13DA84C4ECFFE89A9BE7603A7D01F0E5EF260AF* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateRequestImpl::SetUpdateActivityResult(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequestImpl_SetUpdateActivityResult_m0F478B1877A95D95C733D9D51CB4F38043720A55 (AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* __this, int32_t ___0_resultCode, const RuntimeMethod* method) ;
+// Google.Play.AppUpdate.AppUpdateType Google.Play.AppUpdate.AppUpdateOptions::get_AppUpdateType()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdateOptions_get_AppUpdateType_m62CE4069B795B91398271BB7948C6B84D1876F3A (AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateRequestImpl::OnUpdateDownloaded()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequestImpl_OnUpdateDownloaded_mEE55CD4F6BA30730A4A4B5735B15A5098F7E1F95 (AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* __this, const RuntimeMethod* method) ;
+// Google.Play.Core.Internal.PlayCoreTask`1<System.Int32> Google.Play.AppUpdate.Internal.AppUpdateManagerPlayCore::StartUpdateFlow(Google.Play.AppUpdate.AppUpdateInfo,Google.Play.AppUpdate.AppUpdateOptions)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F* AppUpdateManagerPlayCore_StartUpdateFlow_m060BA768ADFAB1000D614287A5B31354040909CD (AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637* __this, AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* ___0_appUpdateInfo, AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* ___1_appUpdateOptions, const RuntimeMethod* method) ;
+// System.Void System.Action`1<System.Int32>::.ctor(System.Object,System.IntPtr)
+inline void Action_1__ctor_m1BA854F3F4319EA4A4294DDFDA21C395B8D0FF87 (Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_1__ctor_m1BA854F3F4319EA4A4294DDFDA21C395B8D0FF87_gshared)(__this, ___0_object, ___1_method, method);
+}
+// System.Void Google.Play.Core.Internal.PlayCoreTask`1<System.Int32>::RegisterOnSuccessCallback(System.Action`1<TAndroidJava>)
+inline void PlayCoreTask_1_RegisterOnSuccessCallback_m2B6E163F1A0A385BD0C1EBBD9380257154294EA4 (PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F* __this, Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* ___0_onSuccess, const RuntimeMethod* method)
+{
+	((  void (*) (PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F*, Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404*, const RuntimeMethod*))PlayCoreTask_1_RegisterOnSuccessCallback_m2B6E163F1A0A385BD0C1EBBD9380257154294EA4_gshared)(__this, ___0_onSuccess, method);
+}
+// System.Void Google.Play.Core.Internal.PlayCoreTask`1<System.Int32>::RegisterOnFailureCallback(System.Action`2<System.String,System.Int32>)
+inline void PlayCoreTask_1_RegisterOnFailureCallback_mF8543DC0C206CD3ABC2BB7692B2A7BFEE263E694 (PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F* __this, Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF* ___0_onFailure, const RuntimeMethod* method)
+{
+	((  void (*) (PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F*, Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF*, const RuntimeMethod*))PlayCoreTask_1_RegisterOnFailureCallback_mF8543DC0C206CD3ABC2BB7692B2A7BFEE263E694_gshared)(__this, ___0_onFailure, method);
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::AppUpdateRequest(Google.Play.AppUpdate.Internal.AppUpdateRequestImpl,Google.Play.AppUpdate.Internal.AppUpdateState)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateManagerInternal_AppUpdateRequest_m73D925CB08FA8BDDFF10D4875CEB84B4060B0BE6 (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* __this, AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* ___0_request, AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* ___1_newState, const RuntimeMethod* method) ;
+// System.Int32 Google.Play.AppUpdate.Internal.AppUpdateState::get_ErrorCode()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t AppUpdateState_get_ErrorCode_m1F7DE9BB3A91B512472F9A630C17CC370CDCD791_inline (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, const RuntimeMethod* method) ;
+// Google.Play.AppUpdate.AppUpdateErrorCode Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator::TranslatePlayCoreErrorCode(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdatePlayCoreTranslator_TranslatePlayCoreErrorCode_mE59EB28FDB77F65BDF0FEA455F050C9936C4C6C5 (int32_t ___0_playCoreErrorCode, const RuntimeMethod* method) ;
+// Google.Play.AppUpdate.AppUpdateErrorCode Google.Play.AppUpdate.AppUpdateRequest::get_Error()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t AppUpdateRequest_get_Error_m2428F339054733C4391F69FDC31B729FF76EEE6C_inline (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, const RuntimeMethod* method) ;
+// System.Int32 Google.Play.AppUpdate.Internal.AppUpdateState::get_Status()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t AppUpdateState_get_Status_m602AAA83296C02417B09F9F54A1FB91FD2AD3D86_inline (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, const RuntimeMethod* method) ;
+// System.Int64 Google.Play.AppUpdate.Internal.AppUpdateState::get_BytesDownloaded()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int64_t AppUpdateState_get_BytesDownloaded_m7F6D696B6B50A9174566F6E5040D18BC93F7A289_inline (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, const RuntimeMethod* method) ;
+// System.Int64 Google.Play.AppUpdate.Internal.AppUpdateState::get_TotalBytesToDownload()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int64_t AppUpdateState_get_TotalBytesToDownload_m761AB41F863C791B602228ADB58548849410054C_inline (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateRequestImpl::UpdateState(Google.Play.AppUpdate.AppUpdateStatus,System.Int64,System.Int64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequestImpl_UpdateState_mD9502F80F3AE93E807F920C2F9A93234E31444C3 (AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* __this, int32_t ___0_status, int64_t ___1_bytesDownloaded, int64_t ___2_totalBytesToDownload, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.AppUpdateInfo::.ctor(UnityEngine.AndroidJavaObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateInfo__ctor_m953ACFF2AE6DC4C619A6789DBD8DBF8DEF74652A (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ___0_javaAppUpdateInfo, const RuntimeMethod* method) ;
+// System.Void Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.AppUpdate.AppUpdateInfo,Google.Play.AppUpdate.AppUpdateErrorCode>::SetResult(TResult)
+inline void PlayAsyncOperationImpl_2_SetResult_m950096A20B8814CDD43807557258F6DEEEE8DDAD (PlayAsyncOperationImpl_2_tD5929558BD68987D72A9FF54078482B548A45596* __this, AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* ___0_result, const RuntimeMethod* method)
+{
+	((  void (*) (PlayAsyncOperationImpl_2_tD5929558BD68987D72A9FF54078482B548A45596*, AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9*, const RuntimeMethod*))PlayAsyncOperationImpl_2_SetResult_m7B46A4A52A6903275FEC86680EB0B4BE912AAB23_gshared)(__this, ___0_result, method);
+}
+// System.Void Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.AppUpdate.AppUpdateInfo,Google.Play.AppUpdate.AppUpdateErrorCode>::SetError(TError)
+inline void PlayAsyncOperationImpl_2_SetError_m9D2E1F99FBEFDBA70757E6CC6092380F358F38B4 (PlayAsyncOperationImpl_2_tD5929558BD68987D72A9FF54078482B548A45596* __this, int32_t ___0_errorCode, const RuntimeMethod* method)
+{
+	((  void (*) (PlayAsyncOperationImpl_2_tD5929558BD68987D72A9FF54078482B548A45596*, int32_t, const RuntimeMethod*))PlayAsyncOperationImpl_2_SetError_m6D71BBADAE6485EF50402A6764BDC338AD49A792_gshared)(__this, ___0_errorCode, method);
+}
+// System.Void Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.Common.VoidResult,Google.Play.AppUpdate.AppUpdateErrorCode>::SetResult(TResult)
+inline void PlayAsyncOperationImpl_2_SetResult_mF255A462DC9C24B3CDFF8B8DFA075AE8694C7A26 (PlayAsyncOperationImpl_2_t8D42C1E55C0B6B29A1001BAC07DA7BC4EF877083* __this, VoidResult_t2EF77C7575B288CA1B347EDF1877D2236759ED9C* ___0_result, const RuntimeMethod* method)
+{
+	((  void (*) (PlayAsyncOperationImpl_2_t8D42C1E55C0B6B29A1001BAC07DA7BC4EF877083*, VoidResult_t2EF77C7575B288CA1B347EDF1877D2236759ED9C*, const RuntimeMethod*))PlayAsyncOperationImpl_2_SetResult_m7B46A4A52A6903275FEC86680EB0B4BE912AAB23_gshared)(__this, ___0_result, method);
+}
+// System.Void Google.Play.Core.Internal.PlayCoreTask`1<Google.Play.Common.VoidResult>::Dispose()
+inline void PlayCoreTask_1_Dispose_mF100515D3E945380CE4A58671ABE8C470A886AA2 (PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075* __this, const RuntimeMethod* method)
+{
+	((  void (*) (PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075*, const RuntimeMethod*))PlayCoreTask_1_Dispose_m7866FFF1AAEA7F49862785889C2D6F02EE6EEB8B_gshared)(__this, method);
+}
+// System.Void Google.Play.Common.Internal.PlayAsyncOperationImpl`2<Google.Play.Common.VoidResult,Google.Play.AppUpdate.AppUpdateErrorCode>::SetError(TError)
+inline void PlayAsyncOperationImpl_2_SetError_mBB436252BD06E688A82F64131C6955C636564B04 (PlayAsyncOperationImpl_2_t8D42C1E55C0B6B29A1001BAC07DA7BC4EF877083* __this, int32_t ___0_errorCode, const RuntimeMethod* method)
+{
+	((  void (*) (PlayAsyncOperationImpl_2_t8D42C1E55C0B6B29A1001BAC07DA7BC4EF877083*, int32_t, const RuntimeMethod*))PlayAsyncOperationImpl_2_SetError_m6D71BBADAE6485EF50402A6764BDC338AD49A792_gshared)(__this, ___0_errorCode, method);
+}
+// UnityEngine.AndroidJavaObject Google.Play.Common.UnityPlayerHelper::GetCurrentActivity()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* UnityPlayerHelper_GetCurrentActivity_m016A45C7A2E9DDBEA730B34B75289BAF6E3DD040 (const RuntimeMethod* method) ;
+// System.Void UnityEngine.AndroidJavaObject::Call(System.String,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidJavaObject_Call_mDEF7846E2AB1C5379069BB21049ED55A9D837B1C (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
+// System.Void Google.Play.Core.Internal.PlayCoreTask`1<UnityEngine.AndroidJavaObject>::.ctor(UnityEngine.AndroidJavaObject)
+inline void PlayCoreTask_1__ctor_mDAA5455BA547162FA6EA8C79EF4A38E0D0A62B8D (PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* __this, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ___0_javaTask, const RuntimeMethod* method)
+{
+	((  void (*) (PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E*, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*, const RuntimeMethod*))PlayCoreTask_1__ctor_mCBC23C35230AF9B8D3347D1C82F20482C5EFF896_gshared)(__this, ___0_javaTask, method);
+}
+// UnityEngine.AndroidJavaObject Google.Play.AppUpdate.AppUpdateInfo::GetJavaUpdateInfo()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* AppUpdateInfo_GetJavaUpdateInfo_m06F99ACACC30184A690C0C28761FB5B77A547B08_inline (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.Core.Internal.PlayCoreTask`1<System.Int32>::.ctor(UnityEngine.AndroidJavaObject)
+inline void PlayCoreTask_1__ctor_mFF5887DD94D8E7A1F3B1BB63266E75628AF494C8 (PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F* __this, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ___0_javaTask, const RuntimeMethod* method)
+{
+	((  void (*) (PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F*, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*, const RuntimeMethod*))PlayCoreTask_1__ctor_mFF5887DD94D8E7A1F3B1BB63266E75628AF494C8_gshared)(__this, ___0_javaTask, method);
+}
+// System.Void Google.Play.Core.Internal.PlayCoreTask`1<Google.Play.Common.VoidResult>::.ctor(UnityEngine.AndroidJavaObject)
+inline void PlayCoreTask_1__ctor_m53AA82372694AFE445086983C504393B9EB26D51 (PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075* __this, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ___0_javaTask, const RuntimeMethod* method)
+{
+	((  void (*) (PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075*, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*, const RuntimeMethod*))PlayCoreTask_1__ctor_mCBC23C35230AF9B8D3347D1C82F20482C5EFF896_gshared)(__this, ___0_javaTask, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateErrorCode>::TryGetValue(TKey,TValue&)
+inline bool Dictionary_2_TryGetValue_m74465B8FDC479C85F7A7C30351CE15421A289CA8 (Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E* __this, int32_t ___0_key, int32_t* ___1_value, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E*, int32_t, int32_t*, const RuntimeMethod*))Dictionary_2_TryGetValue_m9C7A828C0B5419633EB1A5AA73FC2E06284E639E_gshared)(__this, ___0_key, ___1_value, method);
+}
+// System.String System.Enum::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741 (RuntimeObject* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateStatus>::TryGetValue(TKey,TValue&)
+inline bool Dictionary_2_TryGetValue_m38C2456D2DF42BFDB4E2593B6DAA2C4C08458DC9 (Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692* __this, int32_t ___0_key, int32_t* ___1_value, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692*, int32_t, int32_t*, const RuntimeMethod*))Dictionary_2_TryGetValue_m9C7A828C0B5419633EB1A5AA73FC2E06284E639E_gshared)(__this, ___0_key, ___1_value, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.UpdateAvailability>::TryGetValue(TKey,TValue&)
+inline bool Dictionary_2_TryGetValue_m01DF52861A968413F0004B702ACBD624A651CE89 (Dictionary_2_tC8A0936A5A6577AFC135261FE851A2B8667D267C* __this, int32_t ___0_key, int32_t* ___1_value, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_tC8A0936A5A6577AFC135261FE851A2B8667D267C*, int32_t, int32_t*, const RuntimeMethod*))Dictionary_2_TryGetValue_m9C7A828C0B5419633EB1A5AA73FC2E06284E639E_gshared)(__this, ___0_key, ___1_value, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateType>::TryGetValue(TKey,TValue&)
+inline bool Dictionary_2_TryGetValue_m1B4627D8E489032D5B78A58BCC7EDC3E580B3338 (Dictionary_2_t7AAFE60DBE071FF1583BEA36BFB195214FB795CD* __this, int32_t ___0_key, int32_t* ___1_value, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t7AAFE60DBE071FF1583BEA36BFB195214FB795CD*, int32_t, int32_t*, const RuntimeMethod*))Dictionary_2_TryGetValue_m9C7A828C0B5419633EB1A5AA73FC2E06284E639E_gshared)(__this, ___0_key, ___1_value, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateErrorCode>::.ctor()
+inline void Dictionary_2__ctor_m65988B702DA64A2CCC5DAEC3B25E9592D84DE366 (Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E*, const RuntimeMethod*))Dictionary_2__ctor_mC9C175D184F142682355D54F32FC231BBDCE6FD0_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateErrorCode>::Add(TKey,TValue)
+inline void Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C (Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E* __this, int32_t ___0_key, int32_t ___1_value, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E*, int32_t, int32_t, const RuntimeMethod*))Dictionary_2_Add_m95641EE4325D83C122BF87ECF2A0F729A1CF14D3_gshared)(__this, ___0_key, ___1_value, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateStatus>::.ctor()
+inline void Dictionary_2__ctor_m17A42B6F97B8392301C4C698F9B2961225E3037C (Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692*, const RuntimeMethod*))Dictionary_2__ctor_mC9C175D184F142682355D54F32FC231BBDCE6FD0_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateStatus>::Add(TKey,TValue)
+inline void Dictionary_2_Add_m85BAA36A8E802BB0B42D6141BF059011DBE2608C (Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692* __this, int32_t ___0_key, int32_t ___1_value, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692*, int32_t, int32_t, const RuntimeMethod*))Dictionary_2_Add_m95641EE4325D83C122BF87ECF2A0F729A1CF14D3_gshared)(__this, ___0_key, ___1_value, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.UpdateAvailability>::.ctor()
+inline void Dictionary_2__ctor_m0E21B7EAA817B7C69002AE178FF2B48F92AA4F34 (Dictionary_2_tC8A0936A5A6577AFC135261FE851A2B8667D267C* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tC8A0936A5A6577AFC135261FE851A2B8667D267C*, const RuntimeMethod*))Dictionary_2__ctor_mC9C175D184F142682355D54F32FC231BBDCE6FD0_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.UpdateAvailability>::Add(TKey,TValue)
+inline void Dictionary_2_Add_mD4BABC0648090BFED92098217CB1D70820E94BC9 (Dictionary_2_tC8A0936A5A6577AFC135261FE851A2B8667D267C* __this, int32_t ___0_key, int32_t ___1_value, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tC8A0936A5A6577AFC135261FE851A2B8667D267C*, int32_t, int32_t, const RuntimeMethod*))Dictionary_2_Add_m95641EE4325D83C122BF87ECF2A0F729A1CF14D3_gshared)(__this, ___0_key, ___1_value, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateType>::.ctor()
+inline void Dictionary_2__ctor_mA5CDAC65FA3D30CB44CECAA21ED94DFB45BF3457 (Dictionary_2_t7AAFE60DBE071FF1583BEA36BFB195214FB795CD* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t7AAFE60DBE071FF1583BEA36BFB195214FB795CD*, const RuntimeMethod*))Dictionary_2__ctor_mC9C175D184F142682355D54F32FC231BBDCE6FD0_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,Google.Play.AppUpdate.AppUpdateType>::Add(TKey,TValue)
+inline void Dictionary_2_Add_m895D7CF7F316439A6DA8FA42E82ED50BFF263AE3 (Dictionary_2_t7AAFE60DBE071FF1583BEA36BFB195214FB795CD* __this, int32_t ___0_key, int32_t ___1_value, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t7AAFE60DBE071FF1583BEA36BFB195214FB795CD*, int32_t, int32_t, const RuntimeMethod*))Dictionary_2_Add_m95641EE4325D83C122BF87ECF2A0F729A1CF14D3_gshared)(__this, ___0_key, ___1_value, method);
+}
+// System.Void Google.Play.AppUpdate.AppUpdateRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequest__ctor_m57407A74A5DF2BC66B455100484C249A7A784796 (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.AppUpdateRequest::set_Status(Google.Play.AppUpdate.AppUpdateStatus)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AppUpdateRequest_set_Status_m672F2512A04E85BCE10D52A487BDC9753C3BE65F_inline (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, int32_t ___0_value, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.AppUpdateRequest::set_Error(Google.Play.AppUpdate.AppUpdateErrorCode)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AppUpdateRequest_set_Error_mA2B02019E9445CAB0021543871E11FE0A56EA208_inline (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, int32_t ___0_value, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.AppUpdateRequest::add_Completed(System.Action`1<Google.Play.AppUpdate.AppUpdateRequest>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequest_add_Completed_mC7DFE22C872CED69110E66AD8210D003A541EC6D (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* ___0_value, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.AppUpdateRequest::remove_Completed(System.Action`1<Google.Play.AppUpdate.AppUpdateRequest>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequest_remove_Completed_m16ABCC03CC914BD6521A4E79A19129DED193507E (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* ___0_value, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.AppUpdateRequest::set_DownloadProgress(System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AppUpdateRequest_set_DownloadProgress_mD09F9CCC110358C5F59F82AB1D71FBEBA16D1193_inline (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, float ___0_value, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.AppUpdateRequest::set_BytesDownloaded(System.UInt64)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AppUpdateRequest_set_BytesDownloaded_mF536383F89C50D4AA263F8AF916FD389EEF82A81_inline (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, uint64_t ___0_value, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.AppUpdateRequest::set_TotalBytesToDownload(System.UInt64)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AppUpdateRequest_set_TotalBytesToDownload_mA85DC90B518EAD9B3DC8825B198E28911A0F21E2_inline (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, uint64_t ___0_value, const RuntimeMethod* method) ;
+// Google.Play.AppUpdate.AppUpdateStatus Google.Play.AppUpdate.AppUpdateRequest::get_Status()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t AppUpdateRequest_get_Status_m59B0E73D91BA55511EABF53D0AA23975B2E2424F_inline (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, const RuntimeMethod* method) ;
+// Google.Play.AppUpdate.AppUpdateStatus Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator::TranslateUpdateActivityResult(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdatePlayCoreTranslator_TranslateUpdateActivityResult_m587E8CCFA62ECAE22DBDB3DFCDB844CDA90D9560 (int32_t ___0_resultCode, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.AppUpdateRequest::set_IsDone(System.Boolean)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AppUpdateRequest_set_IsDone_mA86A88EF6509CB0BFC3386A3324E1D501C11F701_inline (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, bool ___0_value, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.AppUpdateRequest::InvokeCompletedEvent()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequest_InvokeCompletedEvent_mE8FBCC9B4906D4BF71849C59DE6669190EF131EE (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, const RuntimeMethod* method) ;
+// ReturnType UnityEngine.AndroidJavaObject::Call<System.Int64>(System.String,System.Object[])
+inline int64_t AndroidJavaObject_Call_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_m63E24F733CDC205FED0CF4659E49DB4AE06ADBB9 (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method)
+{
+	return ((  int64_t (*) (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*, const RuntimeMethod*))AndroidJavaObject_Call_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_m63E24F733CDC205FED0CF4659E49DB4AE06ADBB9_gshared)(__this, ___0_methodName, ___1_args, method);
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateState::set_BytesDownloaded(System.Int64)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AppUpdateState_set_BytesDownloaded_mB80EEB34876C06A4A220C5453F6082F571F97CDC_inline (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, int64_t ___0_value, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateState::set_TotalBytesToDownload(System.Int64)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AppUpdateState_set_TotalBytesToDownload_m7A8387DE748D8061294C0CF77DB296B8EFFD8592_inline (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, int64_t ___0_value, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateState::set_Status(System.Int32)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AppUpdateState_set_Status_m3E43CE637B618E3E134095B9A2A1EBE68B28E39E_inline (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, int32_t ___0_value, const RuntimeMethod* method) ;
+// System.Void UnityEngine.AndroidJavaProxy::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidJavaProxy__ctor_m2832886A0E1BBF6702653A7C6A4609F11FB712C7 (AndroidJavaProxy_tE5521F9761F7B95444B9C39FB15FDFC23F80A78D* __this, String_t* ___0_javaInterface, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateStateListener/<>c__DisplayClass4_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass4_0__ctor_m83D397FE0DF8A08CDD97D0239CB5ADFBA7B2D77C (U3CU3Ec__DisplayClass4_0_t1A6064DBD19D052DA4A95AA5835DEB7DF35B49FD* __this, const RuntimeMethod* method) ;
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateStateListener/<>c::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m5F063465B75FD29482942C098432A76B88780B97 (U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8* __this, const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass7_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass7_0__ctor_mF87540CEE1981FABE78FBA5C0B91310552289B65 (U3CU3Ec__DisplayClass7_0_t1DDCC5DDCCF2CD32AF5B9AD99C0B67D0F6B6A600* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass7_0::<InitializeAssetBundleRequest>b__0(Google.Play.AssetDelivery.PlayAssetBundleRequest)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass7_0_U3CInitializeAssetBundleRequestU3Eb__0_mCCBE89E467DFAB69643BBB8FDA1DDC3E5ECC3563 (U3CU3Ec__DisplayClass7_0_t1DDCC5DDCCF2CD32AF5B9AD99C0B67D0F6B6A600* __this, PlayAssetBundleRequest_t9646E260F4C11DDF3F9BC026B44769B7B1E37B5F* ___0_req, const RuntimeMethod* method) 
+{
+	{
+		// request.Completed += req => _requestRepository.RemoveRequest(assetBundleName);
+		PlayAssetDeliveryInternal_t6D3BC5056F40448DAE64A56BF9C28103D31CE195* L_0 = __this->___U3CU3E4__this_0;
+		NullCheck(L_0);
+		PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* L_1 = L_0->____requestRepository_3;
+		String_t* L_2 = __this->___assetBundleName_1;
+		NullCheck(L_1);
+		PlayRequestRepository_RemoveRequest_m933E6F3F77462893ABDC58009CB808487A859C76(L_1, L_2, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass10_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass10_0__ctor_mA05D17F96CA9AF6CDCB0872D5FE4CCD8CC1922D5 (U3CU3Ec__DisplayClass10_0_t08C481C206404FEE818C307898CDF566F87B42C0* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Boolean Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass10_0::<CreateAndInitiateBatchRequest>b__0(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass10_0_U3CCreateAndInitiateBatchRequestU3Eb__0_m4AA8E677B7B72A7AA7372DA133D95E96405E5CD9 (U3CU3Ec__DisplayClass10_0_t08C481C206404FEE818C307898CDF566F87B42C0* __this, String_t* ___0_name, const RuntimeMethod* method) 
+{
+	{
+		// .Where(name => _requestRepository.ContainsAssetBundleRequest(name))
+		PlayAssetDeliveryInternal_t6D3BC5056F40448DAE64A56BF9C28103D31CE195* L_0 = __this->___U3CU3E4__this_0;
+		NullCheck(L_0);
+		PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* L_1 = L_0->____requestRepository_3;
+		String_t* L_2 = ___0_name;
+		NullCheck(L_1);
+		bool L_3;
+		L_3 = PlayRequestRepository_ContainsAssetBundleRequest_m61DD6FAEF3DF73A21C54A8BBE807F4062BC7148A(L_1, L_2, NULL);
+		return L_3;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass10_0::<CreateAndInitiateBatchRequest>b__1(UnityEngine.AndroidJavaObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass10_0_U3CCreateAndInitiateBatchRequestU3Eb__1_m36A74A1563AF12DA88E46BBF9DC3AEC48EDF40EE (U3CU3Ec__DisplayClass10_0_t08C481C206404FEE818C307898CDF566F87B42C0* __this, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ___0_javaPackStates, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// batchRequest.OnInitializedInPlayCore();
+		PlayAssetPackBatchRequestImpl_tC82BC03D5E3AA6978BD90055586C419EDFDFFFE7* L_0 = __this->___batchRequest_1;
+		NullCheck(L_0);
+		PlayAssetPackBatchRequestImpl_OnInitializedInPlayCore_m22A3BD3B53E060C56A64E0EE139090DF2D60099E(L_0, NULL);
+		// fetchTask.Dispose();
+		PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* L_1 = __this->___fetchTask_2;
+		NullCheck(L_1);
+		PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8(L_1, PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8_RuntimeMethod_var);
+		// });
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass10_0::<CreateAndInitiateBatchRequest>b__2(System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass10_0_U3CCreateAndInitiateBatchRequestU3Eb__2_m56D5BF3916BF402C44A7BF8246B130B2687CFF15 (U3CU3Ec__DisplayClass10_0_t08C481C206404FEE818C307898CDF566F87B42C0* __this, String_t* ___0_reason, int32_t ___1_errorCode, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral82B5EC2A49EF4C35204EC8CB6F305B6A1A7CA57C);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Debug.LogError("Failed to retrieve asset pack batch: " + reason);
+		String_t* L_0 = ___0_reason;
+		String_t* L_1;
+		L_1 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral82B5EC2A49EF4C35204EC8CB6F305B6A1A7CA57C, L_0, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_1, NULL);
+		// batchRequest.OnInitializationErrorOccurred(PlayCoreTranslator.TranslatePlayCoreErrorCode(errorCode));
+		PlayAssetPackBatchRequestImpl_tC82BC03D5E3AA6978BD90055586C419EDFDFFFE7* L_2 = __this->___batchRequest_1;
+		int32_t L_3 = ___1_errorCode;
+		il2cpp_codegen_runtime_class_init_inline(PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_il2cpp_TypeInfo_var);
+		int32_t L_4;
+		L_4 = PlayCoreTranslator_TranslatePlayCoreErrorCode_mBE37A0C9CC75E81F98D5B1909F1C2E4A7FF0A896(L_3, NULL);
+		NullCheck(L_2);
+		PlayAssetPackBatchRequestImpl_OnInitializationErrorOccurred_m0D8D5AE285890CFE0F4582893E7343C12CAC3768(L_2, L_4, NULL);
+		// fetchTask.Dispose();
+		PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* L_5 = __this->___fetchTask_2;
+		NullCheck(L_5);
+		PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8(L_5, PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8_RuntimeMethod_var);
+		// });
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass10_1::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass10_1__ctor_m08B1DCFA51D7AD8BE7AB07941239558A3F3B6664 (U3CU3Ec__DisplayClass10_1_t169233B0571398354428A4A9EE18A05E311F738E* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass10_1::<CreateAndInitiateBatchRequest>b__3(Google.Play.AssetDelivery.PlayAssetPackRequest)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass10_1_U3CCreateAndInitiateBatchRequestU3Eb__3_m04EEA6316D06BA4AAE3DBDA368B96B71D0408F7E (U3CU3Ec__DisplayClass10_1_t169233B0571398354428A4A9EE18A05E311F738E* __this, PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* ___0_req, const RuntimeMethod* method) 
+{
+	{
+		// request.Completed += req => _requestRepository.RemoveRequest(request.AssetPackName);
+		U3CU3Ec__DisplayClass10_0_t08C481C206404FEE818C307898CDF566F87B42C0* L_0 = __this->___CSU24U3CU3E8__locals1_1;
+		NullCheck(L_0);
+		PlayAssetDeliveryInternal_t6D3BC5056F40448DAE64A56BF9C28103D31CE195* L_1 = L_0->___U3CU3E4__this_0;
+		NullCheck(L_1);
+		PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* L_2 = L_1->____requestRepository_3;
+		PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* L_3 = __this->___request_0;
+		NullCheck(L_3);
+		String_t* L_4 = L_3->___AssetPackName_5;
+		NullCheck(L_2);
+		PlayRequestRepository_RemoveRequest_m933E6F3F77462893ABDC58009CB808487A859C76(L_2, L_4, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass11_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass11_0__ctor_m3F7752846BB35A996D5A73B8C8328C87D5871D1D (U3CU3Ec__DisplayClass11_0_t7154261D7B6602B81815819D10310ADCC9A4FE8B* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass11_0::<ShowCellularDataConfirmationInternal>b__0(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass11_0_U3CShowCellularDataConfirmationInternalU3Eb__0_mE4995727E72A97BAB8B54D5651B9C7741153074F (U3CU3Ec__DisplayClass11_0_t7154261D7B6602B81815819D10310ADCC9A4FE8B* __this, int32_t ___0_resultCode, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayAsyncOperationImpl_2_SetResult_mBF264A6422E52A2CCDF15714B8C17E1FC5723E0F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_Dispose_m00ED1653B30AFA878BBA3EA3B72E17FCC8522355_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// operation.SetResult(ConvertToConfirmationDialogResult(resultCode));
+		AssetDeliveryAsyncOperation_1_t33C31211B6C7DF542271167C1436C3884F277D39* L_0 = __this->___operation_0;
+		PlayAssetDeliveryInternal_t6D3BC5056F40448DAE64A56BF9C28103D31CE195* L_1 = __this->___U3CU3E4__this_1;
+		int32_t L_2 = ___0_resultCode;
+		NullCheck(L_1);
+		int32_t L_3;
+		L_3 = PlayAssetDeliveryInternal_ConvertToConfirmationDialogResult_m8602D1D07DEC515B0B42EDDD28261797A51ADE97(L_1, L_2, NULL);
+		NullCheck(L_0);
+		PlayAsyncOperationImpl_2_SetResult_mBF264A6422E52A2CCDF15714B8C17E1FC5723E0F(L_0, L_3, PlayAsyncOperationImpl_2_SetResult_mBF264A6422E52A2CCDF15714B8C17E1FC5723E0F_RuntimeMethod_var);
+		// task.Dispose();
+		PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F* L_4 = __this->___task_2;
+		NullCheck(L_4);
+		PlayCoreTask_1_Dispose_m00ED1653B30AFA878BBA3EA3B72E17FCC8522355(L_4, PlayCoreTask_1_Dispose_m00ED1653B30AFA878BBA3EA3B72E17FCC8522355_RuntimeMethod_var);
+		// });
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass11_0::<ShowCellularDataConfirmationInternal>b__1(System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass11_0_U3CShowCellularDataConfirmationInternalU3Eb__1_m8AE332F1F8E798AD6F2BECD9A9820A0C517F5410 (U3CU3Ec__DisplayClass11_0_t7154261D7B6602B81815819D10310ADCC9A4FE8B* __this, String_t* ___0_message, int32_t ___1_errorCode, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayAsyncOperationImpl_2_SetError_m12F09686B5072581BB81687950E10CD49B3E30D0_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_Dispose_m00ED1653B30AFA878BBA3EA3B72E17FCC8522355_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// operation.SetError(PlayCoreTranslator.TranslatePlayCoreErrorCode(errorCode));
+		AssetDeliveryAsyncOperation_1_t33C31211B6C7DF542271167C1436C3884F277D39* L_0 = __this->___operation_0;
+		int32_t L_1 = ___1_errorCode;
+		il2cpp_codegen_runtime_class_init_inline(PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_il2cpp_TypeInfo_var);
+		int32_t L_2;
+		L_2 = PlayCoreTranslator_TranslatePlayCoreErrorCode_mBE37A0C9CC75E81F98D5B1909F1C2E4A7FF0A896(L_1, NULL);
+		NullCheck(L_0);
+		PlayAsyncOperationImpl_2_SetError_m12F09686B5072581BB81687950E10CD49B3E30D0(L_0, L_2, PlayAsyncOperationImpl_2_SetError_m12F09686B5072581BB81687950E10CD49B3E30D0_RuntimeMethod_var);
+		// task.Dispose();
+		PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F* L_3 = __this->___task_2;
+		NullCheck(L_3);
+		PlayCoreTask_1_Dispose_m00ED1653B30AFA878BBA3EA3B72E17FCC8522355(L_3, PlayCoreTask_1_Dispose_m00ED1653B30AFA878BBA3EA3B72E17FCC8522355_RuntimeMethod_var);
+		// });
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass12_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass12_0__ctor_m6D11D34989B29ADC4148D284C665CC11BE86C6A9 (U3CU3Ec__DisplayClass12_0_tDA637901046F222FF8E632BBDACBA3C384DB91D6* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass12_0::<GetDownloadSizeInternal>b__0(UnityEngine.AndroidJavaObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass12_0_U3CGetDownloadSizeInternalU3Eb__0_m148A5A655E093DA776637D14F2D0E6B9B0A5F650 (U3CU3Ec__DisplayClass12_0_tDA637901046F222FF8E632BBDACBA3C384DB91D6* __this, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ___0_javaPackState, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AssetPackStates_tF29EB9AEFDF74D53DB10977AB96AD4D8E8923FCB_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayAsyncOperationImpl_2_SetResult_m93BFB6A3A6BA37EFDF2179E4F009E6379B1575BC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	AssetPackStates_tF29EB9AEFDF74D53DB10977AB96AD4D8E8923FCB* V_0 = NULL;
+	{
+		// var assetPacks = new AssetPackStates(javaPackState);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ___0_javaPackState;
+		AssetPackStates_tF29EB9AEFDF74D53DB10977AB96AD4D8E8923FCB* L_1 = (AssetPackStates_tF29EB9AEFDF74D53DB10977AB96AD4D8E8923FCB*)il2cpp_codegen_object_new(AssetPackStates_tF29EB9AEFDF74D53DB10977AB96AD4D8E8923FCB_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		AssetPackStates__ctor_mF427C3B49EA8CBE003FCAC69D6D0522C9DDEFA89(L_1, L_0, NULL);
+		V_0 = L_1;
+		// operation.SetResult(assetPacks.TotalBytes);
+		AssetDeliveryAsyncOperation_1_t290D8C237F9F8659DAA13335EE19A29699DF9A3E* L_2 = __this->___operation_0;
+		AssetPackStates_tF29EB9AEFDF74D53DB10977AB96AD4D8E8923FCB* L_3 = V_0;
+		NullCheck(L_3);
+		int64_t L_4;
+		L_4 = AssetPackStates_get_TotalBytes_mAFC0111A353E0ACC2ED7492018180601611EDAB9_inline(L_3, NULL);
+		NullCheck(L_2);
+		PlayAsyncOperationImpl_2_SetResult_m93BFB6A3A6BA37EFDF2179E4F009E6379B1575BC(L_2, L_4, PlayAsyncOperationImpl_2_SetResult_m93BFB6A3A6BA37EFDF2179E4F009E6379B1575BC_RuntimeMethod_var);
+		// task.Dispose();
+		PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* L_5 = __this->___task_1;
+		NullCheck(L_5);
+		PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8(L_5, PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8_RuntimeMethod_var);
+		// });
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass12_0::<GetDownloadSizeInternal>b__1(System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass12_0_U3CGetDownloadSizeInternalU3Eb__1_m29CAD596B5046891C23E8C9A296986BFA7EE2B0D (U3CU3Ec__DisplayClass12_0_tDA637901046F222FF8E632BBDACBA3C384DB91D6* __this, String_t* ___0_message, int32_t ___1_errorCode, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayAsyncOperationImpl_2_SetError_m19F45E26735475B3F4592612A0FD4317F93E31D6_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// operation.SetError(PlayCoreTranslator.TranslatePlayCoreErrorCode(errorCode));
+		AssetDeliveryAsyncOperation_1_t290D8C237F9F8659DAA13335EE19A29699DF9A3E* L_0 = __this->___operation_0;
+		int32_t L_1 = ___1_errorCode;
+		il2cpp_codegen_runtime_class_init_inline(PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_il2cpp_TypeInfo_var);
+		int32_t L_2;
+		L_2 = PlayCoreTranslator_TranslatePlayCoreErrorCode_mBE37A0C9CC75E81F98D5B1909F1C2E4A7FF0A896(L_1, NULL);
+		NullCheck(L_0);
+		PlayAsyncOperationImpl_2_SetError_m19F45E26735475B3F4592612A0FD4317F93E31D6(L_0, L_2, PlayAsyncOperationImpl_2_SetError_m19F45E26735475B3F4592612A0FD4317F93E31D6_RuntimeMethod_var);
+		// task.Dispose();
+		PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* L_3 = __this->___task_1;
+		NullCheck(L_3);
+		PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8(L_3, PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8_RuntimeMethod_var);
+		// });
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass13_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass13_0__ctor_mDF55F4C0407FC050ACDD61FB0F69CFF380810840 (U3CU3Ec__DisplayClass13_0_tF4C60CDC13F4815983AF9E0B015876B7E6E1703B* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass13_0::<RemoveAssetPackInternal>b__0(UnityEngine.AndroidJavaObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass13_0_U3CRemoveAssetPackInternalU3Eb__0_m12CE3AAA46F818F99CED733A17E66CC556095799 (U3CU3Ec__DisplayClass13_0_tF4C60CDC13F4815983AF9E0B015876B7E6E1703B* __this, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ___0_javaPackState, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayAsyncOperationImpl_2_SetResult_m44C069D1589ADF93B612E1904C8AA5579AFA234A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VoidResult_t2EF77C7575B288CA1B347EDF1877D2236759ED9C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// operation.SetResult(new VoidResult());
+		AssetDeliveryAsyncOperation_1_t543238F0246E8409055801D271356CBBEA0A5810* L_0 = __this->___operation_0;
+		VoidResult_t2EF77C7575B288CA1B347EDF1877D2236759ED9C* L_1 = (VoidResult_t2EF77C7575B288CA1B347EDF1877D2236759ED9C*)il2cpp_codegen_object_new(VoidResult_t2EF77C7575B288CA1B347EDF1877D2236759ED9C_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		VoidResult__ctor_m667217F9AE721104DABC4FEBDD1FD16DF8EF93B3(L_1, NULL);
+		NullCheck(L_0);
+		PlayAsyncOperationImpl_2_SetResult_m44C069D1589ADF93B612E1904C8AA5579AFA234A(L_0, L_1, PlayAsyncOperationImpl_2_SetResult_m44C069D1589ADF93B612E1904C8AA5579AFA234A_RuntimeMethod_var);
+		// task.Dispose();
+		PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* L_2 = __this->___task_1;
+		NullCheck(L_2);
+		PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8(L_2, PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8_RuntimeMethod_var);
+		// });
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass13_0::<RemoveAssetPackInternal>b__1(System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass13_0_U3CRemoveAssetPackInternalU3Eb__1_m2914DFA0B1E5D7C94A7C272EDE2BE5D3F64C4D45 (U3CU3Ec__DisplayClass13_0_tF4C60CDC13F4815983AF9E0B015876B7E6E1703B* __this, String_t* ___0_message, int32_t ___1_errorCode, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayAsyncOperationImpl_2_SetError_mD4713F37FF29477CF241FE11AFF354902EF4E4E0_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// operation.SetError(AssetDeliveryErrorCode.InternalError);
+		AssetDeliveryAsyncOperation_1_t543238F0246E8409055801D271356CBBEA0A5810* L_0 = __this->___operation_0;
+		NullCheck(L_0);
+		PlayAsyncOperationImpl_2_SetError_mD4713F37FF29477CF241FE11AFF354902EF4E4E0(L_0, ((int32_t)10), PlayAsyncOperationImpl_2_SetError_mD4713F37FF29477CF241FE11AFF354902EF4E4E0_RuntimeMethod_var);
+		// task.Dispose();
+		PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* L_1 = __this->___task_1;
+		NullCheck(L_1);
+		PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8(L_1, PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8_RuntimeMethod_var);
+		// });
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass16_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass16_0__ctor_mAC980C8EC583E552A398E021D97885DC7A11F8BA (U3CU3Ec__DisplayClass16_0_tC67150A3C438FF4E5F69CD0C1D1CA927EA87C3C0* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass16_0::<InitializeAssetPackRequest>b__0(Google.Play.AssetDelivery.PlayAssetPackRequest)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass16_0_U3CInitializeAssetPackRequestU3Eb__0_mEC3989FB78D0ED468AEB5F6F4DCE172349C3B685 (U3CU3Ec__DisplayClass16_0_tC67150A3C438FF4E5F69CD0C1D1CA927EA87C3C0* __this, PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* ___0_req, const RuntimeMethod* method) 
+{
+	{
+		// request.Completed += req => _requestRepository.RemoveRequest(assetPackName);
+		PlayAssetDeliveryInternal_t6D3BC5056F40448DAE64A56BF9C28103D31CE195* L_0 = __this->___U3CU3E4__this_0;
+		NullCheck(L_0);
+		PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* L_1 = L_0->____requestRepository_3;
+		String_t* L_2 = __this->___assetPackName_1;
+		NullCheck(L_1);
+		PlayRequestRepository_RemoveRequest_m933E6F3F77462893ABDC58009CB808487A859C76(L_1, L_2, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass20_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass20_0__ctor_m0929E69CCBC796B4E26A819DD907509F27E1D48B (U3CU3Ec__DisplayClass20_0_tE8F82E9C90C95D8B076B6E8A5BCF11C67326186F* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass20_0::<StartRequest>b__0(UnityEngine.AndroidJavaObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass20_0_U3CStartRequestU3Eb__0_mDF10FC0BD71022F10F6E7A12A7CE36D53B7836EA (U3CU3Ec__DisplayClass20_0_tE8F82E9C90C95D8B076B6E8A5BCF11C67326186F* __this, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ___0_javaPackStates, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// request.OnInitializedInPlayCore();
+		PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* L_0 = __this->___request_0;
+		NullCheck(L_0);
+		PlayAssetPackRequestImpl_OnInitializedInPlayCore_mE93B3D7C4F0493C2CC17B5F810D43B3E21675EF7(L_0, NULL);
+		// fetchTask.Dispose();
+		PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* L_1 = __this->___fetchTask_1;
+		NullCheck(L_1);
+		PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8(L_1, PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8_RuntimeMethod_var);
+		// });
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetDeliveryInternal/<>c__DisplayClass20_0::<StartRequest>b__1(System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass20_0_U3CStartRequestU3Eb__1_mCE991192824772418860477CFC545EAE25930DE9 (U3CU3Ec__DisplayClass20_0_tE8F82E9C90C95D8B076B6E8A5BCF11C67326186F* __this, String_t* ___0_reason, int32_t ___1_errorCode, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral22BDC6DB76BDB0475A8D4D2C9CBC9F38C8AD2FBA);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Debug.LogErrorFormat("Failed to retrieve asset pack: {0}", reason);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_0 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = L_0;
+		String_t* L_2 = ___0_reason;
+		NullCheck(L_1);
+		ArrayElementTypeCheck (L_1, L_2);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_2);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogErrorFormat_m96690322C941D23A125E5769C9803606859A707C(_stringLiteral22BDC6DB76BDB0475A8D4D2C9CBC9F38C8AD2FBA, L_1, NULL);
+		// request.OnErrorOccured(PlayCoreTranslator.TranslatePlayCoreErrorCode(errorCode));
+		PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* L_3 = __this->___request_0;
+		int32_t L_4 = ___1_errorCode;
+		il2cpp_codegen_runtime_class_init_inline(PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_il2cpp_TypeInfo_var);
+		int32_t L_5;
+		L_5 = PlayCoreTranslator_TranslatePlayCoreErrorCode_mBE37A0C9CC75E81F98D5B1909F1C2E4A7FF0A896(L_4, NULL);
+		NullCheck(L_3);
+		PlayAssetPackRequestImpl_OnErrorOccured_mFA751C138B147A9ED2141E1C42B6648798E74F1E(L_3, L_5, NULL);
+		// fetchTask.Dispose();
+		PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* L_6 = __this->___fetchTask_1;
+		NullCheck(L_6);
+		PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8(L_6, PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8_RuntimeMethod_var);
+		// });
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl::.ctor(System.Collections.Generic.IEnumerable`1<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackBatchRequestImpl__ctor_m195627147FE79C068BBCD2C6390DF0A2DDACC302 (PlayAssetPackBatchRequestImpl_tC82BC03D5E3AA6978BD90055586C419EDFDFFFE7* __this, RuntimeObject* ___0_requests, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t6C653CA94F6E4C002C5DEFFE0C93E3DDEE648147_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerable_ToDictionary_TisPlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_TisString_t_TisPlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673_m4335CBE55AC7B90B955973464B6C466564A7ADAB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Func_2_t5046017BD492967250D8044DFF77E6C6ED3E3B60_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Func_2_t9DEF496CE413EBA35AC4F404085FC769C4A8C110_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HashSet_1__ctor_m780CFB8A2D23543157D1A0E1FADF781E1AF81E03_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerable_1_t0F32D8173C2B7929A933182AF89B36AB888A90E0_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_1_tF66AF85EF77C19E070515ACEB4F1755D738EFBA0_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_m94FF5F8624F96A75FA65134023C4D6790E1CC6E6_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayAssetPackBatchRequestImpl_OnChildPackCompleted_m280F1771D022AE509B38B3CCB919C2224BDDBDEB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3C_ctorU3Eb__1_0_mE7A760D25D68A37F29CDE0B5179B11E1F1843F6D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3C_ctorU3Eb__1_1_mD328C5E6AC058752AB2E50F94ED14B62448912F1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	KeyValuePair_2_tFA7501048F15B1D4E16F48EE197DD55516CD1241 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Func_2_t9DEF496CE413EBA35AC4F404085FC769C4A8C110* G_B2_0 = NULL;
+	RuntimeObject* G_B2_1 = NULL;
+	PlayAssetPackBatchRequestImpl_tC82BC03D5E3AA6978BD90055586C419EDFDFFFE7* G_B2_2 = NULL;
+	Func_2_t9DEF496CE413EBA35AC4F404085FC769C4A8C110* G_B1_0 = NULL;
+	RuntimeObject* G_B1_1 = NULL;
+	PlayAssetPackBatchRequestImpl_tC82BC03D5E3AA6978BD90055586C419EDFDFFFE7* G_B1_2 = NULL;
+	Func_2_t5046017BD492967250D8044DFF77E6C6ED3E3B60* G_B4_0 = NULL;
+	Func_2_t9DEF496CE413EBA35AC4F404085FC769C4A8C110* G_B4_1 = NULL;
+	RuntimeObject* G_B4_2 = NULL;
+	PlayAssetPackBatchRequestImpl_tC82BC03D5E3AA6978BD90055586C419EDFDFFFE7* G_B4_3 = NULL;
+	Func_2_t5046017BD492967250D8044DFF77E6C6ED3E3B60* G_B3_0 = NULL;
+	Func_2_t9DEF496CE413EBA35AC4F404085FC769C4A8C110* G_B3_1 = NULL;
+	RuntimeObject* G_B3_2 = NULL;
+	PlayAssetPackBatchRequestImpl_tC82BC03D5E3AA6978BD90055586C419EDFDFFFE7* G_B3_3 = NULL;
+	{
+		// private readonly HashSet<string> _completedPackNames = new HashSet<string>();
+		HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178* L_0 = (HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178*)il2cpp_codegen_object_new(HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		HashSet_1__ctor_m780CFB8A2D23543157D1A0E1FADF781E1AF81E03(L_0, HashSet_1__ctor_m780CFB8A2D23543157D1A0E1FADF781E1AF81E03_RuntimeMethod_var);
+		__this->____completedPackNames_3 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____completedPackNames_3), (void*)L_0);
+		// internal PlayAssetPackBatchRequestImpl(IEnumerable<PlayAssetPackRequestImpl> requests)
+		PlayAssetPackBatchRequest__ctor_mCEE54CB9A40A3E76C5D569A23F65B645563701FD(__this, NULL);
+		// Requests = requests.ToDictionary(request => request.AssetPackName,
+		//     request => request as PlayAssetPackRequest);
+		RuntimeObject* L_1 = ___0_requests;
+		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_il2cpp_TypeInfo_var);
+		Func_2_t9DEF496CE413EBA35AC4F404085FC769C4A8C110* L_2 = ((U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_il2cpp_TypeInfo_var))->___U3CU3E9__1_0_1;
+		Func_2_t9DEF496CE413EBA35AC4F404085FC769C4A8C110* L_3 = L_2;
+		G_B1_0 = L_3;
+		G_B1_1 = L_1;
+		G_B1_2 = __this;
+		if (L_3)
+		{
+			G_B2_0 = L_3;
+			G_B2_1 = L_1;
+			G_B2_2 = __this;
+			goto IL_0032;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_il2cpp_TypeInfo_var);
+		U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68* L_4 = ((U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_il2cpp_TypeInfo_var))->___U3CU3E9_0;
+		Func_2_t9DEF496CE413EBA35AC4F404085FC769C4A8C110* L_5 = (Func_2_t9DEF496CE413EBA35AC4F404085FC769C4A8C110*)il2cpp_codegen_object_new(Func_2_t9DEF496CE413EBA35AC4F404085FC769C4A8C110_il2cpp_TypeInfo_var);
+		NullCheck(L_5);
+		Func_2__ctor_mAFAD46667F2E6A868B9ABB01AA3894BDA5AE5ED5(L_5, L_4, (intptr_t)((void*)U3CU3Ec_U3C_ctorU3Eb__1_0_mE7A760D25D68A37F29CDE0B5179B11E1F1843F6D_RuntimeMethod_var), NULL);
+		Func_2_t9DEF496CE413EBA35AC4F404085FC769C4A8C110* L_6 = L_5;
+		((U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_il2cpp_TypeInfo_var))->___U3CU3E9__1_0_1 = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_il2cpp_TypeInfo_var))->___U3CU3E9__1_0_1), (void*)L_6);
+		G_B2_0 = L_6;
+		G_B2_1 = G_B1_1;
+		G_B2_2 = G_B1_2;
+	}
+
+IL_0032:
+	{
+		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_il2cpp_TypeInfo_var);
+		Func_2_t5046017BD492967250D8044DFF77E6C6ED3E3B60* L_7 = ((U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_il2cpp_TypeInfo_var))->___U3CU3E9__1_1_2;
+		Func_2_t5046017BD492967250D8044DFF77E6C6ED3E3B60* L_8 = L_7;
+		G_B3_0 = L_8;
+		G_B3_1 = G_B2_0;
+		G_B3_2 = G_B2_1;
+		G_B3_3 = G_B2_2;
+		if (L_8)
+		{
+			G_B4_0 = L_8;
+			G_B4_1 = G_B2_0;
+			G_B4_2 = G_B2_1;
+			G_B4_3 = G_B2_2;
+			goto IL_0051;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_il2cpp_TypeInfo_var);
+		U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68* L_9 = ((U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_il2cpp_TypeInfo_var))->___U3CU3E9_0;
+		Func_2_t5046017BD492967250D8044DFF77E6C6ED3E3B60* L_10 = (Func_2_t5046017BD492967250D8044DFF77E6C6ED3E3B60*)il2cpp_codegen_object_new(Func_2_t5046017BD492967250D8044DFF77E6C6ED3E3B60_il2cpp_TypeInfo_var);
+		NullCheck(L_10);
+		Func_2__ctor_m753270A39E099E0F5FE99992D18F92F393880D13(L_10, L_9, (intptr_t)((void*)U3CU3Ec_U3C_ctorU3Eb__1_1_mD328C5E6AC058752AB2E50F94ED14B62448912F1_RuntimeMethod_var), NULL);
+		Func_2_t5046017BD492967250D8044DFF77E6C6ED3E3B60* L_11 = L_10;
+		((U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_il2cpp_TypeInfo_var))->___U3CU3E9__1_1_2 = L_11;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_il2cpp_TypeInfo_var))->___U3CU3E9__1_1_2), (void*)L_11);
+		G_B4_0 = L_11;
+		G_B4_1 = G_B3_1;
+		G_B4_2 = G_B3_2;
+		G_B4_3 = G_B3_3;
+	}
+
+IL_0051:
+	{
+		Dictionary_2_t3EFA4D10E3094CC14D7BC611CD307E8DF0F580B0* L_12;
+		L_12 = Enumerable_ToDictionary_TisPlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_TisString_t_TisPlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673_m4335CBE55AC7B90B955973464B6C466564A7ADAB(G_B4_2, G_B4_1, G_B4_0, Enumerable_ToDictionary_TisPlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_TisString_t_TisPlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673_m4335CBE55AC7B90B955973464B6C466564A7ADAB_RuntimeMethod_var);
+		NullCheck(G_B4_3);
+		((PlayAssetPackBatchRequest_tA71C1C7470D71B0B2D5C8F7EC28FA14EFE50A96B*)G_B4_3)->___Requests_0 = L_12;
+		Il2CppCodeGenWriteBarrier((void**)(&((PlayAssetPackBatchRequest_tA71C1C7470D71B0B2D5C8F7EC28FA14EFE50A96B*)G_B4_3)->___Requests_0), (void*)L_12);
+		// foreach (var entry in Requests)
+		RuntimeObject* L_13 = ((PlayAssetPackBatchRequest_tA71C1C7470D71B0B2D5C8F7EC28FA14EFE50A96B*)__this)->___Requests_0;
+		NullCheck(L_13);
+		RuntimeObject* L_14;
+		L_14 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<System.String,Google.Play.AssetDelivery.PlayAssetPackRequest>>::GetEnumerator() */, IEnumerable_1_t0F32D8173C2B7929A933182AF89B36AB888A90E0_il2cpp_TypeInfo_var, L_13);
+		V_0 = L_14;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0092:
+			{// begin finally (depth: 1)
+				{
+					RuntimeObject* L_15 = V_0;
+					if (!L_15)
+					{
+						goto IL_009b;
+					}
+				}
+				{
+					RuntimeObject* L_16 = V_0;
+					NullCheck(L_16);
+					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_16);
+				}
+
+IL_009b:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_0088_1;
+			}
+
+IL_0069_1:
+			{
+				// foreach (var entry in Requests)
+				RuntimeObject* L_17 = V_0;
+				NullCheck(L_17);
+				KeyValuePair_2_tFA7501048F15B1D4E16F48EE197DD55516CD1241 L_18;
+				L_18 = InterfaceFuncInvoker0< KeyValuePair_2_tFA7501048F15B1D4E16F48EE197DD55516CD1241 >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<System.Collections.Generic.KeyValuePair`2<System.String,Google.Play.AssetDelivery.PlayAssetPackRequest>>::get_Current() */, IEnumerator_1_tF66AF85EF77C19E070515ACEB4F1755D738EFBA0_il2cpp_TypeInfo_var, L_17);
+				V_1 = L_18;
+				// entry.Value.Completed += OnChildPackCompleted;
+				PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* L_19;
+				L_19 = KeyValuePair_2_get_Value_m94FF5F8624F96A75FA65134023C4D6790E1CC6E6_inline((&V_1), KeyValuePair_2_get_Value_m94FF5F8624F96A75FA65134023C4D6790E1CC6E6_RuntimeMethod_var);
+				Action_1_t6C653CA94F6E4C002C5DEFFE0C93E3DDEE648147* L_20 = (Action_1_t6C653CA94F6E4C002C5DEFFE0C93E3DDEE648147*)il2cpp_codegen_object_new(Action_1_t6C653CA94F6E4C002C5DEFFE0C93E3DDEE648147_il2cpp_TypeInfo_var);
+				NullCheck(L_20);
+				Action_1__ctor_m2234E8C8967A4E619B953FD2A12DAACC49F3AFCE(L_20, __this, (intptr_t)((void*)PlayAssetPackBatchRequestImpl_OnChildPackCompleted_m280F1771D022AE509B38B3CCB919C2224BDDBDEB_RuntimeMethod_var), NULL);
+				NullCheck(L_19);
+				VirtualActionInvoker1< Action_1_t6C653CA94F6E4C002C5DEFFE0C93E3DDEE648147* >::Invoke(9 /* System.Void Google.Play.AssetDelivery.PlayAssetPackRequest::add_Completed(System.Action`1<Google.Play.AssetDelivery.PlayAssetPackRequest>) */, L_19, L_20);
+			}
+
+IL_0088_1:
+			{
+				// foreach (var entry in Requests)
+				RuntimeObject* L_21 = V_0;
+				NullCheck(L_21);
+				bool L_22;
+				L_22 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_21);
+				if (L_22)
+				{
+					goto IL_0069_1;
+				}
+			}
+			{
+				goto IL_009c;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_009c:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl::add_Completed(System.Action`1<Google.Play.AssetDelivery.PlayAssetPackBatchRequest>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackBatchRequestImpl_add_Completed_m96B8BD2C66D6718AB5AB44D6A760E04A6470F892 (PlayAssetPackBatchRequestImpl_tC82BC03D5E3AA6978BD90055586C419EDFDFFFE7* __this, Action_1_tD3B6C9D99DD28F54511BE03819C3E5DB2144A97C* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// if (IsDone)
+		bool L_0;
+		L_0 = PlayAssetPackBatchRequest_get_IsDone_m01EACA2D80CEA4B89B15147B28E09F8BADB4F348_inline(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		// value.Invoke(this);
+		Action_1_tD3B6C9D99DD28F54511BE03819C3E5DB2144A97C* L_1 = ___0_value;
+		NullCheck(L_1);
+		Action_1_Invoke_m308E4172507880FF3970450BFC7F3198B3EC7397_inline(L_1, __this, NULL);
+		// return;
+		return;
+	}
+
+IL_0010:
+	{
+		// base.Completed += value;
+		Action_1_tD3B6C9D99DD28F54511BE03819C3E5DB2144A97C* L_2 = ___0_value;
+		PlayAssetPackBatchRequest_add_Completed_m5700D655929250387F34F1D923D5E3F3BC92DF02(__this, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl::remove_Completed(System.Action`1<Google.Play.AssetDelivery.PlayAssetPackBatchRequest>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackBatchRequestImpl_remove_Completed_m1E64146363861FC5244C6C99AA197449EA7708B0 (PlayAssetPackBatchRequestImpl_tC82BC03D5E3AA6978BD90055586C419EDFDFFFE7* __this, Action_1_tD3B6C9D99DD28F54511BE03819C3E5DB2144A97C* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// remove { base.Completed -= value; }
+		Action_1_tD3B6C9D99DD28F54511BE03819C3E5DB2144A97C* L_0 = ___0_value;
+		PlayAssetPackBatchRequest_remove_Completed_mCE8F6EF1C6F32C5FADE4A52FC2DB9151105A3B93(__this, L_0, NULL);
+		// remove { base.Completed -= value; }
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl::OnInitializedInPlayCore()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackBatchRequestImpl_OnInitializedInPlayCore_m22A3BD3B53E060C56A64E0EE139090DF2D60099E (PlayAssetPackBatchRequestImpl_tC82BC03D5E3AA6978BD90055586C419EDFDFFFE7* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDictionary_2_tCDF317ACA078B5D9B4CF3A8AD303AB5E528114CC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerable_1_tC4AE5E1F8260C2816C6100CA640B5A0FAE9AE489_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_1_tDED69DF92E01EB0D1FDEA585BC7550EC7A6E94DB_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* G_B4_0 = NULL;
+	PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* G_B3_0 = NULL;
+	{
+		// foreach (var request in Requests.Values)
+		RuntimeObject* L_0 = ((PlayAssetPackBatchRequest_tA71C1C7470D71B0B2D5C8F7EC28FA14EFE50A96B*)__this)->___Requests_0;
+		NullCheck(L_0);
+		RuntimeObject* L_1;
+		L_1 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(3 /* System.Collections.Generic.ICollection`1<TValue> System.Collections.Generic.IDictionary`2<System.String,Google.Play.AssetDelivery.PlayAssetPackRequest>::get_Values() */, IDictionary_2_tCDF317ACA078B5D9B4CF3A8AD303AB5E528114CC_il2cpp_TypeInfo_var, L_0);
+		NullCheck(L_1);
+		RuntimeObject* L_2;
+		L_2 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<Google.Play.AssetDelivery.PlayAssetPackRequest>::GetEnumerator() */, IEnumerable_1_tC4AE5E1F8260C2816C6100CA640B5A0FAE9AE489_il2cpp_TypeInfo_var, L_1);
+		V_0 = L_2;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_003b:
+			{// begin finally (depth: 1)
+				{
+					RuntimeObject* L_3 = V_0;
+					if (!L_3)
+					{
+						goto IL_0044;
+					}
+				}
+				{
+					RuntimeObject* L_4 = V_0;
+					NullCheck(L_4);
+					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_4);
+				}
+
+IL_0044:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_0031_1;
+			}
+
+IL_0013_1:
+			{
+				// foreach (var request in Requests.Values)
+				RuntimeObject* L_5 = V_0;
+				NullCheck(L_5);
+				PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* L_6;
+				L_6 = InterfaceFuncInvoker0< PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<Google.Play.AssetDelivery.PlayAssetPackRequest>::get_Current() */, IEnumerator_1_tDED69DF92E01EB0D1FDEA585BC7550EC7A6E94DB_il2cpp_TypeInfo_var, L_5);
+				// var requestImpl = request as PlayAssetPackRequestImpl;
+				// if (requestImpl == null)
+				PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* L_7 = ((PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF*)IsInstClass((RuntimeObject*)L_6, PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_il2cpp_TypeInfo_var));
+				G_B3_0 = L_7;
+				if (L_7)
+				{
+					G_B4_0 = L_7;
+					goto IL_002c_1;
+				}
+			}
+			{
+				// throw new ArgumentException("Request is not a PlayAssetPackRequestImpl");
+				ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_8 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
+				NullCheck(L_8);
+				ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465(L_8, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral299A4AE7C84F7A5E5D53339AC6305C9EBECC3838)), NULL);
+				IL2CPP_RAISE_MANAGED_EXCEPTION(L_8, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&PlayAssetPackBatchRequestImpl_OnInitializedInPlayCore_m22A3BD3B53E060C56A64E0EE139090DF2D60099E_RuntimeMethod_var)));
+			}
+
+IL_002c_1:
+			{
+				// requestImpl.OnInitializedInPlayCore();
+				NullCheck(G_B4_0);
+				PlayAssetPackRequestImpl_OnInitializedInPlayCore_mE93B3D7C4F0493C2CC17B5F810D43B3E21675EF7(G_B4_0, NULL);
+			}
+
+IL_0031_1:
+			{
+				// foreach (var request in Requests.Values)
+				RuntimeObject* L_9 = V_0;
+				NullCheck(L_9);
+				bool L_10;
+				L_10 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_9);
+				if (L_10)
+				{
+					goto IL_0013_1;
+				}
+			}
+			{
+				goto IL_0045;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0045:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl::OnInitializationErrorOccurred(Google.Play.AssetDelivery.AssetDeliveryErrorCode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackBatchRequestImpl_OnInitializationErrorOccurred_m0D8D5AE285890CFE0F4582893E7343C12CAC3768 (PlayAssetPackBatchRequestImpl_tC82BC03D5E3AA6978BD90055586C419EDFDFFFE7* __this, int32_t ___0_errorCode, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDictionary_2_tCDF317ACA078B5D9B4CF3A8AD303AB5E528114CC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerable_1_tC4AE5E1F8260C2816C6100CA640B5A0FAE9AE489_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_1_tDED69DF92E01EB0D1FDEA585BC7550EC7A6E94DB_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* G_B4_0 = NULL;
+	PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* G_B3_0 = NULL;
+	{
+		// foreach (var request in Requests.Values)
+		RuntimeObject* L_0 = ((PlayAssetPackBatchRequest_tA71C1C7470D71B0B2D5C8F7EC28FA14EFE50A96B*)__this)->___Requests_0;
+		NullCheck(L_0);
+		RuntimeObject* L_1;
+		L_1 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(3 /* System.Collections.Generic.ICollection`1<TValue> System.Collections.Generic.IDictionary`2<System.String,Google.Play.AssetDelivery.PlayAssetPackRequest>::get_Values() */, IDictionary_2_tCDF317ACA078B5D9B4CF3A8AD303AB5E528114CC_il2cpp_TypeInfo_var, L_0);
+		NullCheck(L_1);
+		RuntimeObject* L_2;
+		L_2 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<Google.Play.AssetDelivery.PlayAssetPackRequest>::GetEnumerator() */, IEnumerable_1_tC4AE5E1F8260C2816C6100CA640B5A0FAE9AE489_il2cpp_TypeInfo_var, L_1);
+		V_0 = L_2;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_003c:
+			{// begin finally (depth: 1)
+				{
+					RuntimeObject* L_3 = V_0;
+					if (!L_3)
+					{
+						goto IL_0045;
+					}
+				}
+				{
+					RuntimeObject* L_4 = V_0;
+					NullCheck(L_4);
+					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_4);
+				}
+
+IL_0045:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_0032_1;
+			}
+
+IL_0013_1:
+			{
+				// foreach (var request in Requests.Values)
+				RuntimeObject* L_5 = V_0;
+				NullCheck(L_5);
+				PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* L_6;
+				L_6 = InterfaceFuncInvoker0< PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<Google.Play.AssetDelivery.PlayAssetPackRequest>::get_Current() */, IEnumerator_1_tDED69DF92E01EB0D1FDEA585BC7550EC7A6E94DB_il2cpp_TypeInfo_var, L_5);
+				// var requestImpl = request as PlayAssetPackRequestImpl;
+				// if (requestImpl == null)
+				PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* L_7 = ((PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF*)IsInstClass((RuntimeObject*)L_6, PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_il2cpp_TypeInfo_var));
+				G_B3_0 = L_7;
+				if (L_7)
+				{
+					G_B4_0 = L_7;
+					goto IL_002c_1;
+				}
+			}
+			{
+				// throw new ArgumentException("Request is not a PlayAssetPackRequestImpl");
+				ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_8 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
+				NullCheck(L_8);
+				ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465(L_8, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral299A4AE7C84F7A5E5D53339AC6305C9EBECC3838)), NULL);
+				IL2CPP_RAISE_MANAGED_EXCEPTION(L_8, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&PlayAssetPackBatchRequestImpl_OnInitializationErrorOccurred_m0D8D5AE285890CFE0F4582893E7343C12CAC3768_RuntimeMethod_var)));
+			}
+
+IL_002c_1:
+			{
+				// requestImpl.OnErrorOccured(errorCode);
+				int32_t L_9 = ___0_errorCode;
+				NullCheck(G_B4_0);
+				PlayAssetPackRequestImpl_OnErrorOccured_mFA751C138B147A9ED2141E1C42B6648798E74F1E(G_B4_0, L_9, NULL);
+			}
+
+IL_0032_1:
+			{
+				// foreach (var request in Requests.Values)
+				RuntimeObject* L_10 = V_0;
+				NullCheck(L_10);
+				bool L_11;
+				L_11 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_10);
+				if (L_11)
+				{
+					goto IL_0013_1;
+				}
+			}
+			{
+				goto IL_0046;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0046:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl::OnChildPackCompleted(Google.Play.AssetDelivery.PlayAssetPackRequest)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackBatchRequestImpl_OnChildPackCompleted_m280F1771D022AE509B38B3CCB919C2224BDDBDEB (PlayAssetPackBatchRequestImpl_tC82BC03D5E3AA6978BD90055586C419EDFDFFFE7* __this, PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* ___0_request, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HashSet_1_Add_mF3D4CF6D0150392127D5561A87DCDEDA9A81BE5D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HashSet_1_get_Count_mAF52C76F83E02DA4DDF4B21CD4D2910BA7CF157F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ICollection_1_tEB85392496CFDE8689FB4C0C01B88E34759B0BF7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* V_0 = NULL;
+	{
+		// var requestImpl = request as PlayAssetPackRequestImpl;
+		PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* L_0 = ___0_request;
+		V_0 = ((PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF*)IsInstClass((RuntimeObject*)L_0, PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_il2cpp_TypeInfo_var));
+		// if (requestImpl == null)
+		PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* L_1 = V_0;
+		if (L_1)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		// throw new ArgumentException("Request is not a PlayAssetPackRequestImpl");
+		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_2 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
+		NullCheck(L_2);
+		ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465(L_2, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral299A4AE7C84F7A5E5D53339AC6305C9EBECC3838)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&PlayAssetPackBatchRequestImpl_OnChildPackCompleted_m280F1771D022AE509B38B3CCB919C2224BDDBDEB_RuntimeMethod_var)));
+	}
+
+IL_0015:
+	{
+		// _completedPackNames.Add(requestImpl.AssetPackName);
+		HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178* L_3 = __this->____completedPackNames_3;
+		PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* L_4 = V_0;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___AssetPackName_5;
+		NullCheck(L_3);
+		bool L_6;
+		L_6 = HashSet_1_Add_mF3D4CF6D0150392127D5561A87DCDEDA9A81BE5D(L_3, L_5, HashSet_1_Add_mF3D4CF6D0150392127D5561A87DCDEDA9A81BE5D_RuntimeMethod_var);
+		// if (_completedPackNames.Count == Requests.Count && !IsDone)
+		HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178* L_7 = __this->____completedPackNames_3;
+		NullCheck(L_7);
+		int32_t L_8;
+		L_8 = HashSet_1_get_Count_mAF52C76F83E02DA4DDF4B21CD4D2910BA7CF157F_inline(L_7, HashSet_1_get_Count_mAF52C76F83E02DA4DDF4B21CD4D2910BA7CF157F_RuntimeMethod_var);
+		RuntimeObject* L_9 = ((PlayAssetPackBatchRequest_tA71C1C7470D71B0B2D5C8F7EC28FA14EFE50A96B*)__this)->___Requests_0;
+		NullCheck(L_9);
+		int32_t L_10;
+		L_10 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.ICollection`1<System.Collections.Generic.KeyValuePair`2<System.String,Google.Play.AssetDelivery.PlayAssetPackRequest>>::get_Count() */, ICollection_1_tEB85392496CFDE8689FB4C0C01B88E34759B0BF7_il2cpp_TypeInfo_var, L_9);
+		if ((!(((uint32_t)L_8) == ((uint32_t)L_10))))
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		bool L_11;
+		L_11 = PlayAssetPackBatchRequest_get_IsDone_m01EACA2D80CEA4B89B15147B28E09F8BADB4F348_inline(__this, NULL);
+		if (L_11)
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		// IsDone = true;
+		PlayAssetPackBatchRequest_set_IsDone_mCEBAEFE0F71398AF529D026DCB12DA385E84F545_inline(__this, (bool)1, NULL);
+		// InvokeCompletedEvent();
+		PlayAssetPackBatchRequest_InvokeCompletedEvent_m8ECC0DE380EFC4588E7B4936B89D955CAF38D2D2(__this, NULL);
+	}
+
+IL_0054:
+	{
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl/<>c::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_mF32E75EE6D1B43E100010EB6F8CC789AC9FF7FBF (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68* L_0 = (U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68*)il2cpp_codegen_object_new(U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CU3Ec__ctor_m97312C17C32200D50A0481E3F6A76803531F0501(L_0, NULL);
+		((U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_il2cpp_TypeInfo_var))->___U3CU3E9_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68_il2cpp_TypeInfo_var))->___U3CU3E9_0), (void*)L_0);
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl/<>c::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m97312C17C32200D50A0481E3F6A76803531F0501 (U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.String Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl/<>c::<.ctor>b__1_0(Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* U3CU3Ec_U3C_ctorU3Eb__1_0_mE7A760D25D68A37F29CDE0B5179B11E1F1843F6D (U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68* __this, PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* ___0_request, const RuntimeMethod* method) 
+{
+	{
+		// Requests = requests.ToDictionary(request => request.AssetPackName,
+		PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* L_0 = ___0_request;
+		NullCheck(L_0);
+		String_t* L_1 = L_0->___AssetPackName_5;
+		return L_1;
+	}
+}
+// Google.Play.AssetDelivery.PlayAssetPackRequest Google.Play.AssetDelivery.Internal.PlayAssetPackBatchRequestImpl/<>c::<.ctor>b__1_1(Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* U3CU3Ec_U3C_ctorU3Eb__1_1_mD328C5E6AC058752AB2E50F94ED14B62448912F1 (U3CU3Ec_tB5E866956FF6CDEF8BB1C3845CDC191B6BB4AF68* __this, PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* ___0_request, const RuntimeMethod* method) 
+{
+	{
+		// request => request as PlayAssetPackRequest);
+		PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* L_0 = ___0_request;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::.ctor(System.String,Google.Play.AssetDelivery.Internal.AssetPackManager,Google.Play.AssetDelivery.Internal.PlayRequestRepository)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackRequestImpl__ctor_m134F94B05B40066E882C528C196F9C69D7366D56 (PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* __this, String_t* ___0_assetPackName, AssetPackManager_t4FE399402B3A856645FFF2B7AAAC737A7FC30454* ___1_assetPackManager, PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* ___2_requestRepository, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3C_ctorU3Eb__6_0_m986DA32E5B57F0450DA41F80957FCFAD593C4603_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B2_0 = NULL;
+	PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* G_B2_1 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B1_0 = NULL;
+	PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* G_B1_1 = NULL;
+	{
+		// private Action _onInitializedInPlayCore = delegate { };
+		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48_il2cpp_TypeInfo_var);
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_0 = ((U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48_il2cpp_TypeInfo_var))->___U3CU3E9__6_0_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = L_0;
+		G_B1_0 = L_1;
+		G_B1_1 = __this;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			G_B2_1 = __this;
+			goto IL_0020;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48_il2cpp_TypeInfo_var);
+		U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48* L_2 = ((U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48_il2cpp_TypeInfo_var))->___U3CU3E9_0;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_3 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_3, L_2, (intptr_t)((void*)U3CU3Ec_U3C_ctorU3Eb__6_0_m986DA32E5B57F0450DA41F80957FCFAD593C4603_RuntimeMethod_var), NULL);
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_4 = L_3;
+		((U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48_il2cpp_TypeInfo_var))->___U3CU3E9__6_0_1 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48_il2cpp_TypeInfo_var))->___U3CU3E9__6_0_1), (void*)L_4);
+		G_B2_0 = L_4;
+		G_B2_1 = G_B1_1;
+	}
+
+IL_0020:
+	{
+		NullCheck(G_B2_1);
+		G_B2_1->____onInitializedInPlayCore_10 = G_B2_0;
+		Il2CppCodeGenWriteBarrier((void**)(&G_B2_1->____onInitializedInPlayCore_10), (void*)G_B2_0);
+		// public PlayAssetPackRequestImpl(string assetPackName, AssetPackManager assetPackManager,
+		//     PlayRequestRepository requestRepository)
+		PlayAssetPackRequest__ctor_m59C53626C3110AB3D4848454DB9A36208D9FFAFB(__this, NULL);
+		// AssetPackName = assetPackName;
+		String_t* L_5 = ___0_assetPackName;
+		__this->___AssetPackName_5 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___AssetPackName_5), (void*)L_5);
+		// _assetPackManager = assetPackManager;
+		AssetPackManager_t4FE399402B3A856645FFF2B7AAAC737A7FC30454* L_6 = ___1_assetPackManager;
+		__this->____assetPackManager_7 = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____assetPackManager_7), (void*)L_6);
+		// _requestRepository = requestRepository;
+		PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* L_7 = ___2_requestRepository;
+		__this->____requestRepository_9 = L_7;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____requestRepository_9), (void*)L_7);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::add_Completed(System.Action`1<Google.Play.AssetDelivery.PlayAssetPackRequest>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackRequestImpl_add_Completed_mAE8371535DCC2E727EFB2C6E443146B5540C65AD (PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* __this, Action_1_t6C653CA94F6E4C002C5DEFFE0C93E3DDEE648147* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// if (IsDone)
+		bool L_0;
+		L_0 = PlayAssetPackRequest_get_IsDone_m839704DF8C10B15FF3C7C7BCED35EAABC5013EA1_inline(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		// value.Invoke(this);
+		Action_1_t6C653CA94F6E4C002C5DEFFE0C93E3DDEE648147* L_1 = ___0_value;
+		NullCheck(L_1);
+		Action_1_Invoke_m56507AC1998B64411A148F6BD8A3EDA1D83D09A7_inline(L_1, __this, NULL);
+		// return;
+		return;
+	}
+
+IL_0010:
+	{
+		// base.Completed += value;
+		Action_1_t6C653CA94F6E4C002C5DEFFE0C93E3DDEE648147* L_2 = ___0_value;
+		PlayAssetPackRequest_add_Completed_m6F457A051326A7C4F14E1635669DFC6651BAD5C5(__this, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::remove_Completed(System.Action`1<Google.Play.AssetDelivery.PlayAssetPackRequest>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackRequestImpl_remove_Completed_mA6D3EFF2D9D0B84B4A3A1A3317A2993E5885DEB7 (PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* __this, Action_1_t6C653CA94F6E4C002C5DEFFE0C93E3DDEE648147* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// remove { base.Completed -= value; }
+		Action_1_t6C653CA94F6E4C002C5DEFFE0C93E3DDEE648147* L_0 = ___0_value;
+		PlayAssetPackRequest_remove_Completed_m8DC9172EC27B591842A44D040EC1AE489B4ECF9F(__this, L_0, NULL);
+		// remove { base.Completed -= value; }
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::UpdateState(Google.Play.AssetDelivery.AssetDeliveryStatus,System.Int64,System.Int64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackRequestImpl_UpdateState_m040CA462BA4563614FA1902A88B3D29EFE1A69E8 (PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* __this, int32_t ___0_status, int64_t ___1_bytesDownloaded, int64_t ___2_totalBytesToDownload, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	int32_t G_B5_0 = 0;
+	PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* G_B7_0 = NULL;
+	PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* G_B6_0 = NULL;
+	float G_B8_0 = 0.0f;
+	PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* G_B8_1 = NULL;
+	{
+		// if (totalBytesToDownload == 0L)
+		int64_t L_0 = ___2_totalBytesToDownload;
+		if (L_0)
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		// bool finishedDownloading = status == AssetDeliveryStatus.Available
+		//                            || status == AssetDeliveryStatus.Loading
+		//                            || status == AssetDeliveryStatus.Loaded;
+		int32_t L_1 = ___0_status;
+		if ((((int32_t)L_1) == ((int32_t)2)))
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		int32_t L_2 = ___0_status;
+		if ((((int32_t)L_2) == ((int32_t)3)))
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		int32_t L_3 = ___0_status;
+		G_B5_0 = ((((int32_t)L_3) == ((int32_t)4))? 1 : 0);
+		goto IL_0012;
+	}
+
+IL_0011:
+	{
+		G_B5_0 = 1;
+	}
+
+IL_0012:
+	{
+		V_0 = (bool)G_B5_0;
+		// DownloadProgress = finishedDownloading ? 1f : 0f;
+		bool L_4 = V_0;
+		G_B6_0 = __this;
+		if (L_4)
+		{
+			G_B7_0 = __this;
+			goto IL_001e;
+		}
+	}
+	{
+		G_B8_0 = (0.0f);
+		G_B8_1 = G_B6_0;
+		goto IL_0023;
+	}
+
+IL_001e:
+	{
+		G_B8_0 = (1.0f);
+		G_B8_1 = G_B7_0;
+	}
+
+IL_0023:
+	{
+		NullCheck(G_B8_1);
+		PlayAssetPackRequest_set_DownloadProgress_m76595EB101B8FBDE71A3C905DF2BBFE384A9443A_inline(G_B8_1, G_B8_0, NULL);
+		goto IL_0035;
+	}
+
+IL_002a:
+	{
+		// DownloadProgress = bytesDownloaded / (float) totalBytesToDownload;
+		int64_t L_5 = ___1_bytesDownloaded;
+		int64_t L_6 = ___2_totalBytesToDownload;
+		PlayAssetPackRequest_set_DownloadProgress_m76595EB101B8FBDE71A3C905DF2BBFE384A9443A_inline(__this, ((float)(((float)L_5)/((float)L_6))), NULL);
+	}
+
+IL_0035:
+	{
+		// Status = status;
+		int32_t L_7 = ___0_status;
+		PlayAssetPackRequest_set_Status_m39B276A4C8F828D81D4838877A86A33053C47032_inline(__this, L_7, NULL);
+		// if (Status == AssetDeliveryStatus.Available)
+		int32_t L_8;
+		L_8 = PlayAssetPackRequest_get_Status_mF0E848D2064C9B37DA90B23F602AD2D80B7AE763_inline(__this, NULL);
+		if ((!(((uint32_t)L_8) == ((uint32_t)2))))
+		{
+			goto IL_004b;
+		}
+	}
+	{
+		// OnPackAvailable();
+		PlayAssetPackRequestImpl_OnPackAvailable_mA94E56CC69CCD5381AB50EC13BDDC71DA6DE9103(__this, NULL);
+	}
+
+IL_004b:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::OnInitializedInPlayCore()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackRequestImpl_OnInitializedInPlayCore_mE93B3D7C4F0493C2CC17B5F810D43B3E21675EF7 (PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayAssetPackRequestImpl_U3COnInitializedInPlayCoreU3Eb__11_0_mA97C0088DFD0266FEDDE500431143F07F70E8FB9_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// PlayCoreEventHandler.HandleEvent(() =>
+		// {
+		//     _initializedInPlayCore = true;
+		//     _onInitializedInPlayCore();
+		// });
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_0 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_0, __this, (intptr_t)((void*)PlayAssetPackRequestImpl_U3COnInitializedInPlayCoreU3Eb__11_0_mA97C0088DFD0266FEDDE500431143F07F70E8FB9_RuntimeMethod_var), NULL);
+		PlayCoreEventHandler_HandleEvent_m6344840A759B6C257811B9B6F25E457CF2F610C1(L_0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::OnPackAvailable()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackRequestImpl_OnPackAvailable_mA94E56CC69CCD5381AB50EC13BDDC71DA6DE9103 (PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* __this, const RuntimeMethod* method) 
+{
+	{
+		// Status = AssetDeliveryStatus.Available;
+		PlayAssetPackRequest_set_Status_m39B276A4C8F828D81D4838877A86A33053C47032_inline(__this, 2, NULL);
+		// DownloadProgress = 1f;
+		PlayAssetPackRequest_set_DownloadProgress_m76595EB101B8FBDE71A3C905DF2BBFE384A9443A_inline(__this, (1.0f), NULL);
+		// if (!IsDone)
+		bool L_0;
+		L_0 = PlayAssetPackRequest_get_IsDone_m839704DF8C10B15FF3C7C7BCED35EAABC5013EA1_inline(__this, NULL);
+		if (L_0)
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		// IsDone = true;
+		PlayAssetPackRequest_set_IsDone_mF85B396480802F1BB043D86C265629D9B7B94E06_inline(__this, (bool)1, NULL);
+		// InvokeCompletedEvent();
+		PlayAssetPackRequest_InvokeCompletedEvent_m421C696CEBE00EBC12579DFC5CCD3D316020456C(__this, NULL);
+	}
+
+IL_0027:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::OnErrorOccured(Google.Play.AssetDelivery.AssetDeliveryErrorCode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackRequestImpl_OnErrorOccured_mFA751C138B147A9ED2141E1C42B6648798E74F1E (PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* __this, int32_t ___0_errorCode, const RuntimeMethod* method) 
+{
+	{
+		// if (IsDone)
+		bool L_0;
+		L_0 = PlayAssetPackRequest_get_IsDone_m839704DF8C10B15FF3C7C7BCED35EAABC5013EA1_inline(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0009:
+	{
+		// IsDone = true;
+		PlayAssetPackRequest_set_IsDone_mF85B396480802F1BB043D86C265629D9B7B94E06_inline(__this, (bool)1, NULL);
+		// Error = errorCode;
+		int32_t L_1 = ___0_errorCode;
+		PlayAssetPackRequest_set_Error_m768879DE94B4BB96262A72DD4BCB8179D4AE5C54_inline(__this, L_1, NULL);
+		// Status = AssetDeliveryStatus.Failed;
+		PlayAssetPackRequest_set_Status_m39B276A4C8F828D81D4838877A86A33053C47032_inline(__this, 5, NULL);
+		// InvokeCompletedEvent();
+		PlayAssetPackRequest_InvokeCompletedEvent_m421C696CEBE00EBC12579DFC5CCD3D316020456C(__this, NULL);
+		// }
+		return;
+	}
+}
+// UnityEngine.AssetBundleCreateRequest Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::LoadAssetBundleAsync(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AssetBundleCreateRequest_t73B8714B9459A01540E091C3770A408E67188CF6* PlayAssetPackRequestImpl_LoadAssetBundleAsync_m602AC2192FCF657C695EC17955EFB1011F16837C (PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* __this, String_t* ___0_assetBundlePath, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA68377FA6C791A6AF1D252BAA114669071DA16E8);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF5612CA011CD9188E0C60D3ACEE2FEE52DC4900B);
+		s_Il2CppMethodInitialized = true;
+	}
+	AssetLocation_t4E83832DC33FFD7DEF9067BCC90C0E2C03D8A5C0* V_0 = NULL;
+	{
+		// var assetLocation = GetAssetLocation(assetBundlePath);
+		String_t* L_0 = ___0_assetBundlePath;
+		AssetLocation_t4E83832DC33FFD7DEF9067BCC90C0E2C03D8A5C0* L_1;
+		L_1 = VirtualFuncInvoker1< AssetLocation_t4E83832DC33FFD7DEF9067BCC90C0E2C03D8A5C0*, String_t* >::Invoke(11 /* Google.Play.AssetDelivery.AssetLocation Google.Play.AssetDelivery.PlayAssetPackRequest::GetAssetLocation(System.String) */, __this, L_0);
+		V_0 = L_1;
+		// if (assetLocation == null)
+		AssetLocation_t4E83832DC33FFD7DEF9067BCC90C0E2C03D8A5C0* L_2 = V_0;
+		if (L_2)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		// if (AssetPackFolderName.Equals(assetBundlePath.Split('/')[0]))
+		String_t* L_3 = ___0_assetBundlePath;
+		NullCheck(L_3);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4;
+		L_4 = String_Split_m9530B73D02054692283BF35C3A27C8F2230946F4(L_3, ((int32_t)47), 0, NULL);
+		NullCheck(L_4);
+		int32_t L_5 = 0;
+		String_t* L_6 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_5));
+		NullCheck(_stringLiteralF5612CA011CD9188E0C60D3ACEE2FEE52DC4900B);
+		bool L_7;
+		L_7 = String_Equals_mCD5F35DEDCAFE51ACD4E033726FC2EF8DF7E9B4D(_stringLiteralF5612CA011CD9188E0C60D3ACEE2FEE52DC4900B, L_6, NULL);
+		if (!L_7)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		// Debug.LogError("Failed to find the asset at path {0} within the asset pack, possibly because the" +
+		//                " path begins with \"assetpack\".");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteralA68377FA6C791A6AF1D252BAA114669071DA16E8, NULL);
+	}
+
+IL_002c:
+	{
+		// return null;
+		return (AssetBundleCreateRequest_t73B8714B9459A01540E091C3770A408E67188CF6*)NULL;
+	}
+
+IL_002e:
+	{
+		// return AssetBundle.LoadFromFileAsync(assetLocation.Path, /* crc= */ 0, assetLocation.Offset);
+		AssetLocation_t4E83832DC33FFD7DEF9067BCC90C0E2C03D8A5C0* L_8 = V_0;
+		NullCheck(L_8);
+		String_t* L_9;
+		L_9 = AssetLocation_get_Path_mD0FFF67F07E8B24895D6E2CF671934BBDE37174A_inline(L_8, NULL);
+		AssetLocation_t4E83832DC33FFD7DEF9067BCC90C0E2C03D8A5C0* L_10 = V_0;
+		NullCheck(L_10);
+		uint64_t L_11;
+		L_11 = AssetLocation_get_Offset_m24DB27A05BFED41D9E073A756E4743EFD92547D2_inline(L_10, NULL);
+		AssetBundleCreateRequest_t73B8714B9459A01540E091C3770A408E67188CF6* L_12;
+		L_12 = AssetBundle_LoadFromFileAsync_mF5C6B1FF491A8B654AA72057F3EDE17EEBC6B000(L_9, 0, L_11, NULL);
+		return L_12;
+	}
+}
+// Google.Play.AssetDelivery.AssetLocation Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::GetAssetLocation(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AssetLocation_t4E83832DC33FFD7DEF9067BCC90C0E2C03D8A5C0* PlayAssetPackRequestImpl_GetAssetLocation_m4FD9695A0770BAE43E4D82D5D113B1B4308267CC (PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* __this, String_t* ___0_assetPath, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF5612CA011CD9188E0C60D3ACEE2FEE52DC4900B);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	{
+		// var fullAssetPath = Path.Combine(AssetPackFolderName, assetPath);
+		String_t* L_0 = ___0_assetPath;
+		il2cpp_codegen_runtime_class_init_inline(Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
+		String_t* L_1;
+		L_1 = Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE(_stringLiteralF5612CA011CD9188E0C60D3ACEE2FEE52DC4900B, L_0, NULL);
+		V_0 = L_1;
+		// return _assetPackManager.GetAssetLocation(AssetPackName, fullAssetPath);
+		AssetPackManager_t4FE399402B3A856645FFF2B7AAAC737A7FC30454* L_2 = __this->____assetPackManager_7;
+		String_t* L_3 = __this->___AssetPackName_5;
+		String_t* L_4 = V_0;
+		NullCheck(L_2);
+		AssetLocation_t4E83832DC33FFD7DEF9067BCC90C0E2C03D8A5C0* L_5;
+		L_5 = AssetPackManager_GetAssetLocation_m90FC48DC9FFBA8812496A999B54A1767CA2557C4(L_2, L_3, L_4, NULL);
+		return L_5;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::AttemptCancel()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackRequestImpl_AttemptCancel_mD3DE68DE8D1D22DF25704D114D9B429D82EB3178 (PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* __this, const RuntimeMethod* method) 
+{
+	{
+		// if (IsDone || Status == AssetDeliveryStatus.Loaded)
+		bool L_0;
+		L_0 = PlayAssetPackRequest_get_IsDone_m839704DF8C10B15FF3C7C7BCED35EAABC5013EA1_inline(__this, NULL);
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		int32_t L_1;
+		L_1 = PlayAssetPackRequest_get_Status_mF0E848D2064C9B37DA90B23F602AD2D80B7AE763_inline(__this, NULL);
+		if ((!(((uint32_t)L_1) == ((uint32_t)4))))
+		{
+			goto IL_0012;
+		}
+	}
+
+IL_0011:
+	{
+		// return;
+		return;
+	}
+
+IL_0012:
+	{
+		// if (_initializedInPlayCore)
+		bool L_2 = __this->____initializedInPlayCore_8;
+		if (!L_2)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		// CancelPlayCore();
+		PlayAssetPackRequestImpl_CancelPlayCore_m0BED57162CF3B74A804C61BC3B4A86B76DF1C7B2(__this, NULL);
+		goto IL_0028;
+	}
+
+IL_0022:
+	{
+		// DeferCancelPlayCore();
+		PlayAssetPackRequestImpl_DeferCancelPlayCore_m0AFDFD01DF84D5E241503F5C720527D1380511A3(__this, NULL);
+	}
+
+IL_0028:
+	{
+		// OnErrorOccured(AssetDeliveryErrorCode.Canceled);
+		PlayAssetPackRequestImpl_OnErrorOccured_mFA751C138B147A9ED2141E1C42B6648798E74F1E(__this, ((int32_t)9), NULL);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::CancelPlayCore()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackRequestImpl_CancelPlayCore_m0BED57162CF3B74A804C61BC3B4A86B76DF1C7B2 (PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// _assetPackManager.Cancel(AssetPackName).Dispose();
+		AssetPackManager_t4FE399402B3A856645FFF2B7AAAC737A7FC30454* L_0 = __this->____assetPackManager_7;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)1);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = L_1;
+		String_t* L_3 = __this->___AssetPackName_5;
+		NullCheck(L_2);
+		ArrayElementTypeCheck (L_2, L_3);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_3);
+		NullCheck(L_0);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_4;
+		L_4 = AssetPackManager_Cancel_m77565CDDA07F3B1B172C97AAAA984AF95E474D2E(L_0, L_2, NULL);
+		NullCheck(L_4);
+		AndroidJavaObject_Dispose_m2B1593C20B3CE1C8FF95982F638F50985F9DD9E6(L_4, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::DeferCancelPlayCore()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackRequestImpl_DeferCancelPlayCore_m0AFDFD01DF84D5E241503F5C720527D1380511A3 (PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayAssetPackRequestImpl_U3CDeferCancelPlayCoreU3Eb__18_0_m754B11C1ADFA91E89C1C2489A1CE8829DE652A7A_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// _onInitializedInPlayCore = () =>
+		// {
+		//     // Only cancel if a new request hasn't been started, to avoid cancelling the new request.
+		//     if (_requestRepository.ContainsRequest(AssetPackName))
+		//     {
+		//         Debug.LogFormat("Skip canceling {0}", AssetPackName);
+		//     }
+		//     else
+		//     {
+		//         CancelPlayCore();
+		//     }
+		// };
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_0 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_0, __this, (intptr_t)((void*)PlayAssetPackRequestImpl_U3CDeferCancelPlayCoreU3Eb__18_0_m754B11C1ADFA91E89C1C2489A1CE8829DE652A7A_RuntimeMethod_var), NULL);
+		__this->____onInitializedInPlayCore_10 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____onInitializedInPlayCore_10), (void*)L_0);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::<OnInitializedInPlayCore>b__11_0()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackRequestImpl_U3COnInitializedInPlayCoreU3Eb__11_0_mA97C0088DFD0266FEDDE500431143F07F70E8FB9 (PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* __this, const RuntimeMethod* method) 
+{
+	{
+		// _initializedInPlayCore = true;
+		__this->____initializedInPlayCore_8 = (bool)1;
+		// _onInitializedInPlayCore();
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_0 = __this->____onInitializedInPlayCore_10;
+		NullCheck(L_0);
+		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(L_0, NULL);
+		// });
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl::<DeferCancelPlayCore>b__18_0()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayAssetPackRequestImpl_U3CDeferCancelPlayCoreU3Eb__18_0_m754B11C1ADFA91E89C1C2489A1CE8829DE652A7A (PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9AA87AA4A420192EA8D51DBF578A4BD5886937AF);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (_requestRepository.ContainsRequest(AssetPackName))
+		PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* L_0 = __this->____requestRepository_9;
+		String_t* L_1 = __this->___AssetPackName_5;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = PlayRequestRepository_ContainsRequest_m270CE47AA6A796D60AC8C3D7ACCAD0A5157BB4B1(L_0, L_1, NULL);
+		if (!L_2)
+		{
+			goto IL_002d;
+		}
+	}
+	{
+		// Debug.LogFormat("Skip canceling {0}", AssetPackName);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_4 = L_3;
+		String_t* L_5 = __this->___AssetPackName_5;
+		NullCheck(L_4);
+		ArrayElementTypeCheck (L_4, L_5);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_5);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogFormat_mD555556327B42AA3482D077EFAEB16B0AFDF72C7(_stringLiteral9AA87AA4A420192EA8D51DBF578A4BD5886937AF, L_4, NULL);
+		return;
+	}
+
+IL_002d:
+	{
+		// CancelPlayCore();
+		PlayAssetPackRequestImpl_CancelPlayCore_m0BED57162CF3B74A804C61BC3B4A86B76DF1C7B2(__this, NULL);
+		// };
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl/<>c::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_mEB1F11D7EA49CDA9B8834E430365FAA3D7F361D3 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48* L_0 = (U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48*)il2cpp_codegen_object_new(U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CU3Ec__ctor_mFB8E51D2CEF80DB4B6E8564B27B55F7F94E23881(L_0, NULL);
+		((U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48_il2cpp_TypeInfo_var))->___U3CU3E9_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48_il2cpp_TypeInfo_var))->___U3CU3E9_0), (void*)L_0);
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl/<>c::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mFB8E51D2CEF80DB4B6E8564B27B55F7F94E23881 (U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl/<>c::<.ctor>b__6_0()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3C_ctorU3Eb__6_0_m986DA32E5B57F0450DA41F80957FCFAD593C4603 (U3CU3Ec_t34B931832B606513C5C4F6789E09F930FAD7EF48* __this, const RuntimeMethod* method) 
+{
+	{
+		// private Action _onInitializedInPlayCore = delegate { };
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Google.Play.AssetDelivery.AssetDeliveryErrorCode Google.Play.AssetDelivery.Internal.PlayCoreTranslator::TranslatePlayCoreErrorCode(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PlayCoreTranslator_TranslatePlayCoreErrorCode_mBE37A0C9CC75E81F98D5B1909F1C2E4A7FF0A896 (int32_t ___0_assetPackErrorCode, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_TryGetValue_mEB72BB68172FBF3D2454470E9119233F693B92BE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// if (!PlayCoreToAssetDeliveryErrors.TryGetValue(assetPackErrorCode, out translatedErrorCode))
+		il2cpp_codegen_runtime_class_init_inline(PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_il2cpp_TypeInfo_var);
+		Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13* L_0 = ((PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_StaticFields*)il2cpp_codegen_static_fields_for(PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_il2cpp_TypeInfo_var))->___PlayCoreToAssetDeliveryErrors_0;
+		int32_t L_1 = ___0_assetPackErrorCode;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_TryGetValue_mEB72BB68172FBF3D2454470E9119233F693B92BE(L_0, L_1, (&V_0), Dictionary_2_TryGetValue_mEB72BB68172FBF3D2454470E9119233F693B92BE_RuntimeMethod_var);
+		if (L_2)
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		// throw new NotImplementedException("Unexpected error code: " + assetPackErrorCode);
+		String_t* L_3;
+		L_3 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&___0_assetPackErrorCode), NULL);
+		String_t* L_4;
+		L_4 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral82DEFBE43B7B4EFE46CF0D145B40EDFE6776E216)), L_3, NULL);
+		NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8* L_5 = (NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8_il2cpp_TypeInfo_var)));
+		NullCheck(L_5);
+		NotImplementedException__ctor_m8339D1A685E8D77CAC9D3260C06B38B5C7CA7742(L_5, L_4, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_5, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&PlayCoreTranslator_TranslatePlayCoreErrorCode_mBE37A0C9CC75E81F98D5B1909F1C2E4A7FF0A896_RuntimeMethod_var)));
+	}
+
+IL_0026:
+	{
+		// return translatedErrorCode;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Google.Play.AssetDelivery.AssetDeliveryStatus Google.Play.AssetDelivery.Internal.PlayCoreTranslator::TranslatePlayCorePackStatus(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PlayCoreTranslator_TranslatePlayCorePackStatus_m07E1DCFA9B90DAEFF6C1C2A3968ED4FE02F0E08E (int32_t ___0_assetPackStatus, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_TryGetValue_m5FEA856EA377318DEFB13F5DB9A8D43C4FEA1B49_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// if (!PlayCoreToAssetDeliveryStatuses.TryGetValue(assetPackStatus, out translatedStatus))
+		il2cpp_codegen_runtime_class_init_inline(PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_il2cpp_TypeInfo_var);
+		Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC* L_0 = ((PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_StaticFields*)il2cpp_codegen_static_fields_for(PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_il2cpp_TypeInfo_var))->___PlayCoreToAssetDeliveryStatuses_1;
+		int32_t L_1 = ___0_assetPackStatus;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_TryGetValue_m5FEA856EA377318DEFB13F5DB9A8D43C4FEA1B49(L_0, L_1, (&V_0), Dictionary_2_TryGetValue_m5FEA856EA377318DEFB13F5DB9A8D43C4FEA1B49_RuntimeMethod_var);
+		if (L_2)
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		// throw new NotImplementedException("Unexpected pack status: " + assetPackStatus);
+		String_t* L_3;
+		L_3 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&___0_assetPackStatus), NULL);
+		String_t* L_4;
+		L_4 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral4195BE4867D6E78FB923052AF34A532E9C8567A9)), L_3, NULL);
+		NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8* L_5 = (NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8_il2cpp_TypeInfo_var)));
+		NullCheck(L_5);
+		NotImplementedException__ctor_m8339D1A685E8D77CAC9D3260C06B38B5C7CA7742(L_5, L_4, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_5, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&PlayCoreTranslator_TranslatePlayCorePackStatus_m07E1DCFA9B90DAEFF6C1C2A3968ED4FE02F0E08E_RuntimeMethod_var)));
+	}
+
+IL_0026:
+	{
+		// return translatedStatus;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayCoreTranslator::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayCoreTranslator__cctor_mB8C5E3949390AC579819C5C71EBC3DCEE0C5437F (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_m955026197BD6540FDD6C9B0A7A4AD04F01833700_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_m52BE9EF2EE12124F0FA27368384783DB85BE8535_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_m94C607216DEEE513A4B3A0466DC74C2377C25A73_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// private static readonly Dictionary<int, AssetDeliveryErrorCode> PlayCoreToAssetDeliveryErrors =
+		//     new Dictionary<int, AssetDeliveryErrorCode>
+		//     {
+		//         {AssetPackErrorCode.NoError, AssetDeliveryErrorCode.NoError},
+		//         {AssetPackErrorCode.AppUnavailable, AssetDeliveryErrorCode.AppUnavailable},
+		//         {AssetPackErrorCode.PackUnavailable, AssetDeliveryErrorCode.BundleUnavailable},
+		//         {AssetPackErrorCode.InvalidRequest, AssetDeliveryErrorCode.InternalError},
+		//         {AssetPackErrorCode.ApiNotAvailable, AssetDeliveryErrorCode.InternalError},
+		//         {AssetPackErrorCode.DownloadNotFound, AssetDeliveryErrorCode.InternalError},
+		//         {AssetPackErrorCode.InternalError, AssetDeliveryErrorCode.InternalError},
+		//         {AssetPackErrorCode.NetworkError, AssetDeliveryErrorCode.NetworkError},
+		//         {AssetPackErrorCode.AccessDenied, AssetDeliveryErrorCode.AccessDenied},
+		//         {AssetPackErrorCode.InsufficientStorage, AssetDeliveryErrorCode.InsufficientStorage},
+		//         {AssetPackErrorCode.PlayStoreNotFound, AssetDeliveryErrorCode.PlayStoreNotFound},
+		//         {AssetPackErrorCode.NetworkUnrestricted, AssetDeliveryErrorCode.NetworkUnrestricted},
+		//         {AssetPackErrorCode.AppNotOwned, AssetDeliveryErrorCode.AppNotOwned},
+		//     };
+		Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13* L_0 = (Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13*)il2cpp_codegen_object_new(Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		Dictionary_2__ctor_m52BE9EF2EE12124F0FA27368384783DB85BE8535(L_0, Dictionary_2__ctor_m52BE9EF2EE12124F0FA27368384783DB85BE8535_RuntimeMethod_var);
+		Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13* L_1 = L_0;
+		NullCheck(L_1);
+		Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF(L_1, 0, 0, Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF_RuntimeMethod_var);
+		Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13* L_2 = L_1;
+		NullCheck(L_2);
+		Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF(L_2, (-1), 1, Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF_RuntimeMethod_var);
+		Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13* L_3 = L_2;
+		NullCheck(L_3);
+		Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF(L_3, ((int32_t)-2), 2, Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF_RuntimeMethod_var);
+		Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13* L_4 = L_3;
+		NullCheck(L_4);
+		Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF(L_4, ((int32_t)-3), ((int32_t)10), Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF_RuntimeMethod_var);
+		Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13* L_5 = L_4;
+		NullCheck(L_5);
+		Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF(L_5, ((int32_t)-5), ((int32_t)10), Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF_RuntimeMethod_var);
+		Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13* L_6 = L_5;
+		NullCheck(L_6);
+		Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF(L_6, ((int32_t)-4), ((int32_t)10), Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF_RuntimeMethod_var);
+		Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13* L_7 = L_6;
+		NullCheck(L_7);
+		Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF(L_7, ((int32_t)-100), ((int32_t)10), Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF_RuntimeMethod_var);
+		Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13* L_8 = L_7;
+		NullCheck(L_8);
+		Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF(L_8, ((int32_t)-6), 3, Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF_RuntimeMethod_var);
+		Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13* L_9 = L_8;
+		NullCheck(L_9);
+		Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF(L_9, ((int32_t)-7), 4, Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF_RuntimeMethod_var);
+		Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13* L_10 = L_9;
+		NullCheck(L_10);
+		Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF(L_10, ((int32_t)-10), 7, Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF_RuntimeMethod_var);
+		Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13* L_11 = L_10;
+		NullCheck(L_11);
+		Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF(L_11, ((int32_t)-11), ((int32_t)11), Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF_RuntimeMethod_var);
+		Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13* L_12 = L_11;
+		NullCheck(L_12);
+		Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF(L_12, ((int32_t)-12), ((int32_t)12), Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF_RuntimeMethod_var);
+		Dictionary_2_t6E50E13E492C05A63EC90DBC5AA0A55F20CCBF13* L_13 = L_12;
+		NullCheck(L_13);
+		Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF(L_13, ((int32_t)-13), ((int32_t)13), Dictionary_2_Add_m44E380B9DDC8AC1220E5044EEE365A076B0E92CF_RuntimeMethod_var);
+		((PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_StaticFields*)il2cpp_codegen_static_fields_for(PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_il2cpp_TypeInfo_var))->___PlayCoreToAssetDeliveryErrors_0 = L_13;
+		Il2CppCodeGenWriteBarrier((void**)(&((PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_StaticFields*)il2cpp_codegen_static_fields_for(PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_il2cpp_TypeInfo_var))->___PlayCoreToAssetDeliveryErrors_0), (void*)L_13);
+		// private static readonly Dictionary<int, AssetDeliveryStatus> PlayCoreToAssetDeliveryStatuses
+		//     =
+		//     new Dictionary<int, AssetDeliveryStatus>
+		//     {
+		//         // Unity Asset Delivery requests are started immediately, so their status is Pending even if play core
+		//         // has not yet set its status to Pending.
+		//         {AssetPackStatus.NotInstalled, AssetDeliveryStatus.Pending},
+		//         {AssetPackStatus.Pending, AssetDeliveryStatus.Pending},
+		//         {AssetPackStatus.Downloading, AssetDeliveryStatus.Retrieving},
+		//         {AssetPackStatus.Transferring, AssetDeliveryStatus.Retrieving},
+		//         {AssetPackStatus.Completed, AssetDeliveryStatus.Available},
+		//         {AssetPackStatus.WaitingForWifi, AssetDeliveryStatus.WaitingForWifi},
+		//         {AssetPackStatus.Failed, AssetDeliveryStatus.Failed},
+		//         {AssetPackStatus.Unknown, AssetDeliveryStatus.Failed},
+		//         {AssetPackStatus.Canceled, AssetDeliveryStatus.Failed},
+		//     };
+		Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC* L_14 = (Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC*)il2cpp_codegen_object_new(Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC_il2cpp_TypeInfo_var);
+		NullCheck(L_14);
+		Dictionary_2__ctor_m94C607216DEEE513A4B3A0466DC74C2377C25A73(L_14, Dictionary_2__ctor_m94C607216DEEE513A4B3A0466DC74C2377C25A73_RuntimeMethod_var);
+		Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC* L_15 = L_14;
+		NullCheck(L_15);
+		Dictionary_2_Add_m955026197BD6540FDD6C9B0A7A4AD04F01833700(L_15, 8, 0, Dictionary_2_Add_m955026197BD6540FDD6C9B0A7A4AD04F01833700_RuntimeMethod_var);
+		Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC* L_16 = L_15;
+		NullCheck(L_16);
+		Dictionary_2_Add_m955026197BD6540FDD6C9B0A7A4AD04F01833700(L_16, 1, 0, Dictionary_2_Add_m955026197BD6540FDD6C9B0A7A4AD04F01833700_RuntimeMethod_var);
+		Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC* L_17 = L_16;
+		NullCheck(L_17);
+		Dictionary_2_Add_m955026197BD6540FDD6C9B0A7A4AD04F01833700(L_17, 2, 1, Dictionary_2_Add_m955026197BD6540FDD6C9B0A7A4AD04F01833700_RuntimeMethod_var);
+		Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC* L_18 = L_17;
+		NullCheck(L_18);
+		Dictionary_2_Add_m955026197BD6540FDD6C9B0A7A4AD04F01833700(L_18, 3, 1, Dictionary_2_Add_m955026197BD6540FDD6C9B0A7A4AD04F01833700_RuntimeMethod_var);
+		Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC* L_19 = L_18;
+		NullCheck(L_19);
+		Dictionary_2_Add_m955026197BD6540FDD6C9B0A7A4AD04F01833700(L_19, 4, 2, Dictionary_2_Add_m955026197BD6540FDD6C9B0A7A4AD04F01833700_RuntimeMethod_var);
+		Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC* L_20 = L_19;
+		NullCheck(L_20);
+		Dictionary_2_Add_m955026197BD6540FDD6C9B0A7A4AD04F01833700(L_20, 7, 6, Dictionary_2_Add_m955026197BD6540FDD6C9B0A7A4AD04F01833700_RuntimeMethod_var);
+		Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC* L_21 = L_20;
+		NullCheck(L_21);
+		Dictionary_2_Add_m955026197BD6540FDD6C9B0A7A4AD04F01833700(L_21, 5, 5, Dictionary_2_Add_m955026197BD6540FDD6C9B0A7A4AD04F01833700_RuntimeMethod_var);
+		Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC* L_22 = L_21;
+		NullCheck(L_22);
+		Dictionary_2_Add_m955026197BD6540FDD6C9B0A7A4AD04F01833700(L_22, 0, 5, Dictionary_2_Add_m955026197BD6540FDD6C9B0A7A4AD04F01833700_RuntimeMethod_var);
+		Dictionary_2_t31B81C33380D58B88085922EBD553A48F1E6BFFC* L_23 = L_22;
+		NullCheck(L_23);
+		Dictionary_2_Add_m955026197BD6540FDD6C9B0A7A4AD04F01833700(L_23, 6, 5, Dictionary_2_Add_m955026197BD6540FDD6C9B0A7A4AD04F01833700_RuntimeMethod_var);
+		((PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_StaticFields*)il2cpp_codegen_static_fields_for(PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_il2cpp_TypeInfo_var))->___PlayCoreToAssetDeliveryStatuses_1 = L_23;
+		Il2CppCodeGenWriteBarrier((void**)(&((PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_StaticFields*)il2cpp_codegen_static_fields_for(PlayCoreTranslator_t82F4D71BFF2A8C85816734A1AD12D91B04DBF36B_il2cpp_TypeInfo_var))->___PlayCoreToAssetDeliveryStatuses_1), (void*)L_23);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AssetDelivery.Internal.PlayRequestRepository::AddAssetBundleRequest(Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayRequestRepository_AddAssetBundleRequest_m34BCDBEC2310624ED4A95F648C999D42539E5958 (PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* __this, PlayAssetBundleRequestImpl_tC7F57ABFE28C1E3E41C12E6F1FA46B2DF31F964C* ___0_assetBundleRequest, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_m921EF5876404282B67EC3B031A7C44FC4BD3F69E_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// AddRequest(assetBundleRequest.PackRequest);
+		PlayAssetBundleRequestImpl_tC7F57ABFE28C1E3E41C12E6F1FA46B2DF31F964C* L_0 = ___0_assetBundleRequest;
+		NullCheck(L_0);
+		PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* L_1 = L_0->___PackRequest_6;
+		PlayRequestRepository_AddRequest_m63A7F9BCD90A941A487046551A7FD21CFD00B2C8(__this, L_1, NULL);
+		// _assetBundleRequestsByName.Add(assetBundleRequest.PackRequest.AssetPackName, assetBundleRequest);
+		Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55* L_2 = __this->____assetBundleRequestsByName_1;
+		PlayAssetBundleRequestImpl_tC7F57ABFE28C1E3E41C12E6F1FA46B2DF31F964C* L_3 = ___0_assetBundleRequest;
+		NullCheck(L_3);
+		PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* L_4 = L_3->___PackRequest_6;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___AssetPackName_5;
+		PlayAssetBundleRequestImpl_tC7F57ABFE28C1E3E41C12E6F1FA46B2DF31F964C* L_6 = ___0_assetBundleRequest;
+		NullCheck(L_2);
+		Dictionary_2_Add_m921EF5876404282B67EC3B031A7C44FC4BD3F69E(L_2, L_5, L_6, Dictionary_2_Add_m921EF5876404282B67EC3B031A7C44FC4BD3F69E_RuntimeMethod_var);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayRequestRepository::AddRequest(Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayRequestRepository_AddRequest_m63A7F9BCD90A941A487046551A7FD21CFD00B2C8 (PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* __this, PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* ___0_request, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_m5AE17B91EBB2B51FC9CDFAEA41A812DE6DCCDC6D_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// _requestsByName.Add(request.AssetPackName, request);
+		Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0* L_0 = __this->____requestsByName_0;
+		PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* L_1 = ___0_request;
+		NullCheck(L_1);
+		String_t* L_2 = L_1->___AssetPackName_5;
+		PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* L_3 = ___0_request;
+		NullCheck(L_0);
+		Dictionary_2_Add_m5AE17B91EBB2B51FC9CDFAEA41A812DE6DCCDC6D(L_0, L_2, L_3, Dictionary_2_Add_m5AE17B91EBB2B51FC9CDFAEA41A812DE6DCCDC6D_RuntimeMethod_var);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayRequestRepository::RemoveRequest(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayRequestRepository_RemoveRequest_m933E6F3F77462893ABDC58009CB808487A859C76 (PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* __this, String_t* ___0_name, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Remove_m322E60266999EF408510DCECC98E1F341949069C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Remove_m3F89880A33B9D52B491DFC35F84BCAF6D05CF28D_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// _requestsByName.Remove(name);
+		Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0* L_0 = __this->____requestsByName_0;
+		String_t* L_1 = ___0_name;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_Remove_m322E60266999EF408510DCECC98E1F341949069C(L_0, L_1, Dictionary_2_Remove_m322E60266999EF408510DCECC98E1F341949069C_RuntimeMethod_var);
+		// _assetBundleRequestsByName.Remove(name);
+		Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55* L_3 = __this->____assetBundleRequestsByName_1;
+		String_t* L_4 = ___0_name;
+		NullCheck(L_3);
+		bool L_5;
+		L_5 = Dictionary_2_Remove_m3F89880A33B9D52B491DFC35F84BCAF6D05CF28D(L_3, L_4, Dictionary_2_Remove_m3F89880A33B9D52B491DFC35F84BCAF6D05CF28D_RuntimeMethod_var);
+		// }
+		return;
+	}
+}
+// System.Boolean Google.Play.AssetDelivery.Internal.PlayRequestRepository::TryGetAssetBundleRequest(System.String,Google.Play.AssetDelivery.Internal.PlayAssetBundleRequestImpl&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayRequestRepository_TryGetAssetBundleRequest_mA7743E4E4CCBC0F5D5DFB347A8AEA95143626402 (PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* __this, String_t* ___0_name, PlayAssetBundleRequestImpl_tC7F57ABFE28C1E3E41C12E6F1FA46B2DF31F964C** ___1_assetBundleRequest, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_TryGetValue_m1FDE4D34B1FEB997100281FFBC7ECAFC0766C7DA_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return _assetBundleRequestsByName.TryGetValue(name, out assetBundleRequest);
+		Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55* L_0 = __this->____assetBundleRequestsByName_1;
+		String_t* L_1 = ___0_name;
+		PlayAssetBundleRequestImpl_tC7F57ABFE28C1E3E41C12E6F1FA46B2DF31F964C** L_2 = ___1_assetBundleRequest;
+		NullCheck(L_0);
+		bool L_3;
+		L_3 = Dictionary_2_TryGetValue_m1FDE4D34B1FEB997100281FFBC7ECAFC0766C7DA(L_0, L_1, L_2, Dictionary_2_TryGetValue_m1FDE4D34B1FEB997100281FFBC7ECAFC0766C7DA_RuntimeMethod_var);
+		return L_3;
+	}
+}
+// System.Boolean Google.Play.AssetDelivery.Internal.PlayRequestRepository::TryGetRequest(System.String,Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayRequestRepository_TryGetRequest_mF240D71CDCC9356EBF016319EF8AD5F5F32CA0F4 (PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* __this, String_t* ___0_name, PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF** ___1_request, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_TryGetValue_m32FD27FFE62B1388B8E3ED60EB28AE456614A202_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return _requestsByName.TryGetValue(name, out request);
+		Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0* L_0 = __this->____requestsByName_0;
+		String_t* L_1 = ___0_name;
+		PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF** L_2 = ___1_request;
+		NullCheck(L_0);
+		bool L_3;
+		L_3 = Dictionary_2_TryGetValue_m32FD27FFE62B1388B8E3ED60EB28AE456614A202(L_0, L_1, L_2, Dictionary_2_TryGetValue_m32FD27FFE62B1388B8E3ED60EB28AE456614A202_RuntimeMethod_var);
+		return L_3;
+	}
+}
+// System.Collections.Generic.IList`1<Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl> Google.Play.AssetDelivery.Internal.PlayRequestRepository::GetRequestsWithStatus(Google.Play.AssetDelivery.AssetDeliveryStatus)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PlayRequestRepository_GetRequestsWithStatus_m85524C17E7C75DDCE8459F8460475D23948C169D (PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* __this, int32_t ___0_status, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Values_m380CC5A5AC0267504EAAA83F1507D55C1FBA395A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerable_ToList_TisPlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_m257DA9CFCC89EDBA25AF4D6921A8D4E9FD08B458_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerable_Where_TisPlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_mDD458CEE20B946ECF9330F0E23E4B081FCBF8D62_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Func_2_t791489D9497D5BC0F497E038655BCE0E393C8639_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass7_0_U3CGetRequestsWithStatusU3Eb__0_m328EDD68F3B6CB4E7122AE4A4E9FEDBB06BA96B0_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass7_0_tCA553FFEEF1003FFE329D85247BEBFEFD473EDC1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CU3Ec__DisplayClass7_0_tCA553FFEEF1003FFE329D85247BEBFEFD473EDC1* V_0 = NULL;
+	{
+		U3CU3Ec__DisplayClass7_0_tCA553FFEEF1003FFE329D85247BEBFEFD473EDC1* L_0 = (U3CU3Ec__DisplayClass7_0_tCA553FFEEF1003FFE329D85247BEBFEFD473EDC1*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass7_0_tCA553FFEEF1003FFE329D85247BEBFEFD473EDC1_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CU3Ec__DisplayClass7_0__ctor_m07761A3EFB2F35461DBE3978D3DC6DF1E5639320(L_0, NULL);
+		V_0 = L_0;
+		U3CU3Ec__DisplayClass7_0_tCA553FFEEF1003FFE329D85247BEBFEFD473EDC1* L_1 = V_0;
+		int32_t L_2 = ___0_status;
+		NullCheck(L_1);
+		L_1->___status_0 = L_2;
+		// return _requestsByName.Values.Where(request => request.Status == status).ToList();
+		Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0* L_3 = __this->____requestsByName_0;
+		NullCheck(L_3);
+		ValueCollection_t61E003F560D440A9E1E8071CB58BB65495DE50D1* L_4;
+		L_4 = Dictionary_2_get_Values_m380CC5A5AC0267504EAAA83F1507D55C1FBA395A(L_3, Dictionary_2_get_Values_m380CC5A5AC0267504EAAA83F1507D55C1FBA395A_RuntimeMethod_var);
+		U3CU3Ec__DisplayClass7_0_tCA553FFEEF1003FFE329D85247BEBFEFD473EDC1* L_5 = V_0;
+		Func_2_t791489D9497D5BC0F497E038655BCE0E393C8639* L_6 = (Func_2_t791489D9497D5BC0F497E038655BCE0E393C8639*)il2cpp_codegen_object_new(Func_2_t791489D9497D5BC0F497E038655BCE0E393C8639_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
+		Func_2__ctor_m29E53338240E08F78447DBF87CD6FC8A4FA1F18C(L_6, L_5, (intptr_t)((void*)U3CU3Ec__DisplayClass7_0_U3CGetRequestsWithStatusU3Eb__0_m328EDD68F3B6CB4E7122AE4A4E9FEDBB06BA96B0_RuntimeMethod_var), NULL);
+		RuntimeObject* L_7;
+		L_7 = Enumerable_Where_TisPlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_mDD458CEE20B946ECF9330F0E23E4B081FCBF8D62(L_4, L_6, Enumerable_Where_TisPlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_mDD458CEE20B946ECF9330F0E23E4B081FCBF8D62_RuntimeMethod_var);
+		List_1_t73CB53E75D60F4AF3A6F962752DE8CF2D8910DF0* L_8;
+		L_8 = Enumerable_ToList_TisPlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_m257DA9CFCC89EDBA25AF4D6921A8D4E9FD08B458(L_7, Enumerable_ToList_TisPlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF_m257DA9CFCC89EDBA25AF4D6921A8D4E9FD08B458_RuntimeMethod_var);
+		return L_8;
+	}
+}
+// System.String[] Google.Play.AssetDelivery.Internal.PlayRequestRepository::GetActiveAssetPackNames()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* PlayRequestRepository_GetActiveAssetPackNames_m04978B0AF767CB58BB829D97186C8DB768F447F2 (PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Keys_m575EE431066A5E11BA7FA21778B7227A40D2DD45_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerable_ToArray_TisString_t_m3B23EE2DD15B2996E7D2ECA6E74696DA892AA194_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return _requestsByName.Keys.ToArray();
+		Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0* L_0 = __this->____requestsByName_0;
+		NullCheck(L_0);
+		KeyCollection_t85F308B8A8F103FA2411C9157460C86160FADD7A* L_1;
+		L_1 = Dictionary_2_get_Keys_m575EE431066A5E11BA7FA21778B7227A40D2DD45(L_0, Dictionary_2_get_Keys_m575EE431066A5E11BA7FA21778B7227A40D2DD45_RuntimeMethod_var);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2;
+		L_2 = Enumerable_ToArray_TisString_t_m3B23EE2DD15B2996E7D2ECA6E74696DA892AA194(L_1, Enumerable_ToArray_TisString_t_m3B23EE2DD15B2996E7D2ECA6E74696DA892AA194_RuntimeMethod_var);
+		return L_2;
+	}
+}
+// System.Boolean Google.Play.AssetDelivery.Internal.PlayRequestRepository::ContainsAssetBundleRequest(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayRequestRepository_ContainsAssetBundleRequest_m61DD6FAEF3DF73A21C54A8BBE807F4062BC7148A (PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* __this, String_t* ___0_name, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_ContainsKey_m3086064E0FEEAEF4E57516CF3DCCD1DF8447AE2C_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return _assetBundleRequestsByName.ContainsKey(name);
+		Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55* L_0 = __this->____assetBundleRequestsByName_1;
+		String_t* L_1 = ___0_name;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_ContainsKey_m3086064E0FEEAEF4E57516CF3DCCD1DF8447AE2C(L_0, L_1, Dictionary_2_ContainsKey_m3086064E0FEEAEF4E57516CF3DCCD1DF8447AE2C_RuntimeMethod_var);
+		return L_2;
+	}
+}
+// System.Boolean Google.Play.AssetDelivery.Internal.PlayRequestRepository::ContainsRequest(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayRequestRepository_ContainsRequest_m270CE47AA6A796D60AC8C3D7ACCAD0A5157BB4B1 (PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* __this, String_t* ___0_name, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_ContainsKey_m0290F180F2AD38C7266EDEEF6ADA67D7B803AD45_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return _requestsByName.ContainsKey(name);
+		Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0* L_0 = __this->____requestsByName_0;
+		String_t* L_1 = ___0_name;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_ContainsKey_m0290F180F2AD38C7266EDEEF6ADA67D7B803AD45(L_0, L_1, Dictionary_2_ContainsKey_m0290F180F2AD38C7266EDEEF6ADA67D7B803AD45_RuntimeMethod_var);
+		return L_2;
+	}
+}
+// System.Void Google.Play.AssetDelivery.Internal.PlayRequestRepository::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayRequestRepository__ctor_m4AF9BA8FEA66C6EA519829343AEA143AA1C4BAD5 (PlayRequestRepository_t08C183E584644E4CCA89634169980EE7EAEF9E4B* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_m440C792ED7574CAB8132A70EC328C28B8A77F6A5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_m6A57AB5D6243E83A3B448C13BE2E59F6291AB374_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// private Dictionary<string, PlayAssetPackRequestImpl> _requestsByName =
+		//     new Dictionary<string, PlayAssetPackRequestImpl>();
+		Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0* L_0 = (Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0*)il2cpp_codegen_object_new(Dictionary_2_tBC45C8F52C81B4649ADC5CFC399B1B321A807CD0_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		Dictionary_2__ctor_m6A57AB5D6243E83A3B448C13BE2E59F6291AB374(L_0, Dictionary_2__ctor_m6A57AB5D6243E83A3B448C13BE2E59F6291AB374_RuntimeMethod_var);
+		__this->____requestsByName_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____requestsByName_0), (void*)L_0);
+		// private Dictionary<string, PlayAssetBundleRequestImpl> _assetBundleRequestsByName =
+		//     new Dictionary<string, PlayAssetBundleRequestImpl>();
+		Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55* L_1 = (Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55*)il2cpp_codegen_object_new(Dictionary_2_tE839420E7A016452FC79FD2DB1AD675C37639C55_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		Dictionary_2__ctor_m440C792ED7574CAB8132A70EC328C28B8A77F6A5(L_1, Dictionary_2__ctor_m440C792ED7574CAB8132A70EC328C28B8A77F6A5_RuntimeMethod_var);
+		__this->____assetBundleRequestsByName_1 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____assetBundleRequestsByName_1), (void*)L_1);
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AssetDelivery.Internal.PlayRequestRepository/<>c__DisplayClass7_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass7_0__ctor_m07761A3EFB2F35461DBE3978D3DC6DF1E5639320 (U3CU3Ec__DisplayClass7_0_tCA553FFEEF1003FFE329D85247BEBFEFD473EDC1* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Boolean Google.Play.AssetDelivery.Internal.PlayRequestRepository/<>c__DisplayClass7_0::<GetRequestsWithStatus>b__0(Google.Play.AssetDelivery.Internal.PlayAssetPackRequestImpl)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass7_0_U3CGetRequestsWithStatusU3Eb__0_m328EDD68F3B6CB4E7122AE4A4E9FEDBB06BA96B0 (U3CU3Ec__DisplayClass7_0_tCA553FFEEF1003FFE329D85247BEBFEFD473EDC1* __this, PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* ___0_request, const RuntimeMethod* method) 
+{
+	{
+		// return _requestsByName.Values.Where(request => request.Status == status).ToList();
+		PlayAssetPackRequestImpl_t3739EA58D35E7A88ECFFA150D09CCDA965E14FFF* L_0 = ___0_request;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = PlayAssetPackRequest_get_Status_mF0E848D2064C9B37DA90B23F602AD2D80B7AE763_inline(L_0, NULL);
+		int32_t L_2 = __this->___status_0;
+		return (bool)((((int32_t)L_1) == ((int32_t)L_2))? 1 : 0);
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Int32 Google.Play.AppUpdate.AppUpdateInfo::get_AvailableVersionCode()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdateInfo_get_AvailableVersionCode_mB9017C4FEF3E47E7E05B2BD44B509D2710759217 (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2AB8C4D5CF03ABCD1E5790F105BC756A71434A47);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// get { return _javaAppUpdateInfo.Call<int>("availableVersionCode"); }
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->____javaAppUpdateInfo_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1;
+		L_1 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		NullCheck(L_0);
+		int32_t L_2;
+		L_2 = AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC(L_0, _stringLiteral2AB8C4D5CF03ABCD1E5790F105BC756A71434A47, L_1, AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC_RuntimeMethod_var);
+		return L_2;
+	}
+}
+// Google.Play.AppUpdate.UpdateAvailability Google.Play.AppUpdate.AppUpdateInfo::get_UpdateAvailability()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdateInfo_get_UpdateAvailability_m0A4A8FE659A65B4213C8CF0EE4431E56238D198D (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4A66A44C28A3F8E4D1BC9C7C8743D74AC97AB112);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AppUpdatePlayCoreTranslator.TranslatePlayCoreUpdateAvailabilities(
+		//     _javaAppUpdateInfo.Call<int>("updateAvailability"));
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->____javaAppUpdateInfo_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1;
+		L_1 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		NullCheck(L_0);
+		int32_t L_2;
+		L_2 = AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC(L_0, _stringLiteral4A66A44C28A3F8E4D1BC9C7C8743D74AC97AB112, L_1, AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		int32_t L_3;
+		L_3 = AppUpdatePlayCoreTranslator_TranslatePlayCoreUpdateAvailabilities_m21CE11FB4CD033F203D40C47D0DEBA704B85D2A1(L_2, NULL);
+		return L_3;
+	}
+}
+// Google.Play.AppUpdate.AppUpdateStatus Google.Play.AppUpdate.AppUpdateInfo::get_AppUpdateStatus()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdateInfo_get_AppUpdateStatus_mB70421853E9C26EB3951EA8875B2FA5B03E379F4 (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral07075322EF62DC88C79BC907400F25BC6934F767);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AppUpdatePlayCoreTranslator.TranslatePlayCoreUpdateStatus(
+		//     _javaAppUpdateInfo.Call<int>("installStatus"));
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->____javaAppUpdateInfo_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1;
+		L_1 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		NullCheck(L_0);
+		int32_t L_2;
+		L_2 = AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC(L_0, _stringLiteral07075322EF62DC88C79BC907400F25BC6934F767, L_1, AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		int32_t L_3;
+		L_3 = AppUpdatePlayCoreTranslator_TranslatePlayCoreUpdateStatus_m5F4CE37AE2073F90DD6DF42DDF4F7371D405BA00(L_2, NULL);
+		return L_3;
+	}
+}
+// System.Nullable`1<System.Int32> Google.Play.AppUpdate.AppUpdateInfo::get_ClientVersionStalenessDays()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 AppUpdateInfo_get_ClientVersionStalenessDays_m6C950D22DF86D78F1FE49888EB4BCAB7799442FB (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m020246E0988293B6126B690BD6CE4D894276AA3D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral36DE4495C0EC647F5B8FD516B5D10613CB6EA74E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral768F82A25AC6375BDD08F33D316E23F3C9E9872A);
+		s_Il2CppMethodInitialized = true;
+	}
+	AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* V_0 = NULL;
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// var clientVersionStalenessDaysJavaObject =
+		//     _javaAppUpdateInfo.Call<AndroidJavaObject>("clientVersionStalenessDays");
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->____javaAppUpdateInfo_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1;
+		L_1 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		NullCheck(L_0);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_2;
+		L_2 = AndroidJavaObject_Call_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m020246E0988293B6126B690BD6CE4D894276AA3D(L_0, _stringLiteral36DE4495C0EC647F5B8FD516B5D10613CB6EA74E, L_1, AndroidJavaObject_Call_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m020246E0988293B6126B690BD6CE4D894276AA3D_RuntimeMethod_var);
+		V_0 = L_2;
+		// if (PlayCoreHelper.IsNull(clientVersionStalenessDaysJavaObject))
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_3 = V_0;
+		bool L_4;
+		L_4 = PlayCoreHelper_IsNull_mCFCB50978A87E5A44561F28B70A9F8302E72C63C(L_3, NULL);
+		if (!L_4)
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		// return null;
+		il2cpp_codegen_initobj((&V_1), sizeof(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28));
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_5 = V_1;
+		return L_5;
+	}
+
+IL_0028:
+	{
+		// return clientVersionStalenessDaysJavaObject.Call<int>("intValue");
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_6 = V_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_7;
+		L_7 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		NullCheck(L_6);
+		int32_t L_8;
+		L_8 = AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC(L_6, _stringLiteral768F82A25AC6375BDD08F33D316E23F3C9E9872A, L_7, AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC_RuntimeMethod_var);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_9;
+		memset((&L_9), 0, sizeof(L_9));
+		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_9), L_8, /*hidden argument*/Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		return L_9;
+	}
+}
+// System.Int32 Google.Play.AppUpdate.AppUpdateInfo::get_UpdatePriority()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdateInfo_get_UpdatePriority_m07AD61862B2346A657FD0D1B0C19AD47849CFF84 (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral778AD59B9C3ACE8CF7DE22D9B29343E9AA91E41B);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// get { return _javaAppUpdateInfo.Call<int>("updatePriority"); }
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->____javaAppUpdateInfo_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1;
+		L_1 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		NullCheck(L_0);
+		int32_t L_2;
+		L_2 = AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC(L_0, _stringLiteral778AD59B9C3ACE8CF7DE22D9B29343E9AA91E41B, L_1, AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC_RuntimeMethod_var);
+		return L_2;
+	}
+}
+// System.UInt64 Google.Play.AppUpdate.AppUpdateInfo::get_BytesDownloaded()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t AppUpdateInfo_get_BytesDownloaded_mE6DAC9FAA284EF7EE98FCD2FBE579493711A97E5 (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisUInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_m116DA4AF7DB9E6C514C6FCC8AE948078D4AF4795_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0540212BC8D01CEA8329E140D2124BD07BFF2EC7);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// get { return _javaAppUpdateInfo.Call<ulong>("bytesDownloaded"); }
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->____javaAppUpdateInfo_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1;
+		L_1 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		NullCheck(L_0);
+		uint64_t L_2;
+		L_2 = AndroidJavaObject_Call_TisUInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_m116DA4AF7DB9E6C514C6FCC8AE948078D4AF4795(L_0, _stringLiteral0540212BC8D01CEA8329E140D2124BD07BFF2EC7, L_1, AndroidJavaObject_Call_TisUInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_m116DA4AF7DB9E6C514C6FCC8AE948078D4AF4795_RuntimeMethod_var);
+		return L_2;
+	}
+}
+// System.UInt64 Google.Play.AppUpdate.AppUpdateInfo::get_TotalBytesToDownload()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t AppUpdateInfo_get_TotalBytesToDownload_m7CFBB7ACC6973D070DC5E61DA55C6393A0F5D77E (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisUInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_m116DA4AF7DB9E6C514C6FCC8AE948078D4AF4795_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral71115E84CCAF26F0A22537295087FA06CCC56A78);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// get { return _javaAppUpdateInfo.Call<ulong>("totalBytesToDownload"); }
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->____javaAppUpdateInfo_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1;
+		L_1 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		NullCheck(L_0);
+		uint64_t L_2;
+		L_2 = AndroidJavaObject_Call_TisUInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_m116DA4AF7DB9E6C514C6FCC8AE948078D4AF4795(L_0, _stringLiteral71115E84CCAF26F0A22537295087FA06CCC56A78, L_1, AndroidJavaObject_Call_TisUInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_m116DA4AF7DB9E6C514C6FCC8AE948078D4AF4795_RuntimeMethod_var);
+		return L_2;
+	}
+}
+// System.Boolean Google.Play.AppUpdate.AppUpdateInfo::IsUpdateTypeAllowed(Google.Play.AppUpdate.AppUpdateOptions)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AppUpdateInfo_IsUpdateTypeAllowed_m7D5F243FA5E089D5726A5FBCA75CD0C197450374 (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* ___0_appUpdateOptions, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_m05D3284A3FA772D032190A0FE82363C61000F1DF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3BD104280D2FCB1CACC6D2DA2686C9E9B5C1BCAD);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return _javaAppUpdateInfo.Call<bool>("isUpdateTypeAllowed", appUpdateOptions.GetJavaAppUpdateOptions());
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->____javaAppUpdateInfo_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = L_1;
+		AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* L_3 = ___0_appUpdateOptions;
+		NullCheck(L_3);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_4;
+		L_4 = AppUpdateOptions_GetJavaAppUpdateOptions_mA92EC78AA57FEE570CFC694E1706E5CE92216C47_inline(L_3, NULL);
+		NullCheck(L_2);
+		ArrayElementTypeCheck (L_2, L_4);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_4);
+		NullCheck(L_0);
+		bool L_5;
+		L_5 = AndroidJavaObject_Call_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_m05D3284A3FA772D032190A0FE82363C61000F1DF(L_0, _stringLiteral3BD104280D2FCB1CACC6D2DA2686C9E9B5C1BCAD, L_2, AndroidJavaObject_Call_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_m05D3284A3FA772D032190A0FE82363C61000F1DF_RuntimeMethod_var);
+		return L_5;
+	}
+}
+// System.String Google.Play.AppUpdate.AppUpdateInfo::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AppUpdateInfo_ToString_mFBED1890DDDD75826E0414CE5019756B4A52114E (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdateStatus_tF2B3C17AA93719CB1AEBBAFC52FCCEFB77F7D472_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringBuilder_t_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UpdateAvailability_t2BE1320DD3BC7E90329381D380A7BD3292B89712_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral373987AF855C33F15202219DB6447E71E2D18129);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral397D5F4433EAB886D4C9A90EB63283B5172FB828);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral48EE8FA1F27411E4771589A28037B07003548016);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5E3CC3D9E2C8F66698212750CBC59DC25C5B4302);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6F5962048E51719F459202BC6321C5E40AC9BAF3);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral700DA381E8C3217D139C031EBEFE6D2C8AD763C4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral85B3C933E24A38E4B582B65F80458AB7057E2E15);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral98700854E1382A8D1CF64D95CE5853F4530AA5B4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCCC4D077264EB63F7FC9CFF6E2E006EA57EC6D35);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// var infoDescription = new StringBuilder();
+		StringBuilder_t* L_0 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D(L_0, NULL);
+		// infoDescription.AppendFormat("version={0} ", AvailableVersionCode);
+		StringBuilder_t* L_1 = L_0;
+		int32_t L_2;
+		L_2 = AppUpdateInfo_get_AvailableVersionCode_mB9017C4FEF3E47E7E05B2BD44B509D2710759217(__this, NULL);
+		int32_t L_3 = L_2;
+		RuntimeObject* L_4 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_3);
+		NullCheck(L_1);
+		StringBuilder_t* L_5;
+		L_5 = StringBuilder_AppendFormat_mFA88863E4018C2912D1A783E0EA6DAE4F594124F(L_1, _stringLiteral700DA381E8C3217D139C031EBEFE6D2C8AD763C4, L_4, NULL);
+		// infoDescription.AppendFormat("status={0} ", AppUpdateStatus);
+		StringBuilder_t* L_6 = L_1;
+		int32_t L_7;
+		L_7 = AppUpdateInfo_get_AppUpdateStatus_mB70421853E9C26EB3951EA8875B2FA5B03E379F4(__this, NULL);
+		int32_t L_8 = L_7;
+		RuntimeObject* L_9 = Box(AppUpdateStatus_tF2B3C17AA93719CB1AEBBAFC52FCCEFB77F7D472_il2cpp_TypeInfo_var, &L_8);
+		NullCheck(L_6);
+		StringBuilder_t* L_10;
+		L_10 = StringBuilder_AppendFormat_mFA88863E4018C2912D1A783E0EA6DAE4F594124F(L_6, _stringLiteral5E3CC3D9E2C8F66698212750CBC59DC25C5B4302, L_9, NULL);
+		// infoDescription.AppendFormat("availability={0} ", UpdateAvailability);
+		StringBuilder_t* L_11 = L_6;
+		int32_t L_12;
+		L_12 = AppUpdateInfo_get_UpdateAvailability_m0A4A8FE659A65B4213C8CF0EE4431E56238D198D(__this, NULL);
+		int32_t L_13 = L_12;
+		RuntimeObject* L_14 = Box(UpdateAvailability_t2BE1320DD3BC7E90329381D380A7BD3292B89712_il2cpp_TypeInfo_var, &L_13);
+		NullCheck(L_11);
+		StringBuilder_t* L_15;
+		L_15 = StringBuilder_AppendFormat_mFA88863E4018C2912D1A783E0EA6DAE4F594124F(L_11, _stringLiteral6F5962048E51719F459202BC6321C5E40AC9BAF3, L_14, NULL);
+		// infoDescription.AppendFormat("downloaded={0} ", BytesDownloaded);
+		StringBuilder_t* L_16 = L_11;
+		uint64_t L_17;
+		L_17 = AppUpdateInfo_get_BytesDownloaded_mE6DAC9FAA284EF7EE98FCD2FBE579493711A97E5(__this, NULL);
+		uint64_t L_18 = L_17;
+		RuntimeObject* L_19 = Box(UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_il2cpp_TypeInfo_var, &L_18);
+		NullCheck(L_16);
+		StringBuilder_t* L_20;
+		L_20 = StringBuilder_AppendFormat_mFA88863E4018C2912D1A783E0EA6DAE4F594124F(L_16, _stringLiteral48EE8FA1F27411E4771589A28037B07003548016, L_19, NULL);
+		// infoDescription.AppendFormat("priority={0} ", UpdatePriority);
+		StringBuilder_t* L_21 = L_16;
+		int32_t L_22;
+		L_22 = AppUpdateInfo_get_UpdatePriority_m07AD61862B2346A657FD0D1B0C19AD47849CFF84(__this, NULL);
+		int32_t L_23 = L_22;
+		RuntimeObject* L_24 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_23);
+		NullCheck(L_21);
+		StringBuilder_t* L_25;
+		L_25 = StringBuilder_AppendFormat_mFA88863E4018C2912D1A783E0EA6DAE4F594124F(L_21, _stringLiteral98700854E1382A8D1CF64D95CE5853F4530AA5B4, L_24, NULL);
+		// infoDescription.AppendFormat("staleness={0} ", ClientVersionStalenessDays);
+		StringBuilder_t* L_26 = L_21;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_27;
+		L_27 = AppUpdateInfo_get_ClientVersionStalenessDays_m6C950D22DF86D78F1FE49888EB4BCAB7799442FB(__this, NULL);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_28 = L_27;
+		RuntimeObject* L_29 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_28);
+		NullCheck(L_26);
+		StringBuilder_t* L_30;
+		L_30 = StringBuilder_AppendFormat_mFA88863E4018C2912D1A783E0EA6DAE4F594124F(L_26, _stringLiteral373987AF855C33F15202219DB6447E71E2D18129, L_29, NULL);
+		// infoDescription.AppendFormat("totalBytes={0} ", TotalBytesToDownload);
+		StringBuilder_t* L_31 = L_26;
+		uint64_t L_32;
+		L_32 = AppUpdateInfo_get_TotalBytesToDownload_m7CFBB7ACC6973D070DC5E61DA55C6393A0F5D77E(__this, NULL);
+		uint64_t L_33 = L_32;
+		RuntimeObject* L_34 = Box(UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_il2cpp_TypeInfo_var, &L_33);
+		NullCheck(L_31);
+		StringBuilder_t* L_35;
+		L_35 = StringBuilder_AppendFormat_mFA88863E4018C2912D1A783E0EA6DAE4F594124F(L_31, _stringLiteralCCC4D077264EB63F7FC9CFF6E2E006EA57EC6D35, L_34, NULL);
+		// infoDescription.AppendFormat("immediateAllowed={0}",
+		//     IsUpdateTypeAllowed(AppUpdateOptions.ImmediateAppUpdateOptions()));
+		StringBuilder_t* L_36 = L_31;
+		AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* L_37;
+		L_37 = AppUpdateOptions_ImmediateAppUpdateOptions_m6EEEB8B15CAE0C1FCB40503FF22B557945783B6D((bool)0, NULL);
+		bool L_38;
+		L_38 = AppUpdateInfo_IsUpdateTypeAllowed_m7D5F243FA5E089D5726A5FBCA75CD0C197450374(__this, L_37, NULL);
+		bool L_39 = L_38;
+		RuntimeObject* L_40 = Box(Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var, &L_39);
+		NullCheck(L_36);
+		StringBuilder_t* L_41;
+		L_41 = StringBuilder_AppendFormat_mFA88863E4018C2912D1A783E0EA6DAE4F594124F(L_36, _stringLiteral85B3C933E24A38E4B582B65F80458AB7057E2E15, L_40, NULL);
+		// infoDescription.AppendFormat("flexibleAllowed={0}",
+		//     IsUpdateTypeAllowed(AppUpdateOptions.FlexibleAppUpdateOptions()));
+		StringBuilder_t* L_42 = L_36;
+		AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* L_43;
+		L_43 = AppUpdateOptions_FlexibleAppUpdateOptions_m4418263ACA74E7445C526B9363A7DFFC21C3768E((bool)0, NULL);
+		bool L_44;
+		L_44 = AppUpdateInfo_IsUpdateTypeAllowed_m7D5F243FA5E089D5726A5FBCA75CD0C197450374(__this, L_43, NULL);
+		bool L_45 = L_44;
+		RuntimeObject* L_46 = Box(Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var, &L_45);
+		NullCheck(L_42);
+		StringBuilder_t* L_47;
+		L_47 = StringBuilder_AppendFormat_mFA88863E4018C2912D1A783E0EA6DAE4F594124F(L_42, _stringLiteral397D5F4433EAB886D4C9A90EB63283B5172FB828, L_46, NULL);
+		// return infoDescription.ToString();
+		NullCheck(L_42);
+		String_t* L_48;
+		L_48 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_42);
+		return L_48;
+	}
+}
+// System.Void Google.Play.AppUpdate.AppUpdateInfo::.ctor(UnityEngine.AndroidJavaObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateInfo__ctor_m953ACFF2AE6DC4C619A6789DBD8DBF8DEF74652A (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ___0_javaAppUpdateInfo, const RuntimeMethod* method) 
+{
+	{
+		// internal AppUpdateInfo(AndroidJavaObject javaAppUpdateInfo)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// _javaAppUpdateInfo = javaAppUpdateInfo;
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ___0_javaAppUpdateInfo;
+		__this->____javaAppUpdateInfo_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____javaAppUpdateInfo_0), (void*)L_0);
+		// }
+		return;
+	}
+}
+// UnityEngine.AndroidJavaObject Google.Play.AppUpdate.AppUpdateInfo::GetJavaUpdateInfo()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* AppUpdateInfo_GetJavaUpdateInfo_m06F99ACACC30184A690C0C28761FB5B77A547B08 (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, const RuntimeMethod* method) 
+{
+	{
+		// return _javaAppUpdateInfo;
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->____javaAppUpdateInfo_0;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AppUpdate.AppUpdateManager::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateManager__ctor_mF06C456BD18A6275B6F24EC31656C4F2491CFCE4 (AppUpdateManager_tAF831F0CC00B3888CA1DE3A768108806D1DF08EA* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public AppUpdateManager()
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// _appUpdateManagerInternal = new AppUpdateManagerInternal();
+		AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* L_0 = (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9*)il2cpp_codegen_object_new(AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		AppUpdateManagerInternal__ctor_m1D761154579C4807D595C98046C4928019B349B1(L_0, NULL);
+		__this->____appUpdateManagerInternal_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____appUpdateManagerInternal_0), (void*)L_0);
+		// }
+		return;
+	}
+}
+// Google.Play.Common.PlayAsyncOperation`2<Google.Play.AppUpdate.AppUpdateInfo,Google.Play.AppUpdate.AppUpdateErrorCode> Google.Play.AppUpdate.AppUpdateManager::GetAppUpdateInfo()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayAsyncOperation_2_t39D5C6763CB7F06C186D9A8C75D9F63698F753C6* AppUpdateManager_GetAppUpdateInfo_mF6BD7565058CAE3B8137AC77C790D8A3CEA814AC (AppUpdateManager_tAF831F0CC00B3888CA1DE3A768108806D1DF08EA* __this, const RuntimeMethod* method) 
+{
+	{
+		// return _appUpdateManagerInternal.GetAppUpdateInfoInternal();
+		AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* L_0 = __this->____appUpdateManagerInternal_0;
+		NullCheck(L_0);
+		PlayAsyncOperation_2_t39D5C6763CB7F06C186D9A8C75D9F63698F753C6* L_1;
+		L_1 = AppUpdateManagerInternal_GetAppUpdateInfoInternal_m15FF747958520E0C61149AAE61CCB5B81A543A59(L_0, NULL);
+		return L_1;
+	}
+}
+// Google.Play.AppUpdate.AppUpdateRequest Google.Play.AppUpdate.AppUpdateManager::StartUpdate(Google.Play.AppUpdate.AppUpdateInfo,Google.Play.AppUpdate.AppUpdateOptions)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* AppUpdateManager_StartUpdate_m29216222883CB74868977AE167420559241FD561 (AppUpdateManager_tAF831F0CC00B3888CA1DE3A768108806D1DF08EA* __this, AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* ___0_appUpdateInfo, AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* ___1_appUpdateOptions, const RuntimeMethod* method) 
+{
+	{
+		// return _appUpdateManagerInternal.StartUpdateInternal(appUpdateInfo, appUpdateOptions);
+		AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* L_0 = __this->____appUpdateManagerInternal_0;
+		AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* L_1 = ___0_appUpdateInfo;
+		AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* L_2 = ___1_appUpdateOptions;
+		NullCheck(L_0);
+		AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* L_3;
+		L_3 = AppUpdateManagerInternal_StartUpdateInternal_m3E365F64383219D731425164B1A1E0E5560B18DA(L_0, L_1, L_2, NULL);
+		return L_3;
+	}
+}
+// Google.Play.Common.PlayAsyncOperation`2<Google.Play.Common.VoidResult,Google.Play.AppUpdate.AppUpdateErrorCode> Google.Play.AppUpdate.AppUpdateManager::CompleteUpdate()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayAsyncOperation_2_t70D0CB32A79B3B657D0C9EE6606ABA6F5A958F15* AppUpdateManager_CompleteUpdate_m1140EAF3B55BE011F2ED43DB64135525E23E40E7 (AppUpdateManager_tAF831F0CC00B3888CA1DE3A768108806D1DF08EA* __this, const RuntimeMethod* method) 
+{
+	{
+		// return _appUpdateManagerInternal.CompleteUpdateInternal();
+		AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* L_0 = __this->____appUpdateManagerInternal_0;
+		NullCheck(L_0);
+		PlayAsyncOperation_2_t70D0CB32A79B3B657D0C9EE6606ABA6F5A958F15* L_1;
+		L_1 = AppUpdateManagerInternal_CompleteUpdateInternal_m7D90E40DA2362D98150421BA377E68B3F61B9F99(L_0, NULL);
+		return L_1;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Google.Play.AppUpdate.AppUpdateOptions Google.Play.AppUpdate.AppUpdateOptions::ImmediateAppUpdateOptions(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* AppUpdateOptions_ImmediateAppUpdateOptions_m6EEEB8B15CAE0C1FCB40503FF22B557945783B6D (bool ___0_allowAssetPackDeletion, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return new AppUpdateOptions(AppUpdateType.Immediate, allowAssetPackDeletion);
+		bool L_0 = ___0_allowAssetPackDeletion;
+		AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* L_1 = (AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225*)il2cpp_codegen_object_new(AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		AppUpdateOptions__ctor_m70DD47B5E923A94BCD3BC753F8BB47E3AE5F0D48(L_1, 1, L_0, NULL);
+		return L_1;
+	}
+}
+// Google.Play.AppUpdate.AppUpdateOptions Google.Play.AppUpdate.AppUpdateOptions::FlexibleAppUpdateOptions(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* AppUpdateOptions_FlexibleAppUpdateOptions_m4418263ACA74E7445C526B9363A7DFFC21C3768E (bool ___0_allowAssetPackDeletion, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return new AppUpdateOptions(AppUpdateType.Flexible, allowAssetPackDeletion);
+		bool L_0 = ___0_allowAssetPackDeletion;
+		AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* L_1 = (AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225*)il2cpp_codegen_object_new(AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		AppUpdateOptions__ctor_m70DD47B5E923A94BCD3BC753F8BB47E3AE5F0D48(L_1, 0, L_0, NULL);
+		return L_1;
+	}
+}
+// Google.Play.AppUpdate.AppUpdateType Google.Play.AppUpdate.AppUpdateOptions::get_AppUpdateType()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdateOptions_get_AppUpdateType_m62CE4069B795B91398271BB7948C6B84D1876F3A (AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1DED1FE4DC3D681DFAD9D9CB968D797D54654DFB);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AppUpdatePlayCoreTranslator.TranslatePlayCoreAppUpdateType(
+		//     _javaAppUpdateOptions.Call<int>("appUpdateType"));
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->____javaAppUpdateOptions_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1;
+		L_1 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		NullCheck(L_0);
+		int32_t L_2;
+		L_2 = AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC(L_0, _stringLiteral1DED1FE4DC3D681DFAD9D9CB968D797D54654DFB, L_1, AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		int32_t L_3;
+		L_3 = AppUpdatePlayCoreTranslator_TranslatePlayCoreAppUpdateType_mC027D3372A880034B196C3EB930A38CDF840F04E(L_2, NULL);
+		return L_3;
+	}
+}
+// System.Boolean Google.Play.AppUpdate.AppUpdateOptions::get_AllowAssetPackDeletion()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AppUpdateOptions_get_AllowAssetPackDeletion_m94B165DC80696B6824D12304F38F5E9DB2DC5CB1 (AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_m05D3284A3FA772D032190A0FE82363C61000F1DF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral36A0119BD1BA20656C3D67DDCD7CFE7D15216629);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// get { return _javaAppUpdateOptions.Call<bool>("allowAssetPackDeletion"); }
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->____javaAppUpdateOptions_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1;
+		L_1 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = AndroidJavaObject_Call_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_m05D3284A3FA772D032190A0FE82363C61000F1DF(L_0, _stringLiteral36A0119BD1BA20656C3D67DDCD7CFE7D15216629, L_1, AndroidJavaObject_Call_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_m05D3284A3FA772D032190A0FE82363C61000F1DF_RuntimeMethod_var);
+		return L_2;
+	}
+}
+// UnityEngine.AndroidJavaObject Google.Play.AppUpdate.AppUpdateOptions::GetJavaAppUpdateOptions()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* AppUpdateOptions_GetJavaAppUpdateOptions_mA92EC78AA57FEE570CFC694E1706E5CE92216C47 (AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* __this, const RuntimeMethod* method) 
+{
+	{
+		// return _javaAppUpdateOptions;
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->____javaAppUpdateOptions_0;
+		return L_0;
+	}
+}
+// System.Void Google.Play.AppUpdate.AppUpdateOptions::.ctor(Google.Play.AppUpdate.AppUpdateType,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateOptions__ctor_m70DD47B5E923A94BCD3BC753F8BB47E3AE5F0D48 (AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* __this, int32_t ___0_appUpdateType, bool ___1_allowAssetPackDeletion, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_CallStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m398EA96C1DE1BB885F2B1DD0E00E8BBA86B49E63_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m020246E0988293B6126B690BD6CE4D894276AA3D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral91D78299C880F594D3CA25495E9CA7D87BDF4459);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA733C7FC19A8317471D21AD091D1A9A6F973A728);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCDA33B853C851F908A6621450C1B99E8892F2C76);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF89E2B8AEFEFD95D439A48449E4C25ACB8455C5B);
+		s_Il2CppMethodInitialized = true;
+	}
+	AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* V_0 = NULL;
+	AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* V_1 = NULL;
+	{
+		// private AppUpdateOptions(AppUpdateType appUpdateType, bool allowAssetPackDeletion)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// using (var appUpdateOptionsClass = new AndroidJavaClass(appUpdateOptionsClassName))
+		AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_0 = (AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03*)il2cpp_codegen_object_new(AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		AndroidJavaClass__ctor_mB5466169E1151B8CC44C8FED234D79984B431389(L_0, _stringLiteralCDA33B853C851F908A6621450C1B99E8892F2C76, NULL);
+		V_0 = L_0;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0072:
+			{// begin finally (depth: 1)
+				{
+					AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_1 = V_0;
+					if (!L_1)
+					{
+						goto IL_007b;
+					}
+				}
+				{
+					AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_2 = V_0;
+					NullCheck(L_2);
+					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_2);
+				}
+
+IL_007b:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				// var builder = appUpdateOptionsClass.CallStatic<AndroidJavaObject>(
+				//     "newBuilder", (int) appUpdateType);
+				AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_3 = V_0;
+				ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_4 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+				ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_5 = L_4;
+				int32_t L_6 = ___0_appUpdateType;
+				int32_t L_7 = ((int32_t)L_6);
+				RuntimeObject* L_8 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_7);
+				NullCheck(L_5);
+				ArrayElementTypeCheck (L_5, L_8);
+				(L_5)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_8);
+				NullCheck(L_3);
+				AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_9;
+				L_9 = AndroidJavaObject_CallStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m398EA96C1DE1BB885F2B1DD0E00E8BBA86B49E63(L_3, _stringLiteralF89E2B8AEFEFD95D439A48449E4C25ACB8455C5B, L_5, AndroidJavaObject_CallStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m398EA96C1DE1BB885F2B1DD0E00E8BBA86B49E63_RuntimeMethod_var);
+				V_1 = L_9;
+				// builder.Call<AndroidJavaObject>("setAllowAssetPackDeletion",
+				//     allowAssetPackDeletion);
+				AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_10 = V_1;
+				ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_11 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+				ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_12 = L_11;
+				bool L_13 = ___1_allowAssetPackDeletion;
+				bool L_14 = L_13;
+				RuntimeObject* L_15 = Box(Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var, &L_14);
+				NullCheck(L_12);
+				ArrayElementTypeCheck (L_12, L_15);
+				(L_12)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_15);
+				NullCheck(L_10);
+				AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_16;
+				L_16 = AndroidJavaObject_Call_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m020246E0988293B6126B690BD6CE4D894276AA3D(L_10, _stringLiteral91D78299C880F594D3CA25495E9CA7D87BDF4459, L_12, AndroidJavaObject_Call_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m020246E0988293B6126B690BD6CE4D894276AA3D_RuntimeMethod_var);
+				// _javaAppUpdateOptions = builder.Call<AndroidJavaObject>("build");
+				AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_17 = V_1;
+				ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_18;
+				L_18 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+				NullCheck(L_17);
+				AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_19;
+				L_19 = AndroidJavaObject_Call_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m020246E0988293B6126B690BD6CE4D894276AA3D(L_17, _stringLiteralA733C7FC19A8317471D21AD091D1A9A6F973A728, L_18, AndroidJavaObject_Call_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m020246E0988293B6126B690BD6CE4D894276AA3D_RuntimeMethod_var);
+				__this->____javaAppUpdateOptions_0 = L_19;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->____javaAppUpdateOptions_0), (void*)L_19);
+				// if (_javaAppUpdateOptions == null)
+				AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_20 = __this->____javaAppUpdateOptions_0;
+				if (L_20)
+				{
+					goto IL_0070_1;
+				}
+			}
+			{
+				// throw new NullReferenceException("Play Core returned null AppUpdateOptions");
+				NullReferenceException_tBDE63A6D24569B964908408389070C6A9F5005BB* L_21 = (NullReferenceException_tBDE63A6D24569B964908408389070C6A9F5005BB*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NullReferenceException_tBDE63A6D24569B964908408389070C6A9F5005BB_il2cpp_TypeInfo_var)));
+				NullCheck(L_21);
+				NullReferenceException__ctor_mA41317A57F5C1C0E3F59C7EB25ABD484564B23D4(L_21, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralF6DA5F09626DE73E37A7B0200D1E6D24E5FB308B)), NULL);
+				IL2CPP_RAISE_MANAGED_EXCEPTION(L_21, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AppUpdateOptions__ctor_m70DD47B5E923A94BCD3BC753F8BB47E3AE5F0D48_RuntimeMethod_var)));
+			}
+
+IL_0070_1:
+			{
+				// }
+				goto IL_007c;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_007c:
+	{
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AppUpdate.AppUpdateRequest::add_Completed(System.Action`1<Google.Play.AppUpdate.AppUpdateRequest>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequest_add_Completed_mC7DFE22C872CED69110E66AD8210D003A541EC6D (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* V_0 = NULL;
+	Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* V_1 = NULL;
+	Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* V_2 = NULL;
+	{
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_0 = __this->___Completed_0;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_1 = V_0;
+		V_1 = L_1;
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_2 = V_1;
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_3 = ___0_value;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
+		V_2 = ((Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4*)Castclass((RuntimeObject*)L_4, Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4_il2cpp_TypeInfo_var));
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4** L_5 = (&__this->___Completed_0);
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_6 = V_2;
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_7 = V_1;
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_9 = V_0;
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4*)L_9) == ((RuntimeObject*)(Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.AppUpdateRequest::remove_Completed(System.Action`1<Google.Play.AppUpdate.AppUpdateRequest>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequest_remove_Completed_m16ABCC03CC914BD6521A4E79A19129DED193507E (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* V_0 = NULL;
+	Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* V_1 = NULL;
+	Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* V_2 = NULL;
+	{
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_0 = __this->___Completed_0;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_1 = V_0;
+		V_1 = L_1;
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_2 = V_1;
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_3 = ___0_value;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
+		V_2 = ((Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4*)Castclass((RuntimeObject*)L_4, Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4_il2cpp_TypeInfo_var));
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4** L_5 = (&__this->___Completed_0);
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_6 = V_2;
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_7 = V_1;
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_9 = V_0;
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4*)L_9) == ((RuntimeObject*)(Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Boolean Google.Play.AppUpdate.AppUpdateRequest::get_IsDone()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AppUpdateRequest_get_IsDone_m345F4E193257A5E6C87A61AF48DA197893AA78D2 (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, const RuntimeMethod* method) 
+{
+	{
+		// public bool IsDone { get; protected set; }
+		bool L_0 = __this->___U3CIsDoneU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Google.Play.AppUpdate.AppUpdateRequest::set_IsDone(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequest_set_IsDone_mA86A88EF6509CB0BFC3386A3324E1D501C11F701 (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public bool IsDone { get; protected set; }
+		bool L_0 = ___0_value;
+		__this->___U3CIsDoneU3Ek__BackingField_1 = L_0;
+		return;
+	}
+}
+// Google.Play.AppUpdate.AppUpdateStatus Google.Play.AppUpdate.AppUpdateRequest::get_Status()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdateRequest_get_Status_m59B0E73D91BA55511EABF53D0AA23975B2E2424F (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, const RuntimeMethod* method) 
+{
+	{
+		// public AppUpdateStatus Status { get; protected set; }
+		int32_t L_0 = __this->___U3CStatusU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+// System.Void Google.Play.AppUpdate.AppUpdateRequest::set_Status(Google.Play.AppUpdate.AppUpdateStatus)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequest_set_Status_m672F2512A04E85BCE10D52A487BDC9753C3BE65F (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public AppUpdateStatus Status { get; protected set; }
+		int32_t L_0 = ___0_value;
+		__this->___U3CStatusU3Ek__BackingField_2 = L_0;
+		return;
+	}
+}
+// Google.Play.AppUpdate.AppUpdateErrorCode Google.Play.AppUpdate.AppUpdateRequest::get_Error()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdateRequest_get_Error_m2428F339054733C4391F69FDC31B729FF76EEE6C (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, const RuntimeMethod* method) 
+{
+	{
+		// public AppUpdateErrorCode Error { get; protected set; }
+		int32_t L_0 = __this->___U3CErrorU3Ek__BackingField_3;
+		return L_0;
+	}
+}
+// System.Void Google.Play.AppUpdate.AppUpdateRequest::set_Error(Google.Play.AppUpdate.AppUpdateErrorCode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequest_set_Error_mA2B02019E9445CAB0021543871E11FE0A56EA208 (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public AppUpdateErrorCode Error { get; protected set; }
+		int32_t L_0 = ___0_value;
+		__this->___U3CErrorU3Ek__BackingField_3 = L_0;
+		return;
+	}
+}
+// System.Single Google.Play.AppUpdate.AppUpdateRequest::get_DownloadProgress()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AppUpdateRequest_get_DownloadProgress_mD366E3E5DF54E7F3157721388D48949BEC2E3959 (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, const RuntimeMethod* method) 
+{
+	{
+		// public float DownloadProgress { get; protected set; }
+		float L_0 = __this->___U3CDownloadProgressU3Ek__BackingField_4;
+		return L_0;
+	}
+}
+// System.Void Google.Play.AppUpdate.AppUpdateRequest::set_DownloadProgress(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequest_set_DownloadProgress_mD09F9CCC110358C5F59F82AB1D71FBEBA16D1193 (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public float DownloadProgress { get; protected set; }
+		float L_0 = ___0_value;
+		__this->___U3CDownloadProgressU3Ek__BackingField_4 = L_0;
+		return;
+	}
+}
+// System.UInt64 Google.Play.AppUpdate.AppUpdateRequest::get_BytesDownloaded()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t AppUpdateRequest_get_BytesDownloaded_m78060A686A38E6794E768554F8A4DC5F70AEFA65 (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, const RuntimeMethod* method) 
+{
+	{
+		// public ulong BytesDownloaded { get; protected set; }
+		uint64_t L_0 = __this->___U3CBytesDownloadedU3Ek__BackingField_5;
+		return L_0;
+	}
+}
+// System.Void Google.Play.AppUpdate.AppUpdateRequest::set_BytesDownloaded(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequest_set_BytesDownloaded_mF536383F89C50D4AA263F8AF916FD389EEF82A81 (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, uint64_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public ulong BytesDownloaded { get; protected set; }
+		uint64_t L_0 = ___0_value;
+		__this->___U3CBytesDownloadedU3Ek__BackingField_5 = L_0;
+		return;
+	}
+}
+// System.UInt64 Google.Play.AppUpdate.AppUpdateRequest::get_TotalBytesToDownload()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t AppUpdateRequest_get_TotalBytesToDownload_mEAF0D52D7B11B3B9680C86683E1064054BA2BB67 (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, const RuntimeMethod* method) 
+{
+	{
+		// public ulong TotalBytesToDownload { get; protected set; }
+		uint64_t L_0 = __this->___U3CTotalBytesToDownloadU3Ek__BackingField_6;
+		return L_0;
+	}
+}
+// System.Void Google.Play.AppUpdate.AppUpdateRequest::set_TotalBytesToDownload(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequest_set_TotalBytesToDownload_mA85DC90B518EAD9B3DC8825B198E28911A0F21E2 (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, uint64_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public ulong TotalBytesToDownload { get; protected set; }
+		uint64_t L_0 = ___0_value;
+		__this->___U3CTotalBytesToDownloadU3Ek__BackingField_6 = L_0;
+		return;
+	}
+}
+// System.Boolean Google.Play.AppUpdate.AppUpdateRequest::get_keepWaiting()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AppUpdateRequest_get_keepWaiting_m3FC7BEF36A91E74B0A099706644297F01B168F35 (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, const RuntimeMethod* method) 
+{
+	{
+		// get { return !IsDone; }
+		bool L_0;
+		L_0 = AppUpdateRequest_get_IsDone_m345F4E193257A5E6C87A61AF48DA197893AA78D2_inline(__this, NULL);
+		return (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+	}
+}
+// System.Void Google.Play.AppUpdate.AppUpdateRequest::InvokeCompletedEvent()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequest_InvokeCompletedEvent_mE8FBCC9B4906D4BF71849C59DE6669190EF131EE (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, const RuntimeMethod* method) 
+{
+	{
+		// Completed.Invoke(this);
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_0 = __this->___Completed_0;
+		NullCheck(L_0);
+		Action_1_Invoke_mD7916A61A940774CDB895F00A5A36260E8E77118_inline(L_0, __this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.AppUpdateRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequest__ctor_m57407A74A5DF2BC66B455100484C249A7A784796 (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3C_ctorU3Eb__30_0_m82F50B5260DE24022F96F9A809889447B05980D7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* G_B2_0 = NULL;
+	AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* G_B2_1 = NULL;
+	Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* G_B1_0 = NULL;
+	AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* G_B1_1 = NULL;
+	{
+		// public virtual event Action<AppUpdateRequest> Completed = delegate { };
+		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36_il2cpp_TypeInfo_var);
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_0 = ((U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36_il2cpp_TypeInfo_var))->___U3CU3E9__30_0_1;
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_1 = L_0;
+		G_B1_0 = L_1;
+		G_B1_1 = __this;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			G_B2_1 = __this;
+			goto IL_0020;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36_il2cpp_TypeInfo_var);
+		U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36* L_2 = ((U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36_il2cpp_TypeInfo_var))->___U3CU3E9_0;
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_3 = (Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4*)il2cpp_codegen_object_new(Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		Action_1__ctor_m737467E71A96B7AC055B39A166513966ECA4EA76(L_3, L_2, (intptr_t)((void*)U3CU3Ec_U3C_ctorU3Eb__30_0_m82F50B5260DE24022F96F9A809889447B05980D7_RuntimeMethod_var), NULL);
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_4 = L_3;
+		((U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36_il2cpp_TypeInfo_var))->___U3CU3E9__30_0_1 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36_il2cpp_TypeInfo_var))->___U3CU3E9__30_0_1), (void*)L_4);
+		G_B2_0 = L_4;
+		G_B2_1 = G_B1_1;
+	}
+
+IL_0020:
+	{
+		NullCheck(G_B2_1);
+		G_B2_1->___Completed_0 = G_B2_0;
+		Il2CppCodeGenWriteBarrier((void**)(&G_B2_1->___Completed_0), (void*)G_B2_0);
+		CustomYieldInstruction__ctor_mB64531EC09E871EF60BFAC16918A774C977C7B50(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AppUpdate.AppUpdateRequest/<>c::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m3C5169A3BB2C9D61B2A314ECADE410A1215AD72F (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36* L_0 = (U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36*)il2cpp_codegen_object_new(U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CU3Ec__ctor_m5CC3E14C6CC346837C38147B944EF2418E0275C4(L_0, NULL);
+		((U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36_il2cpp_TypeInfo_var))->___U3CU3E9_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36_il2cpp_TypeInfo_var))->___U3CU3E9_0), (void*)L_0);
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.AppUpdateRequest/<>c::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m5CC3E14C6CC346837C38147B944EF2418E0275C4 (U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.AppUpdateRequest/<>c::<.ctor>b__30_0(Google.Play.AppUpdate.AppUpdateRequest)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3C_ctorU3Eb__30_0_m82F50B5260DE24022F96F9A809889447B05980D7 (U3CU3Ec_t0DF8C766B7A24B2E6DED2203EC1EDBC9989FCD36* __this, AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* ___0_U3Cp0U3E, const RuntimeMethod* method) 
+{
+	{
+		// public virtual event Action<AppUpdateRequest> Completed = delegate { };
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateHandler::add_OnStateUpdateEvent(System.Action`1<Google.Play.AppUpdate.Internal.AppUpdateState>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateHandler_add_OnStateUpdateEvent_mE08D5CCC1A2151EEC1963F96149518B26E1C3196 (AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* __this, Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* V_0 = NULL;
+	Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* V_1 = NULL;
+	Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* V_2 = NULL;
+	{
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_0 = __this->___OnStateUpdateEvent_4;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_1 = V_0;
+		V_1 = L_1;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_2 = V_1;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_3 = ___0_value;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
+		V_2 = ((Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*)Castclass((RuntimeObject*)L_4, Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C_il2cpp_TypeInfo_var));
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C** L_5 = (&__this->___OnStateUpdateEvent_4);
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_6 = V_2;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_7 = V_1;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_9 = V_0;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*)L_9) == ((RuntimeObject*)(Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateHandler::remove_OnStateUpdateEvent(System.Action`1<Google.Play.AppUpdate.Internal.AppUpdateState>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateHandler_remove_OnStateUpdateEvent_m1B16D4B70306A852AE32D987598D9A99BA26FFE2 (AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* __this, Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* V_0 = NULL;
+	Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* V_1 = NULL;
+	Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* V_2 = NULL;
+	{
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_0 = __this->___OnStateUpdateEvent_4;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_1 = V_0;
+		V_1 = L_1;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_2 = V_1;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_3 = ___0_value;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
+		V_2 = ((Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*)Castclass((RuntimeObject*)L_4, Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C_il2cpp_TypeInfo_var));
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C** L_5 = (&__this->___OnStateUpdateEvent_4);
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_6 = V_2;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_7 = V_1;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_9 = V_0;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*)L_9) == ((RuntimeObject*)(Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// Google.Play.AppUpdate.Internal.AppUpdateHandler Google.Play.AppUpdate.Internal.AppUpdateHandler::CreateInScene(Google.Play.AppUpdate.Internal.AppUpdateManagerInternal)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* AppUpdateHandler_CreateInScene_mA2432889592EBB5D7C74398A8EC68E9EB9FCC10C (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* ___0_appUpdateManagerInternal, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_AddComponent_TisAppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E_mF9BB90995626221266903C883E6917587C6C7C00_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1928D1579953A0A6C6E7D22A4698E36A6D792654);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// var componentHolder = new GameObject();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		GameObject__ctor_m7D0340DE160786E6EFA8DABD39EC3B694DA30AAD(L_0, NULL);
+		// componentHolder.name = "AppUpdateHandler";
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = L_0;
+		NullCheck(L_1);
+		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_1, _stringLiteral1928D1579953A0A6C6E7D22A4698E36A6D792654, NULL);
+		// DontDestroyOnLoad(componentHolder);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = L_1;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_DontDestroyOnLoad_m4B70C3AEF886C176543D1295507B6455C9DCAEA7(L_2, NULL);
+		// var instance = componentHolder.AddComponent<AppUpdateHandler>();
+		NullCheck(L_2);
+		AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* L_3;
+		L_3 = GameObject_AddComponent_TisAppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E_mF9BB90995626221266903C883E6917587C6C7C00(L_2, GameObject_AddComponent_TisAppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E_mF9BB90995626221266903C883E6917587C6C7C00_RuntimeMethod_var);
+		// instance.Init(appUpdateManagerInternal);
+		AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* L_4 = L_3;
+		AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* L_5 = ___0_appUpdateManagerInternal;
+		NullCheck(L_4);
+		AppUpdateHandler_Init_m83232A6CA5EBE761B3B979EFA8F71AC8C4366897(L_4, L_5, NULL);
+		// return instance;
+		return L_4;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateHandler::Init(Google.Play.AppUpdate.Internal.AppUpdateManagerInternal)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateHandler_Init_m83232A6CA5EBE761B3B979EFA8F71AC8C4366897 (AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* __this, AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* ___0_appUpdateManagerInternal, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdateHandler_OnStateUpdateReceived_mBF8678A1C1342CA0F3B5B6F5E150ADEC0152A93F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// _appUpdateManagerInternal = appUpdateManagerInternal;
+		AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* L_0 = ___0_appUpdateManagerInternal;
+		__this->____appUpdateManagerInternal_6 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____appUpdateManagerInternal_6), (void*)L_0);
+		// _stateUpdateListener = new AppUpdateStateListener();
+		AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161* L_1 = (AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161*)il2cpp_codegen_object_new(AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		AppUpdateStateListener__ctor_mBE7234E95DA23644D8A9803EF9E1B45279DC387B(L_1, NULL);
+		__this->____stateUpdateListener_5 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____stateUpdateListener_5), (void*)L_1);
+		// _stateUpdateListener.OnStateUpdateEvent += OnStateUpdateReceived;
+		AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161* L_2 = __this->____stateUpdateListener_5;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_3 = (Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*)il2cpp_codegen_object_new(Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		Action_1__ctor_mC9070FAAEDE7EDBF76F93ABC0320BD49BEBDAFDF(L_3, __this, (intptr_t)((void*)AppUpdateHandler_OnStateUpdateReceived_mBF8678A1C1342CA0F3B5B6F5E150ADEC0152A93F_RuntimeMethod_var), NULL);
+		NullCheck(L_2);
+		AppUpdateStateListener_add_OnStateUpdateEvent_mE3A67C0B36575BFEBF95A54B8E85335C584A3896(L_2, L_3, NULL);
+		// StartListeningForUpdates();
+		AppUpdateHandler_StartListeningForUpdates_mCB0B5FFDBEB1950B0B4BA6E3200531F06381A7B5(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateHandler::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateHandler_Start_m7BAB461324EA94BDA20188494DBC5EF4831FAC58 (AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* __this, const RuntimeMethod* method) 
+{
+	{
+		// if (_appUpdateManagerInternal == null || _stateUpdateListener == null)
+		AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* L_0 = __this->____appUpdateManagerInternal_6;
+		if (!L_0)
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161* L_1 = __this->____stateUpdateListener_5;
+		if (L_1)
+		{
+			goto IL_001b;
+		}
+	}
+
+IL_0010:
+	{
+		// throw new InvalidOperationException("AppUpdateHandler was never initialized.");
+		InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB* L_2 = (InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB_il2cpp_TypeInfo_var)));
+		NullCheck(L_2);
+		InvalidOperationException__ctor_mE4CB6F4712AB6D99A2358FBAE2E052B3EE976162(L_2, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralA67FF7C0D33FDE50BB64070C337020F894872A55)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AppUpdateHandler_Start_m7BAB461324EA94BDA20188494DBC5EF4831FAC58_RuntimeMethod_var)));
+	}
+
+IL_001b:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateHandler::OnApplicationPause(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateHandler_OnApplicationPause_m9FE8F8A3AA9059A217291D61EABA10BD3FAB0987 (AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* __this, bool ___0_isPaused, const RuntimeMethod* method) 
+{
+	{
+		// if (isPaused)
+		bool L_0 = ___0_isPaused;
+		if (!L_0)
+		{
+			goto IL_000a;
+		}
+	}
+	{
+		// StopListeningForUpdates();
+		AppUpdateHandler_StopListeningForUpdates_mBB60AD723AEB5CC5FBA350BEEEB2E0981A9480C1(__this, NULL);
+		return;
+	}
+
+IL_000a:
+	{
+		// StartListeningForUpdates();
+		AppUpdateHandler_StartListeningForUpdates_mCB0B5FFDBEB1950B0B4BA6E3200531F06381A7B5(__this, NULL);
+		// ForceStatesUpdate();
+		AppUpdateHandler_ForceStatesUpdate_m585E14145063F19488A5C01EF682D7EE6FB2660B(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateHandler::OnDestroy()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateHandler_OnDestroy_mAEC300E90C2A7059E17CEBBFB76548CF59A732D1 (AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* __this, const RuntimeMethod* method) 
+{
+	{
+		// StopListeningForUpdates();
+		AppUpdateHandler_StopListeningForUpdates_mBB60AD723AEB5CC5FBA350BEEEB2E0981A9480C1(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateHandler::ForceStatesUpdate()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateHandler_ForceStatesUpdate_m585E14145063F19488A5C01EF682D7EE6FB2660B (AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_tBD9457F0872CC7E6C1468CA37E6EF9D4403E1594_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdateHandler_ProcessUpdateInfo_mF41BD492E57E6972E90C2E21E08F6DA605B2631D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_RegisterOnSuccessCallback_m2F3393B9B94A1866DE7C446909B4D07D642A835C_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// var appUpdateStateTask = _appUpdateManagerInternal.GetAppUpdateInfo();
+		AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* L_0 = __this->____appUpdateManagerInternal_6;
+		NullCheck(L_0);
+		PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* L_1;
+		L_1 = AppUpdateManagerInternal_GetAppUpdateInfo_m4542E5E375C0270C56A53D8C53593F7A82360C9B(L_0, NULL);
+		// appUpdateStateTask.RegisterOnSuccessCallback(ProcessUpdateInfo);
+		Action_1_tBD9457F0872CC7E6C1468CA37E6EF9D4403E1594* L_2 = (Action_1_tBD9457F0872CC7E6C1468CA37E6EF9D4403E1594*)il2cpp_codegen_object_new(Action_1_tBD9457F0872CC7E6C1468CA37E6EF9D4403E1594_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		Action_1__ctor_mAD4F64E1D47B76FC413CEBA12F172E968C83AD04(L_2, __this, (intptr_t)((void*)AppUpdateHandler_ProcessUpdateInfo_mF41BD492E57E6972E90C2E21E08F6DA605B2631D_RuntimeMethod_var), NULL);
+		NullCheck(L_1);
+		PlayCoreTask_1_RegisterOnSuccessCallback_m2F3393B9B94A1866DE7C446909B4D07D642A835C(L_1, L_2, PlayCoreTask_1_RegisterOnSuccessCallback_m2F3393B9B94A1866DE7C446909B4D07D642A835C_RuntimeMethod_var);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateHandler::ProcessUpdateInfo(UnityEngine.AndroidJavaObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateHandler_ProcessUpdateInfo_mF41BD492E57E6972E90C2E21E08F6DA605B2631D (AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* __this, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ___0_javaAppUpdateInfo, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* V_0 = NULL;
+	{
+		// var updateState = new AppUpdateState(javaAppUpdateInfo);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ___0_javaAppUpdateInfo;
+		AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* L_1 = (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12*)il2cpp_codegen_object_new(AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		AppUpdateState__ctor_m1AD5DA53FA23DDE6978682ADB4C57D9FB26FBCEF(L_1, L_0, NULL);
+		V_0 = L_1;
+		// OnStateUpdateEvent.Invoke(updateState);
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_2 = __this->___OnStateUpdateEvent_4;
+		AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* L_3 = V_0;
+		NullCheck(L_2);
+		Action_1_Invoke_mB67B37DC02404F365CF680F4D9B371CB11A4A8CB_inline(L_2, L_3, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateHandler::OnStateUpdateReceived(Google.Play.AppUpdate.Internal.AppUpdateState)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateHandler_OnStateUpdateReceived_mBF8678A1C1342CA0F3B5B6F5E150ADEC0152A93F (AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* __this, AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* ___0_newState, const RuntimeMethod* method) 
+{
+	{
+		// OnStateUpdateEvent.Invoke(newState);
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_0 = __this->___OnStateUpdateEvent_4;
+		AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* L_1 = ___0_newState;
+		NullCheck(L_0);
+		Action_1_Invoke_mB67B37DC02404F365CF680F4D9B371CB11A4A8CB_inline(L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateHandler::StartListeningForUpdates()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateHandler_StartListeningForUpdates_mCB0B5FFDBEB1950B0B4BA6E3200531F06381A7B5 (AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* __this, const RuntimeMethod* method) 
+{
+	{
+		// _appUpdateManagerInternal.RegisterListener(_stateUpdateListener);
+		AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* L_0 = __this->____appUpdateManagerInternal_6;
+		AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161* L_1 = __this->____stateUpdateListener_5;
+		NullCheck(L_0);
+		AppUpdateManagerInternal_RegisterListener_mD766E41F06BB9E12E29E89072B02A2B22709D9D9(L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateHandler::StopListeningForUpdates()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateHandler_StopListeningForUpdates_mBB60AD723AEB5CC5FBA350BEEEB2E0981A9480C1 (AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* __this, const RuntimeMethod* method) 
+{
+	{
+		// _appUpdateManagerInternal.UnregisterListener(_stateUpdateListener);
+		AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* L_0 = __this->____appUpdateManagerInternal_6;
+		AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161* L_1 = __this->____stateUpdateListener_5;
+		NullCheck(L_0);
+		AppUpdateManagerInternal_UnregisterListener_m6CAB1C26941DD546DF41ED45A99EBE7090BCF47C(L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateHandler::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateHandler__ctor_m390F4686E19D0FC536F5BE2D04B799089B3C02F7 (AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3C_ctorU3Eb__15_0_m9B85B7ED478D4A1F320ADC070450182DDBDA50F0_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* G_B2_0 = NULL;
+	AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* G_B2_1 = NULL;
+	Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* G_B1_0 = NULL;
+	AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* G_B1_1 = NULL;
+	{
+		// public event Action<AppUpdateState> OnStateUpdateEvent = delegate { };
+		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370_il2cpp_TypeInfo_var);
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_0 = ((U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370_il2cpp_TypeInfo_var))->___U3CU3E9__15_0_1;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_1 = L_0;
+		G_B1_0 = L_1;
+		G_B1_1 = __this;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			G_B2_1 = __this;
+			goto IL_0020;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370_il2cpp_TypeInfo_var);
+		U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370* L_2 = ((U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370_il2cpp_TypeInfo_var))->___U3CU3E9_0;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_3 = (Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*)il2cpp_codegen_object_new(Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		Action_1__ctor_mC9070FAAEDE7EDBF76F93ABC0320BD49BEBDAFDF(L_3, L_2, (intptr_t)((void*)U3CU3Ec_U3C_ctorU3Eb__15_0_m9B85B7ED478D4A1F320ADC070450182DDBDA50F0_RuntimeMethod_var), NULL);
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_4 = L_3;
+		((U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370_il2cpp_TypeInfo_var))->___U3CU3E9__15_0_1 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370_il2cpp_TypeInfo_var))->___U3CU3E9__15_0_1), (void*)L_4);
+		G_B2_0 = L_4;
+		G_B2_1 = G_B1_1;
+	}
+
+IL_0020:
+	{
+		NullCheck(G_B2_1);
+		G_B2_1->___OnStateUpdateEvent_4 = G_B2_0;
+		Il2CppCodeGenWriteBarrier((void**)(&G_B2_1->___OnStateUpdateEvent_4), (void*)G_B2_0);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateHandler/<>c::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_mD22C5DFD53E9795F0A972D8C159D7965E68763C8 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370* L_0 = (U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370*)il2cpp_codegen_object_new(U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CU3Ec__ctor_mE5B5600BCFB4F073839C666AC394BFFE02235866(L_0, NULL);
+		((U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370_il2cpp_TypeInfo_var))->___U3CU3E9_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370_il2cpp_TypeInfo_var))->___U3CU3E9_0), (void*)L_0);
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateHandler/<>c::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mE5B5600BCFB4F073839C666AC394BFFE02235866 (U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateHandler/<>c::<.ctor>b__15_0(Google.Play.AppUpdate.Internal.AppUpdateState)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3C_ctorU3Eb__15_0_m9B85B7ED478D4A1F320ADC070450182DDBDA50F0 (U3CU3Ec_tB16CFCFE7904D25194F78322ADECB4235C626370* __this, AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* ___0_U3Cp0U3E, const RuntimeMethod* method) 
+{
+	{
+		// public event Action<AppUpdateState> OnStateUpdateEvent = delegate { };
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateManagerInternal__ctor_m1D761154579C4807D595C98046C4928019B349B1 (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdateManagerInternal_ProcessStateUpdate_m0E5BE160608ACEDB721582186A09A16080BC81CA_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// internal AppUpdateManagerInternal()
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// _appUpdateManagerPlayCore = new AppUpdateManagerPlayCore();
+		AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637* L_0 = (AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637*)il2cpp_codegen_object_new(AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		AppUpdateManagerPlayCore__ctor_mA1B98C6071B03F58B4F72ED7D3ECFFAB15DAE0E9(L_0, NULL);
+		__this->____appUpdateManagerPlayCore_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____appUpdateManagerPlayCore_0), (void*)L_0);
+		// _appUpdateHandler = AppUpdateHandler.CreateInScene(this);
+		AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* L_1;
+		L_1 = AppUpdateHandler_CreateInScene_mA2432889592EBB5D7C74398A8EC68E9EB9FCC10C(__this, NULL);
+		__this->____appUpdateHandler_1 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____appUpdateHandler_1), (void*)L_1);
+		// _appUpdateHandler.OnStateUpdateEvent += ProcessStateUpdate;
+		AppUpdateHandler_t1BAFC46752F6B8618551B6805D2BF23032F2262E* L_2 = __this->____appUpdateHandler_1;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_3 = (Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*)il2cpp_codegen_object_new(Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		Action_1__ctor_mC9070FAAEDE7EDBF76F93ABC0320BD49BEBDAFDF(L_3, __this, (intptr_t)((void*)AppUpdateManagerInternal_ProcessStateUpdate_m0E5BE160608ACEDB721582186A09A16080BC81CA_RuntimeMethod_var), NULL);
+		NullCheck(L_2);
+		AppUpdateHandler_add_OnStateUpdateEvent_mE08D5CCC1A2151EEC1963F96149518B26E1C3196(L_2, L_3, NULL);
+		// PlayCoreEventHandler.CreateInScene();
+		PlayCoreEventHandler_CreateInScene_m45C2939032F2F941F023B15ECA3EC5172A17E31E(NULL);
+		// }
+		return;
+	}
+}
+// Google.Play.Core.Internal.PlayCoreTask`1<UnityEngine.AndroidJavaObject> Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::GetAppUpdateInfo()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* AppUpdateManagerInternal_GetAppUpdateInfo_m4542E5E375C0270C56A53D8C53593F7A82360C9B (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* __this, const RuntimeMethod* method) 
+{
+	{
+		// return _appUpdateManagerPlayCore.GetAppUpdateInfo();
+		AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637* L_0 = __this->____appUpdateManagerPlayCore_0;
+		NullCheck(L_0);
+		PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* L_1;
+		L_1 = AppUpdateManagerPlayCore_GetAppUpdateInfo_m4F699624BE052395C0FA2EFE4A5B71C1B6C6EE60(L_0, NULL);
+		return L_1;
+	}
+}
+// Google.Play.Common.PlayAsyncOperation`2<Google.Play.AppUpdate.AppUpdateInfo,Google.Play.AppUpdate.AppUpdateErrorCode> Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::GetAppUpdateInfoInternal()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayAsyncOperation_2_t39D5C6763CB7F06C186D9A8C75D9F63698F753C6* AppUpdateManagerInternal_GetAppUpdateInfoInternal_m15FF747958520E0C61149AAE61CCB5B81A543A59 (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_tBD9457F0872CC7E6C1468CA37E6EF9D4403E1594_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdateAsyncOperation_1__ctor_mA2F154EB9793BABF281721C1D0D8A593FF8FC1A9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdateAsyncOperation_1_tEC33166ACB2F2393015C72F1DE26C129C951E940_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_RegisterOnFailureCallback_m81B59CC2CA8782959209C1CA9B9410E5859026E5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_RegisterOnSuccessCallback_m2F3393B9B94A1866DE7C446909B4D07D642A835C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass5_0_U3CGetAppUpdateInfoInternalU3Eb__0_mB60DCD7B317C690FA4F5BFE86A46DE0F9B6DDC5A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass5_0_U3CGetAppUpdateInfoInternalU3Eb__1_m2AA8101CB642228DE0DAABD6C4E2D0F300B57D9C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass5_0_t445BD6C105483E94956697869C826EBE2E731EC6_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CU3Ec__DisplayClass5_0_t445BD6C105483E94956697869C826EBE2E731EC6* V_0 = NULL;
+	{
+		U3CU3Ec__DisplayClass5_0_t445BD6C105483E94956697869C826EBE2E731EC6* L_0 = (U3CU3Ec__DisplayClass5_0_t445BD6C105483E94956697869C826EBE2E731EC6*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass5_0_t445BD6C105483E94956697869C826EBE2E731EC6_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CU3Ec__DisplayClass5_0__ctor_m7C0797C0052AEA5903D752819C9E8C772B68AEEB(L_0, NULL);
+		V_0 = L_0;
+		// var appUpdateAsyncOperation = new AppUpdateAsyncOperation<AppUpdateInfo>();
+		U3CU3Ec__DisplayClass5_0_t445BD6C105483E94956697869C826EBE2E731EC6* L_1 = V_0;
+		AppUpdateAsyncOperation_1_tEC33166ACB2F2393015C72F1DE26C129C951E940* L_2 = (AppUpdateAsyncOperation_1_tEC33166ACB2F2393015C72F1DE26C129C951E940*)il2cpp_codegen_object_new(AppUpdateAsyncOperation_1_tEC33166ACB2F2393015C72F1DE26C129C951E940_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		AppUpdateAsyncOperation_1__ctor_mA2F154EB9793BABF281721C1D0D8A593FF8FC1A9(L_2, AppUpdateAsyncOperation_1__ctor_mA2F154EB9793BABF281721C1D0D8A593FF8FC1A9_RuntimeMethod_var);
+		NullCheck(L_1);
+		L_1->___appUpdateAsyncOperation_0 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___appUpdateAsyncOperation_0), (void*)L_2);
+		// var appUpdateInfoTask = GetAppUpdateInfo();
+		U3CU3Ec__DisplayClass5_0_t445BD6C105483E94956697869C826EBE2E731EC6* L_3 = V_0;
+		PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* L_4;
+		L_4 = AppUpdateManagerInternal_GetAppUpdateInfo_m4542E5E375C0270C56A53D8C53593F7A82360C9B(__this, NULL);
+		NullCheck(L_3);
+		L_3->___appUpdateInfoTask_1 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&L_3->___appUpdateInfoTask_1), (void*)L_4);
+		// appUpdateInfoTask.RegisterOnSuccessCallback(javaUpdateInfo =>
+		// {
+		//     appUpdateAsyncOperation.SetResult(new AppUpdateInfo(javaUpdateInfo));
+		//     appUpdateInfoTask.Dispose();
+		// });
+		U3CU3Ec__DisplayClass5_0_t445BD6C105483E94956697869C826EBE2E731EC6* L_5 = V_0;
+		NullCheck(L_5);
+		PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* L_6 = L_5->___appUpdateInfoTask_1;
+		U3CU3Ec__DisplayClass5_0_t445BD6C105483E94956697869C826EBE2E731EC6* L_7 = V_0;
+		Action_1_tBD9457F0872CC7E6C1468CA37E6EF9D4403E1594* L_8 = (Action_1_tBD9457F0872CC7E6C1468CA37E6EF9D4403E1594*)il2cpp_codegen_object_new(Action_1_tBD9457F0872CC7E6C1468CA37E6EF9D4403E1594_il2cpp_TypeInfo_var);
+		NullCheck(L_8);
+		Action_1__ctor_mAD4F64E1D47B76FC413CEBA12F172E968C83AD04(L_8, L_7, (intptr_t)((void*)U3CU3Ec__DisplayClass5_0_U3CGetAppUpdateInfoInternalU3Eb__0_mB60DCD7B317C690FA4F5BFE86A46DE0F9B6DDC5A_RuntimeMethod_var), NULL);
+		NullCheck(L_6);
+		PlayCoreTask_1_RegisterOnSuccessCallback_m2F3393B9B94A1866DE7C446909B4D07D642A835C(L_6, L_8, PlayCoreTask_1_RegisterOnSuccessCallback_m2F3393B9B94A1866DE7C446909B4D07D642A835C_RuntimeMethod_var);
+		// appUpdateInfoTask.RegisterOnFailureCallback((reason, errorCode) =>
+		// {
+		//     appUpdateAsyncOperation.SetError(AppUpdatePlayCoreTranslator.TranslatePlayCoreErrorCode(errorCode));
+		//     appUpdateInfoTask.Dispose();
+		// });
+		U3CU3Ec__DisplayClass5_0_t445BD6C105483E94956697869C826EBE2E731EC6* L_9 = V_0;
+		NullCheck(L_9);
+		PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* L_10 = L_9->___appUpdateInfoTask_1;
+		U3CU3Ec__DisplayClass5_0_t445BD6C105483E94956697869C826EBE2E731EC6* L_11 = V_0;
+		Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF* L_12 = (Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF*)il2cpp_codegen_object_new(Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF_il2cpp_TypeInfo_var);
+		NullCheck(L_12);
+		Action_2__ctor_m84E5BF3DC27EF88D8F87DBBF1C1EC426F2FA4975(L_12, L_11, (intptr_t)((void*)U3CU3Ec__DisplayClass5_0_U3CGetAppUpdateInfoInternalU3Eb__1_m2AA8101CB642228DE0DAABD6C4E2D0F300B57D9C_RuntimeMethod_var), NULL);
+		NullCheck(L_10);
+		PlayCoreTask_1_RegisterOnFailureCallback_m81B59CC2CA8782959209C1CA9B9410E5859026E5(L_10, L_12, PlayCoreTask_1_RegisterOnFailureCallback_m81B59CC2CA8782959209C1CA9B9410E5859026E5_RuntimeMethod_var);
+		// return appUpdateAsyncOperation;
+		U3CU3Ec__DisplayClass5_0_t445BD6C105483E94956697869C826EBE2E731EC6* L_13 = V_0;
+		NullCheck(L_13);
+		AppUpdateAsyncOperation_1_tEC33166ACB2F2393015C72F1DE26C129C951E940* L_14 = L_13->___appUpdateAsyncOperation_0;
+		return L_14;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::RegisterListener(UnityEngine.AndroidJavaProxy)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateManagerInternal_RegisterListener_mD766E41F06BB9E12E29E89072B02A2B22709D9D9 (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* __this, AndroidJavaProxy_tE5521F9761F7B95444B9C39FB15FDFC23F80A78D* ___0_listener, const RuntimeMethod* method) 
+{
+	{
+		// _appUpdateManagerPlayCore.RegisterListener(listener);
+		AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637* L_0 = __this->____appUpdateManagerPlayCore_0;
+		AndroidJavaProxy_tE5521F9761F7B95444B9C39FB15FDFC23F80A78D* L_1 = ___0_listener;
+		NullCheck(L_0);
+		AppUpdateManagerPlayCore_RegisterListener_m7545822D68039FEB1A5969DDB76F5C1881EF65F0(L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::UnregisterListener(UnityEngine.AndroidJavaProxy)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateManagerInternal_UnregisterListener_m6CAB1C26941DD546DF41ED45A99EBE7090BCF47C (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* __this, AndroidJavaProxy_tE5521F9761F7B95444B9C39FB15FDFC23F80A78D* ___0_listener, const RuntimeMethod* method) 
+{
+	{
+		// _appUpdateManagerPlayCore.UnregisterListener(listener);
+		AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637* L_0 = __this->____appUpdateManagerPlayCore_0;
+		AndroidJavaProxy_tE5521F9761F7B95444B9C39FB15FDFC23F80A78D* L_1 = ___0_listener;
+		NullCheck(L_0);
+		AppUpdateManagerPlayCore_UnregisterListener_m0D039D55F0D5EEB8B4AE8E92566C01C5E45C7E72(L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// Google.Play.AppUpdate.AppUpdateRequest Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::StartUpdateInternal(Google.Play.AppUpdate.AppUpdateInfo,Google.Play.AppUpdate.AppUpdateOptions)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* AppUpdateManagerInternal_StartUpdateInternal_m3E365F64383219D731425164B1A1E0E5560B18DA (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* __this, AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* ___0_appUpdateInfo, AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* ___1_appUpdateOptions, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdateManagerInternal_U3CStartUpdateInternalU3Eb__8_0_m9BCE2D91661C631EC2D3750E14E9C96A16F93165_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (appUpdateInfo == null)
+		AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* L_0 = ___0_appUpdateInfo;
+		if (L_0)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		// throw new ArgumentNullException("appUpdateInfo");
+		ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* L_1 = (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var)));
+		NullCheck(L_1);
+		ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B(L_1, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral920617EEBD229EA5BBB788DC30AC9F5E323A448D)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AppUpdateManagerInternal_StartUpdateInternal_m3E365F64383219D731425164B1A1E0E5560B18DA_RuntimeMethod_var)));
+	}
+
+IL_000e:
+	{
+		// if (appUpdateOptions == null)
+		AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* L_2 = ___1_appUpdateOptions;
+		if (L_2)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		// throw new ArgumentNullException("appUpdateOptions");
+		ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* L_3 = (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var)));
+		NullCheck(L_3);
+		ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B(L_3, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral576DE1DC39EED16C68ED00DD6709D3CFCA86ED68)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AppUpdateManagerInternal_StartUpdateInternal_m3E365F64383219D731425164B1A1E0E5560B18DA_RuntimeMethod_var)));
+	}
+
+IL_001c:
+	{
+		// if (_appUpdateRequest != null)
+		AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* L_4 = __this->____appUpdateRequest_2;
+		if (!L_4)
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		// throw new InvalidOperationException(
+		//     "Another update flow is already in progress.");
+		InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB* L_5 = (InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB_il2cpp_TypeInfo_var)));
+		NullCheck(L_5);
+		InvalidOperationException__ctor_mE4CB6F4712AB6D99A2358FBAE2E052B3EE976162(L_5, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralE3105DF2BF7880E64CB64A1976D774B8B6AB3D07)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_5, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AppUpdateManagerInternal_StartUpdateInternal_m3E365F64383219D731425164B1A1E0E5560B18DA_RuntimeMethod_var)));
+	}
+
+IL_002f:
+	{
+		// _appUpdateRequest = new AppUpdateRequestImpl();
+		AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* L_6 = (AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7*)il2cpp_codegen_object_new(AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
+		AppUpdateRequestImpl__ctor_m43911C5E7488D8A115EDB0BD13F5FC47B3639DA7(L_6, NULL);
+		__this->____appUpdateRequest_2 = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____appUpdateRequest_2), (void*)L_6);
+		// if (appUpdateInfo.UpdateAvailability == UpdateAvailability.UpdateNotAvailable)
+		AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* L_7 = ___0_appUpdateInfo;
+		NullCheck(L_7);
+		int32_t L_8;
+		L_8 = AppUpdateInfo_get_UpdateAvailability_m0A4A8FE659A65B4213C8CF0EE4431E56238D198D(L_7, NULL);
+		if ((!(((uint32_t)L_8) == ((uint32_t)1))))
+		{
+			goto IL_0056;
+		}
+	}
+	{
+		// _appUpdateRequest.OnErrorOccurred(AppUpdateErrorCode.ErrorUpdateUnavailable);
+		AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* L_9 = __this->____appUpdateRequest_2;
+		NullCheck(L_9);
+		AppUpdateRequestImpl_OnErrorOccurred_m992A7E58EA6C060B4FE4AA2AAE38DE72F83FDE26(L_9, 5, NULL);
+		// return _appUpdateRequest;
+		AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* L_10 = __this->____appUpdateRequest_2;
+		return L_10;
+	}
+
+IL_0056:
+	{
+		// if (!appUpdateInfo.IsUpdateTypeAllowed(appUpdateOptions))
+		AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* L_11 = ___0_appUpdateInfo;
+		AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* L_12 = ___1_appUpdateOptions;
+		NullCheck(L_11);
+		bool L_13;
+		L_13 = AppUpdateInfo_IsUpdateTypeAllowed_m7D5F243FA5E089D5726A5FBCA75CD0C197450374(L_11, L_12, NULL);
+		if (L_13)
+		{
+			goto IL_0072;
+		}
+	}
+	{
+		// _appUpdateRequest.OnErrorOccurred(AppUpdateErrorCode.ErrorUpdateNotAllowed);
+		AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* L_14 = __this->____appUpdateRequest_2;
+		NullCheck(L_14);
+		AppUpdateRequestImpl_OnErrorOccurred_m992A7E58EA6C060B4FE4AA2AAE38DE72F83FDE26(L_14, 6, NULL);
+		// return _appUpdateRequest;
+		AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* L_15 = __this->____appUpdateRequest_2;
+		return L_15;
+	}
+
+IL_0072:
+	{
+		// _appUpdateRequest.Completed += (req) => { _appUpdateRequest = null; };
+		AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* L_16 = __this->____appUpdateRequest_2;
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_17 = (Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4*)il2cpp_codegen_object_new(Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4_il2cpp_TypeInfo_var);
+		NullCheck(L_17);
+		Action_1__ctor_m737467E71A96B7AC055B39A166513966ECA4EA76(L_17, __this, (intptr_t)((void*)AppUpdateManagerInternal_U3CStartUpdateInternalU3Eb__8_0_m9BCE2D91661C631EC2D3750E14E9C96A16F93165_RuntimeMethod_var), NULL);
+		NullCheck(L_16);
+		VirtualActionInvoker1< Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* >::Invoke(9 /* System.Void Google.Play.AppUpdate.AppUpdateRequest::add_Completed(System.Action`1<Google.Play.AppUpdate.AppUpdateRequest>) */, L_16, L_17);
+		// InitiateRequest(_appUpdateRequest, appUpdateInfo, appUpdateOptions);
+		AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* L_18 = __this->____appUpdateRequest_2;
+		AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* L_19 = ___0_appUpdateInfo;
+		AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* L_20 = ___1_appUpdateOptions;
+		AppUpdateManagerInternal_InitiateRequest_m37AAA5B9590C15DECA95053D3AEA7D93ABB0DBF9(__this, L_18, L_19, L_20, NULL);
+		// return _appUpdateRequest;
+		AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* L_21 = __this->____appUpdateRequest_2;
+		return L_21;
+	}
+}
+// Google.Play.Common.PlayAsyncOperation`2<Google.Play.Common.VoidResult,Google.Play.AppUpdate.AppUpdateErrorCode> Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::CompleteUpdateInternal()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayAsyncOperation_2_t70D0CB32A79B3B657D0C9EE6606ABA6F5A958F15* AppUpdateManagerInternal_CompleteUpdateInternal_m7D90E40DA2362D98150421BA377E68B3F61B9F99 (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t1CE90521DFC32B00F1A467A02F12F52B0F03C219_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdateAsyncOperation_1__ctor_m0549B0A1B22AA510E1BFFFE385D44542AD808D82_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdateAsyncOperation_1_t75D772868C7DB917560A77CD6FE35354A5BF1147_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_RegisterOnFailureCallback_m06E72120A3D0DAA0C848D711476BC60114328F58_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_RegisterOnSuccessCallback_m922BB75531BDB5082724C57F1D7DFE8A476D3AD8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass9_0_U3CCompleteUpdateInternalU3Eb__0_mB2E7A0267E90DA648FD379A779FD96E0B39163D0_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass9_0_U3CCompleteUpdateInternalU3Eb__1_mD3C739CD5CC17F3B4E8AC4D70E1EAF43C848CF83_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass9_0_t3A2F8C92672F0E3AE53F59E0F6D2D131936823CF_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CU3Ec__DisplayClass9_0_t3A2F8C92672F0E3AE53F59E0F6D2D131936823CF* V_0 = NULL;
+	{
+		U3CU3Ec__DisplayClass9_0_t3A2F8C92672F0E3AE53F59E0F6D2D131936823CF* L_0 = (U3CU3Ec__DisplayClass9_0_t3A2F8C92672F0E3AE53F59E0F6D2D131936823CF*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass9_0_t3A2F8C92672F0E3AE53F59E0F6D2D131936823CF_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CU3Ec__DisplayClass9_0__ctor_mBCAACDA88F8D35930CF244D03AF395C524B4FDD0(L_0, NULL);
+		V_0 = L_0;
+		// var completeUpdateAsyncOperation = new AppUpdateAsyncOperation<VoidResult>();
+		U3CU3Ec__DisplayClass9_0_t3A2F8C92672F0E3AE53F59E0F6D2D131936823CF* L_1 = V_0;
+		AppUpdateAsyncOperation_1_t75D772868C7DB917560A77CD6FE35354A5BF1147* L_2 = (AppUpdateAsyncOperation_1_t75D772868C7DB917560A77CD6FE35354A5BF1147*)il2cpp_codegen_object_new(AppUpdateAsyncOperation_1_t75D772868C7DB917560A77CD6FE35354A5BF1147_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		AppUpdateAsyncOperation_1__ctor_m0549B0A1B22AA510E1BFFFE385D44542AD808D82(L_2, AppUpdateAsyncOperation_1__ctor_m0549B0A1B22AA510E1BFFFE385D44542AD808D82_RuntimeMethod_var);
+		NullCheck(L_1);
+		L_1->___completeUpdateAsyncOperation_0 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___completeUpdateAsyncOperation_0), (void*)L_2);
+		// var completeUpdateTask = _appUpdateManagerPlayCore.CompleteUpdate();
+		U3CU3Ec__DisplayClass9_0_t3A2F8C92672F0E3AE53F59E0F6D2D131936823CF* L_3 = V_0;
+		AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637* L_4 = __this->____appUpdateManagerPlayCore_0;
+		NullCheck(L_4);
+		PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075* L_5;
+		L_5 = AppUpdateManagerPlayCore_CompleteUpdate_m9A9204D3E346CE3F56DC5BA4B102C5F1E53495B2(L_4, NULL);
+		NullCheck(L_3);
+		L_3->___completeUpdateTask_1 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&L_3->___completeUpdateTask_1), (void*)L_5);
+		// completeUpdateTask.RegisterOnSuccessCallback(voidResult =>
+		// {
+		//     completeUpdateAsyncOperation.SetResult(voidResult);
+		//     completeUpdateTask.Dispose();
+		// });
+		U3CU3Ec__DisplayClass9_0_t3A2F8C92672F0E3AE53F59E0F6D2D131936823CF* L_6 = V_0;
+		NullCheck(L_6);
+		PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075* L_7 = L_6->___completeUpdateTask_1;
+		U3CU3Ec__DisplayClass9_0_t3A2F8C92672F0E3AE53F59E0F6D2D131936823CF* L_8 = V_0;
+		Action_1_t1CE90521DFC32B00F1A467A02F12F52B0F03C219* L_9 = (Action_1_t1CE90521DFC32B00F1A467A02F12F52B0F03C219*)il2cpp_codegen_object_new(Action_1_t1CE90521DFC32B00F1A467A02F12F52B0F03C219_il2cpp_TypeInfo_var);
+		NullCheck(L_9);
+		Action_1__ctor_mE66F12D709B4E16D29BFB5860EF5B54737A0EBDB(L_9, L_8, (intptr_t)((void*)U3CU3Ec__DisplayClass9_0_U3CCompleteUpdateInternalU3Eb__0_mB2E7A0267E90DA648FD379A779FD96E0B39163D0_RuntimeMethod_var), NULL);
+		NullCheck(L_7);
+		PlayCoreTask_1_RegisterOnSuccessCallback_m922BB75531BDB5082724C57F1D7DFE8A476D3AD8(L_7, L_9, PlayCoreTask_1_RegisterOnSuccessCallback_m922BB75531BDB5082724C57F1D7DFE8A476D3AD8_RuntimeMethod_var);
+		// completeUpdateTask.RegisterOnFailureCallback((reason, errorCode) =>
+		// {
+		//     completeUpdateAsyncOperation.SetError(
+		//         AppUpdatePlayCoreTranslator.TranslatePlayCoreErrorCode(errorCode));
+		//     completeUpdateTask.Dispose();
+		// });
+		U3CU3Ec__DisplayClass9_0_t3A2F8C92672F0E3AE53F59E0F6D2D131936823CF* L_10 = V_0;
+		NullCheck(L_10);
+		PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075* L_11 = L_10->___completeUpdateTask_1;
+		U3CU3Ec__DisplayClass9_0_t3A2F8C92672F0E3AE53F59E0F6D2D131936823CF* L_12 = V_0;
+		Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF* L_13 = (Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF*)il2cpp_codegen_object_new(Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF_il2cpp_TypeInfo_var);
+		NullCheck(L_13);
+		Action_2__ctor_m84E5BF3DC27EF88D8F87DBBF1C1EC426F2FA4975(L_13, L_12, (intptr_t)((void*)U3CU3Ec__DisplayClass9_0_U3CCompleteUpdateInternalU3Eb__1_mD3C739CD5CC17F3B4E8AC4D70E1EAF43C848CF83_RuntimeMethod_var), NULL);
+		NullCheck(L_11);
+		PlayCoreTask_1_RegisterOnFailureCallback_m06E72120A3D0DAA0C848D711476BC60114328F58(L_11, L_13, PlayCoreTask_1_RegisterOnFailureCallback_m06E72120A3D0DAA0C848D711476BC60114328F58_RuntimeMethod_var);
+		// return completeUpdateAsyncOperation;
+		U3CU3Ec__DisplayClass9_0_t3A2F8C92672F0E3AE53F59E0F6D2D131936823CF* L_14 = V_0;
+		NullCheck(L_14);
+		AppUpdateAsyncOperation_1_t75D772868C7DB917560A77CD6FE35354A5BF1147* L_15 = L_14->___completeUpdateAsyncOperation_0;
+		return L_15;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::InitiateRequest(Google.Play.AppUpdate.Internal.AppUpdateRequestImpl,Google.Play.AppUpdate.AppUpdateInfo,Google.Play.AppUpdate.AppUpdateOptions)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateManagerInternal_InitiateRequest_m37AAA5B9590C15DECA95053D3AEA7D93ABB0DBF9 (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* __this, AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* ___0_request, AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* ___1_appUpdateInfo, AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* ___2_appUpdateOptions, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_RegisterOnFailureCallback_mF8543DC0C206CD3ABC2BB7692B2A7BFEE263E694_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_RegisterOnSuccessCallback_m2B6E163F1A0A385BD0C1EBBD9380257154294EA4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass10_0_U3CInitiateRequestU3Eb__0_mEC8D597BAC2740014790AB9FFCB7EF687624864E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass10_0_U3CInitiateRequestU3Eb__1_m51F87D565ED2B14A0436E4F9B3C538333834BA32_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass10_0_tB13DA84C4ECFFE89A9BE7603A7D01F0E5EF260AF_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CU3Ec__DisplayClass10_0_tB13DA84C4ECFFE89A9BE7603A7D01F0E5EF260AF* V_0 = NULL;
+	{
+		U3CU3Ec__DisplayClass10_0_tB13DA84C4ECFFE89A9BE7603A7D01F0E5EF260AF* L_0 = (U3CU3Ec__DisplayClass10_0_tB13DA84C4ECFFE89A9BE7603A7D01F0E5EF260AF*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass10_0_tB13DA84C4ECFFE89A9BE7603A7D01F0E5EF260AF_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CU3Ec__DisplayClass10_0__ctor_m4B7CD913D17642EE9097E93D93B8E354EA1BCF79(L_0, NULL);
+		V_0 = L_0;
+		U3CU3Ec__DisplayClass10_0_tB13DA84C4ECFFE89A9BE7603A7D01F0E5EF260AF* L_1 = V_0;
+		AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* L_2 = ___0_request;
+		NullCheck(L_1);
+		L_1->___request_0 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___request_0), (void*)L_2);
+		// if (appUpdateInfo.UpdateAvailability == UpdateAvailability.DeveloperTriggeredUpdateInProgress)
+		AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* L_3 = ___1_appUpdateInfo;
+		NullCheck(L_3);
+		int32_t L_4;
+		L_4 = AppUpdateInfo_get_UpdateAvailability_m0A4A8FE659A65B4213C8CF0EE4431E56238D198D(L_3, NULL);
+		if ((!(((uint32_t)L_4) == ((uint32_t)3))))
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		// request.SetUpdateActivityResult(ActivityResult.ResultOk);
+		U3CU3Ec__DisplayClass10_0_tB13DA84C4ECFFE89A9BE7603A7D01F0E5EF260AF* L_5 = V_0;
+		NullCheck(L_5);
+		AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* L_6 = L_5->___request_0;
+		NullCheck(L_6);
+		AppUpdateRequestImpl_SetUpdateActivityResult_m0F478B1877A95D95C733D9D51CB4F38043720A55(L_6, (-1), NULL);
+	}
+
+IL_0022:
+	{
+		// if (request.IsDone && appUpdateOptions.AppUpdateType == AppUpdateType.Flexible)
+		U3CU3Ec__DisplayClass10_0_tB13DA84C4ECFFE89A9BE7603A7D01F0E5EF260AF* L_7 = V_0;
+		NullCheck(L_7);
+		AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* L_8 = L_7->___request_0;
+		NullCheck(L_8);
+		bool L_9;
+		L_9 = AppUpdateRequest_get_IsDone_m345F4E193257A5E6C87A61AF48DA197893AA78D2_inline(L_8, NULL);
+		if (!L_9)
+		{
+			goto IL_0043;
+		}
+	}
+	{
+		AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* L_10 = ___2_appUpdateOptions;
+		NullCheck(L_10);
+		int32_t L_11;
+		L_11 = AppUpdateOptions_get_AppUpdateType_m62CE4069B795B91398271BB7948C6B84D1876F3A(L_10, NULL);
+		if (L_11)
+		{
+			goto IL_0043;
+		}
+	}
+	{
+		// request.OnUpdateDownloaded();
+		U3CU3Ec__DisplayClass10_0_tB13DA84C4ECFFE89A9BE7603A7D01F0E5EF260AF* L_12 = V_0;
+		NullCheck(L_12);
+		AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* L_13 = L_12->___request_0;
+		NullCheck(L_13);
+		AppUpdateRequestImpl_OnUpdateDownloaded_mEE55CD4F6BA30730A4A4B5735B15A5098F7E1F95(L_13, NULL);
+		return;
+	}
+
+IL_0043:
+	{
+		// var requestFlowTask = _appUpdateManagerPlayCore.StartUpdateFlow(appUpdateInfo, appUpdateOptions);
+		U3CU3Ec__DisplayClass10_0_tB13DA84C4ECFFE89A9BE7603A7D01F0E5EF260AF* L_14 = V_0;
+		AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637* L_15 = __this->____appUpdateManagerPlayCore_0;
+		AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* L_16 = ___1_appUpdateInfo;
+		AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* L_17 = ___2_appUpdateOptions;
+		NullCheck(L_15);
+		PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F* L_18;
+		L_18 = AppUpdateManagerPlayCore_StartUpdateFlow_m060BA768ADFAB1000D614287A5B31354040909CD(L_15, L_16, L_17, NULL);
+		NullCheck(L_14);
+		L_14->___requestFlowTask_1 = L_18;
+		Il2CppCodeGenWriteBarrier((void**)(&L_14->___requestFlowTask_1), (void*)L_18);
+		// requestFlowTask.RegisterOnSuccessCallback(resultCode =>
+		// {
+		//     // Set user confirmation dialog result for the update request.
+		//     request.SetUpdateActivityResult(resultCode);
+		//     requestFlowTask.Dispose();
+		// });
+		U3CU3Ec__DisplayClass10_0_tB13DA84C4ECFFE89A9BE7603A7D01F0E5EF260AF* L_19 = V_0;
+		NullCheck(L_19);
+		PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F* L_20 = L_19->___requestFlowTask_1;
+		U3CU3Ec__DisplayClass10_0_tB13DA84C4ECFFE89A9BE7603A7D01F0E5EF260AF* L_21 = V_0;
+		Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* L_22 = (Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404*)il2cpp_codegen_object_new(Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404_il2cpp_TypeInfo_var);
+		NullCheck(L_22);
+		Action_1__ctor_m1BA854F3F4319EA4A4294DDFDA21C395B8D0FF87(L_22, L_21, (intptr_t)((void*)U3CU3Ec__DisplayClass10_0_U3CInitiateRequestU3Eb__0_mEC8D597BAC2740014790AB9FFCB7EF687624864E_RuntimeMethod_var), NULL);
+		NullCheck(L_20);
+		PlayCoreTask_1_RegisterOnSuccessCallback_m2B6E163F1A0A385BD0C1EBBD9380257154294EA4(L_20, L_22, PlayCoreTask_1_RegisterOnSuccessCallback_m2B6E163F1A0A385BD0C1EBBD9380257154294EA4_RuntimeMethod_var);
+		// requestFlowTask.RegisterOnFailureCallback((reason, errorCode) =>
+		// {
+		//     Debug.LogErrorFormat("Update flow request failed: {0}", errorCode);
+		//     request.OnErrorOccurred(AppUpdatePlayCoreTranslator.TranslatePlayCoreErrorCode(errorCode));
+		//     requestFlowTask.Dispose();
+		// });
+		U3CU3Ec__DisplayClass10_0_tB13DA84C4ECFFE89A9BE7603A7D01F0E5EF260AF* L_23 = V_0;
+		NullCheck(L_23);
+		PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F* L_24 = L_23->___requestFlowTask_1;
+		U3CU3Ec__DisplayClass10_0_tB13DA84C4ECFFE89A9BE7603A7D01F0E5EF260AF* L_25 = V_0;
+		Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF* L_26 = (Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF*)il2cpp_codegen_object_new(Action_2_t3C59E567836F9368797ABE71269B3D38D4F3E1CF_il2cpp_TypeInfo_var);
+		NullCheck(L_26);
+		Action_2__ctor_m84E5BF3DC27EF88D8F87DBBF1C1EC426F2FA4975(L_26, L_25, (intptr_t)((void*)U3CU3Ec__DisplayClass10_0_U3CInitiateRequestU3Eb__1_m51F87D565ED2B14A0436E4F9B3C538333834BA32_RuntimeMethod_var), NULL);
+		NullCheck(L_24);
+		PlayCoreTask_1_RegisterOnFailureCallback_mF8543DC0C206CD3ABC2BB7692B2A7BFEE263E694(L_24, L_26, PlayCoreTask_1_RegisterOnFailureCallback_mF8543DC0C206CD3ABC2BB7692B2A7BFEE263E694_RuntimeMethod_var);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::ProcessStateUpdate(Google.Play.AppUpdate.Internal.AppUpdateState)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateManagerInternal_ProcessStateUpdate_m0E5BE160608ACEDB721582186A09A16080BC81CA (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* __this, AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* ___0_newState, const RuntimeMethod* method) 
+{
+	{
+		// if (_appUpdateRequest != null && newState != null)
+		AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* L_0 = __this->____appUpdateRequest_2;
+		if (!L_0)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* L_1 = ___0_newState;
+		if (!L_1)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		// AppUpdateRequest(_appUpdateRequest, newState);
+		AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* L_2 = __this->____appUpdateRequest_2;
+		AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* L_3 = ___0_newState;
+		AppUpdateManagerInternal_AppUpdateRequest_m73D925CB08FA8BDDFF10D4875CEB84B4060B0BE6(__this, L_2, L_3, NULL);
+	}
+
+IL_0018:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::AppUpdateRequest(Google.Play.AppUpdate.Internal.AppUpdateRequestImpl,Google.Play.AppUpdate.Internal.AppUpdateState)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateManagerInternal_AppUpdateRequest_m73D925CB08FA8BDDFF10D4875CEB84B4060B0BE6 (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* __this, AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* ___0_request, AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* ___1_newState, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (AppUpdatePlayCoreTranslator.TranslatePlayCoreErrorCode(newState.ErrorCode) !=
+		//     AppUpdateErrorCode.NoError)
+		AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* L_0 = ___1_newState;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = AppUpdateState_get_ErrorCode_m1F7DE9BB3A91B512472F9A630C17CC370CDCD791_inline(L_0, NULL);
+		il2cpp_codegen_runtime_class_init_inline(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		int32_t L_2;
+		L_2 = AppUpdatePlayCoreTranslator_TranslatePlayCoreErrorCode_mE59EB28FDB77F65BDF0FEA455F050C9936C4C6C5(L_1, NULL);
+		if (!L_2)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		// request.OnErrorOccurred(request.Error);
+		AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* L_3 = ___0_request;
+		AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* L_4 = ___0_request;
+		NullCheck(L_4);
+		int32_t L_5;
+		L_5 = AppUpdateRequest_get_Error_m2428F339054733C4391F69FDC31B729FF76EEE6C_inline(L_4, NULL);
+		NullCheck(L_3);
+		AppUpdateRequestImpl_OnErrorOccurred_m992A7E58EA6C060B4FE4AA2AAE38DE72F83FDE26(L_3, L_5, NULL);
+		// return;
+		return;
+	}
+
+IL_001a:
+	{
+		// request.UpdateState(AppUpdatePlayCoreTranslator.TranslatePlayCoreUpdateStatus(newState.Status),
+		//     newState.BytesDownloaded,
+		//     newState.TotalBytesToDownload);
+		AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* L_6 = ___0_request;
+		AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* L_7 = ___1_newState;
+		NullCheck(L_7);
+		int32_t L_8;
+		L_8 = AppUpdateState_get_Status_m602AAA83296C02417B09F9F54A1FB91FD2AD3D86_inline(L_7, NULL);
+		il2cpp_codegen_runtime_class_init_inline(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		int32_t L_9;
+		L_9 = AppUpdatePlayCoreTranslator_TranslatePlayCoreUpdateStatus_m5F4CE37AE2073F90DD6DF42DDF4F7371D405BA00(L_8, NULL);
+		AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* L_10 = ___1_newState;
+		NullCheck(L_10);
+		int64_t L_11;
+		L_11 = AppUpdateState_get_BytesDownloaded_m7F6D696B6B50A9174566F6E5040D18BC93F7A289_inline(L_10, NULL);
+		AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* L_12 = ___1_newState;
+		NullCheck(L_12);
+		int64_t L_13;
+		L_13 = AppUpdateState_get_TotalBytesToDownload_m761AB41F863C791B602228ADB58548849410054C_inline(L_12, NULL);
+		NullCheck(L_6);
+		AppUpdateRequestImpl_UpdateState_mD9502F80F3AE93E807F920C2F9A93234E31444C3(L_6, L_9, L_11, L_13, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal::<StartUpdateInternal>b__8_0(Google.Play.AppUpdate.AppUpdateRequest)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateManagerInternal_U3CStartUpdateInternalU3Eb__8_0_m9BCE2D91661C631EC2D3750E14E9C96A16F93165 (AppUpdateManagerInternal_t60506B1E7DE433E2EB5A85ABFEE9AB79451298A9* __this, AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* ___0_req, const RuntimeMethod* method) 
+{
+	{
+		// _appUpdateRequest.Completed += (req) => { _appUpdateRequest = null; };
+		__this->____appUpdateRequest_2 = (AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____appUpdateRequest_2), (void*)(AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7*)NULL);
+		// _appUpdateRequest.Completed += (req) => { _appUpdateRequest = null; };
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass5_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass5_0__ctor_m7C0797C0052AEA5903D752819C9E8C772B68AEEB (U3CU3Ec__DisplayClass5_0_t445BD6C105483E94956697869C826EBE2E731EC6* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass5_0::<GetAppUpdateInfoInternal>b__0(UnityEngine.AndroidJavaObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass5_0_U3CGetAppUpdateInfoInternalU3Eb__0_mB60DCD7B317C690FA4F5BFE86A46DE0F9B6DDC5A (U3CU3Ec__DisplayClass5_0_t445BD6C105483E94956697869C826EBE2E731EC6* __this, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ___0_javaUpdateInfo, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayAsyncOperationImpl_2_SetResult_m950096A20B8814CDD43807557258F6DEEEE8DDAD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// appUpdateAsyncOperation.SetResult(new AppUpdateInfo(javaUpdateInfo));
+		AppUpdateAsyncOperation_1_tEC33166ACB2F2393015C72F1DE26C129C951E940* L_0 = __this->___appUpdateAsyncOperation_0;
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_1 = ___0_javaUpdateInfo;
+		AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* L_2 = (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9*)il2cpp_codegen_object_new(AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		AppUpdateInfo__ctor_m953ACFF2AE6DC4C619A6789DBD8DBF8DEF74652A(L_2, L_1, NULL);
+		NullCheck(L_0);
+		PlayAsyncOperationImpl_2_SetResult_m950096A20B8814CDD43807557258F6DEEEE8DDAD(L_0, L_2, PlayAsyncOperationImpl_2_SetResult_m950096A20B8814CDD43807557258F6DEEEE8DDAD_RuntimeMethod_var);
+		// appUpdateInfoTask.Dispose();
+		PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* L_3 = __this->___appUpdateInfoTask_1;
+		NullCheck(L_3);
+		PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8(L_3, PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8_RuntimeMethod_var);
+		// });
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass5_0::<GetAppUpdateInfoInternal>b__1(System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass5_0_U3CGetAppUpdateInfoInternalU3Eb__1_m2AA8101CB642228DE0DAABD6C4E2D0F300B57D9C (U3CU3Ec__DisplayClass5_0_t445BD6C105483E94956697869C826EBE2E731EC6* __this, String_t* ___0_reason, int32_t ___1_errorCode, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayAsyncOperationImpl_2_SetError_m9D2E1F99FBEFDBA70757E6CC6092380F358F38B4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// appUpdateAsyncOperation.SetError(AppUpdatePlayCoreTranslator.TranslatePlayCoreErrorCode(errorCode));
+		AppUpdateAsyncOperation_1_tEC33166ACB2F2393015C72F1DE26C129C951E940* L_0 = __this->___appUpdateAsyncOperation_0;
+		int32_t L_1 = ___1_errorCode;
+		il2cpp_codegen_runtime_class_init_inline(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		int32_t L_2;
+		L_2 = AppUpdatePlayCoreTranslator_TranslatePlayCoreErrorCode_mE59EB28FDB77F65BDF0FEA455F050C9936C4C6C5(L_1, NULL);
+		NullCheck(L_0);
+		PlayAsyncOperationImpl_2_SetError_m9D2E1F99FBEFDBA70757E6CC6092380F358F38B4(L_0, L_2, PlayAsyncOperationImpl_2_SetError_m9D2E1F99FBEFDBA70757E6CC6092380F358F38B4_RuntimeMethod_var);
+		// appUpdateInfoTask.Dispose();
+		PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* L_3 = __this->___appUpdateInfoTask_1;
+		NullCheck(L_3);
+		PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8(L_3, PlayCoreTask_1_Dispose_m13E1353896E7AFE26557D1FBFD53A1BC86D8EDE8_RuntimeMethod_var);
+		// });
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass9_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass9_0__ctor_mBCAACDA88F8D35930CF244D03AF395C524B4FDD0 (U3CU3Ec__DisplayClass9_0_t3A2F8C92672F0E3AE53F59E0F6D2D131936823CF* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass9_0::<CompleteUpdateInternal>b__0(Google.Play.Common.VoidResult)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass9_0_U3CCompleteUpdateInternalU3Eb__0_mB2E7A0267E90DA648FD379A779FD96E0B39163D0 (U3CU3Ec__DisplayClass9_0_t3A2F8C92672F0E3AE53F59E0F6D2D131936823CF* __this, VoidResult_t2EF77C7575B288CA1B347EDF1877D2236759ED9C* ___0_voidResult, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayAsyncOperationImpl_2_SetResult_mF255A462DC9C24B3CDFF8B8DFA075AE8694C7A26_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_Dispose_mF100515D3E945380CE4A58671ABE8C470A886AA2_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// completeUpdateAsyncOperation.SetResult(voidResult);
+		AppUpdateAsyncOperation_1_t75D772868C7DB917560A77CD6FE35354A5BF1147* L_0 = __this->___completeUpdateAsyncOperation_0;
+		VoidResult_t2EF77C7575B288CA1B347EDF1877D2236759ED9C* L_1 = ___0_voidResult;
+		NullCheck(L_0);
+		PlayAsyncOperationImpl_2_SetResult_mF255A462DC9C24B3CDFF8B8DFA075AE8694C7A26(L_0, L_1, PlayAsyncOperationImpl_2_SetResult_mF255A462DC9C24B3CDFF8B8DFA075AE8694C7A26_RuntimeMethod_var);
+		// completeUpdateTask.Dispose();
+		PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075* L_2 = __this->___completeUpdateTask_1;
+		NullCheck(L_2);
+		PlayCoreTask_1_Dispose_mF100515D3E945380CE4A58671ABE8C470A886AA2(L_2, PlayCoreTask_1_Dispose_mF100515D3E945380CE4A58671ABE8C470A886AA2_RuntimeMethod_var);
+		// });
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass9_0::<CompleteUpdateInternal>b__1(System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass9_0_U3CCompleteUpdateInternalU3Eb__1_mD3C739CD5CC17F3B4E8AC4D70E1EAF43C848CF83 (U3CU3Ec__DisplayClass9_0_t3A2F8C92672F0E3AE53F59E0F6D2D131936823CF* __this, String_t* ___0_reason, int32_t ___1_errorCode, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayAsyncOperationImpl_2_SetError_mBB436252BD06E688A82F64131C6955C636564B04_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_Dispose_mF100515D3E945380CE4A58671ABE8C470A886AA2_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// completeUpdateAsyncOperation.SetError(
+		//     AppUpdatePlayCoreTranslator.TranslatePlayCoreErrorCode(errorCode));
+		AppUpdateAsyncOperation_1_t75D772868C7DB917560A77CD6FE35354A5BF1147* L_0 = __this->___completeUpdateAsyncOperation_0;
+		int32_t L_1 = ___1_errorCode;
+		il2cpp_codegen_runtime_class_init_inline(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		int32_t L_2;
+		L_2 = AppUpdatePlayCoreTranslator_TranslatePlayCoreErrorCode_mE59EB28FDB77F65BDF0FEA455F050C9936C4C6C5(L_1, NULL);
+		NullCheck(L_0);
+		PlayAsyncOperationImpl_2_SetError_mBB436252BD06E688A82F64131C6955C636564B04(L_0, L_2, PlayAsyncOperationImpl_2_SetError_mBB436252BD06E688A82F64131C6955C636564B04_RuntimeMethod_var);
+		// completeUpdateTask.Dispose();
+		PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075* L_3 = __this->___completeUpdateTask_1;
+		NullCheck(L_3);
+		PlayCoreTask_1_Dispose_mF100515D3E945380CE4A58671ABE8C470A886AA2(L_3, PlayCoreTask_1_Dispose_mF100515D3E945380CE4A58671ABE8C470A886AA2_RuntimeMethod_var);
+		// });
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass10_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass10_0__ctor_m4B7CD913D17642EE9097E93D93B8E354EA1BCF79 (U3CU3Ec__DisplayClass10_0_tB13DA84C4ECFFE89A9BE7603A7D01F0E5EF260AF* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass10_0::<InitiateRequest>b__0(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass10_0_U3CInitiateRequestU3Eb__0_mEC8D597BAC2740014790AB9FFCB7EF687624864E (U3CU3Ec__DisplayClass10_0_tB13DA84C4ECFFE89A9BE7603A7D01F0E5EF260AF* __this, int32_t ___0_resultCode, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_Dispose_m00ED1653B30AFA878BBA3EA3B72E17FCC8522355_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// request.SetUpdateActivityResult(resultCode);
+		AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* L_0 = __this->___request_0;
+		int32_t L_1 = ___0_resultCode;
+		NullCheck(L_0);
+		AppUpdateRequestImpl_SetUpdateActivityResult_m0F478B1877A95D95C733D9D51CB4F38043720A55(L_0, L_1, NULL);
+		// requestFlowTask.Dispose();
+		PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F* L_2 = __this->___requestFlowTask_1;
+		NullCheck(L_2);
+		PlayCoreTask_1_Dispose_m00ED1653B30AFA878BBA3EA3B72E17FCC8522355(L_2, PlayCoreTask_1_Dispose_m00ED1653B30AFA878BBA3EA3B72E17FCC8522355_RuntimeMethod_var);
+		// });
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerInternal/<>c__DisplayClass10_0::<InitiateRequest>b__1(System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass10_0_U3CInitiateRequestU3Eb__1_m51F87D565ED2B14A0436E4F9B3C538333834BA32 (U3CU3Ec__DisplayClass10_0_tB13DA84C4ECFFE89A9BE7603A7D01F0E5EF260AF* __this, String_t* ___0_reason, int32_t ___1_errorCode, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_Dispose_m00ED1653B30AFA878BBA3EA3B72E17FCC8522355_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE2776E6C4A2902E859FFA78E545FDF865AD761C6);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Debug.LogErrorFormat("Update flow request failed: {0}", errorCode);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_0 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = L_0;
+		int32_t L_2 = ___1_errorCode;
+		int32_t L_3 = L_2;
+		RuntimeObject* L_4 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_3);
+		NullCheck(L_1);
+		ArrayElementTypeCheck (L_1, L_4);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_4);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogErrorFormat_m96690322C941D23A125E5769C9803606859A707C(_stringLiteralE2776E6C4A2902E859FFA78E545FDF865AD761C6, L_1, NULL);
+		// request.OnErrorOccurred(AppUpdatePlayCoreTranslator.TranslatePlayCoreErrorCode(errorCode));
+		AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* L_5 = __this->___request_0;
+		int32_t L_6 = ___1_errorCode;
+		il2cpp_codegen_runtime_class_init_inline(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		int32_t L_7;
+		L_7 = AppUpdatePlayCoreTranslator_TranslatePlayCoreErrorCode_mE59EB28FDB77F65BDF0FEA455F050C9936C4C6C5(L_6, NULL);
+		NullCheck(L_5);
+		AppUpdateRequestImpl_OnErrorOccurred_m992A7E58EA6C060B4FE4AA2AAE38DE72F83FDE26(L_5, L_7, NULL);
+		// requestFlowTask.Dispose();
+		PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F* L_8 = __this->___requestFlowTask_1;
+		NullCheck(L_8);
+		PlayCoreTask_1_Dispose_m00ED1653B30AFA878BBA3EA3B72E17FCC8522355(L_8, PlayCoreTask_1_Dispose_m00ED1653B30AFA878BBA3EA3B72E17FCC8522355_RuntimeMethod_var);
+		// });
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerPlayCore::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateManagerPlayCore__ctor_mA1B98C6071B03F58B4F72ED7D3ECFFAB15DAE0E9 (AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_CallStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m398EA96C1DE1BB885F2B1DD0E00E8BBA86B49E63_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral75FAF73308668FD490C851CC686D98C743D7461C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAA54966926EB64A8BF901AF1F5AF1F9BD6671D7D);
+		s_Il2CppMethodInitialized = true;
+	}
+	AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* V_0 = NULL;
+	AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* V_1 = NULL;
+	{
+		// internal AppUpdateManagerPlayCore()
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// using (var activity = UnityPlayerHelper.GetCurrentActivity())
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0;
+		L_0 = UnityPlayerHelper_GetCurrentActivity_m016A45C7A2E9DDBEA730B34B75289BAF6E3DD040(NULL);
+		V_0 = L_0;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_003e:
+			{// begin finally (depth: 1)
+				{
+					AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_1 = V_0;
+					if (!L_1)
+					{
+						goto IL_0047;
+					}
+				}
+				{
+					AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_2 = V_0;
+					NullCheck(L_2);
+					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_2);
+				}
+
+IL_0047:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				// using (var managerFactory = new AndroidJavaClass(factoryClassName))
+				AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_3 = (AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03*)il2cpp_codegen_object_new(AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03_il2cpp_TypeInfo_var);
+				NullCheck(L_3);
+				AndroidJavaClass__ctor_mB5466169E1151B8CC44C8FED234D79984B431389(L_3, _stringLiteralAA54966926EB64A8BF901AF1F5AF1F9BD6671D7D, NULL);
+				V_1 = L_3;
+			}
+			{
+				auto __finallyBlock = il2cpp::utils::Finally([&]
+				{
+
+FINALLY_0034_1:
+					{// begin finally (depth: 2)
+						{
+							AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_4 = V_1;
+							if (!L_4)
+							{
+								goto IL_003d_1;
+							}
+						}
+						{
+							AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_5 = V_1;
+							NullCheck(L_5);
+							InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_5);
+						}
+
+IL_003d_1:
+						{
+							return;
+						}
+					}// end finally (depth: 2)
+				});
+				try
+				{// begin try (depth: 2)
+					// _javaAppUpdateManager = managerFactory.CallStatic<AndroidJavaObject>("create", activity);
+					AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_6 = V_1;
+					ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_7 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+					ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_8 = L_7;
+					AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_9 = V_0;
+					NullCheck(L_8);
+					ArrayElementTypeCheck (L_8, L_9);
+					(L_8)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_9);
+					NullCheck(L_6);
+					AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_10;
+					L_10 = AndroidJavaObject_CallStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m398EA96C1DE1BB885F2B1DD0E00E8BBA86B49E63(L_6, _stringLiteral75FAF73308668FD490C851CC686D98C743D7461C, L_8, AndroidJavaObject_CallStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m398EA96C1DE1BB885F2B1DD0E00E8BBA86B49E63_RuntimeMethod_var);
+					__this->____javaAppUpdateManager_0 = L_10;
+					Il2CppCodeGenWriteBarrier((void**)(&__this->____javaAppUpdateManager_0), (void*)L_10);
+					// }
+					goto IL_0048;
+				}// end try (depth: 2)
+				catch(Il2CppExceptionWrapper& e)
+				{
+					__finallyBlock.StoreException(e.ex);
+				}
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0048:
+	{
+		// if (_javaAppUpdateManager == null)
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_11 = __this->____javaAppUpdateManager_0;
+		if (L_11)
+		{
+			goto IL_005b;
+		}
+	}
+	{
+		// throw new NullReferenceException("Play Core returned null AppUpdateManager");
+		NullReferenceException_tBDE63A6D24569B964908408389070C6A9F5005BB* L_12 = (NullReferenceException_tBDE63A6D24569B964908408389070C6A9F5005BB*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NullReferenceException_tBDE63A6D24569B964908408389070C6A9F5005BB_il2cpp_TypeInfo_var)));
+		NullCheck(L_12);
+		NullReferenceException__ctor_mA41317A57F5C1C0E3F59C7EB25ABD484564B23D4(L_12, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral5DEB9C6D092F5904C61EA3A4A2E4705A6BAB7D80)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_12, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AppUpdateManagerPlayCore__ctor_mA1B98C6071B03F58B4F72ED7D3ECFFAB15DAE0E9_RuntimeMethod_var)));
+	}
+
+IL_005b:
+	{
+		// PlayCoreEventHandler.CreateInScene();
+		PlayCoreEventHandler_CreateInScene_m45C2939032F2F941F023B15ECA3EC5172A17E31E(NULL);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerPlayCore::RegisterListener(UnityEngine.AndroidJavaProxy)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateManagerPlayCore_RegisterListener_m7545822D68039FEB1A5969DDB76F5C1881EF65F0 (AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637* __this, AndroidJavaProxy_tE5521F9761F7B95444B9C39FB15FDFC23F80A78D* ___0_listener, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE94F67292842EEBE05D89BE49B72C3D46F3E1314);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// _javaAppUpdateManager.Call("registerListener", listener);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->____javaAppUpdateManager_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = L_1;
+		AndroidJavaProxy_tE5521F9761F7B95444B9C39FB15FDFC23F80A78D* L_3 = ___0_listener;
+		NullCheck(L_2);
+		ArrayElementTypeCheck (L_2, L_3);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_3);
+		NullCheck(L_0);
+		AndroidJavaObject_Call_mDEF7846E2AB1C5379069BB21049ED55A9D837B1C(L_0, _stringLiteralE94F67292842EEBE05D89BE49B72C3D46F3E1314, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerPlayCore::UnregisterListener(UnityEngine.AndroidJavaProxy)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateManagerPlayCore_UnregisterListener_m0D039D55F0D5EEB8B4AE8E92566C01C5E45C7E72 (AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637* __this, AndroidJavaProxy_tE5521F9761F7B95444B9C39FB15FDFC23F80A78D* ___0_listener, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral18B13376AF1971AA622EBCC3C691A582DE44685A);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// _javaAppUpdateManager.Call("unregisterListener", listener);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->____javaAppUpdateManager_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = L_1;
+		AndroidJavaProxy_tE5521F9761F7B95444B9C39FB15FDFC23F80A78D* L_3 = ___0_listener;
+		NullCheck(L_2);
+		ArrayElementTypeCheck (L_2, L_3);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_3);
+		NullCheck(L_0);
+		AndroidJavaObject_Call_mDEF7846E2AB1C5379069BB21049ED55A9D837B1C(L_0, _stringLiteral18B13376AF1971AA622EBCC3C691A582DE44685A, L_2, NULL);
+		// }
+		return;
+	}
+}
+// Google.Play.Core.Internal.PlayCoreTask`1<UnityEngine.AndroidJavaObject> Google.Play.AppUpdate.Internal.AppUpdateManagerPlayCore::GetAppUpdateInfo()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* AppUpdateManagerPlayCore_GetAppUpdateInfo_m4F699624BE052395C0FA2EFE4A5B71C1B6C6EE60 (AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m020246E0988293B6126B690BD6CE4D894276AA3D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1__ctor_mDAA5455BA547162FA6EA8C79EF4A38E0D0A62B8D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral779880947B42AA00349532A5C9BEF8B3207E53A5);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// var javaTask = _javaAppUpdateManager.Call<AndroidJavaObject>("getAppUpdateInfo");
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->____javaAppUpdateManager_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1;
+		L_1 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		NullCheck(L_0);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_2;
+		L_2 = AndroidJavaObject_Call_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m020246E0988293B6126B690BD6CE4D894276AA3D(L_0, _stringLiteral779880947B42AA00349532A5C9BEF8B3207E53A5, L_1, AndroidJavaObject_Call_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m020246E0988293B6126B690BD6CE4D894276AA3D_RuntimeMethod_var);
+		// return new PlayCoreTask<AndroidJavaObject>(javaTask);
+		PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E* L_3 = (PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E*)il2cpp_codegen_object_new(PlayCoreTask_1_tB6E09B88846562936588A7B563CC080BBD26162E_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		PlayCoreTask_1__ctor_mDAA5455BA547162FA6EA8C79EF4A38E0D0A62B8D(L_3, L_2, PlayCoreTask_1__ctor_mDAA5455BA547162FA6EA8C79EF4A38E0D0A62B8D_RuntimeMethod_var);
+		return L_3;
+	}
+}
+// Google.Play.Core.Internal.PlayCoreTask`1<System.Int32> Google.Play.AppUpdate.Internal.AppUpdateManagerPlayCore::StartUpdateFlow(Google.Play.AppUpdate.AppUpdateInfo,Google.Play.AppUpdate.AppUpdateOptions)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F* AppUpdateManagerPlayCore_StartUpdateFlow_m060BA768ADFAB1000D614287A5B31354040909CD (AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637* __this, AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* ___0_appUpdateInfo, AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* ___1_appUpdateOptions, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m020246E0988293B6126B690BD6CE4D894276AA3D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1__ctor_mFF5887DD94D8E7A1F3B1BB63266E75628AF494C8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral565D6D845D54747D4F15E70103BF82C1B66A1132);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// var javaTask =
+		//     _javaAppUpdateManager.Call<AndroidJavaObject>("startUpdateFlow",
+		//         appUpdateInfo.GetJavaUpdateInfo(), UnityPlayerHelper.GetCurrentActivity(),
+		//         appUpdateOptions.GetJavaAppUpdateOptions());
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->____javaAppUpdateManager_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)3);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = L_1;
+		AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* L_3 = ___0_appUpdateInfo;
+		NullCheck(L_3);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_4;
+		L_4 = AppUpdateInfo_GetJavaUpdateInfo_m06F99ACACC30184A690C0C28761FB5B77A547B08_inline(L_3, NULL);
+		NullCheck(L_2);
+		ArrayElementTypeCheck (L_2, L_4);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_4);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_5 = L_2;
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_6;
+		L_6 = UnityPlayerHelper_GetCurrentActivity_m016A45C7A2E9DDBEA730B34B75289BAF6E3DD040(NULL);
+		NullCheck(L_5);
+		ArrayElementTypeCheck (L_5, L_6);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject*)L_6);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_7 = L_5;
+		AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* L_8 = ___1_appUpdateOptions;
+		NullCheck(L_8);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_9;
+		L_9 = AppUpdateOptions_GetJavaAppUpdateOptions_mA92EC78AA57FEE570CFC694E1706E5CE92216C47_inline(L_8, NULL);
+		NullCheck(L_7);
+		ArrayElementTypeCheck (L_7, L_9);
+		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject*)L_9);
+		NullCheck(L_0);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_10;
+		L_10 = AndroidJavaObject_Call_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m020246E0988293B6126B690BD6CE4D894276AA3D(L_0, _stringLiteral565D6D845D54747D4F15E70103BF82C1B66A1132, L_7, AndroidJavaObject_Call_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m020246E0988293B6126B690BD6CE4D894276AA3D_RuntimeMethod_var);
+		// return new PlayCoreTask<int>(javaTask);
+		PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F* L_11 = (PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F*)il2cpp_codegen_object_new(PlayCoreTask_1_t0D0410B2E2A86BAED6B77AC3173A6F4C58B8514F_il2cpp_TypeInfo_var);
+		NullCheck(L_11);
+		PlayCoreTask_1__ctor_mFF5887DD94D8E7A1F3B1BB63266E75628AF494C8(L_11, L_10, PlayCoreTask_1__ctor_mFF5887DD94D8E7A1F3B1BB63266E75628AF494C8_RuntimeMethod_var);
+		return L_11;
+	}
+}
+// Google.Play.Core.Internal.PlayCoreTask`1<Google.Play.Common.VoidResult> Google.Play.AppUpdate.Internal.AppUpdateManagerPlayCore::CompleteUpdate()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075* AppUpdateManagerPlayCore_CompleteUpdate_m9A9204D3E346CE3F56DC5BA4B102C5F1E53495B2 (AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m020246E0988293B6126B690BD6CE4D894276AA3D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1__ctor_m53AA82372694AFE445086983C504393B9EB26D51_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD09A9C10AD610683A6F54C20D1D65790DB6B52D4);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// var javaTask = _javaAppUpdateManager.Call<AndroidJavaObject>("completeUpdate");
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->____javaAppUpdateManager_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1;
+		L_1 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		NullCheck(L_0);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_2;
+		L_2 = AndroidJavaObject_Call_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m020246E0988293B6126B690BD6CE4D894276AA3D(L_0, _stringLiteralD09A9C10AD610683A6F54C20D1D65790DB6B52D4, L_1, AndroidJavaObject_Call_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m020246E0988293B6126B690BD6CE4D894276AA3D_RuntimeMethod_var);
+		// return new PlayCoreTask<VoidResult>(javaTask);
+		PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075* L_3 = (PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075*)il2cpp_codegen_object_new(PlayCoreTask_1_t95233006887C721BCC64D7026491F6A959963075_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		PlayCoreTask_1__ctor_m53AA82372694AFE445086983C504393B9EB26D51(L_3, L_2, PlayCoreTask_1__ctor_m53AA82372694AFE445086983C504393B9EB26D51_RuntimeMethod_var);
+		return L_3;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateManagerPlayCore::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateManagerPlayCore_Dispose_m5440EB50CF3945B7D8E08FFF1CA354B629E3EEE0 (AppUpdateManagerPlayCore_tC985C67E4B8ECFD3BC87782BD4F56097BC901637* __this, const RuntimeMethod* method) 
+{
+	{
+		// _javaAppUpdateManager.Dispose();
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->____javaAppUpdateManager_0;
+		NullCheck(L_0);
+		AndroidJavaObject_Dispose_m2B1593C20B3CE1C8FF95982F638F50985F9DD9E6(L_0, NULL);
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Google.Play.AppUpdate.AppUpdateErrorCode Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator::TranslatePlayCoreErrorCode(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdatePlayCoreTranslator_TranslatePlayCoreErrorCode_mE59EB28FDB77F65BDF0FEA455F050C9936C4C6C5 (int32_t ___0_playCoreErrorCode, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_TryGetValue_m74465B8FDC479C85F7A7C30351CE15421A289CA8_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// if (!PlayCoreToAppUpdateErrorCode.TryGetValue(playCoreErrorCode, out appUpdateErrorCode))
+		il2cpp_codegen_runtime_class_init_inline(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E* L_0 = ((AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_StaticFields*)il2cpp_codegen_static_fields_for(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var))->___PlayCoreToAppUpdateErrorCode_0;
+		int32_t L_1 = ___0_playCoreErrorCode;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_TryGetValue_m74465B8FDC479C85F7A7C30351CE15421A289CA8(L_0, L_1, (&V_0), Dictionary_2_TryGetValue_m74465B8FDC479C85F7A7C30351CE15421A289CA8_RuntimeMethod_var);
+		if (L_2)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		// throw new NotImplementedException("Unexpected error code: " + appUpdateErrorCode);
+		Il2CppFakeBox<int32_t> L_3(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AppUpdateErrorCode_t4ACD9167EA62A5ECB29547DAB41020D23FEBC932_il2cpp_TypeInfo_var)), (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		String_t* L_5;
+		L_5 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral82DEFBE43B7B4EFE46CF0D145B40EDFE6776E216)), L_4, NULL);
+		NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8* L_6 = (NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8_il2cpp_TypeInfo_var)));
+		NullCheck(L_6);
+		NotImplementedException__ctor_m8339D1A685E8D77CAC9D3260C06B38B5C7CA7742(L_6, L_5, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_6, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AppUpdatePlayCoreTranslator_TranslatePlayCoreErrorCode_mE59EB28FDB77F65BDF0FEA455F050C9936C4C6C5_RuntimeMethod_var)));
+	}
+
+IL_002c:
+	{
+		// return appUpdateErrorCode;
+		int32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// Google.Play.AppUpdate.AppUpdateStatus Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator::TranslatePlayCoreUpdateStatus(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdatePlayCoreTranslator_TranslatePlayCoreUpdateStatus_m5F4CE37AE2073F90DD6DF42DDF4F7371D405BA00 (int32_t ___0_playCoreUpdateStatus, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_TryGetValue_m38C2456D2DF42BFDB4E2593B6DAA2C4C08458DC9_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// if (!PlayCoreToUpdateStatuses.TryGetValue(playCoreUpdateStatus, out appUpdateStatus))
+		il2cpp_codegen_runtime_class_init_inline(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692* L_0 = ((AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_StaticFields*)il2cpp_codegen_static_fields_for(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var))->___PlayCoreToUpdateStatuses_1;
+		int32_t L_1 = ___0_playCoreUpdateStatus;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_TryGetValue_m38C2456D2DF42BFDB4E2593B6DAA2C4C08458DC9(L_0, L_1, (&V_0), Dictionary_2_TryGetValue_m38C2456D2DF42BFDB4E2593B6DAA2C4C08458DC9_RuntimeMethod_var);
+		if (L_2)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		// throw new NotImplementedException("Unexpected status: " + appUpdateStatus);
+		Il2CppFakeBox<int32_t> L_3(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AppUpdateStatus_tF2B3C17AA93719CB1AEBBAFC52FCCEFB77F7D472_il2cpp_TypeInfo_var)), (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		String_t* L_5;
+		L_5 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral3DBC6E65EFFB84E26D3064A90F8F02566E5A20C2)), L_4, NULL);
+		NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8* L_6 = (NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8_il2cpp_TypeInfo_var)));
+		NullCheck(L_6);
+		NotImplementedException__ctor_m8339D1A685E8D77CAC9D3260C06B38B5C7CA7742(L_6, L_5, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_6, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AppUpdatePlayCoreTranslator_TranslatePlayCoreUpdateStatus_m5F4CE37AE2073F90DD6DF42DDF4F7371D405BA00_RuntimeMethod_var)));
+	}
+
+IL_002c:
+	{
+		// return appUpdateStatus;
+		int32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// Google.Play.AppUpdate.UpdateAvailability Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator::TranslatePlayCoreUpdateAvailabilities(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdatePlayCoreTranslator_TranslatePlayCoreUpdateAvailabilities_m21CE11FB4CD033F203D40C47D0DEBA704B85D2A1 (int32_t ___0_playCoreAvailability, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_TryGetValue_m01DF52861A968413F0004B702ACBD624A651CE89_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// if (!PlayCoreToUpdateAvailabilities.TryGetValue(playCoreAvailability, out updateAvailability))
+		il2cpp_codegen_runtime_class_init_inline(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		Dictionary_2_tC8A0936A5A6577AFC135261FE851A2B8667D267C* L_0 = ((AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_StaticFields*)il2cpp_codegen_static_fields_for(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var))->___PlayCoreToUpdateAvailabilities_2;
+		int32_t L_1 = ___0_playCoreAvailability;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_TryGetValue_m01DF52861A968413F0004B702ACBD624A651CE89(L_0, L_1, (&V_0), Dictionary_2_TryGetValue_m01DF52861A968413F0004B702ACBD624A651CE89_RuntimeMethod_var);
+		if (L_2)
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		// throw new NotImplementedException("Unexpected update availability: " + playCoreAvailability);
+		String_t* L_3;
+		L_3 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&___0_playCoreAvailability), NULL);
+		String_t* L_4;
+		L_4 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralAB5A5180371E886C655E129F11D7176561D4581B)), L_3, NULL);
+		NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8* L_5 = (NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8_il2cpp_TypeInfo_var)));
+		NullCheck(L_5);
+		NotImplementedException__ctor_m8339D1A685E8D77CAC9D3260C06B38B5C7CA7742(L_5, L_4, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_5, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AppUpdatePlayCoreTranslator_TranslatePlayCoreUpdateAvailabilities_m21CE11FB4CD033F203D40C47D0DEBA704B85D2A1_RuntimeMethod_var)));
+	}
+
+IL_0026:
+	{
+		// return updateAvailability;
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// Google.Play.AppUpdate.AppUpdateStatus Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator::TranslateUpdateActivityResult(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdatePlayCoreTranslator_TranslateUpdateActivityResult_m587E8CCFA62ECAE22DBDB3DFCDB844CDA90D9560 (int32_t ___0_resultCode, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = ___0_resultCode;
+		switch (((int32_t)il2cpp_codegen_subtract(L_0, (-1))))
+		{
+			case 0:
+			{
+				goto IL_0016;
+			}
+			case 1:
+			{
+				goto IL_001a;
+			}
+			case 2:
+			{
+				goto IL_001e;
+			}
+		}
+	}
+	{
+		goto IL_0022;
+	}
+
+IL_0016:
+	{
+		// dialogResult = AppUpdateStatus.Pending;
+		V_0 = 1;
+		// break;
+		goto IL_0039;
+	}
+
+IL_001a:
+	{
+		// dialogResult = AppUpdateStatus.Canceled;
+		V_0 = 7;
+		// break;
+		goto IL_0039;
+	}
+
+IL_001e:
+	{
+		// dialogResult = AppUpdateStatus.Failed;
+		V_0 = 6;
+		// break;
+		goto IL_0039;
+	}
+
+IL_0022:
+	{
+		// throw new NotImplementedException("Unexpected activity result: " + resultCode);
+		String_t* L_1;
+		L_1 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&___0_resultCode), NULL);
+		String_t* L_2;
+		L_2 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralFB306F660024EB940C90A92256F3EEBA97CF1E36)), L_1, NULL);
+		NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8* L_3 = (NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8_il2cpp_TypeInfo_var)));
+		NullCheck(L_3);
+		NotImplementedException__ctor_m8339D1A685E8D77CAC9D3260C06B38B5C7CA7742(L_3, L_2, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AppUpdatePlayCoreTranslator_TranslateUpdateActivityResult_m587E8CCFA62ECAE22DBDB3DFCDB844CDA90D9560_RuntimeMethod_var)));
+	}
+
+IL_0039:
+	{
+		// return dialogResult;
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// Google.Play.AppUpdate.AppUpdateType Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator::TranslatePlayCoreAppUpdateType(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdatePlayCoreTranslator_TranslatePlayCoreAppUpdateType_mC027D3372A880034B196C3EB930A38CDF840F04E (int32_t ___0_playCoreAppUpdateType, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_TryGetValue_m1B4627D8E489032D5B78A58BCC7EDC3E580B3338_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// if (!PlayCoreToAppUpdateType.TryGetValue(playCoreAppUpdateType, out appUpdateType))
+		il2cpp_codegen_runtime_class_init_inline(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		Dictionary_2_t7AAFE60DBE071FF1583BEA36BFB195214FB795CD* L_0 = ((AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_StaticFields*)il2cpp_codegen_static_fields_for(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var))->___PlayCoreToAppUpdateType_3;
+		int32_t L_1 = ___0_playCoreAppUpdateType;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_TryGetValue_m1B4627D8E489032D5B78A58BCC7EDC3E580B3338(L_0, L_1, (&V_0), Dictionary_2_TryGetValue_m1B4627D8E489032D5B78A58BCC7EDC3E580B3338_RuntimeMethod_var);
+		if (L_2)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		// throw new NotImplementedException("Unexpected appUpdateType: " + appUpdateType);
+		Il2CppFakeBox<int32_t> L_3(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AppUpdateType_t749CC263DD9FE541232518FC95E45C5DC8933263_il2cpp_TypeInfo_var)), (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		String_t* L_5;
+		L_5 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral31EC1637CD5E3B364BC250D53148909FAE317F35)), L_4, NULL);
+		NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8* L_6 = (NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8_il2cpp_TypeInfo_var)));
+		NullCheck(L_6);
+		NotImplementedException__ctor_m8339D1A685E8D77CAC9D3260C06B38B5C7CA7742(L_6, L_5, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_6, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AppUpdatePlayCoreTranslator_TranslatePlayCoreAppUpdateType_mC027D3372A880034B196C3EB930A38CDF840F04E_RuntimeMethod_var)));
+	}
+
+IL_002c:
+	{
+		// return appUpdateType;
+		int32_t L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdatePlayCoreTranslator::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdatePlayCoreTranslator__cctor_m88D9FFF2ACA8CD96DAD0C6EBA403D4D21C91B75C (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_m85BAA36A8E802BB0B42D6141BF059011DBE2608C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_m895D7CF7F316439A6DA8FA42E82ED50BFF263AE3_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_mD4BABC0648090BFED92098217CB1D70820E94BC9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_m0E21B7EAA817B7C69002AE178FF2B48F92AA4F34_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_m17A42B6F97B8392301C4C698F9B2961225E3037C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_m65988B702DA64A2CCC5DAEC3B25E9592D84DE366_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_mA5CDAC65FA3D30CB44CECAA21ED94DFB45BF3457_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_t7AAFE60DBE071FF1583BEA36BFB195214FB795CD_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_tC8A0936A5A6577AFC135261FE851A2B8667D267C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// private static readonly Dictionary<int, AppUpdateErrorCode> PlayCoreToAppUpdateErrorCode =
+		//     new Dictionary<int, AppUpdateErrorCode>
+		//     {
+		//         {PlayCoreInstallErrorCode.NoError, AppUpdateErrorCode.NoError},
+		//         {PlayCoreInstallErrorCode.NoErrorPartiallyAllowed, AppUpdateErrorCode.NoErrorPartiallyAllowed},
+		//         {PlayCoreInstallErrorCode.ErrorUnknown, AppUpdateErrorCode.ErrorUnknown},
+		//         {PlayCoreInstallErrorCode.ErrorApiNotAvailable, AppUpdateErrorCode.ErrorApiNotAvailable},
+		//         {PlayCoreInstallErrorCode.ErrorInvalidRequest, AppUpdateErrorCode.ErrorInvalidRequest},
+		//         {PlayCoreInstallErrorCode.ErrorInstallUnavailable, AppUpdateErrorCode.ErrorUpdateUnavailable},
+		//         {PlayCoreInstallErrorCode.ErrorInstallNotAllowed, AppUpdateErrorCode.ErrorUpdateNotAllowed},
+		//         {PlayCoreInstallErrorCode.ErrorDownloadNotPresent, AppUpdateErrorCode.ErrorDownloadNotPresent},
+		//         {PlayCoreInstallErrorCode.ErrorInstallInProgress, AppUpdateErrorCode.ErrorUpdateInProgress},
+		//         {PlayCoreInstallErrorCode.ErrorPlayStoreNotFound, AppUpdateErrorCode.ErrorPlayStoreNotFound},
+		//         {PlayCoreInstallErrorCode.ErrorAppNotOwned, AppUpdateErrorCode.ErrorAppNotOwned},
+		//         {PlayCoreInstallErrorCode.ErrorInternalError, AppUpdateErrorCode.ErrorInternalError}
+		//     };
+		Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E* L_0 = (Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E*)il2cpp_codegen_object_new(Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		Dictionary_2__ctor_m65988B702DA64A2CCC5DAEC3B25E9592D84DE366(L_0, Dictionary_2__ctor_m65988B702DA64A2CCC5DAEC3B25E9592D84DE366_RuntimeMethod_var);
+		Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E* L_1 = L_0;
+		NullCheck(L_1);
+		Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C(L_1, 0, 0, Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C_RuntimeMethod_var);
+		Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E* L_2 = L_1;
+		NullCheck(L_2);
+		Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C(L_2, 1, 1, Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C_RuntimeMethod_var);
+		Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E* L_3 = L_2;
+		NullCheck(L_3);
+		Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C(L_3, ((int32_t)-2), 2, Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C_RuntimeMethod_var);
+		Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E* L_4 = L_3;
+		NullCheck(L_4);
+		Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C(L_4, ((int32_t)-3), 3, Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C_RuntimeMethod_var);
+		Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E* L_5 = L_4;
+		NullCheck(L_5);
+		Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C(L_5, ((int32_t)-4), 4, Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C_RuntimeMethod_var);
+		Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E* L_6 = L_5;
+		NullCheck(L_6);
+		Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C(L_6, ((int32_t)-5), 5, Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C_RuntimeMethod_var);
+		Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E* L_7 = L_6;
+		NullCheck(L_7);
+		Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C(L_7, ((int32_t)-6), 6, Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C_RuntimeMethod_var);
+		Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E* L_8 = L_7;
+		NullCheck(L_8);
+		Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C(L_8, ((int32_t)-7), 7, Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C_RuntimeMethod_var);
+		Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E* L_9 = L_8;
+		NullCheck(L_9);
+		Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C(L_9, ((int32_t)-8), 8, Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C_RuntimeMethod_var);
+		Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E* L_10 = L_9;
+		NullCheck(L_10);
+		Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C(L_10, ((int32_t)-9), ((int32_t)12), Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C_RuntimeMethod_var);
+		Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E* L_11 = L_10;
+		NullCheck(L_11);
+		Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C(L_11, ((int32_t)-10), ((int32_t)13), Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C_RuntimeMethod_var);
+		Dictionary_2_t93CBB284A7F76B0644E1463AEB17615E36D81B9E* L_12 = L_11;
+		NullCheck(L_12);
+		Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C(L_12, ((int32_t)-100), ((int32_t)9), Dictionary_2_Add_m453CBE0728A2B14765C1D4511525A4054DC6407C_RuntimeMethod_var);
+		((AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_StaticFields*)il2cpp_codegen_static_fields_for(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var))->___PlayCoreToAppUpdateErrorCode_0 = L_12;
+		Il2CppCodeGenWriteBarrier((void**)(&((AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_StaticFields*)il2cpp_codegen_static_fields_for(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var))->___PlayCoreToAppUpdateErrorCode_0), (void*)L_12);
+		// private static readonly Dictionary<int, AppUpdateStatus> PlayCoreToUpdateStatuses =
+		//     new Dictionary<int, AppUpdateStatus>
+		//     {
+		//         {PlayCoreUpdateStatus.Unknown, AppUpdateStatus.Unknown},
+		//         {PlayCoreUpdateStatus.Pending, AppUpdateStatus.Pending},
+		//         {PlayCoreUpdateStatus.Downloading, AppUpdateStatus.Downloading},
+		//         {PlayCoreUpdateStatus.Downloaded, AppUpdateStatus.Downloaded},
+		//         {PlayCoreUpdateStatus.Installing, AppUpdateStatus.Installing},
+		//         {PlayCoreUpdateStatus.Installed, AppUpdateStatus.Installed},
+		//         {PlayCoreUpdateStatus.Failed, AppUpdateStatus.Failed},
+		//         {PlayCoreUpdateStatus.Canceled, AppUpdateStatus.Canceled}
+		//     };
+		Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692* L_13 = (Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692*)il2cpp_codegen_object_new(Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692_il2cpp_TypeInfo_var);
+		NullCheck(L_13);
+		Dictionary_2__ctor_m17A42B6F97B8392301C4C698F9B2961225E3037C(L_13, Dictionary_2__ctor_m17A42B6F97B8392301C4C698F9B2961225E3037C_RuntimeMethod_var);
+		Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692* L_14 = L_13;
+		NullCheck(L_14);
+		Dictionary_2_Add_m85BAA36A8E802BB0B42D6141BF059011DBE2608C(L_14, 0, 0, Dictionary_2_Add_m85BAA36A8E802BB0B42D6141BF059011DBE2608C_RuntimeMethod_var);
+		Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692* L_15 = L_14;
+		NullCheck(L_15);
+		Dictionary_2_Add_m85BAA36A8E802BB0B42D6141BF059011DBE2608C(L_15, 1, 1, Dictionary_2_Add_m85BAA36A8E802BB0B42D6141BF059011DBE2608C_RuntimeMethod_var);
+		Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692* L_16 = L_15;
+		NullCheck(L_16);
+		Dictionary_2_Add_m85BAA36A8E802BB0B42D6141BF059011DBE2608C(L_16, 2, 2, Dictionary_2_Add_m85BAA36A8E802BB0B42D6141BF059011DBE2608C_RuntimeMethod_var);
+		Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692* L_17 = L_16;
+		NullCheck(L_17);
+		Dictionary_2_Add_m85BAA36A8E802BB0B42D6141BF059011DBE2608C(L_17, ((int32_t)11), 3, Dictionary_2_Add_m85BAA36A8E802BB0B42D6141BF059011DBE2608C_RuntimeMethod_var);
+		Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692* L_18 = L_17;
+		NullCheck(L_18);
+		Dictionary_2_Add_m85BAA36A8E802BB0B42D6141BF059011DBE2608C(L_18, 3, 4, Dictionary_2_Add_m85BAA36A8E802BB0B42D6141BF059011DBE2608C_RuntimeMethod_var);
+		Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692* L_19 = L_18;
+		NullCheck(L_19);
+		Dictionary_2_Add_m85BAA36A8E802BB0B42D6141BF059011DBE2608C(L_19, 4, 5, Dictionary_2_Add_m85BAA36A8E802BB0B42D6141BF059011DBE2608C_RuntimeMethod_var);
+		Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692* L_20 = L_19;
+		NullCheck(L_20);
+		Dictionary_2_Add_m85BAA36A8E802BB0B42D6141BF059011DBE2608C(L_20, 5, 6, Dictionary_2_Add_m85BAA36A8E802BB0B42D6141BF059011DBE2608C_RuntimeMethod_var);
+		Dictionary_2_t4F22B6DDCBFA7A3F92F14275C6830DC2B8E6A692* L_21 = L_20;
+		NullCheck(L_21);
+		Dictionary_2_Add_m85BAA36A8E802BB0B42D6141BF059011DBE2608C(L_21, 6, 7, Dictionary_2_Add_m85BAA36A8E802BB0B42D6141BF059011DBE2608C_RuntimeMethod_var);
+		((AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_StaticFields*)il2cpp_codegen_static_fields_for(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var))->___PlayCoreToUpdateStatuses_1 = L_21;
+		Il2CppCodeGenWriteBarrier((void**)(&((AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_StaticFields*)il2cpp_codegen_static_fields_for(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var))->___PlayCoreToUpdateStatuses_1), (void*)L_21);
+		// private static readonly Dictionary<int, UpdateAvailability> PlayCoreToUpdateAvailabilities =
+		//     new Dictionary<int, UpdateAvailability>
+		//     {
+		//         {PlayCoreUpdateAvailability.Unknown, UpdateAvailability.Unknown},
+		//         {PlayCoreUpdateAvailability.UpdateNotAvailable, UpdateAvailability.UpdateNotAvailable},
+		//         {PlayCoreUpdateAvailability.UpdateAvailable, UpdateAvailability.UpdateAvailable},
+		//         {
+		//             PlayCoreUpdateAvailability.DeveloperTriggeredUpdateInProgress,
+		//             UpdateAvailability.DeveloperTriggeredUpdateInProgress
+		//         }
+		//     };
+		Dictionary_2_tC8A0936A5A6577AFC135261FE851A2B8667D267C* L_22 = (Dictionary_2_tC8A0936A5A6577AFC135261FE851A2B8667D267C*)il2cpp_codegen_object_new(Dictionary_2_tC8A0936A5A6577AFC135261FE851A2B8667D267C_il2cpp_TypeInfo_var);
+		NullCheck(L_22);
+		Dictionary_2__ctor_m0E21B7EAA817B7C69002AE178FF2B48F92AA4F34(L_22, Dictionary_2__ctor_m0E21B7EAA817B7C69002AE178FF2B48F92AA4F34_RuntimeMethod_var);
+		Dictionary_2_tC8A0936A5A6577AFC135261FE851A2B8667D267C* L_23 = L_22;
+		NullCheck(L_23);
+		Dictionary_2_Add_mD4BABC0648090BFED92098217CB1D70820E94BC9(L_23, 0, 0, Dictionary_2_Add_mD4BABC0648090BFED92098217CB1D70820E94BC9_RuntimeMethod_var);
+		Dictionary_2_tC8A0936A5A6577AFC135261FE851A2B8667D267C* L_24 = L_23;
+		NullCheck(L_24);
+		Dictionary_2_Add_mD4BABC0648090BFED92098217CB1D70820E94BC9(L_24, 1, 1, Dictionary_2_Add_mD4BABC0648090BFED92098217CB1D70820E94BC9_RuntimeMethod_var);
+		Dictionary_2_tC8A0936A5A6577AFC135261FE851A2B8667D267C* L_25 = L_24;
+		NullCheck(L_25);
+		Dictionary_2_Add_mD4BABC0648090BFED92098217CB1D70820E94BC9(L_25, 2, 2, Dictionary_2_Add_mD4BABC0648090BFED92098217CB1D70820E94BC9_RuntimeMethod_var);
+		Dictionary_2_tC8A0936A5A6577AFC135261FE851A2B8667D267C* L_26 = L_25;
+		NullCheck(L_26);
+		Dictionary_2_Add_mD4BABC0648090BFED92098217CB1D70820E94BC9(L_26, 3, 3, Dictionary_2_Add_mD4BABC0648090BFED92098217CB1D70820E94BC9_RuntimeMethod_var);
+		((AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_StaticFields*)il2cpp_codegen_static_fields_for(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var))->___PlayCoreToUpdateAvailabilities_2 = L_26;
+		Il2CppCodeGenWriteBarrier((void**)(&((AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_StaticFields*)il2cpp_codegen_static_fields_for(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var))->___PlayCoreToUpdateAvailabilities_2), (void*)L_26);
+		// private static readonly Dictionary<int, AppUpdateType> PlayCoreToAppUpdateType =
+		//     new Dictionary<int, AppUpdateType>
+		//     {
+		//         {PlayCoreAppUpdateType.Immediate, AppUpdateType.Immediate},
+		//         {PlayCoreAppUpdateType.Flexible, AppUpdateType.Flexible},
+		//     };
+		Dictionary_2_t7AAFE60DBE071FF1583BEA36BFB195214FB795CD* L_27 = (Dictionary_2_t7AAFE60DBE071FF1583BEA36BFB195214FB795CD*)il2cpp_codegen_object_new(Dictionary_2_t7AAFE60DBE071FF1583BEA36BFB195214FB795CD_il2cpp_TypeInfo_var);
+		NullCheck(L_27);
+		Dictionary_2__ctor_mA5CDAC65FA3D30CB44CECAA21ED94DFB45BF3457(L_27, Dictionary_2__ctor_mA5CDAC65FA3D30CB44CECAA21ED94DFB45BF3457_RuntimeMethod_var);
+		Dictionary_2_t7AAFE60DBE071FF1583BEA36BFB195214FB795CD* L_28 = L_27;
+		NullCheck(L_28);
+		Dictionary_2_Add_m895D7CF7F316439A6DA8FA42E82ED50BFF263AE3(L_28, 1, 1, Dictionary_2_Add_m895D7CF7F316439A6DA8FA42E82ED50BFF263AE3_RuntimeMethod_var);
+		Dictionary_2_t7AAFE60DBE071FF1583BEA36BFB195214FB795CD* L_29 = L_28;
+		NullCheck(L_29);
+		Dictionary_2_Add_m895D7CF7F316439A6DA8FA42E82ED50BFF263AE3(L_29, 0, 0, Dictionary_2_Add_m895D7CF7F316439A6DA8FA42E82ED50BFF263AE3_RuntimeMethod_var);
+		((AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_StaticFields*)il2cpp_codegen_static_fields_for(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var))->___PlayCoreToAppUpdateType_3 = L_29;
+		Il2CppCodeGenWriteBarrier((void**)(&((AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_StaticFields*)il2cpp_codegen_static_fields_for(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var))->___PlayCoreToAppUpdateType_3), (void*)L_29);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateRequestImpl::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequestImpl__ctor_m43911C5E7488D8A115EDB0BD13F5FC47B3639DA7 (AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* __this, const RuntimeMethod* method) 
+{
+	{
+		// public AppUpdateRequestImpl()
+		AppUpdateRequest__ctor_m57407A74A5DF2BC66B455100484C249A7A784796(__this, NULL);
+		// Status = AppUpdateStatus.Unknown;
+		AppUpdateRequest_set_Status_m672F2512A04E85BCE10D52A487BDC9753C3BE65F_inline(__this, 0, NULL);
+		// Error = AppUpdateErrorCode.NoError;
+		AppUpdateRequest_set_Error_mA2B02019E9445CAB0021543871E11FE0A56EA208_inline(__this, 0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateRequestImpl::add_Completed(System.Action`1<Google.Play.AppUpdate.AppUpdateRequest>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequestImpl_add_Completed_mE86F17A1D4915C5F46321D8DFC7B18C02089DF37 (AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* __this, Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// if (IsDone)
+		bool L_0;
+		L_0 = AppUpdateRequest_get_IsDone_m345F4E193257A5E6C87A61AF48DA197893AA78D2_inline(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		// value.Invoke(this);
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_1 = ___0_value;
+		NullCheck(L_1);
+		Action_1_Invoke_mD7916A61A940774CDB895F00A5A36260E8E77118_inline(L_1, __this, NULL);
+		// return;
+		return;
+	}
+
+IL_0010:
+	{
+		// base.Completed += value;
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_2 = ___0_value;
+		AppUpdateRequest_add_Completed_mC7DFE22C872CED69110E66AD8210D003A541EC6D(__this, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateRequestImpl::remove_Completed(System.Action`1<Google.Play.AppUpdate.AppUpdateRequest>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequestImpl_remove_Completed_m9AC16718E29189B49CF33AC93402FA63D71E24D9 (AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* __this, Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// remove { base.Completed -= value; }
+		Action_1_t31358EB1C1E00204A0740C894E65C4C7DF0B4AE4* L_0 = ___0_value;
+		AppUpdateRequest_remove_Completed_m16ABCC03CC914BD6521A4E79A19129DED193507E(__this, L_0, NULL);
+		// remove { base.Completed -= value; }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateRequestImpl::UpdateState(Google.Play.AppUpdate.AppUpdateStatus,System.Int64,System.Int64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequestImpl_UpdateState_mD9502F80F3AE93E807F920C2F9A93234E31444C3 (AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* __this, int32_t ___0_status, int64_t ___1_bytesDownloaded, int64_t ___2_totalBytesToDownload, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* G_B3_0 = NULL;
+	AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* G_B2_0 = NULL;
+	float G_B4_0 = 0.0f;
+	AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* G_B4_1 = NULL;
+	{
+		// Status = status;
+		int32_t L_0 = ___0_status;
+		AppUpdateRequest_set_Status_m672F2512A04E85BCE10D52A487BDC9753C3BE65F_inline(__this, L_0, NULL);
+		// if (totalBytesToDownload == 0L)
+		int64_t L_1 = ___2_totalBytesToDownload;
+		if (L_1)
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		// bool finishedDownloading = status == AppUpdateStatus.Downloaded;
+		int32_t L_2 = ___0_status;
+		V_0 = (bool)((((int32_t)L_2) == ((int32_t)3))? 1 : 0);
+		// DownloadProgress = finishedDownloading ? 1f : 0f;
+		bool L_3 = V_0;
+		G_B2_0 = __this;
+		if (L_3)
+		{
+			G_B3_0 = __this;
+			goto IL_001a;
+		}
+	}
+	{
+		G_B4_0 = (0.0f);
+		G_B4_1 = G_B2_0;
+		goto IL_001f;
+	}
+
+IL_001a:
+	{
+		G_B4_0 = (1.0f);
+		G_B4_1 = G_B3_0;
+	}
+
+IL_001f:
+	{
+		NullCheck(G_B4_1);
+		AppUpdateRequest_set_DownloadProgress_mD09F9CCC110358C5F59F82AB1D71FBEBA16D1193_inline(G_B4_1, G_B4_0, NULL);
+		goto IL_003f;
+	}
+
+IL_0026:
+	{
+		// BytesDownloaded = (ulong) bytesDownloaded;
+		int64_t L_4 = ___1_bytesDownloaded;
+		AppUpdateRequest_set_BytesDownloaded_mF536383F89C50D4AA263F8AF916FD389EEF82A81_inline(__this, L_4, NULL);
+		// TotalBytesToDownload = (ulong) totalBytesToDownload;
+		int64_t L_5 = ___2_totalBytesToDownload;
+		AppUpdateRequest_set_TotalBytesToDownload_mA85DC90B518EAD9B3DC8825B198E28911A0F21E2_inline(__this, L_5, NULL);
+		// DownloadProgress = bytesDownloaded / (float) totalBytesToDownload;
+		int64_t L_6 = ___1_bytesDownloaded;
+		int64_t L_7 = ___2_totalBytesToDownload;
+		AppUpdateRequest_set_DownloadProgress_mD09F9CCC110358C5F59F82AB1D71FBEBA16D1193_inline(__this, ((float)(((float)L_6)/((float)L_7))), NULL);
+	}
+
+IL_003f:
+	{
+		// if (Status == AppUpdateStatus.Downloaded)
+		int32_t L_8;
+		L_8 = AppUpdateRequest_get_Status_m59B0E73D91BA55511EABF53D0AA23975B2E2424F_inline(__this, NULL);
+		if ((!(((uint32_t)L_8) == ((uint32_t)3))))
+		{
+			goto IL_004e;
+		}
+	}
+	{
+		// OnUpdateDownloaded();
+		AppUpdateRequestImpl_OnUpdateDownloaded_mEE55CD4F6BA30730A4A4B5735B15A5098F7E1F95(__this, NULL);
+	}
+
+IL_004e:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateRequestImpl::SetUpdateActivityResult(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequestImpl_SetUpdateActivityResult_m0F478B1877A95D95C733D9D51CB4F38043720A55 (AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* __this, int32_t ___0_resultCode, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// Status = AppUpdatePlayCoreTranslator.TranslateUpdateActivityResult(resultCode);
+		int32_t L_0 = ___0_resultCode;
+		il2cpp_codegen_runtime_class_init_inline(AppUpdatePlayCoreTranslator_t5B19EB6AC770050F0113DBC263B7DAC5C9FEB64F_il2cpp_TypeInfo_var);
+		int32_t L_1;
+		L_1 = AppUpdatePlayCoreTranslator_TranslateUpdateActivityResult_m587E8CCFA62ECAE22DBDB3DFCDB844CDA90D9560(L_0, NULL);
+		AppUpdateRequest_set_Status_m672F2512A04E85BCE10D52A487BDC9753C3BE65F_inline(__this, L_1, NULL);
+		// switch (Status)
+		int32_t L_2;
+		L_2 = AppUpdateRequest_get_Status_m59B0E73D91BA55511EABF53D0AA23975B2E2424F_inline(__this, NULL);
+		V_0 = L_2;
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) == ((int32_t)1)))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		int32_t L_4 = V_0;
+		if ((((int32_t)L_4) == ((int32_t)6)))
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		int32_t L_5 = V_0;
+		if ((!(((uint32_t)L_5) == ((uint32_t)7))))
+		{
+			goto IL_0031;
+		}
+	}
+	{
+		// OnErrorOccurred(AppUpdateErrorCode.ErrorUserCanceled);
+		AppUpdateRequestImpl_OnErrorOccurred_m992A7E58EA6C060B4FE4AA2AAE38DE72F83FDE26(__this, ((int32_t)10), NULL);
+		// break;
+		return;
+	}
+
+IL_0028:
+	{
+		// OnErrorOccurred(AppUpdateErrorCode.ErrorUpdateFailed);
+		AppUpdateRequestImpl_OnErrorOccurred_m992A7E58EA6C060B4FE4AA2AAE38DE72F83FDE26(__this, ((int32_t)11), NULL);
+		// break;
+		return;
+	}
+
+IL_0031:
+	{
+		// OnErrorOccurred(AppUpdateErrorCode.ErrorUnknown);
+		AppUpdateRequestImpl_OnErrorOccurred_m992A7E58EA6C060B4FE4AA2AAE38DE72F83FDE26(__this, 2, NULL);
+	}
+
+IL_0038:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateRequestImpl::OnUpdateDownloaded()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequestImpl_OnUpdateDownloaded_mEE55CD4F6BA30730A4A4B5735B15A5098F7E1F95 (AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* __this, const RuntimeMethod* method) 
+{
+	{
+		// Status = AppUpdateStatus.Downloaded;
+		AppUpdateRequest_set_Status_m672F2512A04E85BCE10D52A487BDC9753C3BE65F_inline(__this, 3, NULL);
+		// Error = AppUpdateErrorCode.NoError;
+		AppUpdateRequest_set_Error_mA2B02019E9445CAB0021543871E11FE0A56EA208_inline(__this, 0, NULL);
+		// DownloadProgress = 1f;
+		AppUpdateRequest_set_DownloadProgress_mD09F9CCC110358C5F59F82AB1D71FBEBA16D1193_inline(__this, (1.0f), NULL);
+		// if (IsDone)
+		bool L_0;
+		L_0 = AppUpdateRequest_get_IsDone_m345F4E193257A5E6C87A61AF48DA197893AA78D2_inline(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0022:
+	{
+		// IsDone = true;
+		AppUpdateRequest_set_IsDone_mA86A88EF6509CB0BFC3386A3324E1D501C11F701_inline(__this, (bool)1, NULL);
+		// InvokeCompletedEvent();
+		AppUpdateRequest_InvokeCompletedEvent_mE8FBCC9B4906D4BF71849C59DE6669190EF131EE(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateRequestImpl::OnErrorOccurred(Google.Play.AppUpdate.AppUpdateErrorCode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateRequestImpl_OnErrorOccurred_m992A7E58EA6C060B4FE4AA2AAE38DE72F83FDE26 (AppUpdateRequestImpl_t7D7B30244B36B9159848D37E88FDC9286A9DDCA7* __this, int32_t ___0_errorCode, const RuntimeMethod* method) 
+{
+	{
+		// if (IsDone)
+		bool L_0;
+		L_0 = AppUpdateRequest_get_IsDone_m345F4E193257A5E6C87A61AF48DA197893AA78D2_inline(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0009:
+	{
+		// IsDone = true;
+		AppUpdateRequest_set_IsDone_mA86A88EF6509CB0BFC3386A3324E1D501C11F701_inline(__this, (bool)1, NULL);
+		// Error = errorCode;
+		int32_t L_1 = ___0_errorCode;
+		AppUpdateRequest_set_Error_mA2B02019E9445CAB0021543871E11FE0A56EA208_inline(__this, L_1, NULL);
+		// Status = AppUpdateStatus.Failed;
+		AppUpdateRequest_set_Status_m672F2512A04E85BCE10D52A487BDC9753C3BE65F_inline(__this, 6, NULL);
+		// InvokeCompletedEvent();
+		AppUpdateRequest_InvokeCompletedEvent_mE8FBCC9B4906D4BF71849C59DE6669190EF131EE(__this, NULL);
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Int64 Google.Play.AppUpdate.Internal.AppUpdateState::get_BytesDownloaded()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t AppUpdateState_get_BytesDownloaded_m7F6D696B6B50A9174566F6E5040D18BC93F7A289 (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, const RuntimeMethod* method) 
+{
+	{
+		// public long BytesDownloaded { get; private set; }
+		int64_t L_0 = __this->___U3CBytesDownloadedU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateState::set_BytesDownloaded(System.Int64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateState_set_BytesDownloaded_mB80EEB34876C06A4A220C5453F6082F571F97CDC (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, int64_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public long BytesDownloaded { get; private set; }
+		int64_t L_0 = ___0_value;
+		__this->___U3CBytesDownloadedU3Ek__BackingField_0 = L_0;
+		return;
+	}
+}
+// System.Int64 Google.Play.AppUpdate.Internal.AppUpdateState::get_TotalBytesToDownload()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t AppUpdateState_get_TotalBytesToDownload_m761AB41F863C791B602228ADB58548849410054C (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, const RuntimeMethod* method) 
+{
+	{
+		// public long TotalBytesToDownload { get; private set; }
+		int64_t L_0 = __this->___U3CTotalBytesToDownloadU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateState::set_TotalBytesToDownload(System.Int64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateState_set_TotalBytesToDownload_m7A8387DE748D8061294C0CF77DB296B8EFFD8592 (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, int64_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public long TotalBytesToDownload { get; private set; }
+		int64_t L_0 = ___0_value;
+		__this->___U3CTotalBytesToDownloadU3Ek__BackingField_1 = L_0;
+		return;
+	}
+}
+// System.Int32 Google.Play.AppUpdate.Internal.AppUpdateState::get_Status()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdateState_get_Status_m602AAA83296C02417B09F9F54A1FB91FD2AD3D86 (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, const RuntimeMethod* method) 
+{
+	{
+		// public int Status { get; private set; }
+		int32_t L_0 = __this->___U3CStatusU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateState::set_Status(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateState_set_Status_m3E43CE637B618E3E134095B9A2A1EBE68B28E39E (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public int Status { get; private set; }
+		int32_t L_0 = ___0_value;
+		__this->___U3CStatusU3Ek__BackingField_2 = L_0;
+		return;
+	}
+}
+// System.Int32 Google.Play.AppUpdate.Internal.AppUpdateState::get_ErrorCode()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AppUpdateState_get_ErrorCode_m1F7DE9BB3A91B512472F9A630C17CC370CDCD791 (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, const RuntimeMethod* method) 
+{
+	{
+		// public int ErrorCode { get; private set; }
+		int32_t L_0 = __this->___U3CErrorCodeU3Ek__BackingField_3;
+		return L_0;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateState::set_ErrorCode(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateState_set_ErrorCode_m6C1A755758FD1C6131C3A4C1598F749FA05BCCAA (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public int ErrorCode { get; private set; }
+		int32_t L_0 = ___0_value;
+		__this->___U3CErrorCodeU3Ek__BackingField_3 = L_0;
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateState::.ctor(UnityEngine.AndroidJavaObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateState__ctor_m1AD5DA53FA23DDE6978682ADB4C57D9FB26FBCEF (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ___0_javaAppUpdateInfo, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_m63E24F733CDC205FED0CF4659E49DB4AE06ADBB9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0540212BC8D01CEA8329E140D2124BD07BFF2EC7);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral07075322EF62DC88C79BC907400F25BC6934F767);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral71115E84CCAF26F0A22537295087FA06CCC56A78);
+		s_Il2CppMethodInitialized = true;
+	}
+	AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* V_0 = NULL;
+	{
+		// public AppUpdateState(AndroidJavaObject javaAppUpdateInfo)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// using (javaAppUpdateInfo)
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ___0_javaAppUpdateInfo;
+		V_0 = L_0;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_004c:
+			{// begin finally (depth: 1)
+				{
+					AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_1 = V_0;
+					if (!L_1)
+					{
+						goto IL_0055;
+					}
+				}
+				{
+					AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_2 = V_0;
+					NullCheck(L_2);
+					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_2);
+				}
+
+IL_0055:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			// BytesDownloaded = javaAppUpdateInfo.Call<long>("bytesDownloaded");
+			AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_3 = ___0_javaAppUpdateInfo;
+			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_4;
+			L_4 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+			NullCheck(L_3);
+			int64_t L_5;
+			L_5 = AndroidJavaObject_Call_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_m63E24F733CDC205FED0CF4659E49DB4AE06ADBB9(L_3, _stringLiteral0540212BC8D01CEA8329E140D2124BD07BFF2EC7, L_4, AndroidJavaObject_Call_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_m63E24F733CDC205FED0CF4659E49DB4AE06ADBB9_RuntimeMethod_var);
+			AppUpdateState_set_BytesDownloaded_mB80EEB34876C06A4A220C5453F6082F571F97CDC_inline(__this, L_5, NULL);
+			// TotalBytesToDownload = javaAppUpdateInfo.Call<long>("totalBytesToDownload");
+			AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_6 = ___0_javaAppUpdateInfo;
+			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_7;
+			L_7 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+			NullCheck(L_6);
+			int64_t L_8;
+			L_8 = AndroidJavaObject_Call_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_m63E24F733CDC205FED0CF4659E49DB4AE06ADBB9(L_6, _stringLiteral71115E84CCAF26F0A22537295087FA06CCC56A78, L_7, AndroidJavaObject_Call_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_m63E24F733CDC205FED0CF4659E49DB4AE06ADBB9_RuntimeMethod_var);
+			AppUpdateState_set_TotalBytesToDownload_m7A8387DE748D8061294C0CF77DB296B8EFFD8592_inline(__this, L_8, NULL);
+			// Status = javaAppUpdateInfo.Call<int>("installStatus");
+			AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_9 = ___0_javaAppUpdateInfo;
+			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_10;
+			L_10 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+			NullCheck(L_9);
+			int32_t L_11;
+			L_11 = AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC(L_9, _stringLiteral07075322EF62DC88C79BC907400F25BC6934F767, L_10, AndroidJavaObject_Call_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mDC5FD095AFC55DFE596907E5B055B5774DA5B5AC_RuntimeMethod_var);
+			AppUpdateState_set_Status_m3E43CE637B618E3E134095B9A2A1EBE68B28E39E_inline(__this, L_11, NULL);
+			// }
+			goto IL_0056;
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0056:
+	{
+		// }
+		return;
+	}
+}
+// System.String Google.Play.AppUpdate.Internal.AppUpdateState::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AppUpdateState_ToString_m5678953ABDF4A2DD967187A51E9A96AFCE0C5839 (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringBuilder_t_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3CC0AB5B1A64196B45E94786E0AC1E5A077B588B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9D2E793B284D53AFEA6CBA2151BBADF6FA6538A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD33C6E9A8F14752E7D697A9E7CCE76B9FF5D6152);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// var stateDescription = new StringBuilder();
+		StringBuilder_t* L_0 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D(L_0, NULL);
+		// stateDescription.AppendFormat("status: {0} ", Status);
+		StringBuilder_t* L_1 = L_0;
+		int32_t L_2;
+		L_2 = AppUpdateState_get_Status_m602AAA83296C02417B09F9F54A1FB91FD2AD3D86_inline(__this, NULL);
+		int32_t L_3 = L_2;
+		RuntimeObject* L_4 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_3);
+		NullCheck(L_1);
+		StringBuilder_t* L_5;
+		L_5 = StringBuilder_AppendFormat_mFA88863E4018C2912D1A783E0EA6DAE4F594124F(L_1, _stringLiteral3CC0AB5B1A64196B45E94786E0AC1E5A077B588B, L_4, NULL);
+		// stateDescription.AppendFormat("bytes downloaded: {0} ", BytesDownloaded);
+		StringBuilder_t* L_6 = L_1;
+		int64_t L_7;
+		L_7 = AppUpdateState_get_BytesDownloaded_m7F6D696B6B50A9174566F6E5040D18BC93F7A289_inline(__this, NULL);
+		int64_t L_8 = L_7;
+		RuntimeObject* L_9 = Box(Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_il2cpp_TypeInfo_var, &L_8);
+		NullCheck(L_6);
+		StringBuilder_t* L_10;
+		L_10 = StringBuilder_AppendFormat_mFA88863E4018C2912D1A783E0EA6DAE4F594124F(L_6, _stringLiteral9D2E793B284D53AFEA6CBA2151BBADF6FA6538A4, L_9, NULL);
+		// stateDescription.AppendFormat("total downloaded: {0}", TotalBytesToDownload);
+		StringBuilder_t* L_11 = L_6;
+		int64_t L_12;
+		L_12 = AppUpdateState_get_TotalBytesToDownload_m761AB41F863C791B602228ADB58548849410054C_inline(__this, NULL);
+		int64_t L_13 = L_12;
+		RuntimeObject* L_14 = Box(Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_il2cpp_TypeInfo_var, &L_13);
+		NullCheck(L_11);
+		StringBuilder_t* L_15;
+		L_15 = StringBuilder_AppendFormat_mFA88863E4018C2912D1A783E0EA6DAE4F594124F(L_11, _stringLiteralD33C6E9A8F14752E7D697A9E7CCE76B9FF5D6152, L_14, NULL);
+		// return stateDescription.ToString();
+		NullCheck(L_11);
+		String_t* L_16;
+		L_16 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_11);
+		return L_16;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateStateListener::add_OnStateUpdateEvent(System.Action`1<Google.Play.AppUpdate.Internal.AppUpdateState>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateStateListener_add_OnStateUpdateEvent_mE3A67C0B36575BFEBF95A54B8E85335C584A3896 (AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161* __this, Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* V_0 = NULL;
+	Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* V_1 = NULL;
+	Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* V_2 = NULL;
+	{
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_0 = __this->___OnStateUpdateEvent_4;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_1 = V_0;
+		V_1 = L_1;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_2 = V_1;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_3 = ___0_value;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
+		V_2 = ((Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*)Castclass((RuntimeObject*)L_4, Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C_il2cpp_TypeInfo_var));
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C** L_5 = (&__this->___OnStateUpdateEvent_4);
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_6 = V_2;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_7 = V_1;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_9 = V_0;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*)L_9) == ((RuntimeObject*)(Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateStateListener::remove_OnStateUpdateEvent(System.Action`1<Google.Play.AppUpdate.Internal.AppUpdateState>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateStateListener_remove_OnStateUpdateEvent_m64615AA1935C0911EA37F6F57B70F612EB9A0D71 (AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161* __this, Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* V_0 = NULL;
+	Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* V_1 = NULL;
+	Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* V_2 = NULL;
+	{
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_0 = __this->___OnStateUpdateEvent_4;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_1 = V_0;
+		V_1 = L_1;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_2 = V_1;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_3 = ___0_value;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
+		V_2 = ((Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*)Castclass((RuntimeObject*)L_4, Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C_il2cpp_TypeInfo_var));
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C** L_5 = (&__this->___OnStateUpdateEvent_4);
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_6 = V_2;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_7 = V_1;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_9 = V_0;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*)L_9) == ((RuntimeObject*)(Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateStateListener::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateStateListener__ctor_mBE7234E95DA23644D8A9803EF9E1B45279DC387B (AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaProxy_tE5521F9761F7B95444B9C39FB15FDFC23F80A78D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3C_ctorU3Eb__3_0_m17571F5C6B929E29250E6A45F4A09EF327A93192_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBF55A0CAFB90637DCAD318D355F27142D7CF47C6);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* G_B2_0 = NULL;
+	AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161* G_B2_1 = NULL;
+	Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* G_B1_0 = NULL;
+	AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161* G_B1_1 = NULL;
+	{
+		// public event Action<AppUpdateState> OnStateUpdateEvent = delegate { };
+		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8_il2cpp_TypeInfo_var);
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_0 = ((U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8_il2cpp_TypeInfo_var))->___U3CU3E9__3_0_1;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_1 = L_0;
+		G_B1_0 = L_1;
+		G_B1_1 = __this;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			G_B2_1 = __this;
+			goto IL_0020;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8_il2cpp_TypeInfo_var);
+		U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8* L_2 = ((U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8_il2cpp_TypeInfo_var))->___U3CU3E9_0;
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_3 = (Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C*)il2cpp_codegen_object_new(Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		Action_1__ctor_mC9070FAAEDE7EDBF76F93ABC0320BD49BEBDAFDF(L_3, L_2, (intptr_t)((void*)U3CU3Ec_U3C_ctorU3Eb__3_0_m17571F5C6B929E29250E6A45F4A09EF327A93192_RuntimeMethod_var), NULL);
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_4 = L_3;
+		((U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8_il2cpp_TypeInfo_var))->___U3CU3E9__3_0_1 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8_il2cpp_TypeInfo_var))->___U3CU3E9__3_0_1), (void*)L_4);
+		G_B2_0 = L_4;
+		G_B2_1 = G_B1_1;
+	}
+
+IL_0020:
+	{
+		NullCheck(G_B2_1);
+		G_B2_1->___OnStateUpdateEvent_4 = G_B2_0;
+		Il2CppCodeGenWriteBarrier((void**)(&G_B2_1->___OnStateUpdateEvent_4), (void*)G_B2_0);
+		// base(PlayCoreConstants.PlayCorePackagePrefix + "install.InstallStateUpdatedListener")
+		il2cpp_codegen_runtime_class_init_inline(AndroidJavaProxy_tE5521F9761F7B95444B9C39FB15FDFC23F80A78D_il2cpp_TypeInfo_var);
+		AndroidJavaProxy__ctor_m2832886A0E1BBF6702653A7C6A4609F11FB712C7(__this, _stringLiteralBF55A0CAFB90637DCAD318D355F27142D7CF47C6, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateStateListener::onStateUpdate(UnityEngine.AndroidJavaObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppUpdateStateListener_onStateUpdate_mF4D30E2AE96A3DBBFBC5D3641F0E95E1ADADE8A4 (AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161* __this, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ___0_installState, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass4_0_U3ConStateUpdateU3Eb__0_mAF5C916284C9206B2C7ADBC8FE75484B83F3CE3B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass4_0_t1A6064DBD19D052DA4A95AA5835DEB7DF35B49FD_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CU3Ec__DisplayClass4_0_t1A6064DBD19D052DA4A95AA5835DEB7DF35B49FD* L_0 = (U3CU3Ec__DisplayClass4_0_t1A6064DBD19D052DA4A95AA5835DEB7DF35B49FD*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass4_0_t1A6064DBD19D052DA4A95AA5835DEB7DF35B49FD_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CU3Ec__DisplayClass4_0__ctor_m83D397FE0DF8A08CDD97D0239CB5ADFBA7B2D77C(L_0, NULL);
+		U3CU3Ec__DisplayClass4_0_t1A6064DBD19D052DA4A95AA5835DEB7DF35B49FD* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this_0 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_0), (void*)__this);
+		// var updateState = new AppUpdateState(installState);
+		U3CU3Ec__DisplayClass4_0_t1A6064DBD19D052DA4A95AA5835DEB7DF35B49FD* L_2 = L_1;
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_3 = ___0_installState;
+		AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* L_4 = (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12*)il2cpp_codegen_object_new(AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12_il2cpp_TypeInfo_var);
+		NullCheck(L_4);
+		AppUpdateState__ctor_m1AD5DA53FA23DDE6978682ADB4C57D9FB26FBCEF(L_4, L_3, NULL);
+		NullCheck(L_2);
+		L_2->___updateState_1 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&L_2->___updateState_1), (void*)L_4);
+		// PlayCoreEventHandler.HandleEvent(() => OnStateUpdateEvent.Invoke(updateState));
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_5 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		NullCheck(L_5);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_5, L_2, (intptr_t)((void*)U3CU3Ec__DisplayClass4_0_U3ConStateUpdateU3Eb__0_mAF5C916284C9206B2C7ADBC8FE75484B83F3CE3B_RuntimeMethod_var), NULL);
+		PlayCoreEventHandler_HandleEvent_m6344840A759B6C257811B9B6F25E457CF2F610C1(L_5, NULL);
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateStateListener/<>c::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m4AF63A7DD12C7EE1FFB6CD7C746B22F1030EDDE2 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8* L_0 = (U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8*)il2cpp_codegen_object_new(U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CU3Ec__ctor_m5F063465B75FD29482942C098432A76B88780B97(L_0, NULL);
+		((U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8_il2cpp_TypeInfo_var))->___U3CU3E9_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8_il2cpp_TypeInfo_var))->___U3CU3E9_0), (void*)L_0);
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateStateListener/<>c::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m5F063465B75FD29482942C098432A76B88780B97 (U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateStateListener/<>c::<.ctor>b__3_0(Google.Play.AppUpdate.Internal.AppUpdateState)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3C_ctorU3Eb__3_0_m17571F5C6B929E29250E6A45F4A09EF327A93192 (U3CU3Ec_t591E0BA2B4268827F80E27E0564218112C834DC8* __this, AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* ___0_U3Cp0U3E, const RuntimeMethod* method) 
+{
+	{
+		// public event Action<AppUpdateState> OnStateUpdateEvent = delegate { };
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateStateListener/<>c__DisplayClass4_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass4_0__ctor_m83D397FE0DF8A08CDD97D0239CB5ADFBA7B2D77C (U3CU3Ec__DisplayClass4_0_t1A6064DBD19D052DA4A95AA5835DEB7DF35B49FD* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Google.Play.AppUpdate.Internal.AppUpdateStateListener/<>c__DisplayClass4_0::<onStateUpdate>b__0()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass4_0_U3ConStateUpdateU3Eb__0_mAF5C916284C9206B2C7ADBC8FE75484B83F3CE3B (U3CU3Ec__DisplayClass4_0_t1A6064DBD19D052DA4A95AA5835DEB7DF35B49FD* __this, const RuntimeMethod* method) 
+{
+	{
+		// PlayCoreEventHandler.HandleEvent(() => OnStateUpdateEvent.Invoke(updateState));
+		AppUpdateStateListener_tF0AF1EF8481ECF8698E0CC474C4B04D1EE482161* L_0 = __this->___U3CU3E4__this_0;
+		NullCheck(L_0);
+		Action_1_t6A53B3BBB35E77D41743259A3863886FAB30BC3C* L_1 = L_0->___OnStateUpdateEvent_4;
+		AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* L_2 = __this->___updateState_1;
+		NullCheck(L_1);
+		Action_1_Invoke_mB67B37DC02404F365CF680F4D9B371CB11A4A8CB_inline(L_1, L_2, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int64_t AssetPackStates_get_TotalBytes_mAFC0111A353E0ACC2ED7492018180601611EDAB9_inline (AssetPackStates_tF29EB9AEFDF74D53DB10977AB96AD4D8E8923FCB* __this, const RuntimeMethod* method) 
+{
+	{
+		// public long TotalBytes { get; private set; }
+		int64_t L_0 = __this->___U3CTotalBytesU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool PlayAssetPackBatchRequest_get_IsDone_m01EACA2D80CEA4B89B15147B28E09F8BADB4F348_inline (PlayAssetPackBatchRequest_tA71C1C7470D71B0B2D5C8F7EC28FA14EFE50A96B* __this, const RuntimeMethod* method) 
+{
+	{
+		// public bool IsDone { get; protected set; }
+		bool L_0 = __this->___U3CIsDoneU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PlayAssetPackBatchRequest_set_IsDone_mCEBAEFE0F71398AF529D026DCB12DA385E84F545_inline (PlayAssetPackBatchRequest_tA71C1C7470D71B0B2D5C8F7EC28FA14EFE50A96B* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public bool IsDone { get; protected set; }
+		bool L_0 = ___0_value;
+		__this->___U3CIsDoneU3Ek__BackingField_1 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool PlayAssetPackRequest_get_IsDone_m839704DF8C10B15FF3C7C7BCED35EAABC5013EA1_inline (PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* __this, const RuntimeMethod* method) 
+{
+	{
+		// public bool IsDone { get; protected set; }
+		bool L_0 = __this->___U3CIsDoneU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PlayAssetPackRequest_set_DownloadProgress_m76595EB101B8FBDE71A3C905DF2BBFE384A9443A_inline (PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public float DownloadProgress { get; protected set; }
+		float L_0 = ___0_value;
+		__this->___U3CDownloadProgressU3Ek__BackingField_0 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PlayAssetPackRequest_set_Status_m39B276A4C8F828D81D4838877A86A33053C47032_inline (PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public AssetDeliveryStatus Status { get; protected set; }
+		int32_t L_0 = ___0_value;
+		__this->___U3CStatusU3Ek__BackingField_3 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PlayAssetPackRequest_get_Status_mF0E848D2064C9B37DA90B23F602AD2D80B7AE763_inline (PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* __this, const RuntimeMethod* method) 
+{
+	{
+		// public AssetDeliveryStatus Status { get; protected set; }
+		int32_t L_0 = __this->___U3CStatusU3Ek__BackingField_3;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PlayAssetPackRequest_set_IsDone_mF85B396480802F1BB043D86C265629D9B7B94E06_inline (PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public bool IsDone { get; protected set; }
+		bool L_0 = ___0_value;
+		__this->___U3CIsDoneU3Ek__BackingField_2 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PlayAssetPackRequest_set_Error_m768879DE94B4BB96262A72DD4BCB8179D4AE5C54_inline (PlayAssetPackRequest_t0A111F6C8B3625AF7649C3EDB0C0C24CCB252673* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public AssetDeliveryErrorCode Error { get; protected set; }
+		int32_t L_0 = ___0_value;
+		__this->___U3CErrorU3Ek__BackingField_1 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* AssetLocation_get_Path_mD0FFF67F07E8B24895D6E2CF671934BBDE37174A_inline (AssetLocation_t4E83832DC33FFD7DEF9067BCC90C0E2C03D8A5C0* __this, const RuntimeMethod* method) 
+{
+	{
+		// public string Path { get; protected set; }
+		String_t* L_0 = __this->___U3CPathU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint64_t AssetLocation_get_Offset_m24DB27A05BFED41D9E073A756E4743EFD92547D2_inline (AssetLocation_t4E83832DC33FFD7DEF9067BCC90C0E2C03D8A5C0* __this, const RuntimeMethod* method) 
+{
+	{
+		// public ulong Offset { get; protected set; }
+		uint64_t L_0 = __this->___U3COffsetU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* AppUpdateOptions_GetJavaAppUpdateOptions_mA92EC78AA57FEE570CFC694E1706E5CE92216C47_inline (AppUpdateOptions_tF10C28F4C2021423E866B7191201D6A16507C225* __this, const RuntimeMethod* method) 
+{
+	{
+		// return _javaAppUpdateOptions;
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->____javaAppUpdateOptions_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool AppUpdateRequest_get_IsDone_m345F4E193257A5E6C87A61AF48DA197893AA78D2_inline (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, const RuntimeMethod* method) 
+{
+	{
+		// public bool IsDone { get; protected set; }
+		bool L_0 = __this->___U3CIsDoneU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t AppUpdateState_get_ErrorCode_m1F7DE9BB3A91B512472F9A630C17CC370CDCD791_inline (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, const RuntimeMethod* method) 
+{
+	{
+		// public int ErrorCode { get; private set; }
+		int32_t L_0 = __this->___U3CErrorCodeU3Ek__BackingField_3;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t AppUpdateRequest_get_Error_m2428F339054733C4391F69FDC31B729FF76EEE6C_inline (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, const RuntimeMethod* method) 
+{
+	{
+		// public AppUpdateErrorCode Error { get; protected set; }
+		int32_t L_0 = __this->___U3CErrorU3Ek__BackingField_3;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t AppUpdateState_get_Status_m602AAA83296C02417B09F9F54A1FB91FD2AD3D86_inline (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, const RuntimeMethod* method) 
+{
+	{
+		// public int Status { get; private set; }
+		int32_t L_0 = __this->___U3CStatusU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int64_t AppUpdateState_get_BytesDownloaded_m7F6D696B6B50A9174566F6E5040D18BC93F7A289_inline (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, const RuntimeMethod* method) 
+{
+	{
+		// public long BytesDownloaded { get; private set; }
+		int64_t L_0 = __this->___U3CBytesDownloadedU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int64_t AppUpdateState_get_TotalBytesToDownload_m761AB41F863C791B602228ADB58548849410054C_inline (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, const RuntimeMethod* method) 
+{
+	{
+		// public long TotalBytesToDownload { get; private set; }
+		int64_t L_0 = __this->___U3CTotalBytesToDownloadU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* AppUpdateInfo_GetJavaUpdateInfo_m06F99ACACC30184A690C0C28761FB5B77A547B08_inline (AppUpdateInfo_tD703FD20B0C2DE97C4157979F53683DEF34F91C9* __this, const RuntimeMethod* method) 
+{
+	{
+		// return _javaAppUpdateInfo;
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = __this->____javaAppUpdateInfo_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AppUpdateRequest_set_Status_m672F2512A04E85BCE10D52A487BDC9753C3BE65F_inline (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public AppUpdateStatus Status { get; protected set; }
+		int32_t L_0 = ___0_value;
+		__this->___U3CStatusU3Ek__BackingField_2 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AppUpdateRequest_set_Error_mA2B02019E9445CAB0021543871E11FE0A56EA208_inline (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public AppUpdateErrorCode Error { get; protected set; }
+		int32_t L_0 = ___0_value;
+		__this->___U3CErrorU3Ek__BackingField_3 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AppUpdateRequest_set_DownloadProgress_mD09F9CCC110358C5F59F82AB1D71FBEBA16D1193_inline (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public float DownloadProgress { get; protected set; }
+		float L_0 = ___0_value;
+		__this->___U3CDownloadProgressU3Ek__BackingField_4 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AppUpdateRequest_set_BytesDownloaded_mF536383F89C50D4AA263F8AF916FD389EEF82A81_inline (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, uint64_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public ulong BytesDownloaded { get; protected set; }
+		uint64_t L_0 = ___0_value;
+		__this->___U3CBytesDownloadedU3Ek__BackingField_5 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AppUpdateRequest_set_TotalBytesToDownload_mA85DC90B518EAD9B3DC8825B198E28911A0F21E2_inline (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, uint64_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public ulong TotalBytesToDownload { get; protected set; }
+		uint64_t L_0 = ___0_value;
+		__this->___U3CTotalBytesToDownloadU3Ek__BackingField_6 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t AppUpdateRequest_get_Status_m59B0E73D91BA55511EABF53D0AA23975B2E2424F_inline (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, const RuntimeMethod* method) 
+{
+	{
+		// public AppUpdateStatus Status { get; protected set; }
+		int32_t L_0 = __this->___U3CStatusU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AppUpdateRequest_set_IsDone_mA86A88EF6509CB0BFC3386A3324E1D501C11F701_inline (AppUpdateRequest_t94FC74B31623597A16D3940BBEF2D26F23E0D855* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public bool IsDone { get; protected set; }
+		bool L_0 = ___0_value;
+		__this->___U3CIsDoneU3Ek__BackingField_1 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AppUpdateState_set_BytesDownloaded_mB80EEB34876C06A4A220C5453F6082F571F97CDC_inline (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, int64_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public long BytesDownloaded { get; private set; }
+		int64_t L_0 = ___0_value;
+		__this->___U3CBytesDownloadedU3Ek__BackingField_0 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AppUpdateState_set_TotalBytesToDownload_m7A8387DE748D8061294C0CF77DB296B8EFFD8592_inline (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, int64_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public long TotalBytesToDownload { get; private set; }
+		int64_t L_0 = ___0_value;
+		__this->___U3CTotalBytesToDownloadU3Ek__BackingField_1 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AppUpdateState_set_Status_m3E43CE637B618E3E134095B9A2A1EBE68B28E39E_inline (AppUpdateState_t131779B4EB325E5145E7E88C874E82E236E42D12* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public int Status { get; private set; }
+		int32_t L_0 = ___0_value;
+		__this->___U3CStatusU3Ek__BackingField_2 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->___value_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, RuntimeObject*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___0_obj, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t HashSet_1_get_Count_m41CC85EEB7855CEFA3BC7A32F115387939318ED3_gshared_inline (HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = (int32_t)__this->____count_9;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_gshared_inline (const RuntimeMethod* method) 
+{
+	{
+		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->rgctx_data, 0));
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_0 = ((EmptyArray_1_tDF0DD7256B115243AA6BD5558417387A734240EE_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->rgctx_data, 0)))->___Value_0;
+		return L_0;
+	}
+}

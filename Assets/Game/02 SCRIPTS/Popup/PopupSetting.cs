@@ -85,4 +85,8 @@ public class PopupSetting : SingletonPopup<PopupSetting>
     {
         ActionEvent.OnShowToast?.Invoke("Coming soon!");
     }
+
+    public void OnClickContact()
+    {
+    }
 }
